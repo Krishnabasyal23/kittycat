@@ -2,14 +2,6 @@ using UnityEngine;
 
 namespace KittyCrash
 {
-    /// <summary>
-    /// Kitty being a cat:
-    ///   Idle / Starting → sits & breathes (stretches while the server rolls the round)
-    ///   Running         → walks, speeding up as the multiplier rises, with random "cat stuff"
-    ///                     fake-out pauses (pure suspense — they never end the round)
-    ///   Ended           → gets distracted by whatever the server picked (fish / sleep / yarn …)
-    /// Uses CatSpriteAnimator if frames are assigned; otherwise bobs the placeholder square.
-    /// </summary>
     public class CatWalker : MonoBehaviour
     {
         [Header("Walking")]

@@ -13,10 +13,12 @@ namespace KittyCrash
     [RequireComponent(typeof(SpriteRenderer))]
     public class SeasonalSprite : MonoBehaviour
     {
-        public enum TintRole { None, Ground, Leaves, Trunk }
+        public enum TintRole { None, Ground, Leaves, Trunk, Distant }
 
         public Sprite spring, summer, autumn, winter;
         public TintRole tintRole = TintRole.None;
+        [Tooltip("Distant role only: 0 = same as sky (far haze), 1 = same as ground (close).")]
+        [Range(0f, 1f)] public float distantMix = 0.5f;
         [Tooltip("Random light/dark variation so repeated plants don't look identical.")]
         public float shadeVariation = 0.1f;
 
@@ -62,6 +64,7 @@ namespace KittyCrash
                 case TintRole.Ground: c = s.ground; break;
                 case TintRole.Leaves: c = s.leaves; break;
                 case TintRole.Trunk: c = s.trunk; break;
+                case TintRole.Distant: c = Color.Lerp(s.sky, s.ground, distantMix) * 0.92f; break;
                 default: c = Color.white; break;
             }
             return new Color(c.r * shade, c.g * shade, c.b * shade, 1f);
