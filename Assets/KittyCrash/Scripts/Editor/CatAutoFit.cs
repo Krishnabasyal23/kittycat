@@ -5,7 +5,12 @@ using UnityEngine;
 
 namespace KittyCrash.EditorTools
 {
-    
+    /// <summary>
+    /// Menu: Kitty Crash › Auto-fit Cat (paws on ground + costumes on head)
+    /// Looks at the actual painted pixels of the cat's idle frame (ignoring empty space in the cell),
+    /// then: puts the paws exactly on the ground, and sizes/places every costume item on the head.
+    /// Run it again any time you change the cat's scale or frames. Ctrl+Z undoes it.
+    /// </summary>
     public static class CatAutoFit
     {
         [MenuItem("Kitty Crash/Auto-fit Cat (paws on ground + costumes on head)")]

@@ -54,6 +54,10 @@ namespace KittyCrash
         public ICrashBackend Backend { get; private set; }
         public string BackendName => Backend != null ? Backend.Name : "-";
         public float GrowthRate => Backend != null ? Backend.GrowthRate : CrashMath.DefaultGrowthRate;
+        public float WarmupSeconds => Backend != null ? Backend.WarmupSeconds : 0f;
+        /// <summary>True during the first seconds of a round: cat walks, multiplier stays 1.00x, no cash-out.</summary>
+        public bool IsWarmingUp => Phase == RoundPhase.Running && RunElapsed < WarmupSeconds;
+        public float WarmupLeft => Mathf.Max(0f, WarmupSeconds - RunElapsed);
         public decimal MinBet => Backend != null ? Backend.MinBet : 1m;
         public decimal MaxBet => Backend != null ? Backend.MaxBet : 500m;
         public decimal PotentialPayout => CrashMath.Payout(Wager, CrashMath.Floor2(Multiplier));
@@ -184,7 +188,7 @@ namespace KittyCrash
 
         public void CashOut()
         {
-            if (Phase != RoundPhase.Running || CashedOut || CashOutPending || RoundId == null) return;
+            if (Phase != RoundPhase.Running || CashedOut || CashOutPending || RoundId == null || IsWarmingUp) return;
             CashOutPending = true;
             string id = RoundId;
 
@@ -219,7 +223,7 @@ namespace KittyCrash
 
         void UpdateRunning()
         {
-            float local = CrashMath.MultiplierAt(RunElapsed, GrowthRate);
+            float local = CrashMath.MultiplierAt(Mathf.Max(0f, RunElapsed - WarmupSeconds), GrowthRate);
 
             if (CrashPoint > 0f && local >= CrashPoint)
             {
@@ -242,7 +246,7 @@ namespace KittyCrash
             }
 
             // Safety net: never walk forever if a request got lost.
-            if (RunElapsed > CrashMath.SecondsFor(CrashMath.DefaultMaxMultiplier, GrowthRate) + 5f)
+            if (RunElapsed > WarmupSeconds + CrashMath.SecondsFor(CrashMath.DefaultMaxMultiplier, GrowthRate) + 5f)
                 EndRound(Multiplier, Distraction);
         }
 
@@ -267,7 +271,7 @@ namespace KittyCrash
                     case RoundStatus.Running:
                         // Keep the local animation in step with the server clock (only ever catch up, never go back).
                         if (r.multiplier > Multiplier + 0.02f)
-                            runStartTime = Time.time - CrashMath.SecondsFor(r.multiplier, GrowthRate);
+                            runStartTime = Time.time - WarmupSeconds - CrashMath.SecondsFor(r.multiplier, GrowthRate);
                         break;
                     case RoundStatus.Crashed:
                         if (!CashOutPending) EndRound(r.multiplier, r.distraction);

@@ -12,7 +12,7 @@ namespace KittyCrash
     public class ParallaxLayer : MonoBehaviour
     {
         public Sprite spring, summer, autumn, winter;
-        [Range(0f, 1f)] public float follow = 0.8f;
+        [Range(-1f, 1f)] public float follow = 0.8f; // negative = foreground, moves faster than the world
         [Tooltip("World Y of the bottom of the image (sprites use a bottom pivot).")]
         public float baselineY = -2.5f;
         [Tooltip("Extra sideways drift in units/second (clouds).")]

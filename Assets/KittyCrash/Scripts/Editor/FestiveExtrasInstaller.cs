@@ -27,6 +27,11 @@ namespace KittyCrash.EditorTools
         [MenuItem("Kitty Crash/Install Festive Extras (background, costumes, props, distractions)")]
         public static void Install()
         {
+            if (EditorApplication.isPlaying)
+            {
+                EditorUtility.DisplayDialog("Kitty Crash", "Stop Play mode first (press the ▶ button), then run this again.\nChanges made during Play mode get thrown away.", "OK");
+                return;
+            }
             var walker = Find<CatWalker>();
             var seasons = Find<SeasonSystem>();
             if (walker == null || seasons == null)

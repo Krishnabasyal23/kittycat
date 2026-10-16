@@ -59,6 +59,8 @@ namespace KittyCrash
     {
         string Name { get; }
         float GrowthRate { get; }
+        /// <summary>Seconds the cat walks at 1.00x before the multiplier starts (no crash, no cash-out).</summary>
+        float WarmupSeconds { get; }
         decimal MinBet { get; }
         decimal MaxBet { get; }
 

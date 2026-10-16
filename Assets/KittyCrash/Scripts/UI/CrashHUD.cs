@@ -142,6 +142,7 @@ namespace KittyCrash
                     bigText = $"{CrashMath.Floor2(round.Multiplier):0.00}x";
                     if (round.CashedOut) c = Win;
                     sub = cat != null ? $"Kitty walked {cat.DistanceThisRound:0.0} m" : "Kitty is walking…";
+                    if (round.IsWarmingUp) { sub = $"Kitty is warming up… multiplier starts in {round.WarmupLeft:0.0}s"; c = Muted; }
                     if (cat != null && cat.IsFidgeting) sub += "   …sniff sniff";
                     break;
                 default:
@@ -189,6 +190,7 @@ namespace KittyCrash
                 case RoundPhase.Running:
                     if (round.CashedOut) text = $"Cashed out @ {round.CashOutMultiplier:0.00}x  +{round.Payout:0.00}";
                     else if (round.CashOutPending) text = "Cashing out…";
+                    else if (round.IsWarmingUp) text = $"Warming up… {round.WarmupLeft:0.0}s";
                     else { text = $"CASH OUT  {round.PotentialPayout:0.00}  (Space)"; action = round.CashOut; }
                     break;
                 case RoundPhase.Ended:

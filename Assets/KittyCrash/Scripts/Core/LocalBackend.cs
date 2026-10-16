@@ -15,6 +15,8 @@ namespace KittyCrash
     {
         [Header("Server constants (keep in sync with crash_engine.py / economy.py)")]
         public float growthRate = CrashMath.DefaultGrowthRate;
+        [Tooltip("Seconds of walking at 1.00x before the multiplier starts.")]
+        public float warmupSeconds = 6f;
         [Range(0f, 0.2f)] public float houseEdge = CrashMath.DefaultHouseEdge;
         public float maxMultiplier = CrashMath.DefaultMaxMultiplier;
         public float initialBalance = 1000f;
@@ -48,6 +50,7 @@ namespace KittyCrash
 
         public string Name => "Offline (local)";
         public float GrowthRate => growthRate;
+        public float WarmupSeconds => warmupSeconds;
         public decimal MinBet => (decimal)minBet;
         public decimal MaxBet => (decimal)maxBet;
 
@@ -85,7 +88,7 @@ namespace KittyCrash
                     wager = wager,
                     crashPoint = CrashMath.CrashFromUniform(u, houseEdge, maxMultiplier),
                     distraction = distractions.Length > 0 ? distractions[rng.Next(distractions.Length)] : "fish",
-                    startTime = Now,
+                    startTime = Now + warmupSeconds,   // multiplier starts after the warm-up walk
                     status = RoundStatus.Running,
                 };
                 r.crashTime = Mathf.Log(r.crashPoint) / growthRate;
@@ -116,7 +119,7 @@ namespace KittyCrash
             switch (r.status)
             {
                 case RoundStatus.Running:
-                    res.multiplier = CrashMath.Floor2(CrashMath.MultiplierAt(Now - r.startTime, growthRate));
+                    res.multiplier = CrashMath.Floor2(CrashMath.MultiplierAt(Mathf.Max(0f, Now - r.startTime), growthRate));
                     break;
                 case RoundStatus.Crashed:
                     res.multiplier = Mathf.Round(r.crashPoint * 100f) / 100f;
@@ -134,6 +137,11 @@ namespace KittyCrash
         {
             if (!rounds.TryGetValue(roundId ?? "", out var r)) { Respond(done, new CashOutResult { ok = false, error = "Round not found for session" }, simulatedLatency); return; }
             Refresh(r);
+            if (r.status == RoundStatus.Running && Now < r.startTime)
+            {
+                Respond(done, new CashOutResult { ok = false, error = "Kitty is still warming up" }, simulatedLatency);
+                return;
+            }
             if (r.status == RoundStatus.Running)
             {
                 float m = CrashMath.Floor2(CrashMath.MultiplierAt(Now - r.startTime, growthRate));

@@ -5,7 +5,12 @@ using UnityEngine;
 
 namespace KittyCrash.EditorTools
 {
-   
+    /// <summary>
+    /// Menu: Kitty Crash › Fix Layout
+    /// Snaps everything that may have been dragged by accident back to the known-good layout,
+    /// and makes the ground/background un-clickable in the Scene view so it can't happen again.
+    /// Keeps your art, sizes, costumes and settings — only positions are reset.
+    /// </summary>
     public static class LayoutFixer
     {
         const float GroundTop = -2.5f;
@@ -59,6 +64,8 @@ namespace KittyCrash.EditorTools
                 {
                     var v = walker.visual;
                     var sr = v.GetComponent<SpriteRenderer>();
+                    // Height that puts the bottom of the sprite on the ground. A small lift you added on purpose is kept;
+                    // anything clearly dragged away (below ground / way up in the air) is snapped back.
                     float feet = sr != null && sr.sprite != null ? -sr.sprite.bounds.min.y * v.localScale.y : v.localScale.y * 0.5f;
                     float y = v.localPosition.y;
                     if (y < -0.05f || y > feet + 0.3f) y = feet;

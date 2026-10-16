@@ -28,6 +28,11 @@ namespace KittyCrash.EditorTools
         [MenuItem("Kitty Crash/Build Prototype Scene")]
         public static void Build()
         {
+            if (EditorApplication.isPlaying)
+            {
+                EditorUtility.DisplayDialog("Kitty Crash", "Stop Play mode first (press the ▶ button), then run this again.\nChanges made during Play mode get thrown away.", "OK");
+                return;
+            }
             if (File.Exists(ScenePath) &&
                 !EditorUtility.DisplayDialog("Kitty Crash", "KittyCrash.unity already exists. Rebuild it and its prefabs? (Your Cat frames/settings in the scene will be lost.)", "Rebuild", "Cancel"))
                 return;

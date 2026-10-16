@@ -19,6 +19,8 @@ namespace KittyCrash
         public float requestTimeout = 20f;
         [Tooltip("Must match GROWTH_RATE in crash_engine.py. Overwritten automatically if /api/health returns growth_rate.")]
         public float growthRate = CrashMath.DefaultGrowthRate;
+        [Tooltip("Read automatically from /api/health (warmup_seconds). Stays 0 if the server doesn't have the warm-up patch, so client and server never disagree.")]
+        public float warmupSeconds = 0f;
         public float minBet = 1f;
         public float maxBet = 500f;
         public bool rememberSession = true;
@@ -29,6 +31,7 @@ namespace KittyCrash
 
         public string Name => "API " + baseUrl + (string.IsNullOrEmpty(RngMode) ? "" : $" ({RngMode})");
         public float GrowthRate => growthRate;
+        public float WarmupSeconds => warmupSeconds;
         public decimal MinBet => (decimal)minBet;
         public decimal MaxBet => (decimal)maxBet;
 
@@ -36,7 +39,7 @@ namespace KittyCrash
         string sessionId;
 
         // ── JSON shapes (field names match the Python responses) ──
-        [Serializable] class HealthDto { public string status; public string game; public string version; public string rng_mode; public float growth_rate; }
+        [Serializable] class HealthDto { public string status; public string game; public string version; public string rng_mode; public float growth_rate; public float warmup_seconds = -1f; }
         [Serializable] class SessionDto { public string session_id; public string balance; }
         [Serializable] class BalanceDto { public string balance; }
         [Serializable] class WagerDto { public string wager; }
@@ -70,6 +73,7 @@ namespace KittyCrash
             {
                 RngMode = health.rng_mode;
                 if (health.growth_rate > 0f) growthRate = health.growth_rate;
+                if (health.warmup_seconds >= 0f) warmupSeconds = health.warmup_seconds;
             }
 
             if (rememberSession) sessionId = PlayerPrefs.GetString(SessionKey, "");
