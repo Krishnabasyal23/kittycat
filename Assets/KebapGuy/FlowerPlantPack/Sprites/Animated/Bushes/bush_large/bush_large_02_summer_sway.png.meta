@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bush_large_02_summer_sway_0
+      name: bush_large_02_summer_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ff7fe5ad558e1e4498ef2a899d7447c
-      internalID: -1783248342
+      spriteID: bde8a05f840732742b33985742ac9187
+      internalID: 1393425436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_summer_sway_1
+      name: bush_large_02_summer_sway_01_02
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85a3827b0a5504a45aee6e21669ef158
-      internalID: -1865708961
+      spriteID: 9526c42ead92eac48b3dad05bacc7e29
+      internalID: -1830787976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_summer_sway_2
+      name: bush_large_02_summer_sway_01_03
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cf0ce32002708549a6f7914718886dc
-      internalID: -1090550787
+      spriteID: ef9f42cb3ae81034980187ade64e84cb
+      internalID: 1230775457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_summer_sway_3
+      name: bush_large_02_summer_sway_01_04
       rect:
         serializedVersion: 2
         x: 144
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 791d294c9eaf1b2468d458136a2af078
-      internalID: 3609610
+      spriteID: 7d9ae3877f043ab449fd48e7b91838fb
+      internalID: -1276451611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_summer_sway_4
+      name: bush_large_02_summer_sway_01_05
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 543873ae82d5b7145bff9e9affa6fbd8
-      internalID: 642981983
+      spriteID: 7e204eba99ea1734383774744ac5a48e
+      internalID: 1990732758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_summer_sway_5
+      name: bush_large_02_summer_sway_01_06
       rect:
         serializedVersion: 2
         x: 240
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42ca9bd6df81e814d8d29f3dc2db96a5
-      internalID: 1057157396
+      spriteID: 03146c081878fa74da183328e13a1ce1
+      internalID: -367194596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_summer_sway_6
+      name: bush_large_02_summer_sway_01_07
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef5149600112e1b419d4010ff2aad9c0
-      internalID: -1929755252
+      spriteID: 00fa19586e4f4e0429af82ec4deaab84
+      internalID: -1606423557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_summer_sway_7
+      name: bush_large_02_summer_sway_01_08
       rect:
         serializedVersion: 2
         x: 336
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5156cbfe44a47d240a7de71c0689608f
-      internalID: 374256605
+      spriteID: 9e475b1620ac2a24aa4bcca50e0a6955
+      internalID: 986474179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_summer_sway_8
+      name: bush_large_02_summer_sway_01_09
       rect:
         serializedVersion: 2
         x: 384
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a908feca56a773478c2ee74203ddf44
-      internalID: -2073272288
+      spriteID: 482d818aa79e5c34f8175b35920d30b2
+      internalID: -1400376810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_summer_sway_9
+      name: bush_large_02_summer_sway_01_10
       rect:
         serializedVersion: 2
         x: 432
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b66f76e6ef3f6e440bc7278a6a2da18e
-      internalID: 454205231
+      spriteID: 11719a289acd69f4aaa937a0d358d71b
+      internalID: -596969624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_summer_sway_10
+      name: bush_large_02_summer_sway_01_11
       rect:
         serializedVersion: 2
         x: 480
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e903c1f217391d74fa4dd8ff7027b569
-      internalID: 1976615891
+      spriteID: bf8af263c2ce72e4bbd4a0e417eedba4
+      internalID: 1572750780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_summer_sway_11
+      name: bush_large_02_summer_sway_01_12
       rect:
         serializedVersion: 2
         x: 528
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41b9f8bb677b839478de92fee89efe43
-      internalID: 1007072999
+      spriteID: fe014b991bbfa7d4d96b6de8cd2ff056
+      internalID: -359574847
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bush_large_02_summer_sway_0: -1783248342
-      bush_large_02_summer_sway_1: -1865708961
-      bush_large_02_summer_sway_10: 1976615891
-      bush_large_02_summer_sway_11: 1007072999
-      bush_large_02_summer_sway_2: -1090550787
-      bush_large_02_summer_sway_3: 3609610
-      bush_large_02_summer_sway_4: 642981983
-      bush_large_02_summer_sway_5: 1057157396
-      bush_large_02_summer_sway_6: -1929755252
-      bush_large_02_summer_sway_7: 374256605
-      bush_large_02_summer_sway_8: -2073272288
-      bush_large_02_summer_sway_9: 454205231
+      bush_large_02_summer_sway_01_01: 1393425436
+      bush_large_02_summer_sway_01_02: -1830787976
+      bush_large_02_summer_sway_01_03: 1230775457
+      bush_large_02_summer_sway_01_04: -1276451611
+      bush_large_02_summer_sway_01_05: 1990732758
+      bush_large_02_summer_sway_01_06: -367194596
+      bush_large_02_summer_sway_01_07: -1606423557
+      bush_large_02_summer_sway_01_08: 986474179
+      bush_large_02_summer_sway_01_09: -1400376810
+      bush_large_02_summer_sway_01_10: -596969624
+      bush_large_02_summer_sway_01_11: 1572750780
+      bush_large_02_summer_sway_01_12: -359574847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

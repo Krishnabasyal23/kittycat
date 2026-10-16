@@ -1,0 +1,227 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5353006535701189587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2912721207996304352}
+  - component: {fileID: 2525135542056096796}
+  - component: {fileID: 6473773535228572842}
+  - component: {fileID: 7513177912573298145}
+  m_Layer: 0
+  m_Name: Art
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2912721207996304352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5353006535701189587}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8173234154891185055}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2525135542056096796
+SpriteRenderer:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5353006535701189587}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -8
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 520351350, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2, y: 1.5625}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
+--- !u!114 &6473773535228572842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5353006535701189587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634850280d984074cacca52c9ca0107a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KittyCrash.SeasonalSprite
+  spring: {fileID: 2087834324, guid: b37626a7fdcb63947bbf10241e5b3957, type: 3}
+  summer: {fileID: 520351350, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  autumn: {fileID: -960030342, guid: 7697b2041fce2ab4a916d8f565cc7691, type: 3}
+  winter: {fileID: -1497917503, guid: 18390bc0c71e9334aac96cf335a33073, type: 3}
+  tintRole: 0
+  distantMix: 0.5
+  shadeVariation: 0.06
+  brightness: 1
+--- !u!114 &7513177912573298145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5353006535701189587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96395a9875d81224a8527ccfd076282e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KittyCrash.PlantAnimator
+  frames:
+  - {fileID: 520351350, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 163006073, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 1609942349, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 1761500250, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: -1439829514, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 1023673351, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: -1899445851, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 1535045388, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 436426821, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 1413051703, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 1730790980, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: -490991903, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  springFrames:
+  - {fileID: 2087834324, guid: b37626a7fdcb63947bbf10241e5b3957, type: 3}
+  - {fileID: 1800051033, guid: b37626a7fdcb63947bbf10241e5b3957, type: 3}
+  - {fileID: 2070926241, guid: b37626a7fdcb63947bbf10241e5b3957, type: 3}
+  - {fileID: 1312481738, guid: b37626a7fdcb63947bbf10241e5b3957, type: 3}
+  - {fileID: -1336037388, guid: b37626a7fdcb63947bbf10241e5b3957, type: 3}
+  - {fileID: -2136732428, guid: b37626a7fdcb63947bbf10241e5b3957, type: 3}
+  - {fileID: 1292686206, guid: b37626a7fdcb63947bbf10241e5b3957, type: 3}
+  - {fileID: 379013934, guid: b37626a7fdcb63947bbf10241e5b3957, type: 3}
+  - {fileID: -1860435156, guid: b37626a7fdcb63947bbf10241e5b3957, type: 3}
+  - {fileID: 257950840, guid: b37626a7fdcb63947bbf10241e5b3957, type: 3}
+  - {fileID: 1189649705, guid: b37626a7fdcb63947bbf10241e5b3957, type: 3}
+  - {fileID: 70343117, guid: b37626a7fdcb63947bbf10241e5b3957, type: 3}
+  summerFrames:
+  - {fileID: 520351350, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 163006073, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 1609942349, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 1761500250, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: -1439829514, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 1023673351, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: -1899445851, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 1535045388, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 436426821, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 1413051703, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: 1730790980, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  - {fileID: -490991903, guid: 92c479273732e024b933a86d3677b23e, type: 3}
+  autumnFrames:
+  - {fileID: -960030342, guid: 7697b2041fce2ab4a916d8f565cc7691, type: 3}
+  - {fileID: -374348803, guid: 7697b2041fce2ab4a916d8f565cc7691, type: 3}
+  - {fileID: -1381572906, guid: 7697b2041fce2ab4a916d8f565cc7691, type: 3}
+  - {fileID: 1742004402, guid: 7697b2041fce2ab4a916d8f565cc7691, type: 3}
+  - {fileID: 1163912903, guid: 7697b2041fce2ab4a916d8f565cc7691, type: 3}
+  - {fileID: -2130667198, guid: 7697b2041fce2ab4a916d8f565cc7691, type: 3}
+  - {fileID: 1480625105, guid: 7697b2041fce2ab4a916d8f565cc7691, type: 3}
+  - {fileID: 103055946, guid: 7697b2041fce2ab4a916d8f565cc7691, type: 3}
+  - {fileID: 582222413, guid: 7697b2041fce2ab4a916d8f565cc7691, type: 3}
+  - {fileID: -490832599, guid: 7697b2041fce2ab4a916d8f565cc7691, type: 3}
+  - {fileID: -1870814360, guid: 7697b2041fce2ab4a916d8f565cc7691, type: 3}
+  - {fileID: 1095585854, guid: 7697b2041fce2ab4a916d8f565cc7691, type: 3}
+  winterFrames:
+  - {fileID: -1497917503, guid: 18390bc0c71e9334aac96cf335a33073, type: 3}
+  - {fileID: 1368260361, guid: 18390bc0c71e9334aac96cf335a33073, type: 3}
+  - {fileID: -53413385, guid: 18390bc0c71e9334aac96cf335a33073, type: 3}
+  - {fileID: -422555181, guid: 18390bc0c71e9334aac96cf335a33073, type: 3}
+  - {fileID: -817785877, guid: 18390bc0c71e9334aac96cf335a33073, type: 3}
+  - {fileID: -1800684925, guid: 18390bc0c71e9334aac96cf335a33073, type: 3}
+  - {fileID: 1429068274, guid: 18390bc0c71e9334aac96cf335a33073, type: 3}
+  - {fileID: 1808573090, guid: 18390bc0c71e9334aac96cf335a33073, type: 3}
+  - {fileID: -1290752252, guid: 18390bc0c71e9334aac96cf335a33073, type: 3}
+  - {fileID: -642110671, guid: 18390bc0c71e9334aac96cf335a33073, type: 3}
+  - {fileID: 1511522391, guid: 18390bc0c71e9334aac96cf335a33073, type: 3}
+  - {fileID: -64028789, guid: 18390bc0c71e9334aac96cf335a33073, type: 3}
+  fps: 6
+  speedVariation: 0.2
+--- !u!1 &7643908570025767445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8173234154891185055}
+  m_Layer: 0
+  m_Name: KG_plant_thistle_02_autumn_sway_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8173234154891185055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7643908570025767445}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2912721207996304352}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

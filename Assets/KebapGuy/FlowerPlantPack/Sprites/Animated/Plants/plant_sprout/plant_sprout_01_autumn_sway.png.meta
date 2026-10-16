@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_sprout_01_autumn_sway_0
+      name: plant_sprout_01_autumn_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20763692332e2264a86a0d6be95bd72d
-      internalID: -149148531
+      spriteID: 3f93793e068dfe440a6ab8585d9a1ebe
+      internalID: -860945801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_autumn_sway_1
+      name: plant_sprout_01_autumn_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f90ca0f750469c942ae4d111bb6f2065
-      internalID: 755335095
+      spriteID: 0bf8f1017b096384e86946aad798b342
+      internalID: 1219374829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_autumn_sway_2
+      name: plant_sprout_01_autumn_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e73fb145a2d19bd4381ff589ab13c602
-      internalID: 5042665
+      spriteID: 1675dd64ab806e149b9008ef0170fc3f
+      internalID: -161123753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_autumn_sway_3
+      name: plant_sprout_01_autumn_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21b85af65dbe56c43bf93a4bb42a9b58
-      internalID: 429055819
+      spriteID: cb529db85fa3d7b4f9e6cd74ba02d478
+      internalID: -2003404250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_autumn_sway_4
+      name: plant_sprout_01_autumn_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddb307e5aa56a0a4fb5ae30b2c0a0ce8
-      internalID: -1716379926
+      spriteID: d47cd84f167f4c4419c777da8c998ebf
+      internalID: -1379186214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_autumn_sway_5
+      name: plant_sprout_01_autumn_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1a9866cdc2dfd94e9f4201fd7d4e0e9
-      internalID: 2055441807
+      spriteID: be636ba2dd75c254cb8ba4888aa825eb
+      internalID: 1202706032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_autumn_sway_6
+      name: plant_sprout_01_autumn_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15de851057886754d9f2e3586c6b47cb
-      internalID: 1354316567
+      spriteID: b958e5394ecdbe046b0bedd8199a0158
+      internalID: 1725723843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_autumn_sway_7
+      name: plant_sprout_01_autumn_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9383fec20aa5aa747b52b4d9b805ed18
-      internalID: -421609163
+      spriteID: 2c61e43d6a708bc4498c26e63b2d6a9d
+      internalID: -1278129354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_autumn_sway_8
+      name: plant_sprout_01_autumn_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68060429bebc7c042bd4e7711ae91ca2
-      internalID: 92395926
+      spriteID: eae3eb60f6b2a1b409199913fb649b47
+      internalID: 1922702348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_autumn_sway_9
+      name: plant_sprout_01_autumn_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a61dc4aa4fe10094ea4549204f5c2913
-      internalID: -577099644
+      spriteID: 0888298c53e30a44da90df1aebd89fe3
+      internalID: 35273519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_autumn_sway_10
+      name: plant_sprout_01_autumn_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3f1519fa8ac2624eaeace21b5393abf
-      internalID: -1079387756
+      spriteID: fe4d1682f70519241b4d48366bd5d1d0
+      internalID: 1621230102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_autumn_sway_11
+      name: plant_sprout_01_autumn_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31572493b7df2884b823e7332a3cf1c0
-      internalID: -906919671
+      spriteID: e80a86f96e82c654fb9784b11080f45a
+      internalID: -1566126282
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_sprout_01_autumn_sway_0: -149148531
-      plant_sprout_01_autumn_sway_1: 755335095
-      plant_sprout_01_autumn_sway_10: -1079387756
-      plant_sprout_01_autumn_sway_11: -906919671
-      plant_sprout_01_autumn_sway_2: 5042665
-      plant_sprout_01_autumn_sway_3: 429055819
-      plant_sprout_01_autumn_sway_4: -1716379926
-      plant_sprout_01_autumn_sway_5: 2055441807
-      plant_sprout_01_autumn_sway_6: 1354316567
-      plant_sprout_01_autumn_sway_7: -421609163
-      plant_sprout_01_autumn_sway_8: 92395926
-      plant_sprout_01_autumn_sway_9: -577099644
+      plant_sprout_01_autumn_sway_01_01: -860945801
+      plant_sprout_01_autumn_sway_01_02: 1219374829
+      plant_sprout_01_autumn_sway_01_03: -161123753
+      plant_sprout_01_autumn_sway_01_04: -2003404250
+      plant_sprout_01_autumn_sway_01_05: -1379186214
+      plant_sprout_01_autumn_sway_01_06: 1202706032
+      plant_sprout_01_autumn_sway_01_07: 1725723843
+      plant_sprout_01_autumn_sway_01_08: -1278129354
+      plant_sprout_01_autumn_sway_01_09: 1922702348
+      plant_sprout_01_autumn_sway_01_10: 35273519
+      plant_sprout_01_autumn_sway_01_11: 1621230102
+      plant_sprout_01_autumn_sway_01_12: -1566126282
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bush_flowering_01_white_sway_0
+      name: bush_flowering_01_white_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0aa3f8dc28115943a2347859774f4b3
-      internalID: 133218824
+      spriteID: 5e7b7457104d52f448ec6cf039c9cbf2
+      internalID: 509399648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_white_sway_1
+      name: bush_flowering_01_white_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66bb22864b5cbc448af69b1a90afbd46
-      internalID: -2039723973
+      spriteID: c337ea0d77bdc7440b7c633a90f090ab
+      internalID: 1003621073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_white_sway_2
+      name: bush_flowering_01_white_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c9f4094cd752c44b8abf8a601d8dfaf
-      internalID: -26857411
+      spriteID: 370e2eb3e963d614bb76afd064d75163
+      internalID: 467104989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_white_sway_3
+      name: bush_flowering_01_white_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68be5a89b998b6d44b74c7e175e54217
-      internalID: -255864842
+      spriteID: 0604400a81afa484da10b2da31061a4a
+      internalID: -1740005555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_white_sway_4
+      name: bush_flowering_01_white_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3fbed670734a07458ea33fd19fbd313
-      internalID: 166626084
+      spriteID: ee652467177685145ababcce824223e6
+      internalID: -345936520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_white_sway_5
+      name: bush_flowering_01_white_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1c1c052e96fa1d44a8d1aa4a4bdc752
-      internalID: -223841437
+      spriteID: 50b0035b5dc68f240b133e7fb20c7351
+      internalID: 566337030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_white_sway_6
+      name: bush_flowering_01_white_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e26f4a0073b67c44aa957dc3094ae566
-      internalID: 1842135307
+      spriteID: 6884b73bb6b6b5b4fbc931d55dd6f308
+      internalID: 1573274563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_white_sway_7
+      name: bush_flowering_01_white_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f7cd78791100c04a9bde13ce7837d12
-      internalID: -1508866296
+      spriteID: edbc0ab3fc978e24ca856eb128a0a6ab
+      internalID: 1432974050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_white_sway_8
+      name: bush_flowering_01_white_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2b4790d80d6c2c4ab3669152e0e5830
-      internalID: -1971457958
+      spriteID: 14cf0818108e0d54d8d6b7f2af488751
+      internalID: 342397857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_white_sway_9
+      name: bush_flowering_01_white_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 155278c643a331148b8f0244ed66cb9d
-      internalID: -810655593
+      spriteID: 1113386768edf6c4aa5ce46fdd18c43d
+      internalID: -232399989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_white_sway_10
+      name: bush_flowering_01_white_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3a33d5ab91ab7f4ca4c721f16c84b1b
-      internalID: 863074244
+      spriteID: 37c817e3af44f134db4f873df7fea4f7
+      internalID: -1803922351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_white_sway_11
+      name: bush_flowering_01_white_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31b2f08c212b4734399ac0e65a6b8e46
-      internalID: -212153809
+      spriteID: da731a04ad26bae4ba74e5ccc4734a03
+      internalID: 1650899459
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bush_flowering_01_white_sway_0: 133218824
-      bush_flowering_01_white_sway_1: -2039723973
-      bush_flowering_01_white_sway_10: 863074244
-      bush_flowering_01_white_sway_11: -212153809
-      bush_flowering_01_white_sway_2: -26857411
-      bush_flowering_01_white_sway_3: -255864842
-      bush_flowering_01_white_sway_4: 166626084
-      bush_flowering_01_white_sway_5: -223841437
-      bush_flowering_01_white_sway_6: 1842135307
-      bush_flowering_01_white_sway_7: -1508866296
-      bush_flowering_01_white_sway_8: -1971457958
-      bush_flowering_01_white_sway_9: -810655593
+      bush_flowering_01_white_sway_01_01: 509399648
+      bush_flowering_01_white_sway_01_02: 1003621073
+      bush_flowering_01_white_sway_01_03: 467104989
+      bush_flowering_01_white_sway_01_04: -1740005555
+      bush_flowering_01_white_sway_01_05: -345936520
+      bush_flowering_01_white_sway_01_06: 566337030
+      bush_flowering_01_white_sway_01_07: 1573274563
+      bush_flowering_01_white_sway_01_08: 1432974050
+      bush_flowering_01_white_sway_01_09: 342397857
+      bush_flowering_01_white_sway_01_10: -232399989
+      bush_flowering_01_white_sway_01_11: -1803922351
+      bush_flowering_01_white_sway_01_12: 1650899459
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -21,6 +21,8 @@ namespace KittyCrash
         [Range(0f, 1f)] public float distantMix = 0.5f;
         [Tooltip("Random light/dark variation so repeated plants don't look identical.")]
         public float shadeVariation = 0.1f;
+        [Tooltip("Overall brightness (far-away depth rows use < 1).")]
+        public float brightness = 1f;
 
         SpriteRenderer main, fade;
         Sprite original;
@@ -67,7 +69,8 @@ namespace KittyCrash
                 case TintRole.Distant: c = Color.Lerp(s.sky, s.ground, distantMix) * 0.92f; break;
                 default: c = Color.white; break;
             }
-            return new Color(c.r * shade, c.g * shade, c.b * shade, 1f);
+            float k = shade * brightness;
+            return new Color(c.r * k, c.g * k, c.b * k, 1f);
         }
 
         void LateUpdate()

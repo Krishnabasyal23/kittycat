@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_sprout_01_spring_sway_0
+      name: plant_sprout_01_spring_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb7c78077ca6f9f4da0580ee3e919cd0
-      internalID: 2034225298
+      spriteID: ff52b6d0aad5b954283f5e6cac289136
+      internalID: -1317560287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_spring_sway_1
+      name: plant_sprout_01_spring_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3502f0d38c91fc144ab771ce8a28347a
-      internalID: -169332157
+      spriteID: e77cf0dc55636754f8558e3bbc12f1fb
+      internalID: -653995641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_spring_sway_2
+      name: plant_sprout_01_spring_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83f41ccbd1006d44f8791c641e854e3d
-      internalID: 62003799
+      spriteID: 178692ad49ee97944b5ab5458b246e03
+      internalID: 451952015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_spring_sway_3
+      name: plant_sprout_01_spring_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cf3ffbb3dd61584bafcb26c308631ba
-      internalID: -859782492
+      spriteID: 18531947bd7555541b218a8b8a9b2fa9
+      internalID: 800725652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_spring_sway_4
+      name: plant_sprout_01_spring_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21b80b9076d6f7546b844b1d5c10339e
-      internalID: -168769322
+      spriteID: 12c6ae9777c1a9d42864a9579d68c556
+      internalID: 414017211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_spring_sway_5
+      name: plant_sprout_01_spring_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e9f1c3359700394498866b132b73b5f
-      internalID: 259428326
+      spriteID: 5adf4fa447eb5d543b87b660e6b61865
+      internalID: 309270811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_spring_sway_6
+      name: plant_sprout_01_spring_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c92e580319c54f4596016cc24e9777f
-      internalID: -1964957320
+      spriteID: e65ea74997db26044866efa5011dd5b7
+      internalID: 1605123226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_spring_sway_7
+      name: plant_sprout_01_spring_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bc9fe79422743e48b6a53a7aa1686fc
-      internalID: -653566532
+      spriteID: 8d394b2b429827547aa55e895dce290f
+      internalID: -2011448177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_spring_sway_8
+      name: plant_sprout_01_spring_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4490c1fad5bcb9d46a3c9604a3aab3ab
-      internalID: 1673980973
+      spriteID: 135e7bfc0ecba984d8623b84060ccf4e
+      internalID: -2141724775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_spring_sway_9
+      name: plant_sprout_01_spring_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec3c53926d4e9644580f6e2439ffca76
-      internalID: 1858258546
+      spriteID: 786fd0d8fb256f14388c000aa52c2429
+      internalID: -263196430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_spring_sway_10
+      name: plant_sprout_01_spring_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32d1e4cb95440aa469df6565ca2b9f98
-      internalID: -1606169988
+      spriteID: 83a0a83f6af59894d9761500f570ff81
+      internalID: 880077178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_spring_sway_11
+      name: plant_sprout_01_spring_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09ccea0bd25f6e643804fc27ea6a6fb8
-      internalID: -781602756
+      spriteID: 2fc6a64a72c4a5f4da989dcd58fb98cf
+      internalID: -308112552
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_sprout_01_spring_sway_0: 2034225298
-      plant_sprout_01_spring_sway_1: -169332157
-      plant_sprout_01_spring_sway_10: -1606169988
-      plant_sprout_01_spring_sway_11: -781602756
-      plant_sprout_01_spring_sway_2: 62003799
-      plant_sprout_01_spring_sway_3: -859782492
-      plant_sprout_01_spring_sway_4: -168769322
-      plant_sprout_01_spring_sway_5: 259428326
-      plant_sprout_01_spring_sway_6: -1964957320
-      plant_sprout_01_spring_sway_7: -653566532
-      plant_sprout_01_spring_sway_8: 1673980973
-      plant_sprout_01_spring_sway_9: 1858258546
+      plant_sprout_01_spring_sway_01_01: -1317560287
+      plant_sprout_01_spring_sway_01_02: -653995641
+      plant_sprout_01_spring_sway_01_03: 451952015
+      plant_sprout_01_spring_sway_01_04: 800725652
+      plant_sprout_01_spring_sway_01_05: 414017211
+      plant_sprout_01_spring_sway_01_06: 309270811
+      plant_sprout_01_spring_sway_01_07: 1605123226
+      plant_sprout_01_spring_sway_01_08: -2011448177
+      plant_sprout_01_spring_sway_01_09: -2141724775
+      plant_sprout_01_spring_sway_01_10: -263196430
+      plant_sprout_01_spring_sway_01_11: 880077178
+      plant_sprout_01_spring_sway_01_12: -308112552
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

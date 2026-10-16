@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_lavender_03_blue_sway_0
+      name: flower_lavender_03_blue_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8bd38b5deb37ed4ba5c6844b9e22996
-      internalID: 1968998728
+      spriteID: 31ee44d9836c62246a759d52d3737703
+      internalID: -790349611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_lavender_03_blue_sway_1
+      name: flower_lavender_03_blue_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60c2f07aa6715964dac4307805e52961
-      internalID: -918889739
+      spriteID: c19ee35254b45e645a4ab0742eecb4ef
+      internalID: -1233788445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_lavender_03_blue_sway_2
+      name: flower_lavender_03_blue_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c9b516e4cc223a45b4d579959440543
-      internalID: -1285650091
+      spriteID: 84e3230d88d4a4e4da20cb78e9f6ab4a
+      internalID: 2134600054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_lavender_03_blue_sway_3
+      name: flower_lavender_03_blue_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e1b765087c23254a9d24e1936b6f46e
-      internalID: -1004100628
+      spriteID: 27db6684490ff7e498536e344ff9e8d8
+      internalID: -1170644694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_lavender_03_blue_sway_4
+      name: flower_lavender_03_blue_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13c5c14a7fff755428d32f1b0ac138fa
-      internalID: 703520416
+      spriteID: 6437fba2112236743b795326255168e9
+      internalID: 2038971861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_lavender_03_blue_sway_5
+      name: flower_lavender_03_blue_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9aaf24fa13c6af44ab92be694d35e05
-      internalID: 1166167387
+      spriteID: 71391786d0982ea4096919db1e7d74ec
+      internalID: -1493197330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_lavender_03_blue_sway_6
+      name: flower_lavender_03_blue_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3908302d7d1d0042b7e53e1af70b110
-      internalID: 1775895310
+      spriteID: b825788d541328944976792570fd75b7
+      internalID: 2102115187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_lavender_03_blue_sway_7
+      name: flower_lavender_03_blue_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50bba045e3dff12449c24f59bfb08b42
-      internalID: 1343954880
+      spriteID: 33a6b4f5854a6384bb3ae5bb537e9c2d
+      internalID: 915074527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_lavender_03_blue_sway_8
+      name: flower_lavender_03_blue_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5099626a57acf344cb55f1f280346316
-      internalID: -756639568
+      spriteID: 63a41d23e0d61e942a1bde3850662b17
+      internalID: 1765029228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_lavender_03_blue_sway_9
+      name: flower_lavender_03_blue_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4aa3c00e711293149bee01f4628e6cb1
-      internalID: -1102504992
+      spriteID: 52fcf84fbdb12254b88e75a36c735cfb
+      internalID: 1977082538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_lavender_03_blue_sway_10
+      name: flower_lavender_03_blue_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8a0acd0392bd0a4595311c77ea3b36e
-      internalID: 1290144604
+      spriteID: 16b9ee2eeb379a64d9589d41fbec2c56
+      internalID: 504075610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_lavender_03_blue_sway_11
+      name: flower_lavender_03_blue_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14ce8c8dbad0f7e4ba3a8c6a2152683e
-      internalID: -532469933
+      spriteID: 1cf298bc4c37c344298f8c120121f186
+      internalID: -1892640417
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flower_lavender_03_blue_sway_0: 1968998728
-      flower_lavender_03_blue_sway_1: -918889739
-      flower_lavender_03_blue_sway_10: 1290144604
-      flower_lavender_03_blue_sway_11: -532469933
-      flower_lavender_03_blue_sway_2: -1285650091
-      flower_lavender_03_blue_sway_3: -1004100628
-      flower_lavender_03_blue_sway_4: 703520416
-      flower_lavender_03_blue_sway_5: 1166167387
-      flower_lavender_03_blue_sway_6: 1775895310
-      flower_lavender_03_blue_sway_7: 1343954880
-      flower_lavender_03_blue_sway_8: -756639568
-      flower_lavender_03_blue_sway_9: -1102504992
+      flower_lavender_03_blue_sway_01_01: -790349611
+      flower_lavender_03_blue_sway_01_02: -1233788445
+      flower_lavender_03_blue_sway_01_03: 2134600054
+      flower_lavender_03_blue_sway_01_04: -1170644694
+      flower_lavender_03_blue_sway_01_05: 2038971861
+      flower_lavender_03_blue_sway_01_06: -1493197330
+      flower_lavender_03_blue_sway_01_07: 2102115187
+      flower_lavender_03_blue_sway_01_08: 915074527
+      flower_lavender_03_blue_sway_01_09: 1765029228
+      flower_lavender_03_blue_sway_01_10: 1977082538
+      flower_lavender_03_blue_sway_01_11: 504075610
+      flower_lavender_03_blue_sway_01_12: -1892640417
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

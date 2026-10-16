@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_tulip_03_blue_sway_0
+      name: flower_tulip_03_blue_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03852358f32b14b4bbd0ba7ab8327725
-      internalID: -1144655277
+      spriteID: fde433fad36f26249a4542c568ea4307
+      internalID: -300953506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_03_blue_sway_1
+      name: flower_tulip_03_blue_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca6fabff4c920994f80b48d609ddbfc9
-      internalID: 1190103227
+      spriteID: 766c23a4de5ca5b498a495fda574d716
+      internalID: -342281989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_03_blue_sway_2
+      name: flower_tulip_03_blue_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05bc6a86538e15e46be984b880cf8d98
-      internalID: -193482909
+      spriteID: b6311f003ae36f148b66279597c7bfea
+      internalID: 1786060278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_03_blue_sway_3
+      name: flower_tulip_03_blue_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9bac4e7229e130498ffa5290001df29
-      internalID: -1831778460
+      spriteID: 312acb710f3052b4c94f04ff44140098
+      internalID: -457189984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_03_blue_sway_4
+      name: flower_tulip_03_blue_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1663a36c4d3bc64b96e78d49a9b7ea3
-      internalID: 1534376833
+      spriteID: 441ca213792847941931adad6d83b65a
+      internalID: -1391684489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_03_blue_sway_5
+      name: flower_tulip_03_blue_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2320835a3653dc2499a32e67d3f724b4
-      internalID: -1458491807
+      spriteID: ae96e7f4b30752449a510fa90ad0b8c8
+      internalID: -191084625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_03_blue_sway_6
+      name: flower_tulip_03_blue_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c928892b497c12a4db552f9e474180dc
-      internalID: -281382251
+      spriteID: 3bc5220a307f0864a949d3aee22e2fa0
+      internalID: 1081962507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_03_blue_sway_7
+      name: flower_tulip_03_blue_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40b881acbe723104f8c76f06daf882ed
-      internalID: 580070913
+      spriteID: 45d6f2bbe47a06a41beb3f6d0619c43f
+      internalID: 124003231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_03_blue_sway_8
+      name: flower_tulip_03_blue_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 643ba683ce3261d4ba091e50dcb758c1
-      internalID: 1327301456
+      spriteID: 2b1f775192635e146ab99df84656053c
+      internalID: 1130807892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_03_blue_sway_9
+      name: flower_tulip_03_blue_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffebe8df348e0de46a376084b3aece04
-      internalID: -1605878299
+      spriteID: a0412bebbf5fd79468f2695c62abdedc
+      internalID: -1105333474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_03_blue_sway_10
+      name: flower_tulip_03_blue_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 516154974e5f87c4f98c14a67a0c7d81
-      internalID: 578915761
+      spriteID: 8ba8244b619241744abcd90fb27bcdf6
+      internalID: -1146494703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_03_blue_sway_11
+      name: flower_tulip_03_blue_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce403b4e9b4b02144a56c45a2cc62962
-      internalID: 56764451
+      spriteID: b5cb179b840d3364a9870611366ba1ba
+      internalID: -1344875063
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flower_tulip_03_blue_sway_0: -1144655277
-      flower_tulip_03_blue_sway_1: 1190103227
-      flower_tulip_03_blue_sway_10: 578915761
-      flower_tulip_03_blue_sway_11: 56764451
-      flower_tulip_03_blue_sway_2: -193482909
-      flower_tulip_03_blue_sway_3: -1831778460
-      flower_tulip_03_blue_sway_4: 1534376833
-      flower_tulip_03_blue_sway_5: -1458491807
-      flower_tulip_03_blue_sway_6: -281382251
-      flower_tulip_03_blue_sway_7: 580070913
-      flower_tulip_03_blue_sway_8: 1327301456
-      flower_tulip_03_blue_sway_9: -1605878299
+      flower_tulip_03_blue_sway_01_01: -300953506
+      flower_tulip_03_blue_sway_01_02: -342281989
+      flower_tulip_03_blue_sway_01_03: 1786060278
+      flower_tulip_03_blue_sway_01_04: -457189984
+      flower_tulip_03_blue_sway_01_05: -1391684489
+      flower_tulip_03_blue_sway_01_06: -191084625
+      flower_tulip_03_blue_sway_01_07: 1081962507
+      flower_tulip_03_blue_sway_01_08: 124003231
+      flower_tulip_03_blue_sway_01_09: 1130807892
+      flower_tulip_03_blue_sway_01_10: -1105333474
+      flower_tulip_03_blue_sway_01_11: -1146494703
+      flower_tulip_03_blue_sway_01_12: -1344875063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_leafy_01_winter_sway_0
+      name: plant_leafy_01_winter_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8299a23375b1ad04098469642644ebf6
-      internalID: 143298821
+      spriteID: 62e3991c5d34a8849a910938fefcc61f
+      internalID: -128471344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_winter_sway_1
+      name: plant_leafy_01_winter_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a2db854396b071448b4f6ccb171a4fc
-      internalID: 1769142747
+      spriteID: bbd1797a645e8984a9062e73decb616b
+      internalID: -1179928065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_winter_sway_2
+      name: plant_leafy_01_winter_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c1a08d78cc55a9449496784792cb49b
-      internalID: 1045080774
+      spriteID: 1387387d29f4d9d49af1c83c2787fc4a
+      internalID: 1219668863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_winter_sway_3
+      name: plant_leafy_01_winter_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bab9a96463482e4f8e2b22fcfad0a13
-      internalID: -420040774
+      spriteID: 5461a8e9e6a50ec468e42b933d008d40
+      internalID: -995836277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_winter_sway_4
+      name: plant_leafy_01_winter_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90c2c4f17b4a1974b87cc32e71649f15
-      internalID: 1614154250
+      spriteID: 6f61229fe0b46854bab331e04ef1f954
+      internalID: 2055247047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_winter_sway_5
+      name: plant_leafy_01_winter_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c88398750a4cf534bbb5254c62cead6e
-      internalID: -1771129747
+      spriteID: 531f70a9b28726d41814d619dda5b5a8
+      internalID: 1951555440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_winter_sway_6
+      name: plant_leafy_01_winter_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98746e7411958e443a53b0eea2e3d8a5
-      internalID: -1720899103
+      spriteID: 54e6ac0f2082dfe4bb59ccf597f700ad
+      internalID: 1980534958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_winter_sway_7
+      name: plant_leafy_01_winter_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d5cee4c6aa909e4bb3bf2b5c9ae3865
-      internalID: 1388293712
+      spriteID: 81188d651fda78e4e938535ad2812e42
+      internalID: -1902428266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_winter_sway_8
+      name: plant_leafy_01_winter_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a55dc34dc1cd7d94694957b0f82ffdc1
-      internalID: 1515672239
+      spriteID: 6c613e80a82998a4fbca3b95c715f56f
+      internalID: 499722195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_winter_sway_9
+      name: plant_leafy_01_winter_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb859b34312b0a745b71135970cc544e
-      internalID: -217519383
+      spriteID: 148d3524d7ea7984ab813d9195ab36d0
+      internalID: -1719629346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_winter_sway_10
+      name: plant_leafy_01_winter_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e0357e0375aa2f48bcc0fbccc78766a
-      internalID: 1541132640
+      spriteID: 6b8db3f5b608b404e9ba558f17f4b667
+      internalID: -910755189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_winter_sway_11
+      name: plant_leafy_01_winter_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 137cdee0813874e44a5298d1ad287865
-      internalID: 994015643
+      spriteID: 7b6908c51eed4f943964692cbc17a5e4
+      internalID: -1708316397
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_leafy_01_winter_sway_0: 143298821
-      plant_leafy_01_winter_sway_1: 1769142747
-      plant_leafy_01_winter_sway_10: 1541132640
-      plant_leafy_01_winter_sway_11: 994015643
-      plant_leafy_01_winter_sway_2: 1045080774
-      plant_leafy_01_winter_sway_3: -420040774
-      plant_leafy_01_winter_sway_4: 1614154250
-      plant_leafy_01_winter_sway_5: -1771129747
-      plant_leafy_01_winter_sway_6: -1720899103
-      plant_leafy_01_winter_sway_7: 1388293712
-      plant_leafy_01_winter_sway_8: 1515672239
-      plant_leafy_01_winter_sway_9: -217519383
+      plant_leafy_01_winter_sway_01_01: -128471344
+      plant_leafy_01_winter_sway_01_02: -1179928065
+      plant_leafy_01_winter_sway_01_03: 1219668863
+      plant_leafy_01_winter_sway_01_04: -995836277
+      plant_leafy_01_winter_sway_01_05: 2055247047
+      plant_leafy_01_winter_sway_01_06: 1951555440
+      plant_leafy_01_winter_sway_01_07: 1980534958
+      plant_leafy_01_winter_sway_01_08: -1902428266
+      plant_leafy_01_winter_sway_01_09: 499722195
+      plant_leafy_01_winter_sway_01_10: -1719629346
+      plant_leafy_01_winter_sway_01_11: -910755189
+      plant_leafy_01_winter_sway_01_12: -1708316397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

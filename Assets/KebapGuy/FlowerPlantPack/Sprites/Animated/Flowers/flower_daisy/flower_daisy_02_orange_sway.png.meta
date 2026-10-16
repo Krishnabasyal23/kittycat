@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_daisy_02_orange_sway_0
+      name: flower_daisy_02_orange_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11a117698fb419d499d7d07e72bcc1a1
-      internalID: -1713676737
+      spriteID: 197128a8f9fb8544e94cf8c829de3b60
+      internalID: -1928133433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_02_orange_sway_1
+      name: flower_daisy_02_orange_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37f1bc3dbf9770b4585aae13891e15bf
-      internalID: 620531453
+      spriteID: 6853261b5ba5c2b47a364caece9d3a80
+      internalID: -896755507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_02_orange_sway_2
+      name: flower_daisy_02_orange_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c055124dc3681474485e095d7bac9ec5
-      internalID: -1914011421
+      spriteID: e7c761aa829c3a44686268edede79bff
+      internalID: 826919695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_02_orange_sway_3
+      name: flower_daisy_02_orange_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d1cefbf44bac8d47869856f95c86206
-      internalID: -1362775934
+      spriteID: b25cc53ea9a96ce4e9f977881c2dae2f
+      internalID: 1168148893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_02_orange_sway_4
+      name: flower_daisy_02_orange_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5145af266f22db4a9fdfe3dee0ae903
-      internalID: 1586864796
+      spriteID: 5547766e3ff709d499813e1369aca254
+      internalID: -1968766685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_02_orange_sway_5
+      name: flower_daisy_02_orange_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8a97c74158338e45beabddfb4a88e63
-      internalID: -563782244
+      spriteID: 8d1261ea904d12840809a30ab0c9d007
+      internalID: 877113090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_02_orange_sway_6
+      name: flower_daisy_02_orange_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6627ea5ff480c5247a6ffe94b4f1a629
-      internalID: -1173576183
+      spriteID: b1a4ad7df04ce0f4881bae6fd53587b7
+      internalID: -1520182658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_02_orange_sway_7
+      name: flower_daisy_02_orange_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b71c1c18d081bf45a7c69bebf4a4495
-      internalID: -1314842481
+      spriteID: 26ad82d3be7486342a3324a40a245cce
+      internalID: -1648585189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_02_orange_sway_8
+      name: flower_daisy_02_orange_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10df44badafd8464b80947b4e87aa864
-      internalID: 950410017
+      spriteID: 54661f1dc856baf43b55fc6b1e62e8c3
+      internalID: 928105492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_02_orange_sway_9
+      name: flower_daisy_02_orange_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e7f7dac87eaf6c42b7f430a1db9f18f
-      internalID: 412960110
+      spriteID: 0f1d80b19d198d642922b3b325d0cd75
+      internalID: 869851894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_02_orange_sway_10
+      name: flower_daisy_02_orange_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bf322aeb93cbf042b304d1f82c8d14e
-      internalID: 189149855
+      spriteID: 2fc45e79dd1642d4591a2d7f881d5e48
+      internalID: -1465743662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_02_orange_sway_11
+      name: flower_daisy_02_orange_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e4ac29c13bfc574fbe96aed2c3ad9b8
-      internalID: 677738037
+      spriteID: 3faa538d3895c9a47892ecffe2e5a138
+      internalID: -1435933928
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flower_daisy_02_orange_sway_0: -1713676737
-      flower_daisy_02_orange_sway_1: 620531453
-      flower_daisy_02_orange_sway_10: 189149855
-      flower_daisy_02_orange_sway_11: 677738037
-      flower_daisy_02_orange_sway_2: -1914011421
-      flower_daisy_02_orange_sway_3: -1362775934
-      flower_daisy_02_orange_sway_4: 1586864796
-      flower_daisy_02_orange_sway_5: -563782244
-      flower_daisy_02_orange_sway_6: -1173576183
-      flower_daisy_02_orange_sway_7: -1314842481
-      flower_daisy_02_orange_sway_8: 950410017
-      flower_daisy_02_orange_sway_9: 412960110
+      flower_daisy_02_orange_sway_01_01: -1928133433
+      flower_daisy_02_orange_sway_01_02: -896755507
+      flower_daisy_02_orange_sway_01_03: 826919695
+      flower_daisy_02_orange_sway_01_04: 1168148893
+      flower_daisy_02_orange_sway_01_05: -1968766685
+      flower_daisy_02_orange_sway_01_06: 877113090
+      flower_daisy_02_orange_sway_01_07: -1520182658
+      flower_daisy_02_orange_sway_01_08: -1648585189
+      flower_daisy_02_orange_sway_01_09: 928105492
+      flower_daisy_02_orange_sway_01_10: 869851894
+      flower_daisy_02_orange_sway_01_11: -1465743662
+      flower_daisy_02_orange_sway_01_12: -1435933928
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

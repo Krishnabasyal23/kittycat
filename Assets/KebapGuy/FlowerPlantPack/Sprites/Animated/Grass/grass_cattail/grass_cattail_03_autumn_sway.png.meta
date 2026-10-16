@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_cattail_03_autumn_sway_0
+      name: grass_cattail_03_autumn_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 48
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47f63d4246effa4459070e944d831fe3
-      internalID: 975830597
+      spriteID: 9b7e128b34100d040a71599e631e1c3c
+      internalID: 1721797345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_03_autumn_sway_1
+      name: grass_cattail_03_autumn_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 48
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51409af79b406064d82d69949a1aa7c7
-      internalID: -1987896344
+      spriteID: 86239886c334af14da0d7ec5cc11136a
+      internalID: 585868759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_03_autumn_sway_2
+      name: grass_cattail_03_autumn_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 48
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d224b30f8c125e4ca83680c0566d7b1
-      internalID: -719022549
+      spriteID: e60e5b194bfa1844d93039b00bcc222a
+      internalID: 973584275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_03_autumn_sway_3
+      name: grass_cattail_03_autumn_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 48
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68ac61ea287d2a84792a76126d30e40f
-      internalID: -1719426407
+      spriteID: 0d8efc97f700f5a45a9d1573980cbeff
+      internalID: -165121839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_03_autumn_sway_4
+      name: grass_cattail_03_autumn_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 48
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ca42378c608ed547a17d75ff9e2eb4e
-      internalID: 1837243302
+      spriteID: a03437e6ff5e864449036aecc0e3ebb4
+      internalID: 1759273404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_03_autumn_sway_5
+      name: grass_cattail_03_autumn_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 48
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae88ae9d165667141b5f2b1fecda87ce
-      internalID: -1312013744
+      spriteID: f64de1fb343853b408125375692dfacc
+      internalID: -1415305623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_03_autumn_sway_6
+      name: grass_cattail_03_autumn_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 48
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ca369f725d146241a54a43e6bea51af
-      internalID: 1771183078
+      spriteID: 02e0cee5690481446bf099cdf2ded68c
+      internalID: 1855356330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_03_autumn_sway_7
+      name: grass_cattail_03_autumn_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 48
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d211877f3ae86d42945a02f8d35d59a
-      internalID: 1931336144
+      spriteID: fcfd984ad23b8ea40b846021345c6883
+      internalID: 493727417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_03_autumn_sway_8
+      name: grass_cattail_03_autumn_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 48
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 003d18dc4eb92d246ac57dcd00d8016b
-      internalID: -157378678
+      spriteID: 9504400a40c302448965ad56cff9c2ae
+      internalID: -1051168326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_03_autumn_sway_9
+      name: grass_cattail_03_autumn_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 48
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94d9458ffbdc0734eb834023e9b80561
-      internalID: 1159688978
+      spriteID: 6b064be19faca5b4db1f4e03193a450d
+      internalID: -1599648476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_03_autumn_sway_10
+      name: grass_cattail_03_autumn_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 48
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fc7fa483574c3e4e9ee137cf243a136
-      internalID: -1101880380
+      spriteID: fb035725844e09647bceb51d4004073b
+      internalID: 134918004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_03_autumn_sway_11
+      name: grass_cattail_03_autumn_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 48
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90f545f5b06eff7408bcf48e99db7caa
-      internalID: -2091436105
+      spriteID: 29862772f27fde048b9102cf9c0f186a
+      internalID: -739549392
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_cattail_03_autumn_sway_0: 975830597
-      grass_cattail_03_autumn_sway_1: -1987896344
-      grass_cattail_03_autumn_sway_10: -1101880380
-      grass_cattail_03_autumn_sway_11: -2091436105
-      grass_cattail_03_autumn_sway_2: -719022549
-      grass_cattail_03_autumn_sway_3: -1719426407
-      grass_cattail_03_autumn_sway_4: 1837243302
-      grass_cattail_03_autumn_sway_5: -1312013744
-      grass_cattail_03_autumn_sway_6: 1771183078
-      grass_cattail_03_autumn_sway_7: 1931336144
-      grass_cattail_03_autumn_sway_8: -157378678
-      grass_cattail_03_autumn_sway_9: 1159688978
+      grass_cattail_03_autumn_sway_01_01: 1721797345
+      grass_cattail_03_autumn_sway_01_02: 585868759
+      grass_cattail_03_autumn_sway_01_03: 973584275
+      grass_cattail_03_autumn_sway_01_04: -165121839
+      grass_cattail_03_autumn_sway_01_05: 1759273404
+      grass_cattail_03_autumn_sway_01_06: -1415305623
+      grass_cattail_03_autumn_sway_01_07: 1855356330
+      grass_cattail_03_autumn_sway_01_08: 493727417
+      grass_cattail_03_autumn_sway_01_09: -1051168326
+      grass_cattail_03_autumn_sway_01_10: -1599648476
+      grass_cattail_03_autumn_sway_01_11: 134918004
+      grass_cattail_03_autumn_sway_01_12: -739549392
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

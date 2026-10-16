@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bush_berry_01_yellow_sway_0
+      name: bush_berry_01_yellow_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc516d5160f15ef4bbcf8ce394c877ed
-      internalID: 710530427
+      spriteID: b5cc0b8c36c1d5c4c9bf02f18869eebe
+      internalID: 330235928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_01_yellow_sway_1
+      name: bush_berry_01_yellow_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44585f4c7915a7b419ccfff88c7558cb
-      internalID: -1499674538
+      spriteID: 1005d0b13c1235f4388ace47c3144832
+      internalID: 2008862124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_01_yellow_sway_2
+      name: bush_berry_01_yellow_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dba73fb36a1157b45becab18f1f0ba35
-      internalID: 1139730641
+      spriteID: 93297947ded1adf48907cba419d03793
+      internalID: -1909831815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_01_yellow_sway_3
+      name: bush_berry_01_yellow_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e79e40d9acb87fc4f9c88355286477cb
-      internalID: -805070395
+      spriteID: 612e6dd1510148542988d90ad80f98af
+      internalID: 427302210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_01_yellow_sway_4
+      name: bush_berry_01_yellow_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57687eab9cce9534c8f241540474599c
-      internalID: -92197756
+      spriteID: 202853c027bce094a9dbef34b5df8e48
+      internalID: -785853225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_01_yellow_sway_5
+      name: bush_berry_01_yellow_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c30867bf34e30e4d8ed5e9f3538a258
-      internalID: -1090569463
+      spriteID: c57b2d1d8accb684783f918c43f74bce
+      internalID: 1438381129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_01_yellow_sway_6
+      name: bush_berry_01_yellow_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b70cf5d0545ba84c99a2c0d2aa241c7
-      internalID: -30810336
+      spriteID: 15aa5082be48f9e4e908c5b5f41c5527
+      internalID: -520709275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_01_yellow_sway_7
+      name: bush_berry_01_yellow_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9371f37295cd204c86c7f2d5f824203
-      internalID: 204054002
+      spriteID: 867f408f56c2d924d9ddf1b1155393bc
+      internalID: 2057690972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_01_yellow_sway_8
+      name: bush_berry_01_yellow_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22726796ab376be4183ca1ec96d313a1
-      internalID: -1017948572
+      spriteID: c6d116048aaa5b24282b9becc00d3385
+      internalID: 698882549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_01_yellow_sway_9
+      name: bush_berry_01_yellow_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5273cd797e5b5e94a8a35084c61cdcf8
-      internalID: 1507010072
+      spriteID: 9dee59cc0e3e47741b739d203f74660c
+      internalID: 535912033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_01_yellow_sway_10
+      name: bush_berry_01_yellow_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79d082d9e7015ba4aa57ded3798626e4
-      internalID: 991328552
+      spriteID: 3c76f6a60a0b04f4397e6b963d578e23
+      internalID: 2019457818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_01_yellow_sway_11
+      name: bush_berry_01_yellow_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 282e520d633628a408390e1e0559e183
-      internalID: -1161144484
+      spriteID: 5bc686eb389ab0d43bde2bc7a7e3f3f7
+      internalID: 512754912
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bush_berry_01_yellow_sway_0: 710530427
-      bush_berry_01_yellow_sway_1: -1499674538
-      bush_berry_01_yellow_sway_10: 991328552
-      bush_berry_01_yellow_sway_11: -1161144484
-      bush_berry_01_yellow_sway_2: 1139730641
-      bush_berry_01_yellow_sway_3: -805070395
-      bush_berry_01_yellow_sway_4: -92197756
-      bush_berry_01_yellow_sway_5: -1090569463
-      bush_berry_01_yellow_sway_6: -30810336
-      bush_berry_01_yellow_sway_7: 204054002
-      bush_berry_01_yellow_sway_8: -1017948572
-      bush_berry_01_yellow_sway_9: 1507010072
+      bush_berry_01_yellow_sway_01_01: 330235928
+      bush_berry_01_yellow_sway_01_02: 2008862124
+      bush_berry_01_yellow_sway_01_03: -1909831815
+      bush_berry_01_yellow_sway_01_04: 427302210
+      bush_berry_01_yellow_sway_01_05: -785853225
+      bush_berry_01_yellow_sway_01_06: 1438381129
+      bush_berry_01_yellow_sway_01_07: -520709275
+      bush_berry_01_yellow_sway_01_08: 2057690972
+      bush_berry_01_yellow_sway_01_09: 698882549
+      bush_berry_01_yellow_sway_01_10: 535912033
+      bush_berry_01_yellow_sway_01_11: 2019457818
+      bush_berry_01_yellow_sway_01_12: 512754912
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

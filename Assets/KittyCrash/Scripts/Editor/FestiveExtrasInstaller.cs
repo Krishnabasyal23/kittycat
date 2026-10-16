@@ -69,7 +69,7 @@ namespace KittyCrash.EditorTools
 
         // ── imports ──────────────────────────────
 
-        static void ConfigureImports()
+        internal static void ConfigureImports()
         {
             foreach (var guid in AssetDatabase.FindAssets("t:Texture2D", new[] { ArtDir }))
             {
@@ -90,7 +90,7 @@ namespace KittyCrash.EditorTools
 
                 imp.textureType = TextureImporterType.Sprite;
                 imp.spriteImportMode = SpriteImportMode.Single;
-                imp.filterMode = FilterMode.Point;
+                imp.filterMode = HdArt.Filter;
                 imp.textureCompression = TextureImporterCompression.Uncompressed;
                 imp.mipmapEnabled = false;
                 imp.alphaIsTransparency = true;
@@ -100,7 +100,7 @@ namespace KittyCrash.EditorTools
                 imp.ReadTextureSettings(s);
                 s.spriteAlignment = (int)align;
                 s.spriteMeshType = mesh;
-                s.spritePixelsPerUnit = ppu;
+                s.spritePixelsPerUnit = HdArt.Ppu(name, ppu);
                 imp.SetTextureSettings(s);
                 imp.SaveAndReimport();
             }
@@ -251,7 +251,7 @@ namespace KittyCrash.EditorTools
             var prefab = PrefabUtility.SaveAsPrefabAsset(root, PrefabDir + "/FestiveProp.prefab");
             Object.DestroyImmediate(root);
 
-            var spawner = Find<TreeSpawner>();
+            var spawner = TreeSpawner.FindMain();
             if (spawner == null || prefab == null) return;
             Undo.RecordObject(spawner, "Festive props");
             var list = new List<GameObject>(spawner.prefabs ?? new GameObject[0]);

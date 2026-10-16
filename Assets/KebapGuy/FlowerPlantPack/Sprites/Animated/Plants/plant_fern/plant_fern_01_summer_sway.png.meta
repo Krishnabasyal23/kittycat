@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_fern_01_summer_sway_0
+      name: plant_fern_01_summer_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4496fbe1663bfc344b5b7b634b4a4a3b
-      internalID: -1089246606
+      spriteID: 5f81828a32b2a16479ac41ce4ac3f6d3
+      internalID: 1712229855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_summer_sway_1
+      name: plant_fern_01_summer_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d275c1580c2f8e4e848202ee52d97a9
-      internalID: 1291384698
+      spriteID: d65bff45c538dba43897382feb0667e6
+      internalID: 1621101354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_summer_sway_2
+      name: plant_fern_01_summer_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 822802cd673ee2b479a9e53cbdde30cd
-      internalID: -1863942042
+      spriteID: e8ecb3393d09d914fbcefcf1758e1a29
+      internalID: -1716335845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_summer_sway_3
+      name: plant_fern_01_summer_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b145f9de6cf3fb4d8d1f586515a9c80
-      internalID: 683394896
+      spriteID: cddc8a10a08f97d408e0e85a47be7a91
+      internalID: -744446154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_summer_sway_4
+      name: plant_fern_01_summer_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce8d0b10226774640a1375da97b2fbe4
-      internalID: -2015469097
+      spriteID: 25527340a00b18942b87553d653d127b
+      internalID: -1189288629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_summer_sway_5
+      name: plant_fern_01_summer_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f554f876d5eaf547aa3d2de0e326e3e
-      internalID: -97665111
+      spriteID: fc5cf050413fe244e81a1ae4125dcc9d
+      internalID: 586740473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_summer_sway_6
+      name: plant_fern_01_summer_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dfd2b9ab3d555a4393ed6896ece4342
-      internalID: 257615297
+      spriteID: b48b00e30dce0414faab99acfb4d1431
+      internalID: -1027899850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_summer_sway_7
+      name: plant_fern_01_summer_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a1aaa89c52628d45bfc15fefc138c25
-      internalID: -496546905
+      spriteID: 03fcabf7ab885df4392b650240d3a7d9
+      internalID: -1565275970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_summer_sway_8
+      name: plant_fern_01_summer_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4feb6a6843a85ef46851bb2f2c2dbb69
-      internalID: 320742748
+      spriteID: b379d61e7050d47489912692936dd6e1
+      internalID: -1187699699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_summer_sway_9
+      name: plant_fern_01_summer_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a068c7efae50c2d438470f714c3b6790
-      internalID: -2119929845
+      spriteID: 8240bb4ca2b77d2478142ec57398ac29
+      internalID: -1382216107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_summer_sway_10
+      name: plant_fern_01_summer_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f306babcf1fdf44ba6142039cded2ac
-      internalID: 326892504
+      spriteID: ca6e8ffebe9659941a7ba60f53c78abf
+      internalID: -180326430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_summer_sway_11
+      name: plant_fern_01_summer_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaf0fb01745ea3445a39862ea28a011a
-      internalID: -554355298
+      spriteID: 9a274b74ec806194c8c2f6ef006a8c54
+      internalID: 1041174294
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_fern_01_summer_sway_0: -1089246606
-      plant_fern_01_summer_sway_1: 1291384698
-      plant_fern_01_summer_sway_10: 326892504
-      plant_fern_01_summer_sway_11: -554355298
-      plant_fern_01_summer_sway_2: -1863942042
-      plant_fern_01_summer_sway_3: 683394896
-      plant_fern_01_summer_sway_4: -2015469097
-      plant_fern_01_summer_sway_5: -97665111
-      plant_fern_01_summer_sway_6: 257615297
-      plant_fern_01_summer_sway_7: -496546905
-      plant_fern_01_summer_sway_8: 320742748
-      plant_fern_01_summer_sway_9: -2119929845
+      plant_fern_01_summer_sway_01_01: 1712229855
+      plant_fern_01_summer_sway_01_02: 1621101354
+      plant_fern_01_summer_sway_01_03: -1716335845
+      plant_fern_01_summer_sway_01_04: -744446154
+      plant_fern_01_summer_sway_01_05: -1189288629
+      plant_fern_01_summer_sway_01_06: 586740473
+      plant_fern_01_summer_sway_01_07: -1027899850
+      plant_fern_01_summer_sway_01_08: -1565275970
+      plant_fern_01_summer_sway_01_09: -1187699699
+      plant_fern_01_summer_sway_01_10: -1382216107
+      plant_fern_01_summer_sway_01_11: -180326430
+      plant_fern_01_summer_sway_01_12: 1041174294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

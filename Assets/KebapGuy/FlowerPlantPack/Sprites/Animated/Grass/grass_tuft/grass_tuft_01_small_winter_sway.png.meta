@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_tuft_01_small_winter_sway_0
+      name: grass_tuft_01_small_winter_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a837d14233552f40a48b6909c41b705
-      internalID: -973279233
+      spriteID: 4ebc842c4febbbe4ab329fb57d971432
+      internalID: 1929431984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_winter_sway_1
+      name: grass_tuft_01_small_winter_sway_01_02
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b5377bc9afe13e4c88805eb3b18fbb7
-      internalID: 1664186263
+      spriteID: d37d1cf57fd9a964e91285414b5af160
+      internalID: -126011619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_winter_sway_2
+      name: grass_tuft_01_small_winter_sway_01_03
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7391d53354633f54093f90719ca9567f
-      internalID: 1960898087
+      spriteID: 0e7eead324dad7d4a8b11a2bf1edde0d
+      internalID: -188761310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_winter_sway_3
+      name: grass_tuft_01_small_winter_sway_01_04
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f370b930857cf514bb2e946f9d03324d
-      internalID: -243577571
+      spriteID: 79c5323ad1e306e46a82304bda9ea46f
+      internalID: -188691383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_winter_sway_4
+      name: grass_tuft_01_small_winter_sway_01_05
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b1a3676dbdcbc640911e2deeb50a845
-      internalID: 941487022
+      spriteID: 8c7ca18c3b2a05b469873fb0adad7a86
+      internalID: 1262892044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_winter_sway_5
+      name: grass_tuft_01_small_winter_sway_01_06
       rect:
         serializedVersion: 2
         x: 80
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b5af398cd856d24e90ce2aceed2ed16
-      internalID: -2000851500
+      spriteID: 7083c98064e73374cbe435f9c6bad210
+      internalID: -1954096757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_winter_sway_6
+      name: grass_tuft_01_small_winter_sway_01_07
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 953e3e865b94b5d4aa52f4d38960d4a1
-      internalID: 988828170
+      spriteID: 6d3a6ea27120942479afd1d5e43ccb6c
+      internalID: 1549480469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_winter_sway_7
+      name: grass_tuft_01_small_winter_sway_01_08
       rect:
         serializedVersion: 2
         x: 112
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a876d82d74ae25479bb84f2458ca0fe
-      internalID: -1866938287
+      spriteID: 870ba9382c60a6c4d8d122dab0de2560
+      internalID: -1922473579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_winter_sway_8
+      name: grass_tuft_01_small_winter_sway_01_09
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c3b40752bfabba43922488b178ec90c
-      internalID: -1598989432
+      spriteID: a24436b25bf90f544b74fe3839b3a418
+      internalID: 1696242486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_winter_sway_9
+      name: grass_tuft_01_small_winter_sway_01_10
       rect:
         serializedVersion: 2
         x: 144
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0714e984519c52448a14efcaf198c406
-      internalID: 1339774250
+      spriteID: 8bb672cbc5c3ba24f889d3de999e6e95
+      internalID: -1052954091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_winter_sway_10
+      name: grass_tuft_01_small_winter_sway_01_11
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2136d98c115522b48a15a3728fdf7c92
-      internalID: -1096168749
+      spriteID: b5eacf96b754c3145960685ba3dfca27
+      internalID: -1304485999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_winter_sway_11
+      name: grass_tuft_01_small_winter_sway_01_12
       rect:
         serializedVersion: 2
         x: 176
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ecc1c91225748344a00fb4e15e9ad10
-      internalID: -1554153207
+      spriteID: e35821b7f2af6314e8d0d0268c691b56
+      internalID: 20896056
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_tuft_01_small_winter_sway_0: -973279233
-      grass_tuft_01_small_winter_sway_1: 1664186263
-      grass_tuft_01_small_winter_sway_10: -1096168749
-      grass_tuft_01_small_winter_sway_11: -1554153207
-      grass_tuft_01_small_winter_sway_2: 1960898087
-      grass_tuft_01_small_winter_sway_3: -243577571
-      grass_tuft_01_small_winter_sway_4: 941487022
-      grass_tuft_01_small_winter_sway_5: -2000851500
-      grass_tuft_01_small_winter_sway_6: 988828170
-      grass_tuft_01_small_winter_sway_7: -1866938287
-      grass_tuft_01_small_winter_sway_8: -1598989432
-      grass_tuft_01_small_winter_sway_9: 1339774250
+      grass_tuft_01_small_winter_sway_01_01: 1929431984
+      grass_tuft_01_small_winter_sway_01_02: -126011619
+      grass_tuft_01_small_winter_sway_01_03: -188761310
+      grass_tuft_01_small_winter_sway_01_04: -188691383
+      grass_tuft_01_small_winter_sway_01_05: 1262892044
+      grass_tuft_01_small_winter_sway_01_06: -1954096757
+      grass_tuft_01_small_winter_sway_01_07: 1549480469
+      grass_tuft_01_small_winter_sway_01_08: -1922473579
+      grass_tuft_01_small_winter_sway_01_09: 1696242486
+      grass_tuft_01_small_winter_sway_01_10: -1052954091
+      grass_tuft_01_small_winter_sway_01_11: -1304485999
+      grass_tuft_01_small_winter_sway_01_12: 20896056
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

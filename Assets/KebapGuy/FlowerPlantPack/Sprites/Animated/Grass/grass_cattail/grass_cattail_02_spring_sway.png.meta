@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_cattail_02_spring_sway_0
+      name: grass_cattail_02_spring_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 48
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c60c5f7472115584abe9799bd791a335
-      internalID: 422152604
+      spriteID: 8ab57b0297414d14ea2a78cb16ad2c5c
+      internalID: -138182716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_02_spring_sway_1
+      name: grass_cattail_02_spring_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 48
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a11a16de506d939468a170e9e71803c8
-      internalID: -1650952841
+      spriteID: 63c20d57bc0c2944f84d7b177ceae1fa
+      internalID: -233560494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_02_spring_sway_2
+      name: grass_cattail_02_spring_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 48
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18375456f07ef1c4f829454a9231469f
-      internalID: 1646907192
+      spriteID: 506e21964d2e51545a2188368a992262
+      internalID: 1336346775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_02_spring_sway_3
+      name: grass_cattail_02_spring_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 48
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff7ea150d1e357f4c9cfa3b67a81ef34
-      internalID: -1684034267
+      spriteID: 94b031a1b3937ce4ba9219ca44f62577
+      internalID: -807719967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_02_spring_sway_4
+      name: grass_cattail_02_spring_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 48
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 592380a53f9d8034ebe42aceaa38f848
-      internalID: 779433054
+      spriteID: 8ee203150abcca84182c39a7e66f082a
+      internalID: -1150776878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_02_spring_sway_5
+      name: grass_cattail_02_spring_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 48
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f142ee4e9f89b0945a6d0c5f86d7d9a1
-      internalID: 1106744179
+      spriteID: 76d59f344102f78498f7c78c8799c848
+      internalID: 1719553835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_02_spring_sway_6
+      name: grass_cattail_02_spring_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 48
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e85e10ba93feb5f4e909d64f558d2ae1
-      internalID: -2072843284
+      spriteID: 1703aac1c4dbefc44b4fed5c21b93edb
+      internalID: -1242459339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_02_spring_sway_7
+      name: grass_cattail_02_spring_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 48
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd62bcf0dd2216f439eb9d93a160e909
-      internalID: 547379777
+      spriteID: c58c545b2be0bd348b0a25cebafd2258
+      internalID: 1649114486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_02_spring_sway_8
+      name: grass_cattail_02_spring_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 48
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa33ab318031b324ba1cb553eefdb402
-      internalID: 1705579803
+      spriteID: c9a052dc025866d40933b9f78809883a
+      internalID: -1979082517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_02_spring_sway_9
+      name: grass_cattail_02_spring_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 48
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09f11037419f4f047966e31510914c2a
-      internalID: -259784954
+      spriteID: 4e5c9721ea6fb4040b11cc3508e734a5
+      internalID: 397074506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_02_spring_sway_10
+      name: grass_cattail_02_spring_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 48
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 736cd180eac3847488dab27e11e72c76
-      internalID: 2039716612
+      spriteID: 3d063b81577c47a489f15cc3ee075564
+      internalID: 1901876428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_02_spring_sway_11
+      name: grass_cattail_02_spring_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 48
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b955b0b680c6db543a63516abd17d86e
-      internalID: -1149180557
+      spriteID: 1963146daec6ad740abefbd67d5b4604
+      internalID: 1239022200
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_cattail_02_spring_sway_0: 422152604
-      grass_cattail_02_spring_sway_1: -1650952841
-      grass_cattail_02_spring_sway_10: 2039716612
-      grass_cattail_02_spring_sway_11: -1149180557
-      grass_cattail_02_spring_sway_2: 1646907192
-      grass_cattail_02_spring_sway_3: -1684034267
-      grass_cattail_02_spring_sway_4: 779433054
-      grass_cattail_02_spring_sway_5: 1106744179
-      grass_cattail_02_spring_sway_6: -2072843284
-      grass_cattail_02_spring_sway_7: 547379777
-      grass_cattail_02_spring_sway_8: 1705579803
-      grass_cattail_02_spring_sway_9: -259784954
+      grass_cattail_02_spring_sway_01_01: -138182716
+      grass_cattail_02_spring_sway_01_02: -233560494
+      grass_cattail_02_spring_sway_01_03: 1336346775
+      grass_cattail_02_spring_sway_01_04: -807719967
+      grass_cattail_02_spring_sway_01_05: -1150776878
+      grass_cattail_02_spring_sway_01_06: 1719553835
+      grass_cattail_02_spring_sway_01_07: -1242459339
+      grass_cattail_02_spring_sway_01_08: 1649114486
+      grass_cattail_02_spring_sway_01_09: -1979082517
+      grass_cattail_02_spring_sway_01_10: 397074506
+      grass_cattail_02_spring_sway_01_11: 1901876428
+      grass_cattail_02_spring_sway_01_12: 1239022200
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

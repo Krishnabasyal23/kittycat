@@ -92,7 +92,7 @@ namespace KittyCrash.EditorTools
 
         static Sprite S(string name) => AssetDatabase.LoadAssetAtPath<Sprite>($"{ArtDir}/{name}.png");
 
-        static void ConfigureImports()
+        internal static void ConfigureImports()
         {
             foreach (var guid in AssetDatabase.FindAssets("t:Texture2D", new[] { ArtDir }))
             {
@@ -103,7 +103,7 @@ namespace KittyCrash.EditorTools
 
                 imp.textureType = TextureImporterType.Sprite;
                 imp.spriteImportMode = SpriteImportMode.Single;
-                imp.filterMode = FilterMode.Point;
+                imp.filterMode = HdArt.Filter;
                 imp.textureCompression = TextureImporterCompression.Uncompressed;
                 imp.mipmapEnabled = false;
                 imp.alphaIsTransparency = true;
@@ -111,7 +111,7 @@ namespace KittyCrash.EditorTools
 
                 var s = new TextureImporterSettings();
                 imp.ReadTextureSettings(s);
-                s.spritePixelsPerUnit = 16;
+                s.spritePixelsPerUnit = HdArt.Ppu(name, 16);
                 s.spriteAlignment = (int)(name.StartsWith("fg_") ? SpriteAlignment.BottomCenter : SpriteAlignment.Center);
                 s.spriteMeshType = name.StartsWith("fg_") ? SpriteMeshType.FullRect : SpriteMeshType.Tight;
                 imp.SetTextureSettings(s);

@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_flowering_02_small_purple_sway_0
+      name: grass_flowering_02_small_purple_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbae4e3b380332a4495d7cce4b524179
-      internalID: 1224418208
+      spriteID: df48d0c12256d0644bfb9b8a4672b68a
+      internalID: -1260754661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_small_purple_sway_1
+      name: grass_flowering_02_small_purple_sway_01_02
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a82aaaa3dcd87a14db9363cbcbd1542c
-      internalID: -2102767590
+      spriteID: 2bfd01edddd1f5441a534ae1a88d0ab2
+      internalID: -1874580114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_small_purple_sway_2
+      name: grass_flowering_02_small_purple_sway_01_03
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbbee81766d6fc249bdf35604aa98de0
-      internalID: 109688763
+      spriteID: 00a42ab6bfc13604d865e8159a31c026
+      internalID: 660172298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_small_purple_sway_3
+      name: grass_flowering_02_small_purple_sway_01_04
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca673610e79cd9042bf1ed3c0039eb43
-      internalID: 893934664
+      spriteID: 0097324fbc8263941834b00941ad66b7
+      internalID: 645880387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_small_purple_sway_4
+      name: grass_flowering_02_small_purple_sway_01_05
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27f0358192051244c942c549f4412a58
-      internalID: 855409424
+      spriteID: b9ef305463a4c514f9cd73528438b0e9
+      internalID: 1693653703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_small_purple_sway_5
+      name: grass_flowering_02_small_purple_sway_01_06
       rect:
         serializedVersion: 2
         x: 80
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f854e65481a9094193fb58962a5376d
-      internalID: 15085085
+      spriteID: bc944598dc2338049b9cc21a2333c026
+      internalID: -713860201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_small_purple_sway_6
+      name: grass_flowering_02_small_purple_sway_01_07
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f43999687dcb23c41839e7e77514ac9f
-      internalID: 96635094
+      spriteID: 69d5d024a0fed534ebd46e90bf13600c
+      internalID: -829864316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_small_purple_sway_7
+      name: grass_flowering_02_small_purple_sway_01_08
       rect:
         serializedVersion: 2
         x: 112
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02c2e4dd51b8c81459ba3056ba1b91e4
-      internalID: -305073793
+      spriteID: 0869e9da77cb45548bcb5e6239f6834d
+      internalID: 1389463113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_small_purple_sway_8
+      name: grass_flowering_02_small_purple_sway_01_09
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23b72be80e70f8148bf1ed3acb8db80e
-      internalID: -1118644562
+      spriteID: 2de8bf4e7ef73b0478570eebe92cf4d3
+      internalID: -88878057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_small_purple_sway_9
+      name: grass_flowering_02_small_purple_sway_01_10
       rect:
         serializedVersion: 2
         x: 144
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef25a14c71bc09c44badb9b29b004f8c
-      internalID: 1078523980
+      spriteID: b53ffa6e6b91e0b4fa7049d34e861808
+      internalID: 849447063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_small_purple_sway_10
+      name: grass_flowering_02_small_purple_sway_01_11
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96e3e2598dba9524b8e94a80582c4946
-      internalID: -1336639809
+      spriteID: ccb2b5e6e632ed649b48d5e577169ad6
+      internalID: -1442937035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_small_purple_sway_11
+      name: grass_flowering_02_small_purple_sway_01_12
       rect:
         serializedVersion: 2
         x: 176
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46651aec5461624469c1fd695cee5c24
-      internalID: 1814098890
+      spriteID: 45f738adb59309c4d9c660f4b944ed3c
+      internalID: -588399069
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_flowering_02_small_purple_sway_0: 1224418208
-      grass_flowering_02_small_purple_sway_1: -2102767590
-      grass_flowering_02_small_purple_sway_10: -1336639809
-      grass_flowering_02_small_purple_sway_11: 1814098890
-      grass_flowering_02_small_purple_sway_2: 109688763
-      grass_flowering_02_small_purple_sway_3: 893934664
-      grass_flowering_02_small_purple_sway_4: 855409424
-      grass_flowering_02_small_purple_sway_5: 15085085
-      grass_flowering_02_small_purple_sway_6: 96635094
-      grass_flowering_02_small_purple_sway_7: -305073793
-      grass_flowering_02_small_purple_sway_8: -1118644562
-      grass_flowering_02_small_purple_sway_9: 1078523980
+      grass_flowering_02_small_purple_sway_01_01: -1260754661
+      grass_flowering_02_small_purple_sway_01_02: -1874580114
+      grass_flowering_02_small_purple_sway_01_03: 660172298
+      grass_flowering_02_small_purple_sway_01_04: 645880387
+      grass_flowering_02_small_purple_sway_01_05: 1693653703
+      grass_flowering_02_small_purple_sway_01_06: -713860201
+      grass_flowering_02_small_purple_sway_01_07: -829864316
+      grass_flowering_02_small_purple_sway_01_08: 1389463113
+      grass_flowering_02_small_purple_sway_01_09: -88878057
+      grass_flowering_02_small_purple_sway_01_10: 849447063
+      grass_flowering_02_small_purple_sway_01_11: -1442937035
+      grass_flowering_02_small_purple_sway_01_12: -588399069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bush_hedge_01_winter_sway_0
+      name: bush_hedge_01_winter_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64e81d9ed5ea88b4d9e4632b74331e2d
-      internalID: -589667355
+      spriteID: 9d4d5c7782783e945a8ee92c14437043
+      internalID: -2077445890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_hedge_01_winter_sway_1
+      name: bush_hedge_01_winter_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2d7d9d9ae9c46344a7d233f44865ca8
-      internalID: 1167700389
+      spriteID: 77127955ad9a3fa4d8277c5583565185
+      internalID: -2085238734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_hedge_01_winter_sway_2
+      name: bush_hedge_01_winter_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28315e50797452442a5eb6fa436119c4
-      internalID: 483020731
+      spriteID: 241da0fe2c0bd2945ae750d1f45fa263
+      internalID: 55042200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_hedge_01_winter_sway_3
+      name: bush_hedge_01_winter_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 240bce2fa72f934469d345459fe49997
-      internalID: 486729031
+      spriteID: ec43f9363bc3e844790eff5aa1164403
+      internalID: -189522142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_hedge_01_winter_sway_4
+      name: bush_hedge_01_winter_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10817ede2dd55b9479181dbca6e16b16
-      internalID: -731708514
+      spriteID: f6745dadef41af743a97d4ea4d915a3d
+      internalID: -103492298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_hedge_01_winter_sway_5
+      name: bush_hedge_01_winter_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f211afb3cbde2c644af8c92b502df7a4
-      internalID: -1275760370
+      spriteID: 2a0cf948bda7b1b498c88f16091c4cfc
+      internalID: -916983678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_hedge_01_winter_sway_6
+      name: bush_hedge_01_winter_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32ff9a4ce4e07884d96be676773e06da
-      internalID: 496477247
+      spriteID: ed3998375c64d1c40b904550ace8cbb0
+      internalID: -626147796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_hedge_01_winter_sway_7
+      name: bush_hedge_01_winter_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09aa8e1ff45caf44e8ba5cc94e11eb29
-      internalID: -1850726499
+      spriteID: 6e247045ee6d96f4bba1ac7d20729940
+      internalID: 723193084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_hedge_01_winter_sway_8
+      name: bush_hedge_01_winter_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 376eb8b4193415f40b784f6d009669b9
-      internalID: -300738906
+      spriteID: 8d876022ce33db940bef6e68945b78b6
+      internalID: 675181799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_hedge_01_winter_sway_9
+      name: bush_hedge_01_winter_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 648ff8f5744c58a47a3c363af848e832
-      internalID: 2044345189
+      spriteID: d49bb9286c64b844d8c71d53e8bb36f6
+      internalID: -1179684021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_hedge_01_winter_sway_10
+      name: bush_hedge_01_winter_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7155283e1c1e4fa41bb28b15de45fbb4
-      internalID: -820340262
+      spriteID: d65dc0916c59104468b1fec144cef387
+      internalID: -1804767336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_hedge_01_winter_sway_11
+      name: bush_hedge_01_winter_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fefe27c3284ec7f4f94b259b8387deb2
-      internalID: 1192161330
+      spriteID: 8c6cd30bc313f5144a86a2c5a93e77de
+      internalID: 1578100726
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bush_hedge_01_winter_sway_0: -589667355
-      bush_hedge_01_winter_sway_1: 1167700389
-      bush_hedge_01_winter_sway_10: -820340262
-      bush_hedge_01_winter_sway_11: 1192161330
-      bush_hedge_01_winter_sway_2: 483020731
-      bush_hedge_01_winter_sway_3: 486729031
-      bush_hedge_01_winter_sway_4: -731708514
-      bush_hedge_01_winter_sway_5: -1275760370
-      bush_hedge_01_winter_sway_6: 496477247
-      bush_hedge_01_winter_sway_7: -1850726499
-      bush_hedge_01_winter_sway_8: -300738906
-      bush_hedge_01_winter_sway_9: 2044345189
+      bush_hedge_01_winter_sway_01_01: -2077445890
+      bush_hedge_01_winter_sway_01_02: -2085238734
+      bush_hedge_01_winter_sway_01_03: 55042200
+      bush_hedge_01_winter_sway_01_04: -189522142
+      bush_hedge_01_winter_sway_01_05: -103492298
+      bush_hedge_01_winter_sway_01_06: -916983678
+      bush_hedge_01_winter_sway_01_07: -626147796
+      bush_hedge_01_winter_sway_01_08: 723193084
+      bush_hedge_01_winter_sway_01_09: 675181799
+      bush_hedge_01_winter_sway_01_10: -1179684021
+      bush_hedge_01_winter_sway_01_11: -1804767336
+      bush_hedge_01_winter_sway_01_12: 1578100726
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

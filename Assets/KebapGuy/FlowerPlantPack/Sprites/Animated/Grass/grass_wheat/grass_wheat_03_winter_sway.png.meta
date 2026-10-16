@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_wheat_03_winter_sway_0
+      name: grass_wheat_03_winter_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ef834638bdc6424fbedfe8b68239363
-      internalID: -231620707
+      spriteID: 19262cddfc24ca647b5359ec1c488bf2
+      internalID: -860959115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_03_winter_sway_1
+      name: grass_wheat_03_winter_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07d2167f975e5c34b8eb59f1c257ca9d
-      internalID: -730741494
+      spriteID: 9dfafa644b3f29646b30bf1e55ef9650
+      internalID: -791857011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_03_winter_sway_2
+      name: grass_wheat_03_winter_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c14e584f3f0996458cfdc22ad07ba42
-      internalID: 2098170648
+      spriteID: 9cb93d487cc6d6a4392e9719ee42f179
+      internalID: 144434656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_03_winter_sway_3
+      name: grass_wheat_03_winter_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cec163b0d2fd9474dacca8d78a5cbcd7
-      internalID: 1350177624
+      spriteID: e9c3a3de325d3a74997b53b09b4da534
+      internalID: -1166128374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_03_winter_sway_4
+      name: grass_wheat_03_winter_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0d26c2fbe3cb1a40a7d284783e1112c
-      internalID: -986041296
+      spriteID: 3e78f0c02725d924d8575ba0039b1ccb
+      internalID: -1325386314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_03_winter_sway_5
+      name: grass_wheat_03_winter_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52ed5968fb7b0eb4887530a59a1f1e17
-      internalID: -2058331169
+      spriteID: e9a7d5643541cb64285ccca3d80ea463
+      internalID: -1296550596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_03_winter_sway_6
+      name: grass_wheat_03_winter_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27d06d9c7202880449a9643620a89e34
-      internalID: -1308268293
+      spriteID: 3b6f47d69f910b44f8c1634a930e95a5
+      internalID: 1181578285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_03_winter_sway_7
+      name: grass_wheat_03_winter_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f74a4e1f74982b4d8ec8e792410a4f9
-      internalID: -732914537
+      spriteID: 5d32ba754e0adc9449ffa31d7d183b55
+      internalID: -1843526316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_03_winter_sway_8
+      name: grass_wheat_03_winter_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 405d95cd6eeb26c47a0c822edf1df89b
-      internalID: -2015004716
+      spriteID: 6b809feccf151594bae001736a630bab
+      internalID: 642143531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_03_winter_sway_9
+      name: grass_wheat_03_winter_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c878128a9cb053c4389eb7d3c12dcf75
-      internalID: -1458594890
+      spriteID: c23ad16f159ed4e4fa4579568ec18106
+      internalID: 862788099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_03_winter_sway_10
+      name: grass_wheat_03_winter_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 641982c898a1b1e4892ea8bebaa89f1c
-      internalID: 1921983564
+      spriteID: cefe0b2c31fd8cb4d8f93857a7915b31
+      internalID: 1882265623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_03_winter_sway_11
+      name: grass_wheat_03_winter_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f236d218f7c5c642b2c313536eed63f
-      internalID: 343712364
+      spriteID: cb08ced140f4ec449946b2e38bc4e732
+      internalID: -375241400
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_wheat_03_winter_sway_0: -231620707
-      grass_wheat_03_winter_sway_1: -730741494
-      grass_wheat_03_winter_sway_10: 1921983564
-      grass_wheat_03_winter_sway_11: 343712364
-      grass_wheat_03_winter_sway_2: 2098170648
-      grass_wheat_03_winter_sway_3: 1350177624
-      grass_wheat_03_winter_sway_4: -986041296
-      grass_wheat_03_winter_sway_5: -2058331169
-      grass_wheat_03_winter_sway_6: -1308268293
-      grass_wheat_03_winter_sway_7: -732914537
-      grass_wheat_03_winter_sway_8: -2015004716
-      grass_wheat_03_winter_sway_9: -1458594890
+      grass_wheat_03_winter_sway_01_01: -860959115
+      grass_wheat_03_winter_sway_01_02: -791857011
+      grass_wheat_03_winter_sway_01_03: 144434656
+      grass_wheat_03_winter_sway_01_04: -1166128374
+      grass_wheat_03_winter_sway_01_05: -1325386314
+      grass_wheat_03_winter_sway_01_06: -1296550596
+      grass_wheat_03_winter_sway_01_07: 1181578285
+      grass_wheat_03_winter_sway_01_08: -1843526316
+      grass_wheat_03_winter_sway_01_09: 642143531
+      grass_wheat_03_winter_sway_01_10: 862788099
+      grass_wheat_03_winter_sway_01_11: 1882265623
+      grass_wheat_03_winter_sway_01_12: -375241400
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,227 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2945023859861714797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6766018304974507203}
+  m_Layer: 0
+  m_Name: KG_plant_sprout_01_small_autumn_sway_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6766018304974507203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2945023859861714797}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4659481664159857888}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3879710554904996345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4659481664159857888}
+  - component: {fileID: 8966240728039735290}
+  - component: {fileID: 6033345119977230144}
+  - component: {fileID: 2636527012894946654}
+  m_Layer: 0
+  m_Name: Art
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4659481664159857888
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3879710554904996345}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6766018304974507203}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &8966240728039735290
+SpriteRenderer:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3879710554904996345}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -8
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 1383372222, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 0.8125}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
+--- !u!114 &6033345119977230144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3879710554904996345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634850280d984074cacca52c9ca0107a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KittyCrash.SeasonalSprite
+  spring: {fileID: 2012214715, guid: b31bef5cc04fc4044811177710a2afd7, type: 3}
+  summer: {fileID: 1383372222, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  autumn: {fileID: -337875282, guid: 98b99712a66296f4183f8ff3d64d4f03, type: 3}
+  winter: {fileID: 1798085992, guid: d642efa247665d546a97b0a3f514278e, type: 3}
+  tintRole: 0
+  distantMix: 0.5
+  shadeVariation: 0.06
+  brightness: 1
+--- !u!114 &2636527012894946654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3879710554904996345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96395a9875d81224a8527ccfd076282e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KittyCrash.PlantAnimator
+  frames:
+  - {fileID: 1383372222, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 1283559277, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 717034693, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 1153813162, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: -1180055433, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: -1612025298, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: -1479757266, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 483166694, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 1195152117, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 339121275, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 511323305, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 671463094, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  springFrames:
+  - {fileID: 2012214715, guid: b31bef5cc04fc4044811177710a2afd7, type: 3}
+  - {fileID: 997908436, guid: b31bef5cc04fc4044811177710a2afd7, type: 3}
+  - {fileID: 1460661654, guid: b31bef5cc04fc4044811177710a2afd7, type: 3}
+  - {fileID: -1766236964, guid: b31bef5cc04fc4044811177710a2afd7, type: 3}
+  - {fileID: -1498229410, guid: b31bef5cc04fc4044811177710a2afd7, type: 3}
+  - {fileID: 1027437412, guid: b31bef5cc04fc4044811177710a2afd7, type: 3}
+  - {fileID: 2031403956, guid: b31bef5cc04fc4044811177710a2afd7, type: 3}
+  - {fileID: 1445148446, guid: b31bef5cc04fc4044811177710a2afd7, type: 3}
+  - {fileID: -1819318335, guid: b31bef5cc04fc4044811177710a2afd7, type: 3}
+  - {fileID: 56818339, guid: b31bef5cc04fc4044811177710a2afd7, type: 3}
+  - {fileID: -862963897, guid: b31bef5cc04fc4044811177710a2afd7, type: 3}
+  - {fileID: 130808665, guid: b31bef5cc04fc4044811177710a2afd7, type: 3}
+  summerFrames:
+  - {fileID: 1383372222, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 1283559277, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 717034693, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 1153813162, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: -1180055433, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: -1612025298, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: -1479757266, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 483166694, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 1195152117, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 339121275, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 511323305, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  - {fileID: 671463094, guid: 77c15c9b5995d9143859a6b90cfc1fe3, type: 3}
+  autumnFrames:
+  - {fileID: -337875282, guid: 98b99712a66296f4183f8ff3d64d4f03, type: 3}
+  - {fileID: -777815524, guid: 98b99712a66296f4183f8ff3d64d4f03, type: 3}
+  - {fileID: 173953276, guid: 98b99712a66296f4183f8ff3d64d4f03, type: 3}
+  - {fileID: -1534699735, guid: 98b99712a66296f4183f8ff3d64d4f03, type: 3}
+  - {fileID: -2031519410, guid: 98b99712a66296f4183f8ff3d64d4f03, type: 3}
+  - {fileID: 171104763, guid: 98b99712a66296f4183f8ff3d64d4f03, type: 3}
+  - {fileID: -183880709, guid: 98b99712a66296f4183f8ff3d64d4f03, type: 3}
+  - {fileID: 817015899, guid: 98b99712a66296f4183f8ff3d64d4f03, type: 3}
+  - {fileID: 1856763713, guid: 98b99712a66296f4183f8ff3d64d4f03, type: 3}
+  - {fileID: 161917350, guid: 98b99712a66296f4183f8ff3d64d4f03, type: 3}
+  - {fileID: -2088581925, guid: 98b99712a66296f4183f8ff3d64d4f03, type: 3}
+  - {fileID: -1239552713, guid: 98b99712a66296f4183f8ff3d64d4f03, type: 3}
+  winterFrames:
+  - {fileID: 1798085992, guid: d642efa247665d546a97b0a3f514278e, type: 3}
+  - {fileID: -1666276035, guid: d642efa247665d546a97b0a3f514278e, type: 3}
+  - {fileID: -1586712054, guid: d642efa247665d546a97b0a3f514278e, type: 3}
+  - {fileID: 247299167, guid: d642efa247665d546a97b0a3f514278e, type: 3}
+  - {fileID: -1341192434, guid: d642efa247665d546a97b0a3f514278e, type: 3}
+  - {fileID: -1161115643, guid: d642efa247665d546a97b0a3f514278e, type: 3}
+  - {fileID: -30386103, guid: d642efa247665d546a97b0a3f514278e, type: 3}
+  - {fileID: -1264865750, guid: d642efa247665d546a97b0a3f514278e, type: 3}
+  - {fileID: 272595899, guid: d642efa247665d546a97b0a3f514278e, type: 3}
+  - {fileID: 1042982064, guid: d642efa247665d546a97b0a3f514278e, type: 3}
+  - {fileID: 425505986, guid: d642efa247665d546a97b0a3f514278e, type: 3}
+  - {fileID: -137938389, guid: d642efa247665d546a97b0a3f514278e, type: 3}
+  fps: 6
+  speedVariation: 0.2

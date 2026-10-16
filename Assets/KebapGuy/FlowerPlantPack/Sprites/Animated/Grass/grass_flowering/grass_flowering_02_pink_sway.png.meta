@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_flowering_02_pink_sway_0
+      name: grass_flowering_02_pink_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90b496fff8c2cc047913df10ca858108
-      internalID: 1700918093
+      spriteID: e5652e6d19635a24eaae3be20ac45b50
+      internalID: 1507184576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_pink_sway_1
+      name: grass_flowering_02_pink_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc50edf8c781dd34eac1021b1848521a
-      internalID: 470030770
+      spriteID: 1f705b10961d80f44b399e278a538826
+      internalID: -397003853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_pink_sway_2
+      name: grass_flowering_02_pink_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dd2e606312d53f4eb3933b06c9e941b
-      internalID: -1193205074
+      spriteID: 34d35b6a25c533241a3f1dcf06cc44ff
+      internalID: 720979737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_pink_sway_3
+      name: grass_flowering_02_pink_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 918e5d519f118e442965ef2f045c3b93
-      internalID: 29492806
+      spriteID: 104061e97f902a64ebcfe66c588e3127
+      internalID: -501509769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_pink_sway_4
+      name: grass_flowering_02_pink_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfd5c52b6a8e29e4c97130c83159b08e
-      internalID: 4838645
+      spriteID: 79291853d0659214da23d98c26ce8787
+      internalID: 601873970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_pink_sway_5
+      name: grass_flowering_02_pink_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42867516ab410214e9e24c867ac6cb40
-      internalID: -1036665905
+      spriteID: b047039a81c50e84cb796dcbd01b4c1e
+      internalID: -1510726844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_pink_sway_6
+      name: grass_flowering_02_pink_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a65b2400ed714b48bc9377f0c32eda5
-      internalID: -1967577379
+      spriteID: 2deb94391f781624f9ab8053b5208eb3
+      internalID: -1382806156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_pink_sway_7
+      name: grass_flowering_02_pink_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1ea4f825aa33b147a9677b028132a91
-      internalID: 298302946
+      spriteID: 12ab538f73c3c71499319b3ce38e0156
+      internalID: -1319738405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_pink_sway_8
+      name: grass_flowering_02_pink_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab51319f58f6ea245a779d188e0a2d6d
-      internalID: -765872322
+      spriteID: 172d7b6e0b820ba4ba998107e06df618
+      internalID: 1973076662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_pink_sway_9
+      name: grass_flowering_02_pink_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57ba8ed29f8256340bb6170275a51bf6
-      internalID: -1668623569
+      spriteID: 26c980a798b44404aa075dcf00818745
+      internalID: 1172823119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_pink_sway_10
+      name: grass_flowering_02_pink_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0411e806df195a4185d61667466a4f6
-      internalID: -1275361494
+      spriteID: 51744d242e50afd498fc691cd16314ea
+      internalID: 1759803770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_pink_sway_11
+      name: grass_flowering_02_pink_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f1e9445c05e4c444b89b15ff2988694
-      internalID: -1413692189
+      spriteID: 20eca40d83f1efd438c95c3400360b5f
+      internalID: 956873613
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_flowering_02_pink_sway_0: 1700918093
-      grass_flowering_02_pink_sway_1: 470030770
-      grass_flowering_02_pink_sway_10: -1275361494
-      grass_flowering_02_pink_sway_11: -1413692189
-      grass_flowering_02_pink_sway_2: -1193205074
-      grass_flowering_02_pink_sway_3: 29492806
-      grass_flowering_02_pink_sway_4: 4838645
-      grass_flowering_02_pink_sway_5: -1036665905
-      grass_flowering_02_pink_sway_6: -1967577379
-      grass_flowering_02_pink_sway_7: 298302946
-      grass_flowering_02_pink_sway_8: -765872322
-      grass_flowering_02_pink_sway_9: -1668623569
+      grass_flowering_02_pink_sway_01_01: 1507184576
+      grass_flowering_02_pink_sway_01_02: -397003853
+      grass_flowering_02_pink_sway_01_03: 720979737
+      grass_flowering_02_pink_sway_01_04: -501509769
+      grass_flowering_02_pink_sway_01_05: 601873970
+      grass_flowering_02_pink_sway_01_06: -1510726844
+      grass_flowering_02_pink_sway_01_07: -1382806156
+      grass_flowering_02_pink_sway_01_08: -1319738405
+      grass_flowering_02_pink_sway_01_09: 1973076662
+      grass_flowering_02_pink_sway_01_10: 1172823119
+      grass_flowering_02_pink_sway_01_11: 1759803770
+      grass_flowering_02_pink_sway_01_12: 956873613
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

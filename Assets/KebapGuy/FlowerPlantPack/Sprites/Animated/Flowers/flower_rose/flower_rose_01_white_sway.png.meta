@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_rose_01_white_sway_0
+      name: flower_rose_01_white_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9faf17ea99e8bc5459d270017127cc31
-      internalID: 1521880274
+      spriteID: a23da40f944582c4ca92104d3bd0a567
+      internalID: 748870210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_01_white_sway_1
+      name: flower_rose_01_white_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3f458f646577e542ab580006f448451
-      internalID: -1453970385
+      spriteID: a892eb13aee2c544abbdc2ff34048d2c
+      internalID: 1851148846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_01_white_sway_2
+      name: flower_rose_01_white_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cafe6ee85ef2261488d6ce44bcaf945e
-      internalID: -723323550
+      spriteID: 493ec47649f060d4198ce3b8994ddccd
+      internalID: -1327056099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_01_white_sway_3
+      name: flower_rose_01_white_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed952d129d8d779419b0acdf86566f1c
-      internalID: 1972529778
+      spriteID: 5ac402fbef1be8743967a99d9172b078
+      internalID: 1327234292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_01_white_sway_4
+      name: flower_rose_01_white_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 090d71ea13fed044cb544d82ad995cbc
-      internalID: -1256824121
+      spriteID: 866d0f8ddce06d74581af55fc81cfc4b
+      internalID: -1434312003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_01_white_sway_5
+      name: flower_rose_01_white_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f6df459981f68945b3c4664a3c820ca
-      internalID: 2034153837
+      spriteID: 6fcea8b481e887249b1fdf728a2d7c3d
+      internalID: 2054206520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_01_white_sway_6
+      name: flower_rose_01_white_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71ad2247da3f9d042aec548039b632c2
-      internalID: 1371380079
+      spriteID: 08a12f41f6647b24a9f50fdc341ac4e6
+      internalID: -1551634911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_01_white_sway_7
+      name: flower_rose_01_white_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 560fc357e2d99ce4dbf07ac56bb76c91
-      internalID: -1065594928
+      spriteID: 0e997199a68477242a7d021954266bee
+      internalID: -2054200514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_01_white_sway_8
+      name: flower_rose_01_white_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af26f5e521a2d194db570e4c05c3b57d
-      internalID: 1315351849
+      spriteID: c883564a93d2fe74e8345531973ec194
+      internalID: 476437436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_01_white_sway_9
+      name: flower_rose_01_white_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c36a3389a045d4e42b446891081bfb70
-      internalID: 1923272524
+      spriteID: 65a4d642d39b73b479802a6cecd13a26
+      internalID: 316301617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_01_white_sway_10
+      name: flower_rose_01_white_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 043f8406cb92912468d0f6eafe85173f
-      internalID: -2033649107
+      spriteID: 188f093b40aa1f3498e89ca3770e0f6c
+      internalID: 1927107369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_01_white_sway_11
+      name: flower_rose_01_white_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70a73dfffbbe38b4aaa44b00a01252b4
-      internalID: -324721748
+      spriteID: 8e9bd93024d45534ea196e1c2953e18b
+      internalID: -2003011652
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flower_rose_01_white_sway_0: 1521880274
-      flower_rose_01_white_sway_1: -1453970385
-      flower_rose_01_white_sway_10: -2033649107
-      flower_rose_01_white_sway_11: -324721748
-      flower_rose_01_white_sway_2: -723323550
-      flower_rose_01_white_sway_3: 1972529778
-      flower_rose_01_white_sway_4: -1256824121
-      flower_rose_01_white_sway_5: 2034153837
-      flower_rose_01_white_sway_6: 1371380079
-      flower_rose_01_white_sway_7: -1065594928
-      flower_rose_01_white_sway_8: 1315351849
-      flower_rose_01_white_sway_9: 1923272524
+      flower_rose_01_white_sway_01_01: 748870210
+      flower_rose_01_white_sway_01_02: 1851148846
+      flower_rose_01_white_sway_01_03: -1327056099
+      flower_rose_01_white_sway_01_04: 1327234292
+      flower_rose_01_white_sway_01_05: -1434312003
+      flower_rose_01_white_sway_01_06: 2054206520
+      flower_rose_01_white_sway_01_07: -1551634911
+      flower_rose_01_white_sway_01_08: -2054200514
+      flower_rose_01_white_sway_01_09: 476437436
+      flower_rose_01_white_sway_01_10: 316301617
+      flower_rose_01_white_sway_01_11: 1927107369
+      flower_rose_01_white_sway_01_12: -2003011652
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

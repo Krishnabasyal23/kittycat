@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_thistle_03_spring_sway_0
+      name: plant_thistle_03_spring_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6d6de682ba46144c9aefcbf0c9b292b
-      internalID: -2000359390
+      spriteID: a9a61079833deb54690f0e0a41f9f398
+      internalID: -1348950836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_03_spring_sway_1
+      name: plant_thistle_03_spring_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd8a5c90f11c86c40beb2a152b350019
-      internalID: -871395255
+      spriteID: 31dee451d1bd0c04c9be61f2a4ad1c86
+      internalID: -1862172114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_03_spring_sway_2
+      name: plant_thistle_03_spring_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c27012d9874297945b275edb79cffafe
-      internalID: 1383530970
+      spriteID: 914071d3f6badc1409b9930fa4ba755c
+      internalID: -1391218112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_03_spring_sway_3
+      name: plant_thistle_03_spring_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60006babea925c6428eee9e61ea8bb32
-      internalID: -1535154789
+      spriteID: c4a209d480ea47e4a822c4ca523c7529
+      internalID: -1542704118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_03_spring_sway_4
+      name: plant_thistle_03_spring_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d618b4053c6c8ea458ae3e0779aff6ee
-      internalID: 1907368204
+      spriteID: 25e542b9397566949a757333d35e01d5
+      internalID: -1612669507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_03_spring_sway_5
+      name: plant_thistle_03_spring_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 103038daadc6633479024657f79c7176
-      internalID: -1797088461
+      spriteID: 5427e85df57a86541beb4fa9f4574af3
+      internalID: -1434757545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_03_spring_sway_6
+      name: plant_thistle_03_spring_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdd734af941525b42bdf1bfcb96784be
-      internalID: 1652251367
+      spriteID: 0e38b63d8452eed409354da209cbb69d
+      internalID: 1577863855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_03_spring_sway_7
+      name: plant_thistle_03_spring_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3aa8e1880fd54154b8c69d638ec77109
-      internalID: -319970008
+      spriteID: 52d4aee34d9e03c4cb9873ee3afa3f7e
+      internalID: 1175478618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_03_spring_sway_8
+      name: plant_thistle_03_spring_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: faf1526b2886d634fb4c203c4e611697
-      internalID: 420644814
+      spriteID: 197cea2004ab0ca4abe82f4d66cc999d
+      internalID: 116114469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_03_spring_sway_9
+      name: plant_thistle_03_spring_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2042f7b2d0fdebc47b1e5bec6a6b20e6
-      internalID: -16303158
+      spriteID: abb93a2dbd9392a4080802803da92088
+      internalID: 337924895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_03_spring_sway_10
+      name: plant_thistle_03_spring_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cde8c95caa41a34aa204b4a23a96542
-      internalID: 1627376863
+      spriteID: 79eeaa802065b144db5cbe309cbc90b7
+      internalID: -1270071824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_03_spring_sway_11
+      name: plant_thistle_03_spring_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e671342439bcd048a5af6e67933e79d
-      internalID: -1338593711
+      spriteID: 910b6c01897e49a41a2c8218520697ac
+      internalID: 647127640
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_thistle_03_spring_sway_0: -2000359390
-      plant_thistle_03_spring_sway_1: -871395255
-      plant_thistle_03_spring_sway_10: 1627376863
-      plant_thistle_03_spring_sway_11: -1338593711
-      plant_thistle_03_spring_sway_2: 1383530970
-      plant_thistle_03_spring_sway_3: -1535154789
-      plant_thistle_03_spring_sway_4: 1907368204
-      plant_thistle_03_spring_sway_5: -1797088461
-      plant_thistle_03_spring_sway_6: 1652251367
-      plant_thistle_03_spring_sway_7: -319970008
-      plant_thistle_03_spring_sway_8: 420644814
-      plant_thistle_03_spring_sway_9: -16303158
+      plant_thistle_03_spring_sway_01_01: -1348950836
+      plant_thistle_03_spring_sway_01_02: -1862172114
+      plant_thistle_03_spring_sway_01_03: -1391218112
+      plant_thistle_03_spring_sway_01_04: -1542704118
+      plant_thistle_03_spring_sway_01_05: -1612669507
+      plant_thistle_03_spring_sway_01_06: -1434757545
+      plant_thistle_03_spring_sway_01_07: 1577863855
+      plant_thistle_03_spring_sway_01_08: 1175478618
+      plant_thistle_03_spring_sway_01_09: 116114469
+      plant_thistle_03_spring_sway_01_10: 337924895
+      plant_thistle_03_spring_sway_01_11: -1270071824
+      plant_thistle_03_spring_sway_01_12: 647127640
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_thistle_02_summer_sway_0
+      name: plant_thistle_02_summer_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffcc477e0fb105a4989be52df47d5b5f
-      internalID: -357583719
+      spriteID: 8e60ab1f91eb4a44d85086669852d939
+      internalID: 520351350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_summer_sway_1
+      name: plant_thistle_02_summer_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f895680e3d8b4d4e8944ee7e8df60d5
-      internalID: -534388975
+      spriteID: eeb086da38b276d448e3a235a5ffdb9f
+      internalID: 163006073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_summer_sway_2
+      name: plant_thistle_02_summer_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23eaeb55ea666334898b681f15cb6716
-      internalID: -1030010483
+      spriteID: 3c73b82784b652c49a91a94ae925afec
+      internalID: 1609942349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_summer_sway_3
+      name: plant_thistle_02_summer_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91bb388eede881540be21672141b6af1
-      internalID: -554427550
+      spriteID: e51d706d967940b4eafe13da7cbbb541
+      internalID: 1761500250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_summer_sway_4
+      name: plant_thistle_02_summer_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff90c6b8e1c7343498b73717c393db49
-      internalID: 1325352380
+      spriteID: a3fd8653d3d742640bbb1b1ef4e980cf
+      internalID: -1439829514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_summer_sway_5
+      name: plant_thistle_02_summer_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1709a7497d50b2a4eb416c2edaf28242
-      internalID: 463591681
+      spriteID: 58ef9c87853250e4bbc883444e871a0c
+      internalID: 1023673351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_summer_sway_6
+      name: plant_thistle_02_summer_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0aa6c0c64bf8e140953202b2e4a3dcd
-      internalID: 179966325
+      spriteID: d78551b6220161a4f9357ab98896b298
+      internalID: -1899445851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_summer_sway_7
+      name: plant_thistle_02_summer_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e3a689d0ba5e05498b88d7b20d040e4
-      internalID: 1648186456
+      spriteID: ba36f0f38495d9e4c9f464e52a01e078
+      internalID: 1535045388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_summer_sway_8
+      name: plant_thistle_02_summer_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6940413f361286040ad82ea5e597c1e0
-      internalID: -1076803717
+      spriteID: 43f053dfd75df184b844325279514e19
+      internalID: 436426821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_summer_sway_9
+      name: plant_thistle_02_summer_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60c71384f9f7d654e9e3880e65fda54a
-      internalID: 2067897457
+      spriteID: 743b61afb05fa52498fc5fdb08004ba9
+      internalID: 1413051703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_summer_sway_10
+      name: plant_thistle_02_summer_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59de6e0e08cc8234e8bf885d172c0c20
-      internalID: -410228282
+      spriteID: 960f6f2f052a97e4fbdd3596ca0a44d2
+      internalID: 1730790980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_summer_sway_11
+      name: plant_thistle_02_summer_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b8a81ba69eb92a4fbcdc068fdd891cc
-      internalID: -1125538993
+      spriteID: fb3cd4e9267bc7b47be02553497b1f48
+      internalID: -490991903
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_thistle_02_summer_sway_0: -357583719
-      plant_thistle_02_summer_sway_1: -534388975
-      plant_thistle_02_summer_sway_10: -410228282
-      plant_thistle_02_summer_sway_11: -1125538993
-      plant_thistle_02_summer_sway_2: -1030010483
-      plant_thistle_02_summer_sway_3: -554427550
-      plant_thistle_02_summer_sway_4: 1325352380
-      plant_thistle_02_summer_sway_5: 463591681
-      plant_thistle_02_summer_sway_6: 179966325
-      plant_thistle_02_summer_sway_7: 1648186456
-      plant_thistle_02_summer_sway_8: -1076803717
-      plant_thistle_02_summer_sway_9: 2067897457
+      plant_thistle_02_summer_sway_01_01: 520351350
+      plant_thistle_02_summer_sway_01_02: 163006073
+      plant_thistle_02_summer_sway_01_03: 1609942349
+      plant_thistle_02_summer_sway_01_04: 1761500250
+      plant_thistle_02_summer_sway_01_05: -1439829514
+      plant_thistle_02_summer_sway_01_06: 1023673351
+      plant_thistle_02_summer_sway_01_07: -1899445851
+      plant_thistle_02_summer_sway_01_08: 1535045388
+      plant_thistle_02_summer_sway_01_09: 436426821
+      plant_thistle_02_summer_sway_01_10: 1413051703
+      plant_thistle_02_summer_sway_01_11: 1730790980
+      plant_thistle_02_summer_sway_01_12: -490991903
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

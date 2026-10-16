@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_vine_01_autumn_sway_0
+      name: plant_vine_01_autumn_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 4
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acc8ce1cea5840043b79752bdce5050f
-      internalID: -1673100722
+      spriteID: 492ceefae3fe44c48aedcfe037f90d4b
+      internalID: 1187789970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_01_autumn_sway_1
+      name: plant_vine_01_autumn_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 4
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6b8b5d97e1ecd64ba8f5af768d91fc8
-      internalID: -1308211553
+      spriteID: 6b099b774ada25742a969eec1544fec9
+      internalID: -712084613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_01_autumn_sway_2
+      name: plant_vine_01_autumn_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 4
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cb1b35dcb18b37468ccbf6fadff5263
-      internalID: -298052221
+      spriteID: e84afb6a93209db45b9d27982b47c0a2
+      internalID: 921947129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_01_autumn_sway_3
+      name: plant_vine_01_autumn_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 4
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e979131b9bc5dd54682a2dc086aa6518
-      internalID: -1380295463
+      spriteID: cef4ea4237e248d4593430d8d24d7ccf
+      internalID: -1330400620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_01_autumn_sway_4
+      name: plant_vine_01_autumn_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 4
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fe9af258282b62479ffe111a0452fd7
-      internalID: 2103159657
+      spriteID: 447797b081fa0884eaa169de2228f238
+      internalID: -1177745469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_01_autumn_sway_5
+      name: plant_vine_01_autumn_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 4
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 858c36ad809114c44931ad9d47a88e51
-      internalID: 642047648
+      spriteID: c7afcc0998a03204cb2adde55f8a77a1
+      internalID: -1892051694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_01_autumn_sway_6
+      name: plant_vine_01_autumn_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 4
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f3ecc744ff838a4387f45e5a157b9dd
-      internalID: 2024167017
+      spriteID: 4920877588fbb3b40b3630fdb4cacb1f
+      internalID: 1358864318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_01_autumn_sway_7
+      name: plant_vine_01_autumn_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 4
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1b6142676d931449a7a1bc23eb26620
-      internalID: 2069756813
+      spriteID: 62492de5a4cb30e40a1668005f7af71f
+      internalID: 1195351422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_01_autumn_sway_8
+      name: plant_vine_01_autumn_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 4
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b67df982bb96ea64cb6b40343924a003
-      internalID: -1821696245
+      spriteID: af08aefa97029ee4ea6abfc4f369cd4f
+      internalID: -1656224251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_01_autumn_sway_9
+      name: plant_vine_01_autumn_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 4
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c2e50ad91101514ea0d95cd6510e401
-      internalID: 1041342334
+      spriteID: d01beca39b7daab4bb91ea5666b94233
+      internalID: 943652684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_01_autumn_sway_10
+      name: plant_vine_01_autumn_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 4
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66cf5f66add4b344bab7ebfeb41618f5
-      internalID: -600959416
+      spriteID: 1198f377d9e1c7f4c94a8c1455e5799e
+      internalID: 1855948272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_01_autumn_sway_11
+      name: plant_vine_01_autumn_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 4
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bb97dacd05ae444192a8613ec1eabbc
-      internalID: -761352649
+      spriteID: b4a50ba09926c014d85e1109ab396399
+      internalID: 1698981826
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_vine_01_autumn_sway_0: -1673100722
-      plant_vine_01_autumn_sway_1: -1308211553
-      plant_vine_01_autumn_sway_10: -600959416
-      plant_vine_01_autumn_sway_11: -761352649
-      plant_vine_01_autumn_sway_2: -298052221
-      plant_vine_01_autumn_sway_3: -1380295463
-      plant_vine_01_autumn_sway_4: 2103159657
-      plant_vine_01_autumn_sway_5: 642047648
-      plant_vine_01_autumn_sway_6: 2024167017
-      plant_vine_01_autumn_sway_7: 2069756813
-      plant_vine_01_autumn_sway_8: -1821696245
-      plant_vine_01_autumn_sway_9: 1041342334
+      plant_vine_01_autumn_sway_01_01: 1187789970
+      plant_vine_01_autumn_sway_01_02: -712084613
+      plant_vine_01_autumn_sway_01_03: 921947129
+      plant_vine_01_autumn_sway_01_04: -1330400620
+      plant_vine_01_autumn_sway_01_05: -1177745469
+      plant_vine_01_autumn_sway_01_06: -1892051694
+      plant_vine_01_autumn_sway_01_07: 1358864318
+      plant_vine_01_autumn_sway_01_08: 1195351422
+      plant_vine_01_autumn_sway_01_09: -1656224251
+      plant_vine_01_autumn_sway_01_10: 943652684
+      plant_vine_01_autumn_sway_01_11: 1855948272
+      plant_vine_01_autumn_sway_01_12: 1698981826
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

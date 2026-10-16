@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_vine_03_summer_sway_0
+      name: plant_vine_03_summer_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dc294276c51a2348b69ead2cf499a88
-      internalID: -712244486
+      spriteID: e67d28d6a48a70b4ca30ed838b0a67dc
+      internalID: -1503299679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_summer_sway_1
+      name: plant_vine_03_summer_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 310cfeb0aa7236a49afeb90e0b184811
-      internalID: -1170615712
+      spriteID: 12e37e179e76b644bae86109c11d0787
+      internalID: 388413651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_summer_sway_2
+      name: plant_vine_03_summer_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2315dc0e9ce2454b9cd193dc4ead9ae
-      internalID: -730853413
+      spriteID: dc2ae3a820b1b584ba39d63c2c6bc1f3
+      internalID: 1979303984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_summer_sway_3
+      name: plant_vine_03_summer_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 964ea91534abdbf4f8a38a3abb865fc9
-      internalID: -1636947738
+      spriteID: f1df5743037857e409a80edc12eee751
+      internalID: 2107896238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_summer_sway_4
+      name: plant_vine_03_summer_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35590f28d2558234192b7c71952fd632
-      internalID: -297957954
+      spriteID: a54e768c4f4a6654daf4642942554a09
+      internalID: -1268533822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_summer_sway_5
+      name: plant_vine_03_summer_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec078deb9df4ca5428c1ad9e4a266f4c
-      internalID: -1978986167
+      spriteID: 904b517139504944bab0596f80940330
+      internalID: 1972149751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_summer_sway_6
+      name: plant_vine_03_summer_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84d8141811a952644a86104e9314e843
-      internalID: 629323252
+      spriteID: 5f7f221d62245e049bb7db265aa08370
+      internalID: -245231610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_summer_sway_7
+      name: plant_vine_03_summer_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 106cd4de9e4453a47bacfcfda2d61f94
-      internalID: 657584621
+      spriteID: d89393589dac6b640bc04899fcf38ea4
+      internalID: -948001649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_summer_sway_8
+      name: plant_vine_03_summer_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc890313ece7aae45bc64fdb80448b32
-      internalID: 527873700
+      spriteID: d18b6970a0b40364cb9093df236e9047
+      internalID: 2131260157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_summer_sway_9
+      name: plant_vine_03_summer_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df64cf90a9a351d42b034d53abdad76f
-      internalID: 673542635
+      spriteID: 5f8657b5c0515e64d85b9d513b6b5434
+      internalID: -1568550876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_summer_sway_10
+      name: plant_vine_03_summer_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd3fe4345f5957649a26dfbf7be17a3c
-      internalID: -1234235988
+      spriteID: 6b2d2525c8e6b0f47823fefe32c47032
+      internalID: -757761420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_summer_sway_11
+      name: plant_vine_03_summer_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f7042d86031d334290ac6cf2419989b
-      internalID: -1255540973
+      spriteID: 64385a3bb62ef4747902ce8e76bca711
+      internalID: -1264197333
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_vine_03_summer_sway_0: -712244486
-      plant_vine_03_summer_sway_1: -1170615712
-      plant_vine_03_summer_sway_10: -1234235988
-      plant_vine_03_summer_sway_11: -1255540973
-      plant_vine_03_summer_sway_2: -730853413
-      plant_vine_03_summer_sway_3: -1636947738
-      plant_vine_03_summer_sway_4: -297957954
-      plant_vine_03_summer_sway_5: -1978986167
-      plant_vine_03_summer_sway_6: 629323252
-      plant_vine_03_summer_sway_7: 657584621
-      plant_vine_03_summer_sway_8: 527873700
-      plant_vine_03_summer_sway_9: 673542635
+      plant_vine_03_summer_sway_01_01: -1503299679
+      plant_vine_03_summer_sway_01_02: 388413651
+      plant_vine_03_summer_sway_01_03: 1979303984
+      plant_vine_03_summer_sway_01_04: 2107896238
+      plant_vine_03_summer_sway_01_05: -1268533822
+      plant_vine_03_summer_sway_01_06: 1972149751
+      plant_vine_03_summer_sway_01_07: -245231610
+      plant_vine_03_summer_sway_01_08: -948001649
+      plant_vine_03_summer_sway_01_09: 2131260157
+      plant_vine_03_summer_sway_01_10: -1568550876
+      plant_vine_03_summer_sway_01_11: -757761420
+      plant_vine_03_summer_sway_01_12: -1264197333
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

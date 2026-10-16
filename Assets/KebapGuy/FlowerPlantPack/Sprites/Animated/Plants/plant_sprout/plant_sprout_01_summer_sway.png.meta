@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_sprout_01_summer_sway_0
+      name: plant_sprout_01_summer_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df86317a153af3540a7bc0dd9d9eca13
-      internalID: -811002895
+      spriteID: d7a726f9a49e45b4586ac0426b571fc4
+      internalID: 413277306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_summer_sway_1
+      name: plant_sprout_01_summer_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be7457736d1e633409a675960d071b26
-      internalID: -1309879391
+      spriteID: fadbbaac9e6d3b5478e8f034acff6a0f
+      internalID: -1127527759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_summer_sway_2
+      name: plant_sprout_01_summer_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bf780ac611ecd140bb029edae5aa73f
-      internalID: -1737758989
+      spriteID: 95f4c28aaab1e6144ab26532b00d3849
+      internalID: 753875179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_summer_sway_3
+      name: plant_sprout_01_summer_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29c0055d34ad35243b1657059b101c5e
-      internalID: 1742177623
+      spriteID: df1b0fa3bf2600a44a6918d55d51c917
+      internalID: -664562328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_summer_sway_4
+      name: plant_sprout_01_summer_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29173313b1a48ce43b474bf5c9eb9df2
-      internalID: 1712062122
+      spriteID: dc754bf556573344997f0de81e09a054
+      internalID: 1250811413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_summer_sway_5
+      name: plant_sprout_01_summer_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a4ebf82aae7bae419883b05b363c3b5
-      internalID: -1459200564
+      spriteID: d180f6c512c4ff647942d6fed78d29c7
+      internalID: -553399933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_summer_sway_6
+      name: plant_sprout_01_summer_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6b709b1091a518488bc7a2184046987
-      internalID: 1082415788
+      spriteID: c58dc209b22dcce44bde3a3a26b1de5f
+      internalID: 1409026810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_summer_sway_7
+      name: plant_sprout_01_summer_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e39db2ae2b077384c90e90fa1b1c45c1
-      internalID: -1339784567
+      spriteID: 87e161008fe01cb4a8fb061ca6805fe9
+      internalID: 1767428991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_summer_sway_8
+      name: plant_sprout_01_summer_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58dfe70c076160a43850dd0b046b8e19
-      internalID: 1915525670
+      spriteID: 8c48f9837dbac43478aa6b27917a0b50
+      internalID: 509443130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_summer_sway_9
+      name: plant_sprout_01_summer_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1ce49837c1733c42bc3d4819223d1d7
-      internalID: -2036038930
+      spriteID: 65a9fa9098cd3cf4b99ee98e309519e8
+      internalID: 1843312243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_summer_sway_10
+      name: plant_sprout_01_summer_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 461658ac11380e240a3dde0533c64877
-      internalID: -197002402
+      spriteID: 28338328280394947973e5d33a2b9e78
+      internalID: -1030881136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_summer_sway_11
+      name: plant_sprout_01_summer_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acd91da3aa2251e4d8078bc6b4fcae38
-      internalID: 1209780554
+      spriteID: 9b9685e0b10bbca4aa738fd6ad8806f6
+      internalID: 200776956
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_sprout_01_summer_sway_0: -811002895
-      plant_sprout_01_summer_sway_1: -1309879391
-      plant_sprout_01_summer_sway_10: -197002402
-      plant_sprout_01_summer_sway_11: 1209780554
-      plant_sprout_01_summer_sway_2: -1737758989
-      plant_sprout_01_summer_sway_3: 1742177623
-      plant_sprout_01_summer_sway_4: 1712062122
-      plant_sprout_01_summer_sway_5: -1459200564
-      plant_sprout_01_summer_sway_6: 1082415788
-      plant_sprout_01_summer_sway_7: -1339784567
-      plant_sprout_01_summer_sway_8: 1915525670
-      plant_sprout_01_summer_sway_9: -2036038930
+      plant_sprout_01_summer_sway_01_01: 413277306
+      plant_sprout_01_summer_sway_01_02: -1127527759
+      plant_sprout_01_summer_sway_01_03: 753875179
+      plant_sprout_01_summer_sway_01_04: -664562328
+      plant_sprout_01_summer_sway_01_05: 1250811413
+      plant_sprout_01_summer_sway_01_06: -553399933
+      plant_sprout_01_summer_sway_01_07: 1409026810
+      plant_sprout_01_summer_sway_01_08: 1767428991
+      plant_sprout_01_summer_sway_01_09: 509443130
+      plant_sprout_01_summer_sway_01_10: 1843312243
+      plant_sprout_01_summer_sway_01_11: -1030881136
+      plant_sprout_01_summer_sway_01_12: 200776956
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

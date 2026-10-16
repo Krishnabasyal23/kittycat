@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_vine_02_winter_sway_0
+      name: plant_vine_02_winter_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d298012d560e14b4e94dbbcaf27ec45a
-      internalID: -121554027
+      spriteID: 7b64c79641980da449fccdd04aaa369e
+      internalID: -1364342392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_02_winter_sway_1
+      name: plant_vine_02_winter_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 419b7534c3b77634c90ab37dbaf1f086
-      internalID: 1867882975
+      spriteID: b05cd0254fecef24dab27ad212beb1e7
+      internalID: 172313093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_02_winter_sway_2
+      name: plant_vine_02_winter_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86f0d19067aaa1947a37747f57b76970
-      internalID: 525357688
+      spriteID: 70916d9271d3a664c8f973eb3368579e
+      internalID: 1454789044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_02_winter_sway_3
+      name: plant_vine_02_winter_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf03c448c4fc1d242a77e6eb21d8f92b
-      internalID: 1746485219
+      spriteID: 1402c73a52b0a0d42973fb52ac01a6e6
+      internalID: -1702178269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_02_winter_sway_4
+      name: plant_vine_02_winter_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a2d10c1dbebba94c8506082fe1ae93b
-      internalID: -761777341
+      spriteID: d8c320f8a66662348a56e843e0a71f7b
+      internalID: 347433935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_02_winter_sway_5
+      name: plant_vine_02_winter_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5d7d652ae916f04983203c87f7633d5
-      internalID: -1396531156
+      spriteID: 3c01b9e135ba7ac40b02a296297af647
+      internalID: 471775648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_02_winter_sway_6
+      name: plant_vine_02_winter_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a74c93c937e3b6c45912fcddecf4829b
-      internalID: -231695946
+      spriteID: b0574eb3ae4819840a5eb85722f37151
+      internalID: 980064836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_02_winter_sway_7
+      name: plant_vine_02_winter_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d58e9f4da6e34ca46bb9b4a9129d1dda
-      internalID: 1104931756
+      spriteID: e9614455f296f2b4b97b2624a04e3c0d
+      internalID: 1091269145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_02_winter_sway_8
+      name: plant_vine_02_winter_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eef473bc9e284bc4c9d7576fbbf63e6d
-      internalID: 358988056
+      spriteID: cf576d9ed924a844b93812711ab6eabd
+      internalID: -1883255286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_02_winter_sway_9
+      name: plant_vine_02_winter_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70b9fdbd7f124a844afb4d3a3f612b84
-      internalID: 2027271243
+      spriteID: 070ec303a59b5704495fe17e39bc7e55
+      internalID: -1737096250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_02_winter_sway_10
+      name: plant_vine_02_winter_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9d8793c5f49f9242b3023101096ebb8
-      internalID: -1426518313
+      spriteID: 981be6b0672696741af8dbf13fc410e1
+      internalID: -1819068704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_02_winter_sway_11
+      name: plant_vine_02_winter_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c52d8020cb1d3b341aadfd7c5239d24a
-      internalID: -1021777640
+      spriteID: c5b547be57f0fc2478eb8d29d0d78f52
+      internalID: -2043849114
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_vine_02_winter_sway_0: -121554027
-      plant_vine_02_winter_sway_1: 1867882975
-      plant_vine_02_winter_sway_10: -1426518313
-      plant_vine_02_winter_sway_11: -1021777640
-      plant_vine_02_winter_sway_2: 525357688
-      plant_vine_02_winter_sway_3: 1746485219
-      plant_vine_02_winter_sway_4: -761777341
-      plant_vine_02_winter_sway_5: -1396531156
-      plant_vine_02_winter_sway_6: -231695946
-      plant_vine_02_winter_sway_7: 1104931756
-      plant_vine_02_winter_sway_8: 358988056
-      plant_vine_02_winter_sway_9: 2027271243
+      plant_vine_02_winter_sway_01_01: -1364342392
+      plant_vine_02_winter_sway_01_02: 172313093
+      plant_vine_02_winter_sway_01_03: 1454789044
+      plant_vine_02_winter_sway_01_04: -1702178269
+      plant_vine_02_winter_sway_01_05: 347433935
+      plant_vine_02_winter_sway_01_06: 471775648
+      plant_vine_02_winter_sway_01_07: 980064836
+      plant_vine_02_winter_sway_01_08: 1091269145
+      plant_vine_02_winter_sway_01_09: -1883255286
+      plant_vine_02_winter_sway_01_10: -1737096250
+      plant_vine_02_winter_sway_01_11: -1819068704
+      plant_vine_02_winter_sway_01_12: -2043849114
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

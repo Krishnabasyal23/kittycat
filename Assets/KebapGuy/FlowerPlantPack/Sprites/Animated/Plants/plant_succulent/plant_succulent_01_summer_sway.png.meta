@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_succulent_01_summer_sway_0
+      name: plant_succulent_01_summer_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 895d5192636172942af6c704266b714a
-      internalID: 2075817190
+      spriteID: 1eb4b00e0609e704fb63f2467fb9fec2
+      internalID: -924903415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_succulent_01_summer_sway_1
+      name: plant_succulent_01_summer_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4922f0a74eef2cd46a791c5b1cdb8022
-      internalID: -1256605873
+      spriteID: a05887d818b5bdf46855a63342297e16
+      internalID: -1632726074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_succulent_01_summer_sway_2
+      name: plant_succulent_01_summer_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28199a889b24ff941a8b9e3480115725
-      internalID: 261111718
+      spriteID: 0115915c352963b49b0e47608868f9a9
+      internalID: 805954463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_succulent_01_summer_sway_3
+      name: plant_succulent_01_summer_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b23095ec8b06d44e81231573e73ee31
-      internalID: -465566980
+      spriteID: 9d621830687e3b8458244ef8a95c4762
+      internalID: 190146921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_succulent_01_summer_sway_4
+      name: plant_succulent_01_summer_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12bbf795290236049a60d641c6d4ec9c
-      internalID: 684965822
+      spriteID: 5f0976e107a1f0c40b9c52ab93da4246
+      internalID: -1042876593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_succulent_01_summer_sway_5
+      name: plant_succulent_01_summer_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 601bd768faef6e84ba5d53b644d4f082
-      internalID: 672683210
+      spriteID: db1eefa2e6f957c47809b830da41e249
+      internalID: -555138049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_succulent_01_summer_sway_6
+      name: plant_succulent_01_summer_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d3cc10f7430e7240ba811dfbb876c2d
-      internalID: 583885479
+      spriteID: c07c3ab4efb590a4ebc043548203ce3f
+      internalID: 308186813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_succulent_01_summer_sway_7
+      name: plant_succulent_01_summer_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12af1f25ea825e34ba6d9ea0a8ff5c9b
-      internalID: 47393942
+      spriteID: 293eb4050915dc5469d7b5fc30d505b5
+      internalID: 1632421261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_succulent_01_summer_sway_8
+      name: plant_succulent_01_summer_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd2722fefb6ce8140807f6e534b6dcb8
-      internalID: 1290122639
+      spriteID: dc4c7cd3b56b0d94bb17fc09c50569ab
+      internalID: -1367366798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_succulent_01_summer_sway_9
+      name: plant_succulent_01_summer_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ac959f6bcf3c5f4b90b327b43a20afe
-      internalID: -1529676453
+      spriteID: 5faea8a54dfc20c4a8f5f8dc601b8cc6
+      internalID: 1059846670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_succulent_01_summer_sway_10
+      name: plant_succulent_01_summer_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40a339905656ab14da6135adabf44652
-      internalID: -749869622
+      spriteID: b1948e2fdde61c64385c98e32922121f
+      internalID: 234925525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_succulent_01_summer_sway_11
+      name: plant_succulent_01_summer_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 472b8a588eab7ac4dbad0399296f8575
-      internalID: -1000175425
+      spriteID: 9849754bb0a077c48a7eaf7703b97f72
+      internalID: -1475082204
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_succulent_01_summer_sway_0: 2075817190
-      plant_succulent_01_summer_sway_1: -1256605873
-      plant_succulent_01_summer_sway_10: -749869622
-      plant_succulent_01_summer_sway_11: -1000175425
-      plant_succulent_01_summer_sway_2: 261111718
-      plant_succulent_01_summer_sway_3: -465566980
-      plant_succulent_01_summer_sway_4: 684965822
-      plant_succulent_01_summer_sway_5: 672683210
-      plant_succulent_01_summer_sway_6: 583885479
-      plant_succulent_01_summer_sway_7: 47393942
-      plant_succulent_01_summer_sway_8: 1290122639
-      plant_succulent_01_summer_sway_9: -1529676453
+      plant_succulent_01_summer_sway_01_01: -924903415
+      plant_succulent_01_summer_sway_01_02: -1632726074
+      plant_succulent_01_summer_sway_01_03: 805954463
+      plant_succulent_01_summer_sway_01_04: 190146921
+      plant_succulent_01_summer_sway_01_05: -1042876593
+      plant_succulent_01_summer_sway_01_06: -555138049
+      plant_succulent_01_summer_sway_01_07: 308186813
+      plant_succulent_01_summer_sway_01_08: 1632421261
+      plant_succulent_01_summer_sway_01_09: -1367366798
+      plant_succulent_01_summer_sway_01_10: 1059846670
+      plant_succulent_01_summer_sway_01_11: 234925525
+      plant_succulent_01_summer_sway_01_12: -1475082204
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

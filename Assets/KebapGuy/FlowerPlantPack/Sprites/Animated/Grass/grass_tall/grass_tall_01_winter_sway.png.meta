@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_tall_01_winter_sway_0
+      name: grass_tall_01_winter_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc5d4bb684066244395cea9bb6219961
-      internalID: 1710384451
+      spriteID: 11a96f744d9d39345aa499a369ffba1a
+      internalID: -1874395281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_winter_sway_1
+      name: grass_tall_01_winter_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e09840de9bf4dcc4dad1a96e86f87a9f
-      internalID: 1869626750
+      spriteID: ea186b5589bbd8a4f8c58fc3b72f8fe8
+      internalID: -2106700872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_winter_sway_2
+      name: grass_tall_01_winter_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b0ffff1c6e2c1e49880096b0504523a
-      internalID: -469424530
+      spriteID: 16a8f6b958cc9e042aa338ab9ee6f374
+      internalID: -144753204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_winter_sway_3
+      name: grass_tall_01_winter_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a87050b0c2d88204bbd55b644bdde405
-      internalID: -557451203
+      spriteID: 4dbd7eb6826c2b74888247015946b22d
+      internalID: 969162282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_winter_sway_4
+      name: grass_tall_01_winter_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00768adebb12a414999c7505f527169b
-      internalID: 1658643057
+      spriteID: cf2f9caf4bb763b4b873b6790379a1fc
+      internalID: -37225859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_winter_sway_5
+      name: grass_tall_01_winter_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97591bc6a54f2e34da978142e08866de
-      internalID: 623452744
+      spriteID: c71baedfc4c524f4cb233de664e05493
+      internalID: -295426925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_winter_sway_6
+      name: grass_tall_01_winter_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f9c461ce010c3849b3832fe6e1b7aa1
-      internalID: -1970009329
+      spriteID: 064b4425117179244a1e9dba8d8ed830
+      internalID: -14744441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_winter_sway_7
+      name: grass_tall_01_winter_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ccd6b1015df8ee48a9ed01b821f197c
-      internalID: 1826302035
+      spriteID: 23b907362ab477d4dbdeb89f9f875f7a
+      internalID: -1613658155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_winter_sway_8
+      name: grass_tall_01_winter_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eaf8532475880e7488b365093e2d7a1f
-      internalID: -816423006
+      spriteID: 0a93dce031338074c9c3187cd406dfbe
+      internalID: 1278384064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_winter_sway_9
+      name: grass_tall_01_winter_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fed7182ce4525c24caecca369b415d91
-      internalID: 1171070168
+      spriteID: ec23e89303e0ddc4b8a60e101ec90595
+      internalID: 1537437019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_winter_sway_10
+      name: grass_tall_01_winter_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4ea9bdc4c1ce114fb3e02304914e143
-      internalID: -707147840
+      spriteID: 54c930c7215b9fa459a1254e1b8f77ad
+      internalID: 2096363691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_winter_sway_11
+      name: grass_tall_01_winter_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1713f6b992e2a6e48854ec5233eb342d
-      internalID: 1958222639
+      spriteID: 01e64342102f4e4469da057944d2c2b9
+      internalID: -1846052821
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_tall_01_winter_sway_0: 1710384451
-      grass_tall_01_winter_sway_1: 1869626750
-      grass_tall_01_winter_sway_10: -707147840
-      grass_tall_01_winter_sway_11: 1958222639
-      grass_tall_01_winter_sway_2: -469424530
-      grass_tall_01_winter_sway_3: -557451203
-      grass_tall_01_winter_sway_4: 1658643057
-      grass_tall_01_winter_sway_5: 623452744
-      grass_tall_01_winter_sway_6: -1970009329
-      grass_tall_01_winter_sway_7: 1826302035
-      grass_tall_01_winter_sway_8: -816423006
-      grass_tall_01_winter_sway_9: 1171070168
+      grass_tall_01_winter_sway_01_01: -1874395281
+      grass_tall_01_winter_sway_01_02: -2106700872
+      grass_tall_01_winter_sway_01_03: -144753204
+      grass_tall_01_winter_sway_01_04: 969162282
+      grass_tall_01_winter_sway_01_05: -37225859
+      grass_tall_01_winter_sway_01_06: -295426925
+      grass_tall_01_winter_sway_01_07: -14744441
+      grass_tall_01_winter_sway_01_08: -1613658155
+      grass_tall_01_winter_sway_01_09: 1278384064
+      grass_tall_01_winter_sway_01_10: 1537437019
+      grass_tall_01_winter_sway_01_11: 2096363691
+      grass_tall_01_winter_sway_01_12: -1846052821
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

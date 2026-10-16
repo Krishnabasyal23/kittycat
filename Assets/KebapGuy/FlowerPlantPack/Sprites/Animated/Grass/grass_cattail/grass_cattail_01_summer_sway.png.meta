@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_cattail_01_summer_sway_0
+      name: grass_cattail_01_summer_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 48
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81ee9974194db764d8b856d7e43a061e
-      internalID: 1794770678
+      spriteID: 2d6e9947addb8cc478611dbea8f64fca
+      internalID: 1109453341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_01_summer_sway_1
+      name: grass_cattail_01_summer_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 48
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b048a715dba13df49860549edfd1d360
-      internalID: -1699306022
+      spriteID: ee25514bd4ef1224c9080a8025826bdf
+      internalID: -1028709070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_01_summer_sway_2
+      name: grass_cattail_01_summer_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 48
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 555533081a1d3364f9e1f7ccffcbd2fd
-      internalID: -1608203236
+      spriteID: 953580b70c965fc498e6d27949a6dc13
+      internalID: -1125460845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_01_summer_sway_3
+      name: grass_cattail_01_summer_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 48
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 438259c8c70df0549ad461a3bbfbae00
-      internalID: 724796198
+      spriteID: ff1bf026577a8af4b835a969560a32fc
+      internalID: 949238345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_01_summer_sway_4
+      name: grass_cattail_01_summer_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 48
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c456899f597fdcd44ab921e497168654
-      internalID: 845480100
+      spriteID: fbd08befeaf227e41961c3df952bd2dc
+      internalID: 130833477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_01_summer_sway_5
+      name: grass_cattail_01_summer_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 48
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95ea637174a5e0343a9fe86056e10509
-      internalID: -1002622656
+      spriteID: 33d33a1af4a433347a3a5c10243f2d1b
+      internalID: 1653316872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_01_summer_sway_6
+      name: grass_cattail_01_summer_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 48
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c7f7459ff56463458e3acb7c4721d12
-      internalID: 848208730
+      spriteID: e3849fb31ad83bd48a265b5ecebca8b2
+      internalID: 1450991536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_01_summer_sway_7
+      name: grass_cattail_01_summer_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 48
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33d31ee0df2410f49a660c997e2cef8c
-      internalID: 390927528
+      spriteID: 9782e7127cf06b14ebc871c5a4d77d44
+      internalID: 615904611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_01_summer_sway_8
+      name: grass_cattail_01_summer_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 48
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7079a61c37de5da45b3a834d29cb60a8
-      internalID: -11989749
+      spriteID: aeb072fa9c092ab4ca03d04c0469187b
+      internalID: 590683743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_01_summer_sway_9
+      name: grass_cattail_01_summer_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 48
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d09fee12aaf2db74ab17e6ed65f087a9
-      internalID: -1995594705
+      spriteID: 2f7a976ab6e04ff48b7eff6741d56aa0
+      internalID: -1049160119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_01_summer_sway_10
+      name: grass_cattail_01_summer_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 48
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b111bbbef64ac5147982165dec526573
-      internalID: -384025483
+      spriteID: 6396f484ae9831a4c9f7bf7b1167064e
+      internalID: 1469694153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_cattail_01_summer_sway_11
+      name: grass_cattail_01_summer_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 48
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1af2583a153c7b4ebdf1dd5130ff380
-      internalID: 2010719106
+      spriteID: 28ee23ad3e6265a4ca1d205ed9e37702
+      internalID: -686294763
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_cattail_01_summer_sway_0: 1794770678
-      grass_cattail_01_summer_sway_1: -1699306022
-      grass_cattail_01_summer_sway_10: -384025483
-      grass_cattail_01_summer_sway_11: 2010719106
-      grass_cattail_01_summer_sway_2: -1608203236
-      grass_cattail_01_summer_sway_3: 724796198
-      grass_cattail_01_summer_sway_4: 845480100
-      grass_cattail_01_summer_sway_5: -1002622656
-      grass_cattail_01_summer_sway_6: 848208730
-      grass_cattail_01_summer_sway_7: 390927528
-      grass_cattail_01_summer_sway_8: -11989749
-      grass_cattail_01_summer_sway_9: -1995594705
+      grass_cattail_01_summer_sway_01_01: 1109453341
+      grass_cattail_01_summer_sway_01_02: -1028709070
+      grass_cattail_01_summer_sway_01_03: -1125460845
+      grass_cattail_01_summer_sway_01_04: 949238345
+      grass_cattail_01_summer_sway_01_05: 130833477
+      grass_cattail_01_summer_sway_01_06: 1653316872
+      grass_cattail_01_summer_sway_01_07: 1450991536
+      grass_cattail_01_summer_sway_01_08: 615904611
+      grass_cattail_01_summer_sway_01_09: 590683743
+      grass_cattail_01_summer_sway_01_10: -1049160119
+      grass_cattail_01_summer_sway_01_11: 1469694153
+      grass_cattail_01_summer_sway_01_12: -686294763
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

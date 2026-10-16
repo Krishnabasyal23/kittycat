@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_waterlily_02_white_sway_0
+      name: flower_waterlily_02_white_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51a0e918ab7a33c4ea79d82b14aeae34
-      internalID: 441348044
+      spriteID: 3020faf7ca1d58340b0a85d5d6528b8e
+      internalID: 71512685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_waterlily_02_white_sway_1
+      name: flower_waterlily_02_white_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfcb7850de54e51409ffa94eb32b5132
-      internalID: 358391842
+      spriteID: 464992b514d042c45bcc28a222368408
+      internalID: 902145112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_waterlily_02_white_sway_2
+      name: flower_waterlily_02_white_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8a92bf5e3622e84a998b054cb835b29
-      internalID: 1576438721
+      spriteID: ada47319150624a44ac465681437b887
+      internalID: -1614839565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_waterlily_02_white_sway_3
+      name: flower_waterlily_02_white_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96a528f8c937e2b468bef73dd051922d
-      internalID: 1771881882
+      spriteID: 0dcc28f4f47f24b43a4dc25f33c5eb8c
+      internalID: 605084245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_waterlily_02_white_sway_4
+      name: flower_waterlily_02_white_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf0b56b965dff894ba1c46aa623012dc
-      internalID: -695909245
+      spriteID: 62106ab04542b2045b00b41eae999a83
+      internalID: -1963985587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_waterlily_02_white_sway_5
+      name: flower_waterlily_02_white_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f63e70fd5d95e0468dfe6f99c23cbe7
-      internalID: 1113952512
+      spriteID: 4eed429dd9740ac428f004af6c1489c9
+      internalID: -2009558134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_waterlily_02_white_sway_6
+      name: flower_waterlily_02_white_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4334740c893e5749870ad3930b0b7fb
-      internalID: 966853702
+      spriteID: 87658ca5429b60744ac7752642393131
+      internalID: 615899438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_waterlily_02_white_sway_7
+      name: flower_waterlily_02_white_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4046622825e39864296f23edbd6e54ea
-      internalID: 185217367
+      spriteID: 6fc42fd4d3263a6449cbafb070c7900f
+      internalID: 250860914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_waterlily_02_white_sway_8
+      name: flower_waterlily_02_white_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 185645c091749f240b5fa103c4a09e0f
-      internalID: 2055314792
+      spriteID: 2edb2b68dd5c86245b2bf0140d3ae1b2
+      internalID: -200274573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_waterlily_02_white_sway_9
+      name: flower_waterlily_02_white_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5bc7b1cbf41d4847939ec2cfc74f373
-      internalID: 845165205
+      spriteID: 6e541a7db590a9348a12bc0c0d1b90e5
+      internalID: 471226169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_waterlily_02_white_sway_10
+      name: flower_waterlily_02_white_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0b6f0e994622f54f88b7708ff1fffe5
-      internalID: 1045283001
+      spriteID: 2b26fca534bd1a04baeeb227079f4218
+      internalID: 1767098758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_waterlily_02_white_sway_11
+      name: flower_waterlily_02_white_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a89c5f75fa26864e8fa3e3450c0f601
-      internalID: -548983545
+      spriteID: 7b7eb05553ae8e44586338ed8343770c
+      internalID: 1031572892
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flower_waterlily_02_white_sway_0: 441348044
-      flower_waterlily_02_white_sway_1: 358391842
-      flower_waterlily_02_white_sway_10: 1045283001
-      flower_waterlily_02_white_sway_11: -548983545
-      flower_waterlily_02_white_sway_2: 1576438721
-      flower_waterlily_02_white_sway_3: 1771881882
-      flower_waterlily_02_white_sway_4: -695909245
-      flower_waterlily_02_white_sway_5: 1113952512
-      flower_waterlily_02_white_sway_6: 966853702
-      flower_waterlily_02_white_sway_7: 185217367
-      flower_waterlily_02_white_sway_8: 2055314792
-      flower_waterlily_02_white_sway_9: 845165205
+      flower_waterlily_02_white_sway_01_01: 71512685
+      flower_waterlily_02_white_sway_01_02: 902145112
+      flower_waterlily_02_white_sway_01_03: -1614839565
+      flower_waterlily_02_white_sway_01_04: 605084245
+      flower_waterlily_02_white_sway_01_05: -1963985587
+      flower_waterlily_02_white_sway_01_06: -2009558134
+      flower_waterlily_02_white_sway_01_07: 615899438
+      flower_waterlily_02_white_sway_01_08: 250860914
+      flower_waterlily_02_white_sway_01_09: -200274573
+      flower_waterlily_02_white_sway_01_10: 471226169
+      flower_waterlily_02_white_sway_01_11: 1767098758
+      flower_waterlily_02_white_sway_01_12: 1031572892
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

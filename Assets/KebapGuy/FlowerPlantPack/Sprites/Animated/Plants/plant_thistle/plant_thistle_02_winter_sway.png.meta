@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_thistle_02_winter_sway_0
+      name: plant_thistle_02_winter_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0093f274097f3e64b94071ccb576a88d
-      internalID: 1700709524
+      spriteID: 7286bd1dcdbac6045b61b9ccf6ca3408
+      internalID: -1497917503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_winter_sway_1
+      name: plant_thistle_02_winter_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48e80e5bf33997d4b9290d678d83841f
-      internalID: 187971036
+      spriteID: 4cb15f1d7997f3a4ebf814507cbb7568
+      internalID: 1368260361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_winter_sway_2
+      name: plant_thistle_02_winter_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: def47b85d3ab3bc4aafe3b445e54697e
-      internalID: 1370532307
+      spriteID: eb5ad962d69e3eb428fdce9f40c2f47c
+      internalID: -53413385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_winter_sway_3
+      name: plant_thistle_02_winter_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 488400c06e9844f4d9d46e8f808f24a3
-      internalID: 1298715843
+      spriteID: 3de88cbbf483fa34ba813f9aea2bfe45
+      internalID: -422555181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_winter_sway_4
+      name: plant_thistle_02_winter_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ad80132e08a41c4a94333e4ddc506ee
-      internalID: -1056535911
+      spriteID: 8bba0b4405385784bb4904d735188ab1
+      internalID: -817785877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_winter_sway_5
+      name: plant_thistle_02_winter_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6505f4caff5ea0409fa59ee7a945cb2
-      internalID: -1866643365
+      spriteID: 2ae7d72e9cfd7434483b5e6e203eab3e
+      internalID: -1800684925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_winter_sway_6
+      name: plant_thistle_02_winter_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 855dd32fb28f86f4ba2307f947b3cf55
-      internalID: 855409944
+      spriteID: 10c4bc994218efa418a8f702abfa4dd2
+      internalID: 1429068274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_winter_sway_7
+      name: plant_thistle_02_winter_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1db76b3d1af55954ab5f25f8528c7bde
-      internalID: 1210158491
+      spriteID: 626d1016240be084198743e8db1b107b
+      internalID: 1808573090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_winter_sway_8
+      name: plant_thistle_02_winter_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8c74648484038e40bee7e049542aca1
-      internalID: -985252612
+      spriteID: 7e95dcf941e0cbc4b84284eddff4fb67
+      internalID: -1290752252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_winter_sway_9
+      name: plant_thistle_02_winter_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ada7319616dddc54fb69f857360cfda4
-      internalID: 77747371
+      spriteID: 8b89db30a2ba3724a99c99002eed18bb
+      internalID: -642110671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_winter_sway_10
+      name: plant_thistle_02_winter_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 805f1440cf8315d4f93b8e02368d262f
-      internalID: -918576452
+      spriteID: 213b25c766bd401479e5b4de99392948
+      internalID: 1511522391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_02_winter_sway_11
+      name: plant_thistle_02_winter_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ce14f11a26fc7f41a57ed18d299a21f
-      internalID: -411950902
+      spriteID: 4d6772e8d49dade47bcdfa7b74ad11d7
+      internalID: -64028789
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_thistle_02_winter_sway_0: 1700709524
-      plant_thistle_02_winter_sway_1: 187971036
-      plant_thistle_02_winter_sway_10: -918576452
-      plant_thistle_02_winter_sway_11: -411950902
-      plant_thistle_02_winter_sway_2: 1370532307
-      plant_thistle_02_winter_sway_3: 1298715843
-      plant_thistle_02_winter_sway_4: -1056535911
-      plant_thistle_02_winter_sway_5: -1866643365
-      plant_thistle_02_winter_sway_6: 855409944
-      plant_thistle_02_winter_sway_7: 1210158491
-      plant_thistle_02_winter_sway_8: -985252612
-      plant_thistle_02_winter_sway_9: 77747371
+      plant_thistle_02_winter_sway_01_01: -1497917503
+      plant_thistle_02_winter_sway_01_02: 1368260361
+      plant_thistle_02_winter_sway_01_03: -53413385
+      plant_thistle_02_winter_sway_01_04: -422555181
+      plant_thistle_02_winter_sway_01_05: -817785877
+      plant_thistle_02_winter_sway_01_06: -1800684925
+      plant_thistle_02_winter_sway_01_07: 1429068274
+      plant_thistle_02_winter_sway_01_08: 1808573090
+      plant_thistle_02_winter_sway_01_09: -1290752252
+      plant_thistle_02_winter_sway_01_10: -642110671
+      plant_thistle_02_winter_sway_01_11: 1511522391
+      plant_thistle_02_winter_sway_01_12: -64028789
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

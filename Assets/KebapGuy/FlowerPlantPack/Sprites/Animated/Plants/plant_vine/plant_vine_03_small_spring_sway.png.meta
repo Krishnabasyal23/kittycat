@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_vine_03_small_spring_sway_0
+      name: plant_vine_03_small_spring_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,64 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f6010f89b65e9c4597bd633e35ea5c9
-      internalID: -1067307930
+      spriteID: abef7fa63180cf6429239763ed7d904d
+      internalID: 756397214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_small_spring_sway_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cce205653565e7c4781e095c52c7cafb
-      internalID: 1326345681
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plant_vine_03_small_spring_sway_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09171f836947709499f0ec6b21dd2935
-      internalID: -1536945351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plant_vine_03_small_spring_sway_3
+      name: plant_vine_03_small_spring_sway_01_02
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc36e2fabe863ac4f9bddbee12c1f148
-      internalID: -442028342
+      spriteID: 2bb70b9e5221c614ba5f4204e81246a0
+      internalID: 77323419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_small_spring_sway_4
+      name: plant_vine_03_small_spring_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 669d44e7edc884047951474846a76f33
-      internalID: -1847548257
+      spriteID: c7797239df460ad4f8caaf9fb936ae1f
+      internalID: -1440331415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_small_spring_sway_5
+      name: plant_vine_03_small_spring_sway_01_04
       rect:
         serializedVersion: 2
         x: 80
         y: 0
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee217a401fb321d4a9e74e37d03299a6
-      internalID: -289738080
+      spriteID: 23631b15b9e7cac43815383df05b7400
+      internalID: 1011832375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_small_spring_sway_6
+      name: plant_vine_03_small_spring_sway_01_05
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,64 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acfa7ec72b8a7724298c5f3dec409af9
-      internalID: 551260148
+      spriteID: 689915d49cb809547ab1fef6a94664a3
+      internalID: 2106903008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_small_spring_sway_7
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86989cbd836410f47a91bfd3e39ab969
-      internalID: 683007637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plant_vine_03_small_spring_sway_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 468166eb460bb544d840eec28dfe2440
-      internalID: -1627119295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plant_vine_03_small_spring_sway_9
+      name: plant_vine_03_small_spring_sway_01_06
       rect:
         serializedVersion: 2
         x: 144
         y: 0
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41d73b6f4a03c6946b3da5673afdd1af
-      internalID: -275029955
+      spriteID: f2e9c908e19dc3541bd2685d44f5e503
+      internalID: 399427414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_small_spring_sway_10
+      name: plant_vine_03_small_spring_sway_01_07
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd89da83c7e7be748b7588696c718c66
-      internalID: 712762201
+      spriteID: 8f461080ee10d5944b82c63593a7105c
+      internalID: -536527278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_vine_03_small_spring_sway_11
+      name: plant_vine_03_small_spring_sway_01_08
       rect:
         serializedVersion: 2
         x: 176
         y: 0
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d214bc6693ad1054ca9b76d044b13a76
-      internalID: -690075224
+      spriteID: d266ea840700be345bd15b9c213b19dd
+      internalID: 964033868
       vertices: []
       indices: 
       edges: []
@@ -396,18 +308,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_vine_03_small_spring_sway_0: -1067307930
-      plant_vine_03_small_spring_sway_1: 1326345681
-      plant_vine_03_small_spring_sway_10: 712762201
-      plant_vine_03_small_spring_sway_11: -690075224
-      plant_vine_03_small_spring_sway_2: -1536945351
-      plant_vine_03_small_spring_sway_3: -442028342
-      plant_vine_03_small_spring_sway_4: -1847548257
-      plant_vine_03_small_spring_sway_5: -289738080
-      plant_vine_03_small_spring_sway_6: 551260148
-      plant_vine_03_small_spring_sway_7: 683007637
-      plant_vine_03_small_spring_sway_8: -1627119295
-      plant_vine_03_small_spring_sway_9: -275029955
+      plant_vine_03_small_spring_sway_01_01: 756397214
+      plant_vine_03_small_spring_sway_01_02: 77323419
+      plant_vine_03_small_spring_sway_01_03: -1440331415
+      plant_vine_03_small_spring_sway_01_04: 1011832375
+      plant_vine_03_small_spring_sway_01_05: 2106903008
+      plant_vine_03_small_spring_sway_01_06: 399427414
+      plant_vine_03_small_spring_sway_01_07: -536527278
+      plant_vine_03_small_spring_sway_01_08: 964033868
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

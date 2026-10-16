@@ -27,6 +27,14 @@ namespace KittyCrash
         public ApiBackend apiBackend;
         public LocalBackend localBackend;
 
+        [Header("Round cycle (crash-game style)")]
+        [Tooltip("Rounds run on their own: betting countdown (cat keeps running) → walk → distracted → countdown…\n" +
+                 "Bets placed during the countdown join the next walk. Untick for the old 'bet starts the round' flow.")]
+        public bool autoRounds = true;
+        public float bettingCountdown = 8f;
+        [Tooltip("Distractions used for rounds nobody bet on (purely visual).")]
+        public string[] spectatorDistractions = { "fish", "sleep", "yarn" };
+
         [Header("Timing")]
         public float pollInterval = 0.15f;
         public float resultDuration = 3.5f;
@@ -61,6 +69,13 @@ namespace KittyCrash
         public decimal MinBet => Backend != null ? Backend.MinBet : 1m;
         public decimal MaxBet => Backend != null ? Backend.MaxBet : 500m;
         public decimal PotentialPayout => CrashMath.Payout(Wager, CrashMath.Floor2(Multiplier));
+        /// <summary>The player has real money in the current/last round.</summary>
+        public bool HasBet { get; private set; }
+        /// <summary>A bet was placed during the countdown and will join the next walk.</summary>
+        public bool BetQueued { get; private set; }
+        public decimal QueuedWager { get; private set; }
+        public float QueuedAutoCashOut { get; private set; }
+        public bool IsSpectating => Phase == RoundPhase.Running && !HasBet;
         public float RunElapsed => Time.time - runStartTime;
 
         public event Action<RoundPhase> OnPhaseChanged;
@@ -70,6 +85,8 @@ namespace KittyCrash
 
         float runStartTime, nextPollTime;
         bool pollInFlight, outcomeRequested;
+        float spectatorCrash;
+        readonly System.Random spectatorRng = new System.Random();
         int connectAttempt;
 
         void Awake()
@@ -109,7 +126,8 @@ namespace KittyCrash
                 {
                     Balance = r.balance;
                     LastError = null;
-                    SetPhase(RoundPhase.Idle);
+                    BetQueued = false;
+                    EnterIdle();
                 }
                 else
                 {
@@ -124,6 +142,13 @@ namespace KittyCrash
         {
             switch (Phase)
             {
+                case RoundPhase.Idle:
+                    if (autoRounds)
+                    {
+                        PhaseTimeLeft -= Time.deltaTime;
+                        if (PhaseTimeLeft <= 0f) BeginRound();
+                    }
+                    break;
                 case RoundPhase.Offline:
                     PhaseTimeLeft -= Time.deltaTime;
                     if (PhaseTimeLeft <= 0f) Connect();
@@ -135,7 +160,7 @@ namespace KittyCrash
                     PhaseTimeLeft -= Time.deltaTime;
                     if (PhaseTimeLeft <= 0f)
                     {
-                        SetPhase(RoundPhase.Idle);
+                        EnterIdle();
                         RefreshBalance();
                     }
                     break;
@@ -148,12 +173,35 @@ namespace KittyCrash
         {
             LastError = null;
             wager = Math.Round(wager, 2, MidpointRounding.AwayFromZero);
-            if (Phase != RoundPhase.Idle) { LastError = "Wait for the current walk to finish"; return false; }
+            if (Phase != RoundPhase.Idle) { LastError = "Bets open again after this walk"; return false; }
             if (wager < MinBet || wager > MaxBet) { LastError = $"Bet must be {MinBet:0}–{MaxBet:0}"; return false; }
             if (wager > Balance) { LastError = "Not enough credits"; return false; }
 
-            Wager = wager;
-            AutoCashOut = autoCashOut >= 1.01f ? CrashMath.Floor2(autoCashOut) : 0f;
+            if (autoRounds)
+            {
+                BetQueued = true;
+                QueuedWager = wager;
+                QueuedAutoCashOut = autoCashOut;
+                return true;
+            }
+            StartBackendRound(wager, autoCashOut);
+            return true;
+        }
+
+        /// <summary>Take back a bet placed during the countdown (before the walk starts).</summary>
+        public void CancelBet()
+        {
+            if (Phase == RoundPhase.Idle) BetQueued = false;
+        }
+
+        void EnterIdle()
+        {
+            PhaseTimeLeft = autoRounds ? bettingCountdown : 0f;
+            SetPhase(RoundPhase.Idle);
+        }
+
+        void ResetRoundState()
+        {
             RoundId = null;
             Multiplier = 1f;
             CashedOut = CashOutPending = pollInFlight = outcomeRequested = false;
@@ -161,6 +209,43 @@ namespace KittyCrash
             Payout = 0m;
             CrashPoint = -1f;
             Distraction = null;
+        }
+
+        void BeginRound()
+        {
+            if (BetQueued)
+            {
+                BetQueued = false;
+                if (QueuedWager <= Balance) { StartBackendRound(QueuedWager, QueuedAutoCashOut); return; }
+                LastError = "Not enough credits - watching this round";
+            }
+            StartSpectatorRound();
+        }
+
+        /// <summary>A round nobody bet on: same curve, local random crash point, no money involved.</summary>
+        void StartSpectatorRound()
+        {
+            ResetRoundState();
+            HasBet = false;
+            Wager = 0m;
+            double u;
+            do { u = spectatorRng.NextDouble(); } while (u <= 0.0);
+            spectatorCrash = CrashMath.CrashFromUniform(u, CrashMath.DefaultHouseEdge, CrashMath.DefaultMaxMultiplier);
+            runStartTime = Time.time;
+            SetPhase(RoundPhase.Running);
+            OnRoundStarted?.Invoke();
+        }
+
+        string RandomSpectatorDistraction()
+            => spectatorDistractions != null && spectatorDistractions.Length > 0
+                ? spectatorDistractions[spectatorRng.Next(spectatorDistractions.Length)] : "fish";
+
+        void StartBackendRound(decimal wager, float autoCashOut)
+        {
+            Wager = wager;
+            AutoCashOut = autoCashOut >= 1.01f ? CrashMath.Floor2(autoCashOut) : 0f;
+            ResetRoundState();
+            HasBet = true;
             SetPhase(RoundPhase.Starting);
 
             Backend.StartRound(wager, r =>
@@ -169,8 +254,9 @@ namespace KittyCrash
                 if (!r.ok)
                 {
                     LastError = r.error;
-                    SetPhase(RoundPhase.Idle);
-                    if (r.sessionLost) Connect();
+                    HasBet = false;
+                    if (r.sessionLost) { Connect(); return; }
+                    if (autoRounds) StartSpectatorRound(); else EnterIdle();
                     return;
                 }
 
@@ -183,12 +269,11 @@ namespace KittyCrash
 
                 if (r.status == RoundStatus.Crashed) EndRound(1f, r.distraction);   // instant 1.00x
             });
-            return true;
         }
 
         public void CashOut()
         {
-            if (Phase != RoundPhase.Running || CashedOut || CashOutPending || RoundId == null || IsWarmingUp) return;
+            if (Phase != RoundPhase.Running || !HasBet || CashedOut || CashOutPending || RoundId == null || IsWarmingUp) return;
             CashOutPending = true;
             string id = RoundId;
 
@@ -211,6 +296,13 @@ namespace KittyCrash
                     Payout = r.payout;
                     OnCashOut?.Invoke(r.multiplier, r.payout);
                 }
+                else if (r.status == RoundStatus.Interrupted)
+                {
+                    LastError = "Server restarted - your wager was refunded";
+                    EndRound(Multiplier, null);
+                    RefreshBalance();
+                    return;
+                }
                 else
                 {
                     LastError = "Too late — kitty was already distracted!";
@@ -224,6 +316,13 @@ namespace KittyCrash
         void UpdateRunning()
         {
             float local = CrashMath.MultiplierAt(Mathf.Max(0f, RunElapsed - WarmupSeconds), GrowthRate);
+
+            if (!HasBet)
+            {
+                if (local >= spectatorCrash) EndRound(spectatorCrash, RandomSpectatorDistraction());
+                else Multiplier = local;
+                return;
+            }
 
             if (CrashPoint > 0f && local >= CrashPoint)
             {
@@ -279,6 +378,11 @@ namespace KittyCrash
                     case RoundStatus.CashedOut:
                         if (!CashedOut) { CashedOut = true; CashOutMultiplier = r.multiplier; Payout = r.payout; FetchOutcome(id); }
                         break;
+                    case RoundStatus.Interrupted:
+                        LastError = "Server restarted - your wager was refunded";
+                        EndRound(Multiplier, null);
+                        RefreshBalance();
+                        break;
                 }
             });
         }
@@ -329,6 +433,7 @@ namespace KittyCrash
         public void ResetOfflineBalance()
         {
             if (useApi || localBackend == null || Phase == RoundPhase.Running || Phase == RoundPhase.Starting) return;
+            BetQueued = false;
             localBackend.ResetBalance();
             Connect();
         }

@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_thistle_01_autumn_sway_0
+      name: plant_thistle_01_autumn_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac1261fa0b5fd964282668178bf678fe
-      internalID: -1070678640
+      spriteID: 6689adbfdd908c24b9cb263d1f0c259f
+      internalID: 130154905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_01_autumn_sway_1
+      name: plant_thistle_01_autumn_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7a895855f5fdfc4b8bd652a9b90911c
-      internalID: 1659871733
+      spriteID: 0bc30d0281bc9024c8cf98ca3efe4349
+      internalID: -1494435949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_01_autumn_sway_2
+      name: plant_thistle_01_autumn_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b45c7c0939e1f0a48981a6653720b1e8
-      internalID: -1243135657
+      spriteID: 9840c2226a81c5e4d8569f068c065c37
+      internalID: -357957983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_01_autumn_sway_3
+      name: plant_thistle_01_autumn_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64747bb56a04cf04ca6421be3344a5db
-      internalID: -391588505
+      spriteID: 757ad1a6fc522c247810818e99602717
+      internalID: -788808746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_01_autumn_sway_4
+      name: plant_thistle_01_autumn_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b229125995b146e47afc6319d4935da2
-      internalID: -15625528
+      spriteID: 038a03c50189ca448830fd8ac39f40a4
+      internalID: 514620731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_01_autumn_sway_5
+      name: plant_thistle_01_autumn_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 478f4ae92f237664fa83df7cd3092e3a
-      internalID: -947514048
+      spriteID: 05d55716d25b7f04a820a0b41be30f98
+      internalID: -1092209676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_01_autumn_sway_6
+      name: plant_thistle_01_autumn_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db39192e9468dc144bb3e4fa7744c1cc
-      internalID: -1910625501
+      spriteID: 2fbb686b3b71a6541a93738162e46d3e
+      internalID: 943104281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_01_autumn_sway_7
+      name: plant_thistle_01_autumn_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be1773a7f441b2540ae42d43d8e3c1f3
-      internalID: 199035533
+      spriteID: 00c2fb7d527a5a941848e4406302d4ce
+      internalID: 1983568503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_01_autumn_sway_8
+      name: plant_thistle_01_autumn_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c745be0b0549524794b200af25828dc
-      internalID: -663686592
+      spriteID: 51a4d6fe428fa5e4285317f922ce573d
+      internalID: -2022648259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_01_autumn_sway_9
+      name: plant_thistle_01_autumn_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f65618f774133394abe7884daefa56a8
-      internalID: 1576205628
+      spriteID: ba5261338f48d6b498efc33d69ce08cc
+      internalID: 1624780765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_01_autumn_sway_10
+      name: plant_thistle_01_autumn_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12f84daf0d0d8ed48ade7083158e15b3
-      internalID: -641843988
+      spriteID: 1a02a9bc399fa734aa06ec8da8241074
+      internalID: -2089769251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_thistle_01_autumn_sway_11
+      name: plant_thistle_01_autumn_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ecf740b748ee6848ab191816a10d884
-      internalID: -889626295
+      spriteID: 51cdd45bafd664443a40b46b49087cc8
+      internalID: -1557503197
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_thistle_01_autumn_sway_0: -1070678640
-      plant_thistle_01_autumn_sway_1: 1659871733
-      plant_thistle_01_autumn_sway_10: -641843988
-      plant_thistle_01_autumn_sway_11: -889626295
-      plant_thistle_01_autumn_sway_2: -1243135657
-      plant_thistle_01_autumn_sway_3: -391588505
-      plant_thistle_01_autumn_sway_4: -15625528
-      plant_thistle_01_autumn_sway_5: -947514048
-      plant_thistle_01_autumn_sway_6: -1910625501
-      plant_thistle_01_autumn_sway_7: 199035533
-      plant_thistle_01_autumn_sway_8: -663686592
-      plant_thistle_01_autumn_sway_9: 1576205628
+      plant_thistle_01_autumn_sway_01_01: 130154905
+      plant_thistle_01_autumn_sway_01_02: -1494435949
+      plant_thistle_01_autumn_sway_01_03: -357957983
+      plant_thistle_01_autumn_sway_01_04: -788808746
+      plant_thistle_01_autumn_sway_01_05: 514620731
+      plant_thistle_01_autumn_sway_01_06: -1092209676
+      plant_thistle_01_autumn_sway_01_07: 943104281
+      plant_thistle_01_autumn_sway_01_08: 1983568503
+      plant_thistle_01_autumn_sway_01_09: -2022648259
+      plant_thistle_01_autumn_sway_01_10: 1624780765
+      plant_thistle_01_autumn_sway_01_11: -2089769251
+      plant_thistle_01_autumn_sway_01_12: -1557503197
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

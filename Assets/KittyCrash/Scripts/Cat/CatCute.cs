@@ -129,7 +129,7 @@ namespace KittyCrash
                 if (rm.Phase == RoundPhase.Idle)
                 {
                     idleTimer -= Time.deltaTime;
-                    if (idleTimer <= 0f) { Emote(Random.value < 0.6f ? zzz : heart, 1.6f); idleTimer = Random.Range(7f, 12f); }
+                    if (idleTimer <= 0f) { Emote(Random.value < 0.6f ? note : heart, 1.4f); idleTimer = Random.Range(7f, 12f); }
                 }
                 else idleTimer = Random.Range(4f, 7f);
             }

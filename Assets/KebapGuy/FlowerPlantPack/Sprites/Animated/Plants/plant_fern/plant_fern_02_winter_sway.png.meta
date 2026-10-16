@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_fern_02_winter_sway_0
+      name: plant_fern_02_winter_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 099ba774668d8c04c8e8cb72e2233b2a
-      internalID: 1864071332
+      spriteID: ea49ba1036a46f740ba85bf66c043061
+      internalID: -1579800382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_02_winter_sway_1
+      name: plant_fern_02_winter_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cb84cd700c9fa34f999a5ed2acc1551
-      internalID: 69052360
+      spriteID: abf0382b91b6ad842aa4b6f9c21b3f38
+      internalID: 57123856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_02_winter_sway_2
+      name: plant_fern_02_winter_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43d4067f7fd0a9d4aa7a91c01408a8db
-      internalID: -1488759880
+      spriteID: 26b223b9fd5f5e2408d385272cf07a01
+      internalID: -1405701395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_02_winter_sway_3
+      name: plant_fern_02_winter_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b28626c1f09e4364199410078bef13ee
-      internalID: -1575932219
+      spriteID: 741cd1df4b9b56d48960c54be93bdc3f
+      internalID: 1877399113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_02_winter_sway_4
+      name: plant_fern_02_winter_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfbf5e316d115d747ba652a03e375dce
-      internalID: 948871943
+      spriteID: f5fd576d66940044192cbc4e2978e7ea
+      internalID: 338779921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_02_winter_sway_5
+      name: plant_fern_02_winter_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 475bc063205c7b14e95dffa00758ce88
-      internalID: -1157711104
+      spriteID: 96ef2ba9e673334469537da41155ecbd
+      internalID: -573623202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_02_winter_sway_6
+      name: plant_fern_02_winter_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3ca7144af462904497f074f7cfabf97
-      internalID: -107396961
+      spriteID: b72268a4cfbfe36438ef5923db9c8b39
+      internalID: -1165339284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_02_winter_sway_7
+      name: plant_fern_02_winter_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecf042276b026804b8149099ae392a8b
-      internalID: 1317191077
+      spriteID: 8b730ece87c73cc45a71b703a0a48798
+      internalID: 941498794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_02_winter_sway_8
+      name: plant_fern_02_winter_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9aabdb8e1a3d1b44e93deefea6c6c834
-      internalID: -1979753192
+      spriteID: f69216257dc48bd4c91323d7c4b7d713
+      internalID: -1788304971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_02_winter_sway_9
+      name: plant_fern_02_winter_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02aaf3a1c750deb44b7b6cffff6f2b97
-      internalID: -956208825
+      spriteID: 4eaa7920b32f0fc4cab07c89dc4ccf03
+      internalID: 865295599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_02_winter_sway_10
+      name: plant_fern_02_winter_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1f4f82d19541504aa5618f99b64a8aa
-      internalID: -2049102768
+      spriteID: 3f40063f02a98ef44a69522bd38ca082
+      internalID: 2095995936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_02_winter_sway_11
+      name: plant_fern_02_winter_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d580f93ece62a1f4ba44d5eb3af8a52d
-      internalID: 582993937
+      spriteID: 6b8c39c32a0e77a47aa16b1388210c41
+      internalID: -11013865
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_fern_02_winter_sway_0: 1864071332
-      plant_fern_02_winter_sway_1: 69052360
-      plant_fern_02_winter_sway_10: -2049102768
-      plant_fern_02_winter_sway_11: 582993937
-      plant_fern_02_winter_sway_2: -1488759880
-      plant_fern_02_winter_sway_3: -1575932219
-      plant_fern_02_winter_sway_4: 948871943
-      plant_fern_02_winter_sway_5: -1157711104
-      plant_fern_02_winter_sway_6: -107396961
-      plant_fern_02_winter_sway_7: 1317191077
-      plant_fern_02_winter_sway_8: -1979753192
-      plant_fern_02_winter_sway_9: -956208825
+      plant_fern_02_winter_sway_01_01: -1579800382
+      plant_fern_02_winter_sway_01_02: 57123856
+      plant_fern_02_winter_sway_01_03: -1405701395
+      plant_fern_02_winter_sway_01_04: 1877399113
+      plant_fern_02_winter_sway_01_05: 338779921
+      plant_fern_02_winter_sway_01_06: -573623202
+      plant_fern_02_winter_sway_01_07: -1165339284
+      plant_fern_02_winter_sway_01_08: 941498794
+      plant_fern_02_winter_sway_01_09: -1788304971
+      plant_fern_02_winter_sway_01_10: 865295599
+      plant_fern_02_winter_sway_01_11: 2095995936
+      plant_fern_02_winter_sway_01_12: -11013865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

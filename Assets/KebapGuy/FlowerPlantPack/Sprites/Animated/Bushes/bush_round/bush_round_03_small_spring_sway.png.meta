@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bush_round_03_small_spring_sway_0
+      name: bush_round_03_small_spring_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66e0abf88355ff141813a638fca1b253
-      internalID: -1752635812
+      spriteID: 4d175e279d48b2a40ac0629284b19911
+      internalID: -1647500685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_spring_sway_1
+      name: bush_round_03_small_spring_sway_01_02
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b79f9a8898592c47b3a19dc36e85d8f
-      internalID: -402090992
+      spriteID: 73bb51c9f552d5f4bb1c246d4ed569e6
+      internalID: 1537132902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_spring_sway_2
+      name: bush_round_03_small_spring_sway_01_03
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 937b7a430a8e15d41864a930c0fd51b1
-      internalID: 1047089420
+      spriteID: 773a4c88b34cb704c96ed8085bc2afdf
+      internalID: -450377600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_spring_sway_3
+      name: bush_round_03_small_spring_sway_01_04
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30b801a89ec85b242a873737557c1611
-      internalID: -550527471
+      spriteID: 4149ae74f9c9ca04696511f5ad415618
+      internalID: -785223328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_spring_sway_4
+      name: bush_round_03_small_spring_sway_01_05
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc02f93c5b2620a4baa5b080ab5e35aa
-      internalID: -973790293
+      spriteID: f9d35726ac1274b4da1a23f72c9bf30f
+      internalID: -1439994492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_spring_sway_5
+      name: bush_round_03_small_spring_sway_01_06
       rect:
         serializedVersion: 2
         x: 80
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 424d54ca8fcffd94d9c19f82d5338f4a
-      internalID: -236088336
+      spriteID: 5b044be3ad8dd3d4b820ea246a9e4522
+      internalID: -1230249762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_spring_sway_6
+      name: bush_round_03_small_spring_sway_01_07
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ab5899a827c78a47a9d1363e9921447
-      internalID: 44651249
+      spriteID: 6a4e26fabed879e44947410d97e41dac
+      internalID: 16551212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_spring_sway_7
+      name: bush_round_03_small_spring_sway_01_08
       rect:
         serializedVersion: 2
         x: 112
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2754736f8d76f1342a13da7d1e94b5ac
-      internalID: 1967447625
+      spriteID: 043183574999f8e4e9791480adba04be
+      internalID: -1849513864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_spring_sway_8
+      name: bush_round_03_small_spring_sway_01_09
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5560c5081a0b28d46860bef89e3a526a
-      internalID: 50666583
+      spriteID: 11121fff00a1df5448f2f5e703c1ed2a
+      internalID: 1043346004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_spring_sway_9
+      name: bush_round_03_small_spring_sway_01_10
       rect:
         serializedVersion: 2
         x: 144
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03978add3c3eef7439966ecfe0ac4b44
-      internalID: 1009005626
+      spriteID: 0e5decb7e2008f541ade2b30a31b7c62
+      internalID: 2049476891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_spring_sway_10
+      name: bush_round_03_small_spring_sway_01_11
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baed4e36bd82bd846a0ae15b13b1a613
-      internalID: -1193335061
+      spriteID: ac1e8e8045760874a9462f43ab7e3155
+      internalID: 1000009492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_spring_sway_11
+      name: bush_round_03_small_spring_sway_01_12
       rect:
         serializedVersion: 2
         x: 176
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2b1d4b071d915447ac26b306030a26c
-      internalID: 1876802283
+      spriteID: afce4181e85622b449f5342d7de0e7c5
+      internalID: 215847823
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bush_round_03_small_spring_sway_0: -1752635812
-      bush_round_03_small_spring_sway_1: -402090992
-      bush_round_03_small_spring_sway_10: -1193335061
-      bush_round_03_small_spring_sway_11: 1876802283
-      bush_round_03_small_spring_sway_2: 1047089420
-      bush_round_03_small_spring_sway_3: -550527471
-      bush_round_03_small_spring_sway_4: -973790293
-      bush_round_03_small_spring_sway_5: -236088336
-      bush_round_03_small_spring_sway_6: 44651249
-      bush_round_03_small_spring_sway_7: 1967447625
-      bush_round_03_small_spring_sway_8: 50666583
-      bush_round_03_small_spring_sway_9: 1009005626
+      bush_round_03_small_spring_sway_01_01: -1647500685
+      bush_round_03_small_spring_sway_01_02: 1537132902
+      bush_round_03_small_spring_sway_01_03: -450377600
+      bush_round_03_small_spring_sway_01_04: -785223328
+      bush_round_03_small_spring_sway_01_05: -1439994492
+      bush_round_03_small_spring_sway_01_06: -1230249762
+      bush_round_03_small_spring_sway_01_07: 16551212
+      bush_round_03_small_spring_sway_01_08: -1849513864
+      bush_round_03_small_spring_sway_01_09: 1043346004
+      bush_round_03_small_spring_sway_01_10: 2049476891
+      bush_round_03_small_spring_sway_01_11: 1000009492
+      bush_round_03_small_spring_sway_01_12: 215847823
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

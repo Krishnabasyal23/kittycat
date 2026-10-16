@@ -3,6 +3,10 @@ using UnityEngine;
 
 namespace KittyCrash
 {
+    /// <summary>
+    /// Cat extras: soft shadow under the paws, dust puffs while running, a coin shower on cash-out,
+    /// and a little "!" pop when distracted. Put it on the Cat (root).
+    /// </summary>
     public class CatFx : MonoBehaviour
     {
         public float shadowWidth = 1.1f;

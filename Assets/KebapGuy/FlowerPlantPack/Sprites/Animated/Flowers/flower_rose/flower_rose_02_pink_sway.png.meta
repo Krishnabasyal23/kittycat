@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_rose_02_pink_sway_0
+      name: flower_rose_02_pink_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f906df06c822ac245ae8d1cd3428d5b6
-      internalID: -1329729923
+      spriteID: 6bc4286f9920a8147828c33aa641f909
+      internalID: 1343950987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_02_pink_sway_1
+      name: flower_rose_02_pink_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 148b6da47eb94f04e8d99b24d621d46a
-      internalID: 269428177
+      spriteID: 976aee14a4dcd6c49903400e1def7101
+      internalID: 671320209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_02_pink_sway_2
+      name: flower_rose_02_pink_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6275c9148fb66b43b5a66c5ca58e358
-      internalID: -1866171389
+      spriteID: e92d87756158dc548b0bed74d8b3074f
+      internalID: -1861602476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_02_pink_sway_3
+      name: flower_rose_02_pink_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e32d5a7ec04f5b48b992f094fb250d8
-      internalID: -1910789930
+      spriteID: 51455a14a8f071e4cb79aaf2f6683fe3
+      internalID: -1414438774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_02_pink_sway_4
+      name: flower_rose_02_pink_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3be065cdb879a04eadbea10ad9fe6ad
-      internalID: 997011437
+      spriteID: 9512933ea37847f4795a098f598ad1aa
+      internalID: -873680292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_02_pink_sway_5
+      name: flower_rose_02_pink_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36e31e25e9f85454ebf7f394186f9cb7
-      internalID: 1155196222
+      spriteID: df530af7569258041b583b9061b403d7
+      internalID: 395500674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_02_pink_sway_6
+      name: flower_rose_02_pink_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 719a5ef0de4750b45bf4becb205a3271
-      internalID: -343305347
+      spriteID: e4c7686a954aea648ad188168ae8ea00
+      internalID: -384839848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_02_pink_sway_7
+      name: flower_rose_02_pink_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34a286bcaf5ecef478c33c59fea16161
-      internalID: 1331912073
+      spriteID: cf344e0b1134bfe40aa240227c4a70d2
+      internalID: -1083034599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_02_pink_sway_8
+      name: flower_rose_02_pink_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21996b2ba84e53b4d979756f08df9729
-      internalID: -1929942695
+      spriteID: ab2adceb733dce742999f98b33ca2e8d
+      internalID: -486821311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_02_pink_sway_9
+      name: flower_rose_02_pink_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f191a151b767a1489a2ce157da33549
-      internalID: 488967913
+      spriteID: e59911a3844c1654b822c1484b192f6d
+      internalID: 1220718990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_02_pink_sway_10
+      name: flower_rose_02_pink_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddf8e8b6c4469a047a8bc9e7063d7f54
-      internalID: 726815294
+      spriteID: 401756da8dff4c24cbab7f876dd6d314
+      internalID: 218918714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_rose_02_pink_sway_11
+      name: flower_rose_02_pink_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 2
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a480ee62c7e2e4d439a9402b8af85c82
-      internalID: 808824217
+      spriteID: 114c7fbd31cb9b044835f239347d8388
+      internalID: 1885683085
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flower_rose_02_pink_sway_0: -1329729923
-      flower_rose_02_pink_sway_1: 269428177
-      flower_rose_02_pink_sway_10: 726815294
-      flower_rose_02_pink_sway_11: 808824217
-      flower_rose_02_pink_sway_2: -1866171389
-      flower_rose_02_pink_sway_3: -1910789930
-      flower_rose_02_pink_sway_4: 997011437
-      flower_rose_02_pink_sway_5: 1155196222
-      flower_rose_02_pink_sway_6: -343305347
-      flower_rose_02_pink_sway_7: 1331912073
-      flower_rose_02_pink_sway_8: -1929942695
-      flower_rose_02_pink_sway_9: 488967913
+      flower_rose_02_pink_sway_01_01: 1343950987
+      flower_rose_02_pink_sway_01_02: 671320209
+      flower_rose_02_pink_sway_01_03: -1861602476
+      flower_rose_02_pink_sway_01_04: -1414438774
+      flower_rose_02_pink_sway_01_05: -873680292
+      flower_rose_02_pink_sway_01_06: 395500674
+      flower_rose_02_pink_sway_01_07: -384839848
+      flower_rose_02_pink_sway_01_08: -1083034599
+      flower_rose_02_pink_sway_01_09: -486821311
+      flower_rose_02_pink_sway_01_10: 1220718990
+      flower_rose_02_pink_sway_01_11: 218918714
+      flower_rose_02_pink_sway_01_12: 1885683085
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

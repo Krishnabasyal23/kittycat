@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_tuft_01_small_summer_sway_0
+      name: grass_tuft_01_small_summer_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2b413540823b75438e4c72ec1324602
-      internalID: -172097799
+      spriteID: bae82a044e0a120419c3556ad80e8b85
+      internalID: 1321450779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_summer_sway_1
+      name: grass_tuft_01_small_summer_sway_01_02
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdc071da706851e4ba252e7bde181488
-      internalID: 1693849817
+      spriteID: 766d1732d44d81a4a97619536730e79c
+      internalID: -468432246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_summer_sway_2
+      name: grass_tuft_01_small_summer_sway_01_03
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4afc2ab2419a284cbd2a01097664204
-      internalID: 161098948
+      spriteID: 03cfc5f8639e9374ab667588fc6b1409
+      internalID: 1065821754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_summer_sway_3
+      name: grass_tuft_01_small_summer_sway_01_04
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc76ea2564ba28c40836619ec6afee29
-      internalID: -1052441759
+      spriteID: 96b19e8e29e99ec47926a2fb908e53f8
+      internalID: 1674750796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_summer_sway_4
+      name: grass_tuft_01_small_summer_sway_01_05
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e5558e07e6da0c4991fb896abca3944
-      internalID: 1141800013
+      spriteID: 19ff1038299cfed479b15fd344d6e232
+      internalID: 205613022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_summer_sway_5
+      name: grass_tuft_01_small_summer_sway_01_06
       rect:
         serializedVersion: 2
         x: 80
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cc7494e46b27a6459c41241531032c5
-      internalID: -1312588288
+      spriteID: 7dabb799bdb651742b3a951664d09587
+      internalID: 1147057245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_summer_sway_6
+      name: grass_tuft_01_small_summer_sway_01_07
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c8f837e915ded94aabb1f2361e83691
-      internalID: -833591909
+      spriteID: 79dba9e2d58a6fd4abda491481b376a7
+      internalID: 962043740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_summer_sway_7
+      name: grass_tuft_01_small_summer_sway_01_08
       rect:
         serializedVersion: 2
         x: 112
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d05499f436d7a7a4c92cadfc8f83e679
-      internalID: 2054263102
+      spriteID: cadd0d1e7718f26428a6c4e4c3483388
+      internalID: 831335896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_summer_sway_8
+      name: grass_tuft_01_small_summer_sway_01_09
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5b4dc9c301e37f4cb057e5b63e38a9d
-      internalID: 1917740480
+      spriteID: 36da31947b9ce3745a297b91c1491fbc
+      internalID: 624579410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_summer_sway_9
+      name: grass_tuft_01_small_summer_sway_01_10
       rect:
         serializedVersion: 2
         x: 144
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1453fcf0e52c21b41a93456d8407ed70
-      internalID: 2116280342
+      spriteID: a41e889b62bbb5a4dab3327838e8bac7
+      internalID: -544532528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_summer_sway_10
+      name: grass_tuft_01_small_summer_sway_01_11
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e2688a42e7c2c1438c94232a9824a53
-      internalID: 1157066290
+      spriteID: a44fa3df34c852b4d914cfafbdb965e3
+      internalID: -1314187784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_01_small_summer_sway_11
+      name: grass_tuft_01_small_summer_sway_01_12
       rect:
         serializedVersion: 2
         x: 176
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d03d49c94f733443aaaf957f2438c27
-      internalID: 1085509908
+      spriteID: f61675beadc4c53458c72baf4f3393b0
+      internalID: 390949718
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_tuft_01_small_summer_sway_0: -172097799
-      grass_tuft_01_small_summer_sway_1: 1693849817
-      grass_tuft_01_small_summer_sway_10: 1157066290
-      grass_tuft_01_small_summer_sway_11: 1085509908
-      grass_tuft_01_small_summer_sway_2: 161098948
-      grass_tuft_01_small_summer_sway_3: -1052441759
-      grass_tuft_01_small_summer_sway_4: 1141800013
-      grass_tuft_01_small_summer_sway_5: -1312588288
-      grass_tuft_01_small_summer_sway_6: -833591909
-      grass_tuft_01_small_summer_sway_7: 2054263102
-      grass_tuft_01_small_summer_sway_8: 1917740480
-      grass_tuft_01_small_summer_sway_9: 2116280342
+      grass_tuft_01_small_summer_sway_01_01: 1321450779
+      grass_tuft_01_small_summer_sway_01_02: -468432246
+      grass_tuft_01_small_summer_sway_01_03: 1065821754
+      grass_tuft_01_small_summer_sway_01_04: 1674750796
+      grass_tuft_01_small_summer_sway_01_05: 205613022
+      grass_tuft_01_small_summer_sway_01_06: 1147057245
+      grass_tuft_01_small_summer_sway_01_07: 962043740
+      grass_tuft_01_small_summer_sway_01_08: 831335896
+      grass_tuft_01_small_summer_sway_01_09: 624579410
+      grass_tuft_01_small_summer_sway_01_10: -544532528
+      grass_tuft_01_small_summer_sway_01_11: -1314187784
+      grass_tuft_01_small_summer_sway_01_12: 390949718
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

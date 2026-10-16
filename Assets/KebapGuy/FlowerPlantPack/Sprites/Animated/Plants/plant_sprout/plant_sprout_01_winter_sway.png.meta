@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_sprout_01_winter_sway_0
+      name: plant_sprout_01_winter_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4d6dc79e0053f647ac2b2e474d5fb0d
-      internalID: 1122534388
+      spriteID: 5027e4bb56d4cfe449afa996c774b76a
+      internalID: 65095787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_winter_sway_1
+      name: plant_sprout_01_winter_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 160b321efb73a6b4eb4038ac68143d83
-      internalID: 376073346
+      spriteID: 4472fba74971838408ad7d3aebc58f8a
+      internalID: 1594250683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_winter_sway_2
+      name: plant_sprout_01_winter_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55726f34fdc0d4645916028a4777cdbf
-      internalID: -1639568589
+      spriteID: f754f24c155bc9d43bd270a4ecaaf33b
+      internalID: -1396996552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_winter_sway_3
+      name: plant_sprout_01_winter_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35b057feb9bd33c4f9da937336460f23
-      internalID: 1387805092
+      spriteID: afd35a43d9ccc0948bef0f1073b8545f
+      internalID: 22078318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_winter_sway_4
+      name: plant_sprout_01_winter_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0295010a978a0db439fdb6d64748c3d6
-      internalID: -1594420374
+      spriteID: e70898c79c80c18439f4782a64c29e62
+      internalID: -1631483775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_winter_sway_5
+      name: plant_sprout_01_winter_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2edbc250c52915e4f8b4697c7e09dc16
-      internalID: 1087960714
+      spriteID: 4a6b7d321e09f56418a05091e913468d
+      internalID: 1065975739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_winter_sway_6
+      name: plant_sprout_01_winter_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e44c23bd6db21854eabd8705fd8fb81c
-      internalID: -1083131799
+      spriteID: da6430c26727d5b4a80780b92304bcd6
+      internalID: -1424663053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_winter_sway_7
+      name: plant_sprout_01_winter_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8fff2c57ce7d7a4498ec587530422c6
-      internalID: -797711196
+      spriteID: d6983571559e6f744ae5d0163a2f1cd5
+      internalID: 1034914874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_winter_sway_8
+      name: plant_sprout_01_winter_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e3aafd2f41e59f46ba21d1a621a0ad3
-      internalID: -1723665233
+      spriteID: bfa1abd5e80474649a70d56a26fd542d
+      internalID: 65813159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_winter_sway_9
+      name: plant_sprout_01_winter_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d19330b521734a646894caae1a0137da
-      internalID: -235048716
+      spriteID: 461c0ac4d5c9c34449b23ab4cd095a35
+      internalID: -976271329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_winter_sway_10
+      name: plant_sprout_01_winter_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e2d02df283101546b31785ffcbb5191
-      internalID: 86540871
+      spriteID: 63d54377115575e4bb0ba971b8dd7f34
+      internalID: -1821528126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_sprout_01_winter_sway_11
+      name: plant_sprout_01_winter_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69756fd812a20fa4a84a954448f556ad
-      internalID: -78238623
+      spriteID: f8718b0e7fc89594383e88d2e43733a8
+      internalID: -1103931973
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_sprout_01_winter_sway_0: 1122534388
-      plant_sprout_01_winter_sway_1: 376073346
-      plant_sprout_01_winter_sway_10: 86540871
-      plant_sprout_01_winter_sway_11: -78238623
-      plant_sprout_01_winter_sway_2: -1639568589
-      plant_sprout_01_winter_sway_3: 1387805092
-      plant_sprout_01_winter_sway_4: -1594420374
-      plant_sprout_01_winter_sway_5: 1087960714
-      plant_sprout_01_winter_sway_6: -1083131799
-      plant_sprout_01_winter_sway_7: -797711196
-      plant_sprout_01_winter_sway_8: -1723665233
-      plant_sprout_01_winter_sway_9: -235048716
+      plant_sprout_01_winter_sway_01_01: 65095787
+      plant_sprout_01_winter_sway_01_02: 1594250683
+      plant_sprout_01_winter_sway_01_03: -1396996552
+      plant_sprout_01_winter_sway_01_04: 22078318
+      plant_sprout_01_winter_sway_01_05: -1631483775
+      plant_sprout_01_winter_sway_01_06: 1065975739
+      plant_sprout_01_winter_sway_01_07: -1424663053
+      plant_sprout_01_winter_sway_01_08: 1034914874
+      plant_sprout_01_winter_sway_01_09: 65813159
+      plant_sprout_01_winter_sway_01_10: -976271329
+      plant_sprout_01_winter_sway_01_11: -1821528126
+      plant_sprout_01_winter_sway_01_12: -1103931973
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

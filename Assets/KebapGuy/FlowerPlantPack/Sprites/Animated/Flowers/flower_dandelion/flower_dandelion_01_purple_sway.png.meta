@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_dandelion_01_purple_sway_0
+      name: flower_dandelion_01_purple_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e706dc5e89896d34da3fc02c1c4b1ceb
-      internalID: -904198258
+      spriteID: 46369d976b578234d95a983a49cf8349
+      internalID: 365018924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_01_purple_sway_1
+      name: flower_dandelion_01_purple_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d77e4fd0ec99f3846b57a636ed298200
-      internalID: 1181039399
+      spriteID: 6df3e02e986791944a154de8a4a03691
+      internalID: 294494955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_01_purple_sway_2
+      name: flower_dandelion_01_purple_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3723e4c049dac4b4384e0594ee846247
-      internalID: -1881125766
+      spriteID: 4cfa62ccafe63984e9903a635e139b34
+      internalID: -2023141965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_01_purple_sway_3
+      name: flower_dandelion_01_purple_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc425a2a2d40a454f9fff0d2c5e849d3
-      internalID: -1236953271
+      spriteID: 22143b4b962fe47409e997b162b6b6f9
+      internalID: 1170592487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_01_purple_sway_4
+      name: flower_dandelion_01_purple_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6715328631823e040a17fd631601fb82
-      internalID: -1301314828
+      spriteID: 0d63aa16be240da458c3a10e52b76de6
+      internalID: 27006339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_01_purple_sway_5
+      name: flower_dandelion_01_purple_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da6c2b63286370944be941f9477d4290
-      internalID: -802532917
+      spriteID: 62d2961c42bb4af488435dc6b97d84a8
+      internalID: 392071614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_01_purple_sway_6
+      name: flower_dandelion_01_purple_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70ba72ddee9e90a4f822269c0b517a17
-      internalID: -633801962
+      spriteID: f812ff241da403d42ac835fc7ef0895f
+      internalID: 557454952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_01_purple_sway_7
+      name: flower_dandelion_01_purple_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6a4b7351a38eff49bccc6faeaacd3e1
-      internalID: 1009317609
+      spriteID: a2a43273084123548aa221aaf72f4aea
+      internalID: 1071512970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_01_purple_sway_8
+      name: flower_dandelion_01_purple_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4aa802d6917623d4096ae5c40e674cfd
-      internalID: 849244357
+      spriteID: 2fd19e5661243ab4facda4bb165c54bb
+      internalID: 1459292102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_01_purple_sway_9
+      name: flower_dandelion_01_purple_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f4f22d2dc5576b4fbeb2479a1976c99
-      internalID: 451362702
+      spriteID: 30a47ade8a2fbba428e6fda5d69914d8
+      internalID: 1668796675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_01_purple_sway_10
+      name: flower_dandelion_01_purple_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d949917a9458aa44af86752dee567cf
-      internalID: 606907174
+      spriteID: c7b755099878d7945bcff881b8a1af2c
+      internalID: 1683050239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_01_purple_sway_11
+      name: flower_dandelion_01_purple_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48ddc3ffbad4c274f92392e5ac54a908
-      internalID: 2054127318
+      spriteID: dcd0b0c9c97720841b9cf521bc522833
+      internalID: -180925067
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flower_dandelion_01_purple_sway_0: -904198258
-      flower_dandelion_01_purple_sway_1: 1181039399
-      flower_dandelion_01_purple_sway_10: 606907174
-      flower_dandelion_01_purple_sway_11: 2054127318
-      flower_dandelion_01_purple_sway_2: -1881125766
-      flower_dandelion_01_purple_sway_3: -1236953271
-      flower_dandelion_01_purple_sway_4: -1301314828
-      flower_dandelion_01_purple_sway_5: -802532917
-      flower_dandelion_01_purple_sway_6: -633801962
-      flower_dandelion_01_purple_sway_7: 1009317609
-      flower_dandelion_01_purple_sway_8: 849244357
-      flower_dandelion_01_purple_sway_9: 451362702
+      flower_dandelion_01_purple_sway_01_01: 365018924
+      flower_dandelion_01_purple_sway_01_02: 294494955
+      flower_dandelion_01_purple_sway_01_03: -2023141965
+      flower_dandelion_01_purple_sway_01_04: 1170592487
+      flower_dandelion_01_purple_sway_01_05: 27006339
+      flower_dandelion_01_purple_sway_01_06: 392071614
+      flower_dandelion_01_purple_sway_01_07: 557454952
+      flower_dandelion_01_purple_sway_01_08: 1071512970
+      flower_dandelion_01_purple_sway_01_09: 1459292102
+      flower_dandelion_01_purple_sway_01_10: 1668796675
+      flower_dandelion_01_purple_sway_01_11: 1683050239
+      flower_dandelion_01_purple_sway_01_12: -180925067
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_tuft_03_autumn_sway_0
+      name: grass_tuft_03_autumn_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 645825b74d342d74295a30e5e566d508
-      internalID: 1141592670
+      spriteID: 2b720df283f25604b812ee94abcfb43b
+      internalID: 1128756726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_autumn_sway_1
+      name: grass_tuft_03_autumn_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 962a2a9bbb914984082ac2f7e0e20cdc
-      internalID: -462702320
+      spriteID: 9e68cbe58f7946a4fb8e8df1b3ff4c15
+      internalID: -1528294804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_autumn_sway_2
+      name: grass_tuft_03_autumn_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e6d33d3b3c4863438a1a0fd4e8d8132
-      internalID: -744923896
+      spriteID: 1d3e53dde9797f74ba80d812967546ce
+      internalID: 880711520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_autumn_sway_3
+      name: grass_tuft_03_autumn_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e17e0259c5f82a94595aefb6761a58c4
-      internalID: 502338364
+      spriteID: 644e812fd26c5014f914e344add0f790
+      internalID: 1626741155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_autumn_sway_4
+      name: grass_tuft_03_autumn_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95788a6660e46fc4fa6fd14b479db15c
-      internalID: -1099607012
+      spriteID: a2258a4cb2a0c0342a34d7afd8984000
+      internalID: 365616648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_autumn_sway_5
+      name: grass_tuft_03_autumn_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaf071ed201fef44481b6b0829d12bd8
-      internalID: 287609286
+      spriteID: 4c3a22a8f3da6ba45af8dcfcece9eb93
+      internalID: -183282438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_autumn_sway_6
+      name: grass_tuft_03_autumn_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 337e4a40b3678ee4ab708c87c98aa89a
-      internalID: 1094963794
+      spriteID: 9afde697332ef8840863c8700a66e536
+      internalID: -507026446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_autumn_sway_7
+      name: grass_tuft_03_autumn_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98c2961cb96785b4aaad3b59b35ac2c8
-      internalID: 788693431
+      spriteID: 7f33afb7ead6d924f8a04609d69bc7bb
+      internalID: -1878214681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_autumn_sway_8
+      name: grass_tuft_03_autumn_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3fc738b662b5c248a9e2451b79f2b9b
-      internalID: -1567504973
+      spriteID: 399a66788568b8e47979328805dff0ca
+      internalID: -1142153368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_autumn_sway_9
+      name: grass_tuft_03_autumn_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 942d81112328a4041b8aaba33821961e
-      internalID: 1065143777
+      spriteID: b38b2b8169387e146b194e42898c8ec9
+      internalID: -605561285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_autumn_sway_10
+      name: grass_tuft_03_autumn_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81956553389366d46b70ebbb70f0c5f3
-      internalID: -1266349262
+      spriteID: 74585e083063cad448eea1093c06f10c
+      internalID: -2025752946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_autumn_sway_11
+      name: grass_tuft_03_autumn_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4422717a26b4d44c84ea7d8845f8e0a
-      internalID: -1699793604
+      spriteID: c8a42338ca2ac114c8dacdf0e6918ccc
+      internalID: 1230867900
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_tuft_03_autumn_sway_0: 1141592670
-      grass_tuft_03_autumn_sway_1: -462702320
-      grass_tuft_03_autumn_sway_10: -1266349262
-      grass_tuft_03_autumn_sway_11: -1699793604
-      grass_tuft_03_autumn_sway_2: -744923896
-      grass_tuft_03_autumn_sway_3: 502338364
-      grass_tuft_03_autumn_sway_4: -1099607012
-      grass_tuft_03_autumn_sway_5: 287609286
-      grass_tuft_03_autumn_sway_6: 1094963794
-      grass_tuft_03_autumn_sway_7: 788693431
-      grass_tuft_03_autumn_sway_8: -1567504973
-      grass_tuft_03_autumn_sway_9: 1065143777
+      grass_tuft_03_autumn_sway_01_01: 1128756726
+      grass_tuft_03_autumn_sway_01_02: -1528294804
+      grass_tuft_03_autumn_sway_01_03: 880711520
+      grass_tuft_03_autumn_sway_01_04: 1626741155
+      grass_tuft_03_autumn_sway_01_05: 365616648
+      grass_tuft_03_autumn_sway_01_06: -183282438
+      grass_tuft_03_autumn_sway_01_07: -507026446
+      grass_tuft_03_autumn_sway_01_08: -1878214681
+      grass_tuft_03_autumn_sway_01_09: -1142153368
+      grass_tuft_03_autumn_sway_01_10: -605561285
+      grass_tuft_03_autumn_sway_01_11: -2025752946
+      grass_tuft_03_autumn_sway_01_12: 1230867900
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

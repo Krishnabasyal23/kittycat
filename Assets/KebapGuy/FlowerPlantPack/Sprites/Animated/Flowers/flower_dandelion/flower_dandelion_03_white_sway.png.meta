@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_dandelion_03_white_sway_0
+      name: flower_dandelion_03_white_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 791cfa7ef9043d14191c9e1b45af0382
-      internalID: -779721243
+      spriteID: bc20dc244b2997b44afd457d8974fe8e
+      internalID: -816602086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_03_white_sway_1
+      name: flower_dandelion_03_white_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b64111603593dc42b2c7b767280fa72
-      internalID: -1730392939
+      spriteID: c223dcedf622f7741bc5fb759089dd7e
+      internalID: -1222189680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_03_white_sway_2
+      name: flower_dandelion_03_white_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 858e04d6e002d2143b8bd94ca46451c2
-      internalID: 70777635
+      spriteID: 4c1da8a90f9c4e2489ed636faf7eb596
+      internalID: -1418633806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_03_white_sway_3
+      name: flower_dandelion_03_white_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca44c918b9e5b0b4ebbac1551334f2cc
-      internalID: 1754857392
+      spriteID: eef1af10dd40d7e47aa3eacc0819b2e1
+      internalID: 1012380970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_03_white_sway_4
+      name: flower_dandelion_03_white_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f646ddd2338574418c9edd71a60a107
-      internalID: 1705659701
+      spriteID: f6b7d0f50ea7cca4eb9c9bd19a91ba24
+      internalID: -1915560960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_03_white_sway_5
+      name: flower_dandelion_03_white_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e87a543eb5cbdeb4982d0b8494c0092a
-      internalID: -883784503
+      spriteID: bdbe7c05f4669c24fb08353300dd8058
+      internalID: 2054653677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_03_white_sway_6
+      name: flower_dandelion_03_white_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08084364d9156b547b99415a75f33eb6
-      internalID: -1270722143
+      spriteID: d882dc9bbb0b45a4fac4b437077d4541
+      internalID: 1057659955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_03_white_sway_7
+      name: flower_dandelion_03_white_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 518e9ad41b7864340a7ce523a0774823
-      internalID: 589791242
+      spriteID: de1e5b05073ca1f499915a41e0a948c4
+      internalID: -1590775377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_03_white_sway_8
+      name: flower_dandelion_03_white_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 802b74cb118bb944aa68e36d7d76843c
-      internalID: 1224189332
+      spriteID: 5732ba22c03c96d4f952d4c032d31f69
+      internalID: 12444995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_03_white_sway_9
+      name: flower_dandelion_03_white_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de91b5f1f9009884d98ef415f403f669
-      internalID: -1529736856
+      spriteID: 95fc797ff1fe61e4abdc94a739d2d1aa
+      internalID: -1108182164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_03_white_sway_10
+      name: flower_dandelion_03_white_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 010dfdfa317c4fc4cbd800452d1a5722
-      internalID: -446833075
+      spriteID: b88084e0ef31ce149b71d44f78836d12
+      internalID: -1166163848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_dandelion_03_white_sway_11
+      name: flower_dandelion_03_white_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34d268099d6e6ae4fa3ccb84d1edf7d1
-      internalID: 1846866792
+      spriteID: bb5d21c87b6dd7e4f913efea249a8741
+      internalID: -589066041
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flower_dandelion_03_white_sway_0: -779721243
-      flower_dandelion_03_white_sway_1: -1730392939
-      flower_dandelion_03_white_sway_10: -446833075
-      flower_dandelion_03_white_sway_11: 1846866792
-      flower_dandelion_03_white_sway_2: 70777635
-      flower_dandelion_03_white_sway_3: 1754857392
-      flower_dandelion_03_white_sway_4: 1705659701
-      flower_dandelion_03_white_sway_5: -883784503
-      flower_dandelion_03_white_sway_6: -1270722143
-      flower_dandelion_03_white_sway_7: 589791242
-      flower_dandelion_03_white_sway_8: 1224189332
-      flower_dandelion_03_white_sway_9: -1529736856
+      flower_dandelion_03_white_sway_01_01: -816602086
+      flower_dandelion_03_white_sway_01_02: -1222189680
+      flower_dandelion_03_white_sway_01_03: -1418633806
+      flower_dandelion_03_white_sway_01_04: 1012380970
+      flower_dandelion_03_white_sway_01_05: -1915560960
+      flower_dandelion_03_white_sway_01_06: 2054653677
+      flower_dandelion_03_white_sway_01_07: 1057659955
+      flower_dandelion_03_white_sway_01_08: -1590775377
+      flower_dandelion_03_white_sway_01_09: 12444995
+      flower_dandelion_03_white_sway_01_10: -1108182164
+      flower_dandelion_03_white_sway_01_11: -1166163848
+      flower_dandelion_03_white_sway_01_12: -589066041
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

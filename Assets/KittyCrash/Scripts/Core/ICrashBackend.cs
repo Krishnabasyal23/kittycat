@@ -2,7 +2,7 @@ using System;
 
 namespace KittyCrash
 {
-    public enum RoundStatus { Running, Crashed, CashedOut }
+    public enum RoundStatus { Running, Crashed, CashedOut, Interrupted }
 
     public class BackendResult
     {
@@ -80,6 +80,7 @@ namespace KittyCrash
             {
                 case "crashed": return RoundStatus.Crashed;
                 case "cashed_out": return RoundStatus.CashedOut;
+                case "interrupted": return RoundStatus.Interrupted;   // server restarted mid-round, wager refunded
                 default: return RoundStatus.Running;
             }
         }

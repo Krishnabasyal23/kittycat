@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bush_round_03_small_winter_sway_0
+      name: bush_round_03_small_winter_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 242703170b7ffe8448beef1ca482900d
-      internalID: 496147556
+      spriteID: 5b878af3fbee9f8448e34ad05264ff32
+      internalID: 252161295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_winter_sway_1
+      name: bush_round_03_small_winter_sway_01_02
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec733449726a7244a9e9510a9b88da66
-      internalID: -36827806
+      spriteID: 938d706649ad05d4dbc52dd6e265a2c2
+      internalID: 392791404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_winter_sway_2
+      name: bush_round_03_small_winter_sway_01_03
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4a5576677b38f24f9b73efd5e69a536
-      internalID: -1964284674
+      spriteID: c15bc79e4cef7a54aa142b35a2733b21
+      internalID: -1870947645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_winter_sway_3
+      name: bush_round_03_small_winter_sway_01_04
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebdd4c64e00680c46a82e696557aceab
-      internalID: -495256317
+      spriteID: e47babbe7cb10d94ebf8791793af6f62
+      internalID: 794131403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_winter_sway_4
+      name: bush_round_03_small_winter_sway_01_05
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0d7d0a2d0677e045814cc9428ce4feb
-      internalID: 1612193809
+      spriteID: fd49ac59429122248ae0e6fe391ded4c
+      internalID: 1688239980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_winter_sway_5
+      name: bush_round_03_small_winter_sway_01_06
       rect:
         serializedVersion: 2
         x: 80
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddaf1b79159a16849923fb12431f1072
-      internalID: -1244292439
+      spriteID: 9eb70d734fb9f4145b17ac404eb5d96b
+      internalID: 327859424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_winter_sway_6
+      name: bush_round_03_small_winter_sway_01_07
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84ed4b67acaf54f4d88d13dd6efcb425
-      internalID: -1761518227
+      spriteID: 9d1be06640f0ff547a76412e203d7023
+      internalID: -430321112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_winter_sway_7
+      name: bush_round_03_small_winter_sway_01_08
       rect:
         serializedVersion: 2
         x: 112
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c81942f7fa92cf42bef8179f98cd5e9
-      internalID: 517865396
+      spriteID: 50f62ff0729ea3744b7817ed2e8b1a3f
+      internalID: -1622794065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_winter_sway_8
+      name: bush_round_03_small_winter_sway_01_09
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a5d6623be10ef6458886a5766a03d10
-      internalID: -783362883
+      spriteID: 2f141de584d4ddb489d0f5de5abf7283
+      internalID: 1414393518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_winter_sway_9
+      name: bush_round_03_small_winter_sway_01_10
       rect:
         serializedVersion: 2
         x: 144
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fe8547984218e34684e4b05ec5cd038
-      internalID: -226664926
+      spriteID: dd465294105bed144801b53694884dff
+      internalID: 1570784230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_winter_sway_10
+      name: bush_round_03_small_winter_sway_01_11
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f4ab61f4f7e9fe43bbc61fa6a5ded32
-      internalID: 1350398316
+      spriteID: 1a1e8687136e52349a45805dc8889759
+      internalID: 174243798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_03_small_winter_sway_11
+      name: bush_round_03_small_winter_sway_01_12
       rect:
         serializedVersion: 2
         x: 176
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc5cdbfb7d1edd84dad58a7f78e44d7b
-      internalID: -597515512
+      spriteID: c78999899a305484386c05768c503ca4
+      internalID: -1750743475
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bush_round_03_small_winter_sway_0: 496147556
-      bush_round_03_small_winter_sway_1: -36827806
-      bush_round_03_small_winter_sway_10: 1350398316
-      bush_round_03_small_winter_sway_11: -597515512
-      bush_round_03_small_winter_sway_2: -1964284674
-      bush_round_03_small_winter_sway_3: -495256317
-      bush_round_03_small_winter_sway_4: 1612193809
-      bush_round_03_small_winter_sway_5: -1244292439
-      bush_round_03_small_winter_sway_6: -1761518227
-      bush_round_03_small_winter_sway_7: 517865396
-      bush_round_03_small_winter_sway_8: -783362883
-      bush_round_03_small_winter_sway_9: -226664926
+      bush_round_03_small_winter_sway_01_01: 252161295
+      bush_round_03_small_winter_sway_01_02: 392791404
+      bush_round_03_small_winter_sway_01_03: -1870947645
+      bush_round_03_small_winter_sway_01_04: 794131403
+      bush_round_03_small_winter_sway_01_05: 1688239980
+      bush_round_03_small_winter_sway_01_06: 327859424
+      bush_round_03_small_winter_sway_01_07: -430321112
+      bush_round_03_small_winter_sway_01_08: -1622794065
+      bush_round_03_small_winter_sway_01_09: 1414393518
+      bush_round_03_small_winter_sway_01_10: 1570784230
+      bush_round_03_small_winter_sway_01_11: 174243798
+      bush_round_03_small_winter_sway_01_12: -1750743475
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_fern_01_spring_sway_0
+      name: plant_fern_01_spring_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6324ac33bcb686d4bbd229c9ff6a631d
-      internalID: 468314557
+      spriteID: 595a266e17251654396f41cfa1f87036
+      internalID: 1622489115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_spring_sway_1
+      name: plant_fern_01_spring_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ade140eae1065ac498e47b80044ed9e2
-      internalID: 549327057
+      spriteID: 6c5c6d8fbf8107448bc6436da53372a9
+      internalID: 1523263934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_spring_sway_2
+      name: plant_fern_01_spring_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efcd1f59e99c92040be22466d766b74c
-      internalID: -846763275
+      spriteID: 6a685a847e0dccd4aa2058b9b27e4630
+      internalID: 134742924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_spring_sway_3
+      name: plant_fern_01_spring_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d6e548e9852d0d46915ae5189f14d38
-      internalID: -811175633
+      spriteID: 4ea399dc9293ed641bc529c082b18810
+      internalID: 70050379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_spring_sway_4
+      name: plant_fern_01_spring_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dff9e6288769ecb40a03a468d3522274
-      internalID: 777843604
+      spriteID: 61983aedd2bc51c4c925a0a0fa982e63
+      internalID: -2100309290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_spring_sway_5
+      name: plant_fern_01_spring_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86c040a98866e0a49b4b8997be4ada35
-      internalID: -1693768882
+      spriteID: 4013dad9a6899a7458b8f90d8975abaf
+      internalID: -568862576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_spring_sway_6
+      name: plant_fern_01_spring_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0dbbcd2031937e40b3078d497c3a77c
-      internalID: 205532738
+      spriteID: 48b687773d6294b4a9101f470f2c50f6
+      internalID: -1665923383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_spring_sway_7
+      name: plant_fern_01_spring_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 452b73f9abbeb944d8f7305be2bb812c
-      internalID: -2031968319
+      spriteID: 0b82358345637c24fb28637ce68ca158
+      internalID: -783659156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_spring_sway_8
+      name: plant_fern_01_spring_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94c1d6e9ab80c2c44a05c79a6c422d10
-      internalID: 1105535357
+      spriteID: d68ee49900a52cd4e9c08fc7588e5b88
+      internalID: 530379920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_spring_sway_9
+      name: plant_fern_01_spring_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25de0710c95d787429a27a5e7af5585c
-      internalID: -1359908837
+      spriteID: e849a8976a5c19a46ae2b2f39f8a5331
+      internalID: -867090203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_spring_sway_10
+      name: plant_fern_01_spring_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 846255ce62372ec40a47addaa7060e71
-      internalID: -1161750812
+      spriteID: 5299afdf730dc8a408d932506fa3fa09
+      internalID: -673711744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_01_spring_sway_11
+      name: plant_fern_01_spring_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6864ae865bbae24690d6889a1c1d8c8
-      internalID: -1304269157
+      spriteID: 47dc232eac0a0e44683f9b5f148b393d
+      internalID: 1325785437
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_fern_01_spring_sway_0: 468314557
-      plant_fern_01_spring_sway_1: 549327057
-      plant_fern_01_spring_sway_10: -1161750812
-      plant_fern_01_spring_sway_11: -1304269157
-      plant_fern_01_spring_sway_2: -846763275
-      plant_fern_01_spring_sway_3: -811175633
-      plant_fern_01_spring_sway_4: 777843604
-      plant_fern_01_spring_sway_5: -1693768882
-      plant_fern_01_spring_sway_6: 205532738
-      plant_fern_01_spring_sway_7: -2031968319
-      plant_fern_01_spring_sway_8: 1105535357
-      plant_fern_01_spring_sway_9: -1359908837
+      plant_fern_01_spring_sway_01_01: 1622489115
+      plant_fern_01_spring_sway_01_02: 1523263934
+      plant_fern_01_spring_sway_01_03: 134742924
+      plant_fern_01_spring_sway_01_04: 70050379
+      plant_fern_01_spring_sway_01_05: -2100309290
+      plant_fern_01_spring_sway_01_06: -568862576
+      plant_fern_01_spring_sway_01_07: -1665923383
+      plant_fern_01_spring_sway_01_08: -783659156
+      plant_fern_01_spring_sway_01_09: 530379920
+      plant_fern_01_spring_sway_01_10: -867090203
+      plant_fern_01_spring_sway_01_11: -673711744
+      plant_fern_01_spring_sway_01_12: 1325785437
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_leafy_01_summer_sway_0
+      name: plant_leafy_01_summer_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99dad62650457974ea283d2782afd203
-      internalID: -512442818
+      spriteID: 64141b26d3645e549ac97eec5945cc4d
+      internalID: 117640329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_summer_sway_1
+      name: plant_leafy_01_summer_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d7d1d1d1534d214da38f3d5a7901ef9
-      internalID: -1154495907
+      spriteID: 4b8cd49b62036d448b8997fc09b56d66
+      internalID: -1356431856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_summer_sway_2
+      name: plant_leafy_01_summer_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fcfe49a73b2a9b499541d894337e329
-      internalID: 1996935266
+      spriteID: 792704de543b7184c97241ff63afa1a2
+      internalID: 1015072779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_summer_sway_3
+      name: plant_leafy_01_summer_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff793de5b770bb2408406dc09f785234
-      internalID: -1781754063
+      spriteID: c89baeb4239d69f4a961baa694f70e98
+      internalID: -895923734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_summer_sway_4
+      name: plant_leafy_01_summer_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1be3fa683056359458ebdd203dc58d4c
-      internalID: -565319980
+      spriteID: c49d37e8577a20a47b2870c233196037
+      internalID: 1668900041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_summer_sway_5
+      name: plant_leafy_01_summer_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5890fb55309e3845bfb69fd89f1cb06
-      internalID: -1715910744
+      spriteID: 2d8b8f4947e584b4ca946c4b73ddac03
+      internalID: -1118493112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_summer_sway_6
+      name: plant_leafy_01_summer_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83f928ae46f762842ad1835e63071188
-      internalID: 2071528288
+      spriteID: dd383e8c04c73074aad0672749268ed1
+      internalID: -765205326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_summer_sway_7
+      name: plant_leafy_01_summer_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a68e680346641e438e2baf29ea94bec
-      internalID: -447361544
+      spriteID: 23a420b54d120b4499c6b99dfd54d1f2
+      internalID: 2046553375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_summer_sway_8
+      name: plant_leafy_01_summer_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be509046492c78949897a56232efb9ca
-      internalID: 66996509
+      spriteID: 4f274b4693f51034080a9cbf44a0ed8b
+      internalID: 743099840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_summer_sway_9
+      name: plant_leafy_01_summer_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d11c6e2fc25975459fb52143ebaad01
-      internalID: -1321514294
+      spriteID: b63cd7c047c99c74faecef7779922617
+      internalID: 2105316303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_summer_sway_10
+      name: plant_leafy_01_summer_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab8cffb67ed179649820ff81c9fd9a81
-      internalID: -1489862108
+      spriteID: 7dd51cb7a5ce9ab458489e6ed1602ae6
+      internalID: -1135725194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_01_summer_sway_11
+      name: plant_leafy_01_summer_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8a82e29bc4d9664f80da13d7669ac6a
-      internalID: 1730431320
+      spriteID: 13adf3a77278d59468b9cd70f85a3fb3
+      internalID: 1735960011
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_leafy_01_summer_sway_0: -512442818
-      plant_leafy_01_summer_sway_1: -1154495907
-      plant_leafy_01_summer_sway_10: -1489862108
-      plant_leafy_01_summer_sway_11: 1730431320
-      plant_leafy_01_summer_sway_2: 1996935266
-      plant_leafy_01_summer_sway_3: -1781754063
-      plant_leafy_01_summer_sway_4: -565319980
-      plant_leafy_01_summer_sway_5: -1715910744
-      plant_leafy_01_summer_sway_6: 2071528288
-      plant_leafy_01_summer_sway_7: -447361544
-      plant_leafy_01_summer_sway_8: 66996509
-      plant_leafy_01_summer_sway_9: -1321514294
+      plant_leafy_01_summer_sway_01_01: 117640329
+      plant_leafy_01_summer_sway_01_02: -1356431856
+      plant_leafy_01_summer_sway_01_03: 1015072779
+      plant_leafy_01_summer_sway_01_04: -895923734
+      plant_leafy_01_summer_sway_01_05: 1668900041
+      plant_leafy_01_summer_sway_01_06: -1118493112
+      plant_leafy_01_summer_sway_01_07: -765205326
+      plant_leafy_01_summer_sway_01_08: 2046553375
+      plant_leafy_01_summer_sway_01_09: 743099840
+      plant_leafy_01_summer_sway_01_10: 2105316303
+      plant_leafy_01_summer_sway_01_11: -1135725194
+      plant_leafy_01_summer_sway_01_12: 1735960011
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -19,6 +19,8 @@ namespace KittyCrash
         public float fullSpeedAtMultiplier = 6f;
         [Tooltip("Above this fraction of max speed, the Run clip plays instead of Walk.")]
         [Range(0f, 1f)] public float runThreshold = 0.6f;
+        [Tooltip("Speed while waiting for the next round (the cat never stops except when distracted).")]
+        public float cruiseSpeed = 1.3f;
         public float acceleration = 3f;
         public float stopDeceleration = 12f;
 
@@ -80,6 +82,8 @@ namespace KittyCrash
             bool running = rm != null && rm.Phase == RoundPhase.Running;
 
             float target = 0f;
+            if (rm != null && (rm.Phase == RoundPhase.Idle || rm.Phase == RoundPhase.Starting || rm.Phase == RoundPhase.Connecting))
+                target = cruiseSpeed; // keep trotting during the betting countdown
             if (running)
             {
                 float k = Mathf.InverseLerp(1f, fullSpeedAtMultiplier, rm.Multiplier);
@@ -106,6 +110,15 @@ namespace KittyCrash
             if (running) DistanceThisRound += step;
 
             UpdateVisual(rm, running);
+        }
+
+        /// <summary>Something tempting is right here: slow down and look (but keep going).</summary>
+        public void Tempt(float seconds)
+        {
+            var rm = RoundManager.Instance;
+            if (rm == null || rm.Phase != RoundPhase.Running || distracted) return;
+            fidgetLeft = Mathf.Max(fidgetLeft, seconds);
+            fidgetTimer = Mathf.Max(fidgetTimer, seconds + 1f);
         }
 
         void HandleRoundStarted()

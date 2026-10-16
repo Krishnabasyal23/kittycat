@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_longleaf_02_small_spring_sway_0
+      name: plant_longleaf_02_small_spring_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 590fb88ebd0897f4298eb724966ac707
-      internalID: -1955464967
+      spriteID: 2836658b7eeefb04f9125d705e707c55
+      internalID: 1258097303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_longleaf_02_small_spring_sway_1
+      name: plant_longleaf_02_small_spring_sway_01_02
       rect:
         serializedVersion: 2
         x: 16
-        y: 0
+        y: 1
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88b533410f8ac3d49a180633330f36d5
-      internalID: 1604845550
+      spriteID: ca0dc17105ac51a44b48b2ca0a1925ea
+      internalID: 151873534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_longleaf_02_small_spring_sway_2
+      name: plant_longleaf_02_small_spring_sway_01_03
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 1
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc4e706d6d7cca848ac615e91127ef2a
-      internalID: 524716084
+      spriteID: 2d172e9726011534383519d6389c03cb
+      internalID: 90731231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_longleaf_02_small_spring_sway_3
+      name: plant_longleaf_02_small_spring_sway_01_04
       rect:
         serializedVersion: 2
         x: 48
-        y: 0
+        y: 1
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c50230fa87482bc4e8c51dc535af84b5
-      internalID: 1782598289
+      spriteID: f85935e620d15f747b2e68f6a9a71430
+      internalID: -1928255280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_longleaf_02_small_spring_sway_4
+      name: plant_longleaf_02_small_spring_sway_01_05
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 1
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0961a7d3ebf63994fbbd4229767c8a6c
-      internalID: 1530642802
+      spriteID: 7c863f54754e2424b8d271b8b2be5d9a
+      internalID: -665968169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_longleaf_02_small_spring_sway_5
+      name: plant_longleaf_02_small_spring_sway_01_06
       rect:
         serializedVersion: 2
         x: 80
-        y: 0
+        y: 1
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4415ef7e4135ad468e37c138446b036
-      internalID: -1184617455
+      spriteID: 53dbdd5b8be507248808bb7490e384a2
+      internalID: 858944430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_longleaf_02_small_spring_sway_6
+      name: plant_longleaf_02_small_spring_sway_01_07
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 1
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d9cf17622569f84a8c674cf2a8a8b4b
-      internalID: 541505149
+      spriteID: 4f138d88f1c7db1429b20597610cbdb9
+      internalID: -498284830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_longleaf_02_small_spring_sway_7
+      name: plant_longleaf_02_small_spring_sway_01_08
       rect:
         serializedVersion: 2
         x: 112
-        y: 0
+        y: 1
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11e0f1583b2888640b46b150656d8d69
-      internalID: 659792440
+      spriteID: 217c5fa1066561f499791c75e4768c81
+      internalID: -606164849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_longleaf_02_small_spring_sway_8
+      name: plant_longleaf_02_small_spring_sway_01_09
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 1
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 267e58c01dc329e45b24e6d5cbd4fce1
-      internalID: -1890895890
+      spriteID: c35ac67ab5c58af4a9dfddee186f5c0f
+      internalID: 1084670973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_longleaf_02_small_spring_sway_9
+      name: plant_longleaf_02_small_spring_sway_01_10
       rect:
         serializedVersion: 2
         x: 144
-        y: 0
+        y: 1
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc8379034bb21ab44b50874a42e0e6c7
-      internalID: 281471703
+      spriteID: 79ed06a616355b741968af87c2e56f16
+      internalID: 356406007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_longleaf_02_small_spring_sway_10
+      name: plant_longleaf_02_small_spring_sway_01_11
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 1
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dadfe8867aa0198459bc6f16cb2a567a
-      internalID: 1273019547
+      spriteID: 1d6b2046a7616f044b23d15e3c38b12e
+      internalID: -1523794559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_longleaf_02_small_spring_sway_11
+      name: plant_longleaf_02_small_spring_sway_01_12
       rect:
         serializedVersion: 2
         x: 176
-        y: 0
+        y: 1
         width: 16
-        height: 16
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6ba70b30aefcc64ba4de4652a209805
-      internalID: 213573279
+      spriteID: 2cec186977060fe4597c7c488c4245c9
+      internalID: -1648507148
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_longleaf_02_small_spring_sway_0: -1955464967
-      plant_longleaf_02_small_spring_sway_1: 1604845550
-      plant_longleaf_02_small_spring_sway_10: 1273019547
-      plant_longleaf_02_small_spring_sway_11: 213573279
-      plant_longleaf_02_small_spring_sway_2: 524716084
-      plant_longleaf_02_small_spring_sway_3: 1782598289
-      plant_longleaf_02_small_spring_sway_4: 1530642802
-      plant_longleaf_02_small_spring_sway_5: -1184617455
-      plant_longleaf_02_small_spring_sway_6: 541505149
-      plant_longleaf_02_small_spring_sway_7: 659792440
-      plant_longleaf_02_small_spring_sway_8: -1890895890
-      plant_longleaf_02_small_spring_sway_9: 281471703
+      plant_longleaf_02_small_spring_sway_01_01: 1258097303
+      plant_longleaf_02_small_spring_sway_01_02: 151873534
+      plant_longleaf_02_small_spring_sway_01_03: 90731231
+      plant_longleaf_02_small_spring_sway_01_04: -1928255280
+      plant_longleaf_02_small_spring_sway_01_05: -665968169
+      plant_longleaf_02_small_spring_sway_01_06: 858944430
+      plant_longleaf_02_small_spring_sway_01_07: -498284830
+      plant_longleaf_02_small_spring_sway_01_08: -606164849
+      plant_longleaf_02_small_spring_sway_01_09: 1084670973
+      plant_longleaf_02_small_spring_sway_01_10: 356406007
+      plant_longleaf_02_small_spring_sway_01_11: -1523794559
+      plant_longleaf_02_small_spring_sway_01_12: -1648507148
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

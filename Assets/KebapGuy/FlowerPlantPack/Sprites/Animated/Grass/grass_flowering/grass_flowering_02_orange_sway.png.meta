@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_flowering_02_orange_sway_0
+      name: grass_flowering_02_orange_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76298c2b31911ea4da63ec461e65be3e
-      internalID: -1352342144
+      spriteID: 70636288e6ba60c4485040518cc8ff4c
+      internalID: -518675273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_orange_sway_1
+      name: grass_flowering_02_orange_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5acaa6b1d5ea98141a8fc92b983d717b
-      internalID: -417533376
+      spriteID: 168a429a5890e14469ff2d3fcf4dcf01
+      internalID: -17998316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_orange_sway_2
+      name: grass_flowering_02_orange_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af3d0fef19c33764f8cc4f1f23023e63
-      internalID: -1274708454
+      spriteID: d714331ecbc1b064fb894ee777d8c03b
+      internalID: 1042936551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_orange_sway_3
+      name: grass_flowering_02_orange_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 749ca9b1a2c184948939761ee196f60c
-      internalID: 1723518143
+      spriteID: fa3d00ff81cca744b931e78afeda05d6
+      internalID: 1352109754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_orange_sway_4
+      name: grass_flowering_02_orange_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 041c26e84db5e074da4e63ca126e2591
-      internalID: -614348364
+      spriteID: 5858a8381afef3543b03cd151f8a9c38
+      internalID: 305742503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_orange_sway_5
+      name: grass_flowering_02_orange_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdf5776a7d3d15545bd75369535214df
-      internalID: 47274296
+      spriteID: f34b3ac5be061cd4baf0ba8b1defc9dc
+      internalID: 1441698764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_orange_sway_6
+      name: grass_flowering_02_orange_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18ecf9bdcfcc6c145a4385ea8b32570f
-      internalID: 889296768
+      spriteID: 3c2b71e4a7a786d4e94675d514afeed0
+      internalID: 741310551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_orange_sway_7
+      name: grass_flowering_02_orange_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ddfd6dec2128894b885c26b652b32b3
-      internalID: -1710813690
+      spriteID: 4bc46feae6cc4ef4b941d9f0560e8dd1
+      internalID: 488912502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_orange_sway_8
+      name: grass_flowering_02_orange_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a7c843822499e64fae81f7ad06d651b
-      internalID: -37871719
+      spriteID: 81546175668fc2043838085dbb474ff0
+      internalID: 1613302429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_orange_sway_9
+      name: grass_flowering_02_orange_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2681e3597e20a0f44a722de1a2264ec9
-      internalID: 641169427
+      spriteID: 47369df903f6b8440af78930361869fa
+      internalID: 1611718823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_orange_sway_10
+      name: grass_flowering_02_orange_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 140d016d383124d4fac6b7f71ea393da
-      internalID: 532309988
+      spriteID: 4721c158445015b4f9f8b2da421136eb
+      internalID: -74856780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_orange_sway_11
+      name: grass_flowering_02_orange_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf940878d4272c84ab6eef677a4429f1
-      internalID: -112552169
+      spriteID: 9fc969b510af8aa408f37b12e6fd79dc
+      internalID: -2051036069
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_flowering_02_orange_sway_0: -1352342144
-      grass_flowering_02_orange_sway_1: -417533376
-      grass_flowering_02_orange_sway_10: 532309988
-      grass_flowering_02_orange_sway_11: -112552169
-      grass_flowering_02_orange_sway_2: -1274708454
-      grass_flowering_02_orange_sway_3: 1723518143
-      grass_flowering_02_orange_sway_4: -614348364
-      grass_flowering_02_orange_sway_5: 47274296
-      grass_flowering_02_orange_sway_6: 889296768
-      grass_flowering_02_orange_sway_7: -1710813690
-      grass_flowering_02_orange_sway_8: -37871719
-      grass_flowering_02_orange_sway_9: 641169427
+      grass_flowering_02_orange_sway_01_01: -518675273
+      grass_flowering_02_orange_sway_01_02: -17998316
+      grass_flowering_02_orange_sway_01_03: 1042936551
+      grass_flowering_02_orange_sway_01_04: 1352109754
+      grass_flowering_02_orange_sway_01_05: 305742503
+      grass_flowering_02_orange_sway_01_06: 1441698764
+      grass_flowering_02_orange_sway_01_07: 741310551
+      grass_flowering_02_orange_sway_01_08: 488912502
+      grass_flowering_02_orange_sway_01_09: 1613302429
+      grass_flowering_02_orange_sway_01_10: 1611718823
+      grass_flowering_02_orange_sway_01_11: -74856780
+      grass_flowering_02_orange_sway_01_12: -2051036069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

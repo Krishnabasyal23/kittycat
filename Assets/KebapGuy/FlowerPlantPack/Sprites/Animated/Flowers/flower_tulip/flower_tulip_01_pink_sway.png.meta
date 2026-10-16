@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_tulip_01_pink_sway_0
+      name: flower_tulip_01_pink_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 128d9b04a0c2420409b665cd939c0af0
-      internalID: -523603626
+      spriteID: 355feaffc75355d45aee3cec1a27c524
+      internalID: 743074240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_01_pink_sway_1
+      name: flower_tulip_01_pink_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64e9302b9fec993428ccdebdbbaa6ad1
-      internalID: -576954546
+      spriteID: c457e6b4103ad0444a08cbb362439e24
+      internalID: -696544007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_01_pink_sway_2
+      name: flower_tulip_01_pink_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32cea162eacc21c46904fa3c4df9a94c
-      internalID: 191950515
+      spriteID: e85b79907e7c57743977d8cd31a41e22
+      internalID: -1803625132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_01_pink_sway_3
+      name: flower_tulip_01_pink_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75870305232fade4293be512186bfdea
-      internalID: 172793898
+      spriteID: 95f7e228dc1248149a89fdd811aa03bd
+      internalID: -831681216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_01_pink_sway_4
+      name: flower_tulip_01_pink_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ebda8e7f426ccc4dab8dc3c69c766cf
-      internalID: -1845455639
+      spriteID: a4e4b486a8aa2f14497d4546e4158852
+      internalID: -1131791303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_01_pink_sway_5
+      name: flower_tulip_01_pink_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ff93c5ef93ea914b887ca50e6a0925b
-      internalID: -586555245
+      spriteID: 2a344aa8e958b164bb3f392f6135da5d
+      internalID: 826350454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_01_pink_sway_6
+      name: flower_tulip_01_pink_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e130efeb1a374994aa85a4d7c36f3326
-      internalID: 1752332321
+      spriteID: 7d981ebe8a1dc594ebe4a3a394a81f31
+      internalID: 1590606473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_01_pink_sway_7
+      name: flower_tulip_01_pink_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43d86d38c5e1dc14196a3c4065be8f4b
-      internalID: 720694691
+      spriteID: 6d979d27a8e52b64cac663d067e69d26
+      internalID: -34764247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_01_pink_sway_8
+      name: flower_tulip_01_pink_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1b832ae91b8588459b0a942f7585c3f
-      internalID: -1822507378
+      spriteID: 0e226763a910e174f8fe3191df49abc8
+      internalID: -1802847354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_01_pink_sway_9
+      name: flower_tulip_01_pink_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5b9517141fa3c34ca2c2c632285795d
-      internalID: -933176872
+      spriteID: c642a54d2291597489a2190c7e28a763
+      internalID: 999862497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_01_pink_sway_10
+      name: flower_tulip_01_pink_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c3d1657e1e720e499fefb22ec620fe5
-      internalID: 1115946736
+      spriteID: 9c84fd42d31e3824b8e3af44fb002761
+      internalID: 1606506774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_tulip_01_pink_sway_11
+      name: flower_tulip_01_pink_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 440c22662847c3a41b32bba4984a4d1f
-      internalID: -710478198
+      spriteID: f4f10229c0ddaa74398c49b40d9071cf
+      internalID: -1640478992
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flower_tulip_01_pink_sway_0: -523603626
-      flower_tulip_01_pink_sway_1: -576954546
-      flower_tulip_01_pink_sway_10: 1115946736
-      flower_tulip_01_pink_sway_11: -710478198
-      flower_tulip_01_pink_sway_2: 191950515
-      flower_tulip_01_pink_sway_3: 172793898
-      flower_tulip_01_pink_sway_4: -1845455639
-      flower_tulip_01_pink_sway_5: -586555245
-      flower_tulip_01_pink_sway_6: 1752332321
-      flower_tulip_01_pink_sway_7: 720694691
-      flower_tulip_01_pink_sway_8: -1822507378
-      flower_tulip_01_pink_sway_9: -933176872
+      flower_tulip_01_pink_sway_01_01: 743074240
+      flower_tulip_01_pink_sway_01_02: -696544007
+      flower_tulip_01_pink_sway_01_03: -1803625132
+      flower_tulip_01_pink_sway_01_04: -831681216
+      flower_tulip_01_pink_sway_01_05: -1131791303
+      flower_tulip_01_pink_sway_01_06: 826350454
+      flower_tulip_01_pink_sway_01_07: 1590606473
+      flower_tulip_01_pink_sway_01_08: -34764247
+      flower_tulip_01_pink_sway_01_09: -1802847354
+      flower_tulip_01_pink_sway_01_10: 999862497
+      flower_tulip_01_pink_sway_01_11: 1606506774
+      flower_tulip_01_pink_sway_01_12: -1640478992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

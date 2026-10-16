@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_lilypad_02_autumn_sway_0
+      name: plant_lilypad_02_autumn_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 070a1d20a2ccf284286c2abcb28e4bc1
-      internalID: -1791525573
+      spriteID: 15ce0afc09070f745a6112cda557828f
+      internalID: -1121301067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_autumn_sway_1
+      name: plant_lilypad_02_autumn_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56fc880242e4c4145be95188df9ab19e
-      internalID: -335723879
+      spriteID: 1b8c3cb2e969a594a91033d0c145526b
+      internalID: 1225101453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_autumn_sway_2
+      name: plant_lilypad_02_autumn_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20ac414145dc300409670e641c194721
-      internalID: -1567412753
+      spriteID: 87475752bb1aef949b439262584ff0ec
+      internalID: 618963836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_autumn_sway_3
+      name: plant_lilypad_02_autumn_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fe7a9479568fa340ab44ecffe26dc92
-      internalID: 1201298925
+      spriteID: 5801ca91bda4ddf419cfd972f331207f
+      internalID: 938532237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_autumn_sway_4
+      name: plant_lilypad_02_autumn_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ce17df12756e394fbf7f69eab06ad91
-      internalID: 227905134
+      spriteID: e857fcfa98b67c048afc08c804e0339c
+      internalID: 883888669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_autumn_sway_5
+      name: plant_lilypad_02_autumn_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70768647e445ffe45a3acb2de1358347
-      internalID: 263815482
+      spriteID: c45e0ccb628195d4e91be0a51bc0bb0b
+      internalID: -1702260748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_autumn_sway_6
+      name: plant_lilypad_02_autumn_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f480d7c3b5d9c3b4389ebcb32953f207
-      internalID: -341150931
+      spriteID: 221ed3c1cf9356441bda80a234821dc8
+      internalID: 2068639427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_autumn_sway_7
+      name: plant_lilypad_02_autumn_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d99079c1bf7fa043822ec422c7ca192
-      internalID: -951008737
+      spriteID: 77aedfc4845d9e74cb4dce489c610a46
+      internalID: -640379074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_autumn_sway_8
+      name: plant_lilypad_02_autumn_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff548cc568e16a540b200aaf5b4b09aa
-      internalID: 2095000440
+      spriteID: 2119bee1b6f827d4fbc1cef1a2de8f83
+      internalID: -657702653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_autumn_sway_9
+      name: plant_lilypad_02_autumn_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5a637b026932364ab84e721f7d528ee
-      internalID: 57181289
+      spriteID: d005f5679489b18419f9252e3f6bab17
+      internalID: 977907756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_autumn_sway_10
+      name: plant_lilypad_02_autumn_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33f7d05eff287e94ab4b61c4b81cf3f3
-      internalID: -1063426495
+      spriteID: 6e744861b43f762428a9329082bb80d1
+      internalID: 1529281049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_autumn_sway_11
+      name: plant_lilypad_02_autumn_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c9be7b6362841d4391ce3b87f187b62
-      internalID: -904771938
+      spriteID: 7c327ca4f014e124c97f022ed04aeeb2
+      internalID: 726797983
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_lilypad_02_autumn_sway_0: -1791525573
-      plant_lilypad_02_autumn_sway_1: -335723879
-      plant_lilypad_02_autumn_sway_10: -1063426495
-      plant_lilypad_02_autumn_sway_11: -904771938
-      plant_lilypad_02_autumn_sway_2: -1567412753
-      plant_lilypad_02_autumn_sway_3: 1201298925
-      plant_lilypad_02_autumn_sway_4: 227905134
-      plant_lilypad_02_autumn_sway_5: 263815482
-      plant_lilypad_02_autumn_sway_6: -341150931
-      plant_lilypad_02_autumn_sway_7: -951008737
-      plant_lilypad_02_autumn_sway_8: 2095000440
-      plant_lilypad_02_autumn_sway_9: 57181289
+      plant_lilypad_02_autumn_sway_01_01: -1121301067
+      plant_lilypad_02_autumn_sway_01_02: 1225101453
+      plant_lilypad_02_autumn_sway_01_03: 618963836
+      plant_lilypad_02_autumn_sway_01_04: 938532237
+      plant_lilypad_02_autumn_sway_01_05: 883888669
+      plant_lilypad_02_autumn_sway_01_06: -1702260748
+      plant_lilypad_02_autumn_sway_01_07: 2068639427
+      plant_lilypad_02_autumn_sway_01_08: -640379074
+      plant_lilypad_02_autumn_sway_01_09: -657702653
+      plant_lilypad_02_autumn_sway_01_10: 977907756
+      plant_lilypad_02_autumn_sway_01_11: 1529281049
+      plant_lilypad_02_autumn_sway_01_12: 726797983
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

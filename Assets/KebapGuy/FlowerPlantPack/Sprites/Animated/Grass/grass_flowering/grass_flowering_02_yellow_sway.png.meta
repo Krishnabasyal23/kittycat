@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_flowering_02_yellow_sway_0
+      name: grass_flowering_02_yellow_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f36560a13e9b56b4686adfba7273959a
-      internalID: 1195594681
+      spriteID: af6c34228a8ef1b48a54eb788c0697a4
+      internalID: -2117456774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_yellow_sway_1
+      name: grass_flowering_02_yellow_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c284b0598b8afd4d952a50416901aeb
-      internalID: 1070109763
+      spriteID: 7cc650a01367cb44c9067f40e0a48240
+      internalID: 1084472105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_yellow_sway_2
+      name: grass_flowering_02_yellow_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaac586ce0be7a54584ded4a968bcaf9
-      internalID: -1074720756
+      spriteID: 45a83735138af604f9e7e2e54c8e36f2
+      internalID: 1322452128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_yellow_sway_3
+      name: grass_flowering_02_yellow_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c7c241cd340d6a4e86fdaf8cc80f806
-      internalID: -2060876833
+      spriteID: ba0d3d68d5604b047aafb46741699c85
+      internalID: -99074863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_yellow_sway_4
+      name: grass_flowering_02_yellow_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba69b8c355dfc1f4f97df6fb205c9254
-      internalID: -138018485
+      spriteID: d147212d1b3632d47970355aab2fcd71
+      internalID: 350709495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_yellow_sway_5
+      name: grass_flowering_02_yellow_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee931e6741d796540a5478d8dd8eb680
-      internalID: 147014575
+      spriteID: abb052570ec944c4296d4e1878b2d42c
+      internalID: 1365980591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_yellow_sway_6
+      name: grass_flowering_02_yellow_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1b819b596c609f40a2a95d95bec33e2
-      internalID: -1110208801
+      spriteID: 3e6318bbea377094fbdd5f46c626ee5e
+      internalID: -1937558583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_yellow_sway_7
+      name: grass_flowering_02_yellow_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d52039ac4e6bb04880c5253606c9593
-      internalID: -740124486
+      spriteID: 9c3c79e1998497e499cb4fade86609bb
+      internalID: 2067942957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_yellow_sway_8
+      name: grass_flowering_02_yellow_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fd4996f3fb60a943b13483d10d8c56b
-      internalID: -390263611
+      spriteID: 08d71a9a736471849b1e9942d3f78e88
+      internalID: -1526996475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_yellow_sway_9
+      name: grass_flowering_02_yellow_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8cd53f4184de0b40a91e9e521b7a321
-      internalID: 366558871
+      spriteID: 4543ac348faefe14d962aad671af8ca8
+      internalID: 1931001141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_yellow_sway_10
+      name: grass_flowering_02_yellow_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 229b3d9576f325b4fbbadd42a687caa7
-      internalID: -954739676
+      spriteID: 9805d6f05f3f27548916b0dae859fd8d
+      internalID: 136062408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_flowering_02_yellow_sway_11
+      name: grass_flowering_02_yellow_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17b2c473e2c681d40b43781ced98d238
-      internalID: 1030070853
+      spriteID: 2dc0fe2c5e584384f9725d86d9abf3a7
+      internalID: -1883968240
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_flowering_02_yellow_sway_0: 1195594681
-      grass_flowering_02_yellow_sway_1: 1070109763
-      grass_flowering_02_yellow_sway_10: -954739676
-      grass_flowering_02_yellow_sway_11: 1030070853
-      grass_flowering_02_yellow_sway_2: -1074720756
-      grass_flowering_02_yellow_sway_3: -2060876833
-      grass_flowering_02_yellow_sway_4: -138018485
-      grass_flowering_02_yellow_sway_5: 147014575
-      grass_flowering_02_yellow_sway_6: -1110208801
-      grass_flowering_02_yellow_sway_7: -740124486
-      grass_flowering_02_yellow_sway_8: -390263611
-      grass_flowering_02_yellow_sway_9: 366558871
+      grass_flowering_02_yellow_sway_01_01: -2117456774
+      grass_flowering_02_yellow_sway_01_02: 1084472105
+      grass_flowering_02_yellow_sway_01_03: 1322452128
+      grass_flowering_02_yellow_sway_01_04: -99074863
+      grass_flowering_02_yellow_sway_01_05: 350709495
+      grass_flowering_02_yellow_sway_01_06: 1365980591
+      grass_flowering_02_yellow_sway_01_07: -1937558583
+      grass_flowering_02_yellow_sway_01_08: 2067942957
+      grass_flowering_02_yellow_sway_01_09: -1526996475
+      grass_flowering_02_yellow_sway_01_10: 1931001141
+      grass_flowering_02_yellow_sway_01_11: 136062408
+      grass_flowering_02_yellow_sway_01_12: -1883968240
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

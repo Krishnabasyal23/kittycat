@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_wheat_02_autumn_sway_0
+      name: grass_wheat_02_autumn_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 088c7311208f1ef40b0c22cd01bd6852
-      internalID: 1868195634
+      spriteID: 375ad4e64775b61439fe9f6d75f940e6
+      internalID: -1939291098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_02_autumn_sway_1
+      name: grass_wheat_02_autumn_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a841b832eefff344fa73456f3c9431a0
-      internalID: -1602556812
+      spriteID: 15fecb4d5fee0fd4a983db984d58d474
+      internalID: -1877055946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_02_autumn_sway_2
+      name: grass_wheat_02_autumn_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88310dd4470306840b4c89dcc785ea27
-      internalID: 2022695120
+      spriteID: 8c050a4d3dbdd274a9100eebe663d33e
+      internalID: 793577949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_02_autumn_sway_3
+      name: grass_wheat_02_autumn_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c8bc76d24eb7e04ab9fbfd326306eaf
-      internalID: -2024924931
+      spriteID: 97f0743674cdca1408d9d0ac457d7576
+      internalID: 141516082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_02_autumn_sway_4
+      name: grass_wheat_02_autumn_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 502b7498757094543bbaa7108ede6885
-      internalID: 1564304161
+      spriteID: 1a894470eddee394f9f9cb784e3eb9a3
+      internalID: 1431875800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_02_autumn_sway_5
+      name: grass_wheat_02_autumn_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20a401a7c5e73694dad0055f2f197671
-      internalID: 953611701
+      spriteID: 78d2fec6841710f4ba359e43e0544e48
+      internalID: 563579233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_02_autumn_sway_6
+      name: grass_wheat_02_autumn_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d977adbb495d2248b643db1c89d6fe5
-      internalID: 1762710382
+      spriteID: afeef2c17b0fff34f8a2d0fb587a71fc
+      internalID: 204110000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_02_autumn_sway_7
+      name: grass_wheat_02_autumn_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2ba3ad0c46f6e3498c425075c2c3892
-      internalID: -1571964889
+      spriteID: 8e3197df356af164db2830da200181dc
+      internalID: -1876146833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_02_autumn_sway_8
+      name: grass_wheat_02_autumn_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0919759fc6ce31439fd5f063e5b9333
-      internalID: -1080566956
+      spriteID: ba0bbbc9325dc8942aa1253b30332bf6
+      internalID: 1967826900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_02_autumn_sway_9
+      name: grass_wheat_02_autumn_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e585846222e534c459bb59e7355aed9a
-      internalID: -20665890
+      spriteID: 29931b7f8a4fb58498bb8a23bd645919
+      internalID: -2086107071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_02_autumn_sway_10
+      name: grass_wheat_02_autumn_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d40da667607d6d40a3c4e464ee5de10
-      internalID: 596370964
+      spriteID: 954b5213987e1d04c986d75ae79cba36
+      internalID: -597426579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_wheat_02_autumn_sway_11
+      name: grass_wheat_02_autumn_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a994624d2eaa51045953014bca9576aa
-      internalID: 399457421
+      spriteID: d1b56d505b4c0a44fa57add442c68318
+      internalID: -1178363728
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_wheat_02_autumn_sway_0: 1868195634
-      grass_wheat_02_autumn_sway_1: -1602556812
-      grass_wheat_02_autumn_sway_10: 596370964
-      grass_wheat_02_autumn_sway_11: 399457421
-      grass_wheat_02_autumn_sway_2: 2022695120
-      grass_wheat_02_autumn_sway_3: -2024924931
-      grass_wheat_02_autumn_sway_4: 1564304161
-      grass_wheat_02_autumn_sway_5: 953611701
-      grass_wheat_02_autumn_sway_6: 1762710382
-      grass_wheat_02_autumn_sway_7: -1571964889
-      grass_wheat_02_autumn_sway_8: -1080566956
-      grass_wheat_02_autumn_sway_9: -20665890
+      grass_wheat_02_autumn_sway_01_01: -1939291098
+      grass_wheat_02_autumn_sway_01_02: -1877055946
+      grass_wheat_02_autumn_sway_01_03: 793577949
+      grass_wheat_02_autumn_sway_01_04: 141516082
+      grass_wheat_02_autumn_sway_01_05: 1431875800
+      grass_wheat_02_autumn_sway_01_06: 563579233
+      grass_wheat_02_autumn_sway_01_07: 204110000
+      grass_wheat_02_autumn_sway_01_08: -1876146833
+      grass_wheat_02_autumn_sway_01_09: 1967826900
+      grass_wheat_02_autumn_sway_01_10: -2086107071
+      grass_wheat_02_autumn_sway_01_11: -597426579
+      grass_wheat_02_autumn_sway_01_12: -1178363728
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

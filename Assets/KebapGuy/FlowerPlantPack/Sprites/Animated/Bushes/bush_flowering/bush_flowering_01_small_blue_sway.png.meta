@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bush_flowering_01_small_blue_sway_0
+      name: bush_flowering_01_small_blue_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ef0964c46d445c46937a54b5c4ee350
-      internalID: -29191868
+      spriteID: 9faa69e7811fa4d478619cf4a5049675
+      internalID: -22170556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_small_blue_sway_1
+      name: bush_flowering_01_small_blue_sway_01_02
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53c7ccbbdb362304f836f6610ee9eac7
-      internalID: -675275241
+      spriteID: 7062b9087b4d8764aa934616fea53547
+      internalID: -1434363039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_small_blue_sway_2
+      name: bush_flowering_01_small_blue_sway_01_03
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8489cf54cd161024cb69e8e55229a394
-      internalID: 1078157661
+      spriteID: 889b67c209c157a44a3d33fc1bcfe250
+      internalID: 165544792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_small_blue_sway_3
+      name: bush_flowering_01_small_blue_sway_01_04
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d351f29ca803dd3409d566eeb33a4899
-      internalID: -155841536
+      spriteID: e7c3d7c0482a00342a9bb6b920ff8f7b
+      internalID: -120051462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_small_blue_sway_4
+      name: bush_flowering_01_small_blue_sway_01_05
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18b7ab8810b20b94595dd1785009a47b
-      internalID: -220103440
+      spriteID: 63122cbe536e2d24b9152f24887664c5
+      internalID: 106624820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_small_blue_sway_5
+      name: bush_flowering_01_small_blue_sway_01_06
       rect:
         serializedVersion: 2
         x: 80
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c8ee0c749203014798be4688bbb41f7
-      internalID: -1840957483
+      spriteID: 798544007a28381498e7f94df0b292d0
+      internalID: 1499724145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_small_blue_sway_6
+      name: bush_flowering_01_small_blue_sway_01_07
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29971cf293d4424478e84890ff08a287
-      internalID: 460236431
+      spriteID: ee4855cbffd8a9b4d84c0743b83f20de
+      internalID: 772840074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_small_blue_sway_7
+      name: bush_flowering_01_small_blue_sway_01_08
       rect:
         serializedVersion: 2
         x: 112
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f5b6e64b7742544cadbb99c327e4c77
-      internalID: -1107365590
+      spriteID: 419a43ce444994a448923503be7e7e77
+      internalID: 467554761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_small_blue_sway_8
+      name: bush_flowering_01_small_blue_sway_01_09
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d746d1040f046954abc15c20f1d4488e
-      internalID: 250505724
+      spriteID: dd07601d905caef4fb79a224ff5fb60a
+      internalID: 228752715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_small_blue_sway_9
+      name: bush_flowering_01_small_blue_sway_01_10
       rect:
         serializedVersion: 2
         x: 144
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0e18a165d353b047b311a7f82352ab0
-      internalID: -786902094
+      spriteID: a35e0f113ba19554c9db9825ebea0995
+      internalID: 175895052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_small_blue_sway_10
+      name: bush_flowering_01_small_blue_sway_01_11
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5020c738e57cbf40a52dafe52d4f7ed
-      internalID: 797965834
+      spriteID: 5e0200b2667139448be4acec715913ab
+      internalID: -963363363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_flowering_01_small_blue_sway_11
+      name: bush_flowering_01_small_blue_sway_01_12
       rect:
         serializedVersion: 2
         x: 176
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 170a1aa8c98d2ae40b8e556f27ea3e1d
-      internalID: 1409001099
+      spriteID: 3620a385dd9fe3044886ddd03c6931c1
+      internalID: 16243349
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bush_flowering_01_small_blue_sway_0: -29191868
-      bush_flowering_01_small_blue_sway_1: -675275241
-      bush_flowering_01_small_blue_sway_10: 797965834
-      bush_flowering_01_small_blue_sway_11: 1409001099
-      bush_flowering_01_small_blue_sway_2: 1078157661
-      bush_flowering_01_small_blue_sway_3: -155841536
-      bush_flowering_01_small_blue_sway_4: -220103440
-      bush_flowering_01_small_blue_sway_5: -1840957483
-      bush_flowering_01_small_blue_sway_6: 460236431
-      bush_flowering_01_small_blue_sway_7: -1107365590
-      bush_flowering_01_small_blue_sway_8: 250505724
-      bush_flowering_01_small_blue_sway_9: -786902094
+      bush_flowering_01_small_blue_sway_01_01: -22170556
+      bush_flowering_01_small_blue_sway_01_02: -1434363039
+      bush_flowering_01_small_blue_sway_01_03: 165544792
+      bush_flowering_01_small_blue_sway_01_04: -120051462
+      bush_flowering_01_small_blue_sway_01_05: 106624820
+      bush_flowering_01_small_blue_sway_01_06: 1499724145
+      bush_flowering_01_small_blue_sway_01_07: 772840074
+      bush_flowering_01_small_blue_sway_01_08: 467554761
+      bush_flowering_01_small_blue_sway_01_09: 228752715
+      bush_flowering_01_small_blue_sway_01_10: 175895052
+      bush_flowering_01_small_blue_sway_01_11: -963363363
+      bush_flowering_01_small_blue_sway_01_12: 16243349
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

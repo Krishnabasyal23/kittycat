@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_fern_04_autumn_sway_0
+      name: plant_fern_04_autumn_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1effbd64eaffedf4db10da0a8eabd75b
-      internalID: 345494394
+      spriteID: a0db00687bdf22044aefd7867e4aa4ae
+      internalID: -1938896126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_04_autumn_sway_1
+      name: plant_fern_04_autumn_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fada2a5b2109bd459f56c804e3323b6
-      internalID: -428268400
+      spriteID: d0a99d94b9ae6404f880205fc1a6934b
+      internalID: -141033974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_04_autumn_sway_2
+      name: plant_fern_04_autumn_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c50764131d55c834cb892fb1fc7f0429
-      internalID: 638735214
+      spriteID: 0c210e0f1cb56f14098543145162bb8b
+      internalID: -552973788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_04_autumn_sway_3
+      name: plant_fern_04_autumn_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d82af7344ca67c4ca70470378d9e006
-      internalID: -759742204
+      spriteID: bcbc5a2c11211684e89f935464aeefa7
+      internalID: -1751712509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_04_autumn_sway_4
+      name: plant_fern_04_autumn_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de5881500e22aea408f4be7be22eee18
-      internalID: 103647487
+      spriteID: 1855f1dcc3d728e47b14f266a705c04d
+      internalID: 657985059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_04_autumn_sway_5
+      name: plant_fern_04_autumn_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 515aa8b737b6d594eb9ac73e3f5d8edd
-      internalID: -743386873
+      spriteID: 5a370616ea830ee479678854373cdcc6
+      internalID: -2115516322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_04_autumn_sway_6
+      name: plant_fern_04_autumn_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4807e7ba19b2bde4aa5c1c08f2c65c86
-      internalID: -278377504
+      spriteID: 5b9e0b0a079f3f542aaba19f0a2c6b71
+      internalID: 1323407260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_04_autumn_sway_7
+      name: plant_fern_04_autumn_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 246384580d27dac4b99aeb5cacbf3461
-      internalID: -1590780529
+      spriteID: 10b4decb614e7934f827bbee404b9b37
+      internalID: -1948587101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_04_autumn_sway_8
+      name: plant_fern_04_autumn_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9d035aae54601a4294c1272549c15cb
-      internalID: 185948413
+      spriteID: e11b22220a12c58469d8a812be233081
+      internalID: -481145311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_04_autumn_sway_9
+      name: plant_fern_04_autumn_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed88c5656aac7f845ab2a210369f88eb
-      internalID: 1911084770
+      spriteID: 9a333f56ba781fd40b4847fc610a6859
+      internalID: 1616868617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_04_autumn_sway_10
+      name: plant_fern_04_autumn_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de586333a777da5418781270dda1f94c
-      internalID: -2039606397
+      spriteID: 059323b432104634c8442d31552d38a0
+      internalID: -286613147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_fern_04_autumn_sway_11
+      name: plant_fern_04_autumn_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e93708faeb27a04dbc28cab41886dc6
-      internalID: 19905419
+      spriteID: 50db6d05b5283e54cbc07b528fbba3c2
+      internalID: -428546319
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_fern_04_autumn_sway_0: 345494394
-      plant_fern_04_autumn_sway_1: -428268400
-      plant_fern_04_autumn_sway_10: -2039606397
-      plant_fern_04_autumn_sway_11: 19905419
-      plant_fern_04_autumn_sway_2: 638735214
-      plant_fern_04_autumn_sway_3: -759742204
-      plant_fern_04_autumn_sway_4: 103647487
-      plant_fern_04_autumn_sway_5: -743386873
-      plant_fern_04_autumn_sway_6: -278377504
-      plant_fern_04_autumn_sway_7: -1590780529
-      plant_fern_04_autumn_sway_8: 185948413
-      plant_fern_04_autumn_sway_9: 1911084770
+      plant_fern_04_autumn_sway_01_01: -1938896126
+      plant_fern_04_autumn_sway_01_02: -141033974
+      plant_fern_04_autumn_sway_01_03: -552973788
+      plant_fern_04_autumn_sway_01_04: -1751712509
+      plant_fern_04_autumn_sway_01_05: 657985059
+      plant_fern_04_autumn_sway_01_06: -2115516322
+      plant_fern_04_autumn_sway_01_07: 1323407260
+      plant_fern_04_autumn_sway_01_08: -1948587101
+      plant_fern_04_autumn_sway_01_09: -481145311
+      plant_fern_04_autumn_sway_01_10: 1616868617
+      plant_fern_04_autumn_sway_01_11: -286613147
+      plant_fern_04_autumn_sway_01_12: -428546319
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

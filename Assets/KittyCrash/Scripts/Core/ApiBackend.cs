@@ -24,6 +24,11 @@ namespace KittyCrash
         public float minBet = 1f;
         public float maxBet = 500f;
         public bool rememberSession = true;
+        [Tooltip("Web build: talk to the server that served the page (http(s)://host:port of the game page) instead of Base Url. " +
+                 "Works when the FastAPI server also hosts the WebGL build (KittyAPI/web).")]
+        public bool usePageAddressInBrowser = true;
+        /// <summary>GROWTH_RATE in crash_engine.py when the server doesn't report it.</summary>
+        public const float ServerDefaultGrowthRate = 0.18f;
         public bool logRequests;
 
         public string RngMode { get; private set; }
@@ -39,7 +44,7 @@ namespace KittyCrash
         string sessionId;
 
         // ── JSON shapes (field names match the Python responses) ──
-        [Serializable] class HealthDto { public string status; public string game; public string version; public string rng_mode; public float growth_rate; public float warmup_seconds = -1f; }
+        [Serializable] class HealthDto { public string status; public string game; public string version; public string rng_mode; public float growth_rate; public float warmup_seconds = -1f; public string min_bet; public string max_bet; }
         [Serializable] class SessionDto { public string session_id; public string balance; }
         [Serializable] class BalanceDto { public string balance; }
         [Serializable] class WagerDto { public string wager; }
@@ -64,6 +69,13 @@ namespace KittyCrash
 
         IEnumerator ConnectRoutine(Action<BalanceResult> done)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            if (usePageAddressInBrowser && !string.IsNullOrEmpty(Application.absoluteURL))
+            {
+                try { baseUrl = new Uri(Application.absoluteURL).GetLeftPart(UriPartial.Authority); }
+                catch (Exception) { /* keep the Inspector value */ }
+            }
+#endif
             var r = new Response();
             yield return Send("GET", "/api/health", null, false, r);
             if (!r.Ok) { done(new BalanceResult { ok = false, error = r.error }); yield break; }
@@ -73,6 +85,16 @@ namespace KittyCrash
             {
                 RngMode = health.rng_mode;
                 if (health.growth_rate > 0f) growthRate = health.growth_rate;
+                else
+                {
+                    // Older server without growth_rate in /api/health: assume its built-in default,
+                    // otherwise the cat/curve would run at a different speed than the real round.
+                    growthRate = ServerDefaultGrowthRate;
+                    Debug.LogWarning($"[KittyCrash] Server didn't report growth_rate - assuming {ServerDefaultGrowthRate}. Update main.py from the kit to fix.");
+                }
+                float mb, xb;
+                if (float.TryParse(health.min_bet, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out mb) && mb > 0f) minBet = mb;
+                if (float.TryParse(health.max_bet, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out xb) && xb > 0f) maxBet = xb;
                 if (health.warmup_seconds >= 0f) warmupSeconds = health.warmup_seconds;
             }
 

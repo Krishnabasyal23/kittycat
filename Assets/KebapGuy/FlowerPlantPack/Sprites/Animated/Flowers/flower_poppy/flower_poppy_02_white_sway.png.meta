@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_poppy_02_white_sway_0
+      name: flower_poppy_02_white_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed69e66e3b3ebbc4a9660acc79694363
-      internalID: 1977061752
+      spriteID: 1c5c9d5c98dace04a816f6df0fb0b728
+      internalID: 1599601793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_poppy_02_white_sway_1
+      name: flower_poppy_02_white_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 315e4fd262ebe2e4590ca02c2432c686
-      internalID: 416777770
+      spriteID: d9c03ef8032e1e84abc7957499f32659
+      internalID: 94562323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_poppy_02_white_sway_2
+      name: flower_poppy_02_white_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94b17916d5b33a144802a16f5b998f9b
-      internalID: 2059449833
+      spriteID: a9510a16f94906d4a919e919fc7fa3e4
+      internalID: 554763357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_poppy_02_white_sway_3
+      name: flower_poppy_02_white_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51ae6e822dc921948927bc82350c1e6f
-      internalID: -724428896
+      spriteID: 557570c938583864e877cad5e490133b
+      internalID: 8425097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_poppy_02_white_sway_4
+      name: flower_poppy_02_white_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af7ccb99e1098f440a76e5435a70a8c2
-      internalID: -1600937527
+      spriteID: 8e0474f16a05c7846bf2f5f290d1f3ed
+      internalID: -179971495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_poppy_02_white_sway_5
+      name: flower_poppy_02_white_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0c2dfa465a8b6445a6644192a6fc5ea
-      internalID: 1691216675
+      spriteID: 229fe33e0ab036849abb3e995701c232
+      internalID: 279078235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_poppy_02_white_sway_6
+      name: flower_poppy_02_white_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35549675a269a6046a25242dcd478cfb
-      internalID: 398049551
+      spriteID: bef6249d8de4d13468c1e18a518e397c
+      internalID: -1858926957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_poppy_02_white_sway_7
+      name: flower_poppy_02_white_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff4ac319827354249ad732fbb406b6a4
-      internalID: -1468841355
+      spriteID: 5bc8365ee65c76c4dbeffefdb57d870c
+      internalID: -817289234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_poppy_02_white_sway_8
+      name: flower_poppy_02_white_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ab7720886895b94c822592ce8c5e7b0
-      internalID: -1238976601
+      spriteID: 71e05eb1274279a44af834ad63a23f9d
+      internalID: 70708174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_poppy_02_white_sway_9
+      name: flower_poppy_02_white_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1921a4b0fed8a244a9d14f151959a197
-      internalID: -1531372479
+      spriteID: a98ca2b728e7dda48a3a45e7d4c11d18
+      internalID: 918354185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_poppy_02_white_sway_10
+      name: flower_poppy_02_white_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5622e725f5ee130418566b708e524a0a
-      internalID: -1250986413
+      spriteID: 9de80e03d3be11f4dbd5e7e0211f65dd
+      internalID: 1254560826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_poppy_02_white_sway_11
+      name: flower_poppy_02_white_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3443785ade5f82f489d9c6a0b643aa1f
-      internalID: -1231797191
+      spriteID: 45766e04cc923474681e28eda267b5b3
+      internalID: 1617563515
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flower_poppy_02_white_sway_0: 1977061752
-      flower_poppy_02_white_sway_1: 416777770
-      flower_poppy_02_white_sway_10: -1250986413
-      flower_poppy_02_white_sway_11: -1231797191
-      flower_poppy_02_white_sway_2: 2059449833
-      flower_poppy_02_white_sway_3: -724428896
-      flower_poppy_02_white_sway_4: -1600937527
-      flower_poppy_02_white_sway_5: 1691216675
-      flower_poppy_02_white_sway_6: 398049551
-      flower_poppy_02_white_sway_7: -1468841355
-      flower_poppy_02_white_sway_8: -1238976601
-      flower_poppy_02_white_sway_9: -1531372479
+      flower_poppy_02_white_sway_01_01: 1599601793
+      flower_poppy_02_white_sway_01_02: 94562323
+      flower_poppy_02_white_sway_01_03: 554763357
+      flower_poppy_02_white_sway_01_04: 8425097
+      flower_poppy_02_white_sway_01_05: -179971495
+      flower_poppy_02_white_sway_01_06: 279078235
+      flower_poppy_02_white_sway_01_07: -1858926957
+      flower_poppy_02_white_sway_01_08: -817289234
+      flower_poppy_02_white_sway_01_09: 70708174
+      flower_poppy_02_white_sway_01_10: 918354185
+      flower_poppy_02_white_sway_01_11: 1254560826
+      flower_poppy_02_white_sway_01_12: 1617563515
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

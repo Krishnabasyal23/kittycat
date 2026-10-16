@@ -23,6 +23,9 @@ namespace KittyCrash
         [Header("Fonts (Pixelify Sans is in Art/Fonts)")]
         public Font font;
         public Font boldFont;
+        [Tooltip("Bottom betting panel uses a clean, sharp font (Fredoka) so numbers are easy to read, even if the rest is pixel-style.")]
+        public bool cleanDockFont = true;
+        Font dockFont, dockBoldFont;
 
         [Header("Colours")]
         public Color accent = new Color(1f, 0.66f, 0.18f);
@@ -36,6 +39,72 @@ namespace KittyCrash
         public bool disableOldHud = true;
         public string startingBet = "10";
         public string startingAuto = "2.00";
+
+        [Header("Split screen")]
+        [Tooltip("Game on top, betting dock along the bottom. The camera only draws above the dock, so nothing covers the cat.")]
+        public bool docked = true;
+        public float dockHeight = 300f;
+        [Tooltip("Camera zoom for the game area (smaller = closer).")]
+        public float gameViewSize = 4f;
+        [Tooltip("Camera height for the game area (keeps the ground near the bottom of the game view).")]
+        public float gameViewCenterY = -1f;
+
+        RectTransform dockRT;
+        Camera gameCam;
+        Canvas canvasRef;
+
+        void Awake()
+        {
+            if (!docked) return;
+            gameCam = Camera.main;
+            if (gameCam == null) return;
+            float frac = dockHeight / 1080f;
+            gameCam.rect = new Rect(0f, frac, 1f, 1f - frac);
+            gameCam.orthographicSize = gameViewSize;
+            var p = gameCam.transform.position;
+            gameCam.transform.position = new Vector3(p.x, gameViewCenterY, p.z);
+            var juice = gameCam.GetComponent<CameraJuice>();
+            if (juice != null) juice.minSize = gameViewSize * 0.88f;
+        }
+
+        void LateUpdate()
+        {
+            if (!docked || gameCam == null || dockRT == null || canvasRef == null) return;
+            float frac = Mathf.Clamp(dockRT.rect.height * canvasRef.scaleFactor / Mathf.Max(1, Screen.height), 0f, 0.8f);
+            var r = new Rect(0f, frac, 1f, 1f - frac);
+            if (gameCam.rect != r) gameCam.rect = r;
+            FitDock();
+        }
+
+        RectTransform creditsRT, warmRT, graphRT;
+
+        /// <summary>
+        /// Narrow screens (e.g. a 4:3 Game view): shrink the graph card and fit the middle column
+        /// (credits, history, status, countdown bar) into the space between the two cards so nothing overlaps.
+        /// </summary>
+        void FitDock()
+        {
+            if (creditsRT == null || graphRT == null || statusText == null) return;
+            float W = ((RectTransform)canvasRef.transform).rect.width;
+            float gw = Mathf.Clamp(W - 30f - 470f - 16f - 380f - 16f - 30f, 320f, 580f);
+            graphRT.sizeDelta = new Vector2(gw, graphRT.sizeDelta.y);
+            float left = 30f + 470f + 16f, right = W - 30f - gw - 16f;
+            float cw = Mathf.Max(200f, right - left);
+            float cx = (left + right) * 0.5f - W * 0.5f;
+
+            creditsRT.anchoredPosition = new Vector2(cx, creditsRT.anchoredPosition.y);
+            creditsRT.sizeDelta = new Vector2(Mathf.Min(340f, cw), creditsRT.sizeDelta.y);
+            historyRow.anchoredPosition = new Vector2(cx, historyRow.anchoredPosition.y);
+            historyRow.sizeDelta = new Vector2(Mathf.Min(800f, cw), historyRow.sizeDelta.y);
+            var st = statusText.rectTransform;
+            st.anchoredPosition = new Vector2(cx, st.anchoredPosition.y);
+            st.sizeDelta = new Vector2(Mathf.Min(820f, cw), 56f);
+            if (warmRT != null)
+            {
+                warmRT.anchoredPosition = new Vector2(cx, warmRT.anchoredPosition.y);
+                warmRT.sizeDelta = new Vector2(Mathf.Min(560f, cw - 20f), warmRT.sizeDelta.y);
+            }
+        }
 
         static readonly CultureInfo Inv = CultureInfo.InvariantCulture;
 
@@ -53,6 +122,7 @@ namespace KittyCrash
         CanvasGroup toastCG;
         CrashGraph graph;
         Text[] graphLabels = new Text[4];
+        Text graphValue, graphCaption, graphX0, graphX1, graphTarget, graphCash;
         Selectable[] betControls;
 
         Vector2 multBase, toastBase;
@@ -83,6 +153,13 @@ namespace KittyCrash
 #endif
             }
             if (boldFont == null) boldFont = font;
+            if (cleanDockFont)
+            {
+                dockFont = Resources.Load<Font>("KittyCrashFonts/Fredoka-Medium");
+                dockBoldFont = Resources.Load<Font>("KittyCrashFonts/Fredoka-Bold");
+            }
+            if (dockFont == null) dockFont = font;
+            if (dockBoldFont == null) dockBoldFont = dockFont != font ? dockFont : boldFont;
 
             Build();
 
@@ -108,7 +185,7 @@ namespace KittyCrash
         void HandleCrash(float crash, string distraction)
         {
             shakeT = 0.45f;
-            if (!rm.CashedOut) Toast("-" + rm.Wager.ToString("N2", Inv), lose);
+            ShowBanner(crash, distraction);
         }
 
         // ── per frame ─────────────────────────────
@@ -126,6 +203,77 @@ namespace KittyCrash
             UpdateGraph();
             UpdateHistory();
             UpdateToast();
+            UpdateBanner();
+        }
+
+        // ── big "DISTRACTED BY ..." banner ─────────
+
+        RectTransform bannerRT, bannerIconRT;
+        Image bannerIcon, bannerBg;
+        Text bannerTitle, bannerReason, bannerResult;
+        float bannerT = 99f;
+
+        void BuildBanner(Transform root)
+        {
+            bannerBg = Panel("DistractionBanner", root, new Color(0.08f, 0.06f, 0.12f, 0.88f), rounded);
+            bannerRT = bannerBg.rectTransform;
+            Place(bannerRT, new Vector2(0.5f, 1), new Vector2(0, docked ? -126 : -160), new Vector2(860, 170), new Vector2(0.5f, 1));
+            var stripe = Panel("Stripe", bannerRT, lose, rounded);
+            stripe.rectTransform.anchorMin = new Vector2(0f, 0f);
+            stripe.rectTransform.anchorMax = new Vector2(0f, 1f);
+            stripe.rectTransform.pivot = new Vector2(0f, 0.5f);
+            stripe.rectTransform.anchoredPosition = Vector2.zero;
+            stripe.rectTransform.sizeDelta = new Vector2(14f, 0f);
+
+            var iconGO = new GameObject("Icon", typeof(RectTransform));
+            iconGO.transform.SetParent(bannerRT, false);
+            bannerIcon = iconGO.AddComponent<Image>();
+            bannerIcon.preserveAspect = true;
+            bannerIcon.raycastTarget = false;
+            bannerIconRT = (RectTransform)iconGO.transform;
+            Place(bannerIconRT, new Vector2(0, 0.5f), new Vector2(40, 0), new Vector2(130, 130), new Vector2(0, 0.5f));
+
+            bannerTitle = Label("Title", bannerRT, "DISTRACTED!", 64, lose, TextAnchor.UpperLeft, true);
+            Place(bannerTitle.rectTransform, new Vector2(0, 1), new Vector2(196, -14), new Vector2(640, 74));
+            AddShadow(bannerTitle.gameObject, 3);
+            bannerReason = Label("Reason", bannerRT, "", 38, textMain, TextAnchor.UpperLeft, true);
+            Place(bannerReason.rectTransform, new Vector2(0, 1), new Vector2(198, -84), new Vector2(640, 44));
+            bannerResult = Label("Result", bannerRT, "", 26, textMuted, TextAnchor.UpperLeft, false);
+            Place(bannerResult.rectTransform, new Vector2(0, 1), new Vector2(200, -128), new Vector2(640, 32));
+            bannerBg.gameObject.SetActive(false);
+        }
+
+        void ShowBanner(float crash, string distraction)
+        {
+            if (bannerRT == null) return;
+            var type = Distractions.FromServer(distraction);
+            Sprite icon = null;
+            if (cat != null && cat.distractionSprites != null && (int)type < cat.distractionSprites.Length) icon = cat.distractionSprites[(int)type];
+            bannerIcon.sprite = icon;
+            bannerIcon.enabled = icon != null;
+            bannerTitle.text = "DISTRACTED!";
+            bannerReason.text = "Kitty spotted " + Distractions.Pretty(type) + " at " + crash.ToString("0.00", Inv) + "x";
+            if (rm.HasBet && !rm.CashedOut) { bannerResult.text = "You lost " + rm.Wager.ToString("N2", Inv) + " - cash out sooner next time!"; bannerResult.color = lose; }
+            else if (rm.HasBet && rm.CashedOut) { bannerResult.text = "You got out at " + rm.CashOutMultiplier.ToString("0.00", Inv) + "x and won " + rm.Payout.ToString("N2", Inv) + "!"; bannerResult.color = win; }
+            else { bannerResult.text = "No bet this round - place one for the next walk"; bannerResult.color = textMuted; }
+            bannerT = 0f;
+            bannerBg.gameObject.SetActive(true);
+        }
+
+        void UpdateBanner()
+        {
+            if (bannerRT == null) return;
+            bool show = rm.Phase == RoundPhase.Ended && bannerT < 30f;
+            multText.enabled = !show; // the banner takes the multiplier's place (it shows the crash value itself)
+            if (!show) { if (bannerBg.gameObject.activeSelf) bannerBg.gameObject.SetActive(false); bannerT = 99f; return; }
+            bannerT += Time.deltaTime;
+            // elastic pop-in, then a gentle breathe
+            float k = Mathf.Clamp01(bannerT / 0.45f);
+            float pop = k < 1f ? 1f + Mathf.Sin(k * Mathf.PI * 2.5f) * (1f - k) * 0.35f : 1f + Mathf.Sin(bannerT * 3f) * 0.015f;
+            if (bannerT < 0.08f) pop = Mathf.Lerp(0.3f, 1f, bannerT / 0.08f);
+            bannerRT.localScale = new Vector3(pop, pop, 1f);
+            bannerIconRT.localRotation = Quaternion.Euler(0f, 0f, Mathf.Sin(bannerT * 6f) * 10f);
+            bannerIconRT.anchoredPosition = new Vector2(40f, Mathf.Sin(bannerT * 4f) * 6f);
         }
 
         void UpdateTopBar()
@@ -170,7 +318,18 @@ namespace KittyCrash
             {
                 case RoundPhase.Connecting: big = "..."; sub = "Connecting..."; c = textMuted; break;
                 case RoundPhase.Offline: big = "OFFLINE"; sub = $"Can't reach the server - retrying in {Mathf.CeilToInt(rm.PhaseTimeLeft)}s"; c = lose; break;
-                case RoundPhase.Idle: big = "1.00x"; sub = "Place a bet to send kitty walking"; c = textMuted; break;
+                case RoundPhase.Idle:
+                    if (rm.autoRounds)
+                    {
+                        big = Mathf.CeilToInt(Mathf.Max(0f, rm.PhaseTimeLeft)).ToString();
+                        c = accent;
+                        pulse = 0.6f;
+                        sub = rm.BetQueued
+                            ? $"Bet locked in: {rm.QueuedWager.ToString("N2", Inv)}  -  kitty starts in {rm.PhaseTimeLeft:0.0}s"
+                            : $"Place your bets!  Next walk in {rm.PhaseTimeLeft:0.0}s";
+                    }
+                    else { big = "1.00x"; sub = "Place a bet to send kitty walking"; c = textMuted; }
+                    break;
                 case RoundPhase.Starting: big = "1.00x"; sub = "Kitty is stretching...  rolling the quantum dice"; c = textMuted; break;
                 case RoundPhase.Running:
                     float m = CrashMath.Floor2(rm.Multiplier);
@@ -183,6 +342,7 @@ namespace KittyCrash
                         sub = cat != null ? $"Kitty has walked {cat.DistanceThisRound:0.0} m" : "Kitty is walking...";
                         if (cat != null && cat.IsFidgeting) sub += "   ...sniff sniff";
                         if (rm.CashedOut) sub = $"You cashed out at {rm.CashOutMultiplier:0.00}x - watch where kitty stops!";
+                        if (!rm.HasBet) sub = "Just watching this round - bets open when kitty gets distracted";
                     }
                     break;
                 default:
@@ -208,41 +368,45 @@ namespace KittyCrash
 
             statusText.text = sub;
 
-            bool warming = rm.IsWarmingUp;
-            warmBar.SetActive(warming);
-            if (warming && rm.WarmupSeconds > 0f)
-            {
-                var rt = warmFill.rectTransform;
-                rt.anchorMax = new Vector2(1f - rm.WarmupLeft / rm.WarmupSeconds, 1f);
-            }
+            bool counting = rm.Phase == RoundPhase.Idle && rm.autoRounds && rm.bettingCountdown > 0f;
+            bool warming = rm.IsWarmingUp && rm.WarmupSeconds > 0f;
+            warmBar.SetActive(counting || warming);
+            var fill = warmFill.rectTransform;
+            if (counting) fill.anchorMax = new Vector2(1f - Mathf.Clamp01(rm.PhaseTimeLeft / rm.bettingCountdown), 1f);
+            else if (warming) fill.anchorMax = new Vector2(1f - rm.WarmupLeft / rm.WarmupSeconds, 1f);
         }
 
         void UpdateBetCard()
         {
-            bool editable = rm.Phase == RoundPhase.Idle;
+            bool editable = rm.Phase == RoundPhase.Idle && !rm.BetQueued;
             foreach (var sel in betControls) sel.interactable = editable;
 
             string label;
             Color bg;
             bool clickable = false;
+            bool darkText = true;
             switch (rm.Phase)
             {
-                case RoundPhase.Idle: label = "BET"; bg = win; clickable = true; break;
+                case RoundPhase.Idle:
+                    if (rm.BetQueued) { label = "CANCEL BET"; bg = panelLight; clickable = true; darkText = false; }
+                    else { label = rm.autoRounds ? $"BET   ({Mathf.CeilToInt(Mathf.Max(0f, rm.PhaseTimeLeft))}s)" : "BET"; bg = win; clickable = true; }
+                    break;
                 case RoundPhase.Starting: label = "STARTING..."; bg = panelLight; break;
                 case RoundPhase.Running:
-                    if (rm.CashedOut) { label = "WON  +" + rm.Payout.ToString("N2", Inv); bg = panelLight; }
+                    if (!rm.HasBet) { label = "WATCHING..."; bg = panelLight; }
+                    else if (rm.CashedOut) { label = "WON  +" + rm.Payout.ToString("N2", Inv); bg = panelLight; }
                     else if (rm.CashOutPending) { label = "CASHING OUT..."; bg = accent * 0.8f; }
                     else if (rm.IsWarmingUp) { label = $"WARMING UP  {rm.WarmupLeft:0.0}s"; bg = panelLight; }
                     else { label = "CASH OUT  " + rm.PotentialPayout.ToString("N2", Inv); bg = accent; clickable = true; }
                     break;
                 case RoundPhase.Ended:
-                    label = rm.CashedOut ? "WON  +" + rm.Payout.ToString("N2", Inv) : "LOST  -" + rm.Wager.ToString("N2", Inv);
+                    label = !rm.HasBet ? "BETS OPEN SOON" : rm.CashedOut ? "WON  +" + rm.Payout.ToString("N2", Inv) : "LOST  -" + rm.Wager.ToString("N2", Inv);
                     bg = panelLight; break;
                 default: label = "OFFLINE"; bg = panelLight; break;
             }
             bg.a = 1f;
             actionText.text = label;
-            actionText.color = clickable ? new Color(0.06f, 0.07f, 0.1f) : textMuted;
+            actionText.color = clickable ? (darkText ? new Color(0.06f, 0.07f, 0.1f) : textMain) : textMuted;
             actionBg.color = bg;
             actionBtn.interactable = clickable;
 
@@ -257,9 +421,60 @@ namespace KittyCrash
             if (rm.Phase == RoundPhase.Ended) { elapsed = CrashMath.SecondsFor(rm.Multiplier, rm.GrowthRate); line = lose; }
             if (rm.CashedOut && rm.Phase == RoundPhase.Running) line = win;
 
-            graph.SetState(rm.GrowthRate, elapsed, rm.CashedOut ? rm.CashOutMultiplier : -1f, line);
+            float target = TargetMultiplier();
+            bool ended = rm.Phase == RoundPhase.Ended;
+            graph.SetState(rm.GrowthRate, elapsed, rm.CashedOut ? rm.CashOutMultiplier : -1f, line, rm.CashedOut ? -1f : target, ended);
             for (int i = 0; i < 4; i++)
                 graphLabels[i].text = (1f + (graph.MaxMult - 1f) * i / 3f).ToString("0.0", Inv) + "x";
+
+            // what the chart means, in words
+            float m = rm.Multiplier;
+            switch (rm.Phase)
+            {
+                case RoundPhase.Running:
+                    graphValue.text = rm.IsWarmingUp ? "" : m.ToString("0.00", Inv) + "x  " + elapsed.ToString("0.0", Inv) + "s";
+                    graphValue.color = line;
+                    graphCaption.text = rm.CashedOut ? "Banked! The line keeps going until kitty gets distracted."
+                                      : rm.HasBet ? "Payout grows every second - cash out before the line stops."
+                                      : "Watching: the line stops where kitty gets distracted.";
+                    break;
+                case RoundPhase.Ended:
+                    graphValue.text = "STOP " + m.ToString("0.00", Inv) + "x";
+                    graphValue.color = lose;
+                    graphCaption.text = "Kitty got distracted after " + elapsed.ToString("0.0", Inv) + "s - that's where this round crashed.";
+                    break;
+                default:
+                    graphValue.text = "";
+                    graphCaption.text = "Same curve every round. Only where it stops is random.";
+                    break;
+            }
+            graphX1.text = graph.MaxTime.ToString("0", Inv) + "s";
+
+            // labels for the dashed target line and the cash-out dot
+            bool showTarget = target > 1f && !rm.CashedOut && target <= graph.MaxMult;
+            graphTarget.enabled = showTarget;
+            if (showTarget)
+            {
+                graphTarget.text = "AUTO CASH-OUT " + target.ToString("0.00", Inv) + "x";
+                graphTarget.rectTransform.anchoredPosition = new Vector2(graph.rectTransform.rect.xMax, graph.LocalY(target) + 3f);
+            }
+            bool showCash = rm.CashedOut && rm.CashOutMultiplier > 1f;
+            graphCash.enabled = showCash;
+            if (showCash)
+            {
+                graphCash.text = "YOU " + rm.CashOutMultiplier.ToString("0.00", Inv) + "x";
+                graphCash.rectTransform.anchoredPosition = new Vector2(graph.LocalX(graph.TimeFor(rm.CashOutMultiplier)), graph.LocalY(rm.CashOutMultiplier) + 12f);
+            }
+        }
+
+        /// <summary>The auto cash-out the player is aiming for (active bet, queued bet, or what's typed in the card).</summary>
+        float TargetMultiplier()
+        {
+            if (rm.HasBet && rm.AutoCashOut > 1f) return rm.AutoCashOut;
+            if (rm.BetQueued && rm.QueuedAutoCashOut > 1f) return rm.QueuedAutoCashOut;
+            if (!rm.HasBet && autoToggle != null && autoToggle.isOn && autoInput != null
+                && float.TryParse(autoInput.text, NumberStyles.Float, Inv, out float a) && a > 1f) return a;
+            return -1f;
         }
 
         void UpdateHistory()
@@ -305,6 +520,7 @@ namespace KittyCrash
         void OnAction()
         {
             if (rm == null) return;
+            if (rm.Phase == RoundPhase.Idle && rm.BetQueued) { rm.CancelBet(); return; }
             if (rm.Phase == RoundPhase.Idle)
             {
                 if (!decimal.TryParse(betInput.text, NumberStyles.Number, Inv, out var wager)) { rm.LastError = "Enter a valid bet"; return; }
@@ -335,19 +551,43 @@ namespace KittyCrash
         void Build()
         {
             EnsureEventSystem();
-            rounded = MakeRounded(64, 16);
-            pillSprite = MakeRounded(64, 30);
+            // 2x-resolution corner textures (drawn at half size) = smooth, sharp rounded cards on big screens
+            rounded = MakeRounded(128, 32, 200f);
+            pillSprite = MakeRounded(128, 60, 200f);
 
             var canvasGO = new GameObject("CrashUI Canvas", typeof(RectTransform));
             var canvas = canvasGO.AddComponent<Canvas>();
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
             canvas.sortingOrder = 50;
+            canvas.pixelPerfect = true;   // text snaps to whole screen pixels = sharper
             var scaler = canvasGO.AddComponent<CanvasScaler>();
             scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
             scaler.referenceResolution = new Vector2(1920, 1080);
-            scaler.matchWidthOrHeight = 0.5f;
+            scaler.matchWidthOrHeight = docked ? 1f : 0.5f; // match height → the dock is always the same share of the screen
             canvasGO.AddComponent<GraphicRaycaster>();
+            canvasRef = canvas;
             var root = canvasGO.transform;
+
+            // ── bottom dock (split screen) ──
+            Transform dock = root;
+            if (docked)
+            {
+                var d = Panel("Dock", root, new Color(0.05f, 0.06f, 0.09f, 1f), null);
+                d.raycastTarget = true;
+                dockRT = d.rectTransform;
+                dockRT.anchorMin = new Vector2(0f, 0f);
+                dockRT.anchorMax = new Vector2(1f, 0f);
+                dockRT.pivot = new Vector2(0.5f, 0f);
+                dockRT.anchoredPosition = Vector2.zero;
+                dockRT.sizeDelta = new Vector2(0f, dockHeight);
+                var edge = Panel("Edge", dockRT, new Color(accent.r, accent.g, accent.b, 0.55f), null);
+                edge.rectTransform.anchorMin = new Vector2(0f, 1f);
+                edge.rectTransform.anchorMax = new Vector2(1f, 1f);
+                edge.rectTransform.pivot = new Vector2(0.5f, 1f);
+                edge.rectTransform.anchoredPosition = Vector2.zero;
+                edge.rectTransform.sizeDelta = new Vector2(0f, 4f);
+                dock = dockRT;
+            }
 
             // ── top-left: logo + mode badge + switch ──
             var logo = Label("Logo", root, "KITTY CRASH", 58, accent, TextAnchor.UpperLeft, true);
@@ -374,8 +614,9 @@ namespace KittyCrash
             AddShadow(festText.gameObject, 2);
 
             // ── top-right: credits card ──
-            var creditsCard = Panel("Credits", root, panel, rounded);
-            Place(creditsCard.rectTransform, new Vector2(1, 1), new Vector2(-40, -24), new Vector2(340, 88), new Vector2(1, 1));
+            var creditsCard = Panel("Credits", dock, docked ? new Color(0.11f, 0.12f, 0.18f, 1f) : panel, rounded);
+            if (docked) { Place(creditsCard.rectTransform, new Vector2(0.5f, 0), new Vector2(0, 182), new Vector2(340, 88), new Vector2(0.5f, 0)); creditsRT = creditsCard.rectTransform; }
+            else Place(creditsCard.rectTransform, new Vector2(1, 1), new Vector2(-40, -24), new Vector2(340, 88), new Vector2(1, 1));
             var cl = Label("Label", creditsCard.transform, "CREDITS", 20, textMuted, TextAnchor.UpperLeft, false);
             Place(cl.rectTransform, new Vector2(0, 1), new Vector2(20, -10), new Vector2(200, 26));
             creditsText = Label("Value", creditsCard.transform, "0.00", 44, textMain, TextAnchor.LowerRight, true);
@@ -383,59 +624,76 @@ namespace KittyCrash
 
             // ── history pills (under credits) ──
             var hr = new GameObject("History", typeof(RectTransform)).GetComponent<RectTransform>();
-            hr.SetParent(root, false);
-            Place(hr, new Vector2(1, 1), new Vector2(-40, -126), new Vector2(1140, 40), new Vector2(1, 1));
+            hr.SetParent(dock, false);
+            if (docked) Place(hr, new Vector2(0.5f, 0), new Vector2(0, 128), new Vector2(800, 40), new Vector2(0.5f, 0));
+            else Place(hr, new Vector2(1, 1), new Vector2(-40, -126), new Vector2(1140, 40), new Vector2(1, 1));
             var hl = hr.gameObject.AddComponent<HorizontalLayoutGroup>();
-            hl.childAlignment = TextAnchor.MiddleRight;
+            hl.childAlignment = docked ? TextAnchor.MiddleCenter : TextAnchor.MiddleRight;
             hl.spacing = 8;
             hl.childControlWidth = hl.childControlHeight = true;
             hl.childForceExpandWidth = hl.childForceExpandHeight = false;
             historyRow = hr;
+            if (docked) hr.gameObject.AddComponent<RectMask2D>();
 
             // ── centre: multiplier, status, warm-up bar ──
             multText = Label("Multiplier", root, "1.00x", 150, textMain, TextAnchor.MiddleCenter, true);
             multRT = multText.rectTransform;
-            Place(multRT, new Vector2(0.5f, 1), new Vector2(0, -170), new Vector2(1000, 180), new Vector2(0.5f, 1));
-            AddShadow(multText.gameObject, 6);
+            Place(multRT, new Vector2(0.5f, 1), new Vector2(0, docked ? -128 : -170), new Vector2(1000, 180), new Vector2(0.5f, 1));
+            AddShadow(multText.gameObject, 3);
             multBase = multRT.anchoredPosition;
 
-            statusText = Label("Status", root, "", 32, textMain, TextAnchor.MiddleCenter, false);
-            Place(statusText.rectTransform, new Vector2(0.5f, 1), new Vector2(0, -350), new Vector2(1300, 46), new Vector2(0.5f, 1));
+            statusText = Label("Status", dock, "", docked ? 28 : 32, textMain, TextAnchor.MiddleCenter, false);
+            if (docked) Place(statusText.rectTransform, new Vector2(0.5f, 0), new Vector2(0, 66), new Vector2(820, 44), new Vector2(0.5f, 0));
+            else Place(statusText.rectTransform, new Vector2(0.5f, 1), new Vector2(0, -350), new Vector2(1300, 46), new Vector2(0.5f, 1));
             AddShadow(statusText.gameObject, 3);
+            if (docked)
+            {
+                statusText.resizeTextForBestFit = true;   // long messages shrink instead of running under the cards
+                statusText.resizeTextMinSize = 14;
+                statusText.resizeTextMaxSize = 28;
+                statusText.horizontalOverflow = HorizontalWrapMode.Wrap;
+                statusText.verticalOverflow = VerticalWrapMode.Truncate;
+            }
 
-            var wb = Panel("WarmupBar", root, new Color(0, 0, 0, 0.45f), pillSprite);
-            Place(wb.rectTransform, new Vector2(0.5f, 1), new Vector2(0, -404), new Vector2(460, 16), new Vector2(0.5f, 1));
+            var wb = Panel("WarmupBar", dock, new Color(1f, 1f, 1f, 0.12f), pillSprite);
+            if (docked) Place(wb.rectTransform, new Vector2(0.5f, 0), new Vector2(0, 34), new Vector2(560, 16), new Vector2(0.5f, 0));
+            else Place(wb.rectTransform, new Vector2(0.5f, 1), new Vector2(0, -404), new Vector2(460, 16), new Vector2(0.5f, 1));
             warmFill = Panel("Fill", wb.transform, accent, pillSprite);
             warmFill.rectTransform.anchorMin = Vector2.zero;
             warmFill.rectTransform.anchorMax = new Vector2(0f, 1f);
             warmFill.rectTransform.offsetMin = warmFill.rectTransform.offsetMax = Vector2.zero;
             warmBar = wb.gameObject;
+            warmRT = wb.rectTransform;
 
             // ── toast ──
             toastText = Label("Toast", root, "", 96, win, TextAnchor.MiddleCenter, true);
             toastRT = toastText.rectTransform;
-            Place(toastRT, new Vector2(0.5f, 0.5f), new Vector2(0, 20), new Vector2(900, 130), new Vector2(0.5f, 0.5f));
+            Place(toastRT, new Vector2(0.5f, 0.5f), new Vector2(0, docked ? dockHeight * 0.5f + 20f : 20f), new Vector2(900, 130), new Vector2(0.5f, 0.5f));
             AddShadow(toastText.gameObject, 6);
             toastCG = toastText.gameObject.AddComponent<CanvasGroup>();
             toastCG.alpha = 0f;
             toastCG.blocksRaycasts = false;
             toastBase = toastRT.anchoredPosition;
 
-            BuildBetCard(root);
-            BuildGraphCard(root);
+            BuildBanner(root);
+            BuildBetCard(dock);
+            BuildGraphCard(dock);
         }
 
         void BuildBetCard(Transform root)
         {
-            var card = Panel("BetCard", root, panel, rounded);
-            Place(card.rectTransform, new Vector2(0, 0), new Vector2(40, 40), new Vector2(470, 372), new Vector2(0, 0));
+            bool d = docked;
+            var card = Panel("BetCard", root, d ? new Color(0.11f, 0.12f, 0.18f, 1f) : panel, rounded);
+            Place(card.rectTransform, new Vector2(0, 0), d ? new Vector2(30, 16) : new Vector2(40, 40), new Vector2(470, d ? 268 : 372), new Vector2(0, 0));
             var t = card.transform;
+            float yInput = d ? -40 : -50, hInput = d ? 56 : 66, yChips = d ? -104 : -128, hChips = d ? 40 : 48;
+            float yAuto = d ? -152 : -194, btnH = d ? 66 : 84, btnY = d ? 12 : 22;
 
             var title = Label("Title", t, "YOUR BET", 22, textMuted, TextAnchor.UpperLeft, false);
             Place(title.rectTransform, new Vector2(0, 1), new Vector2(24, -16), new Vector2(300, 28));
 
             betInput = MakeInput("Bet", t, startingBet, InputField.ContentType.DecimalNumber, 38);
-            Place((RectTransform)betInput.transform, new Vector2(0, 1), new Vector2(24, -50), new Vector2(422, 66));
+            Place((RectTransform)betInput.transform, new Vector2(0, 1), new Vector2(24, yInput), new Vector2(422, hInput));
             var unit = Label("Unit", betInput.transform, "credits", 22, textMuted, TextAnchor.MiddleRight, false);
             Place(unit.rectTransform, new Vector2(1, 0.5f), new Vector2(-18, 0), new Vector2(120, 40), new Vector2(1, 0.5f));
 
@@ -448,24 +706,25 @@ namespace KittyCrash
                 chipButtons[i] = ButtonWithLabel("Chip_" + chips[i], t, chips[i], 22, out var bg, out var lbl, () => Chip(op));
                 bg.color = panelLight;
                 lbl.color = textMain;
-                Place((RectTransform)chipButtons[i].transform, new Vector2(0, 1), new Vector2(24 + i * 108, -128), new Vector2(98, 48));
+                Place((RectTransform)chipButtons[i].transform, new Vector2(0, 1), new Vector2(24 + i * 108, yChips), new Vector2(98, hChips));
             }
 
             autoToggle = MakeToggle("Auto", t, out var autoLabel);
-            Place((RectTransform)autoToggle.transform, new Vector2(0, 1), new Vector2(24, -194), new Vector2(36, 36));
+            Place((RectTransform)autoToggle.transform, new Vector2(0, 1), new Vector2(24, yAuto), new Vector2(36, 36));
             autoLabel.text = "";
             var al = Label("AutoLabel", t, "Auto cash-out at", 24, textMain, TextAnchor.MiddleLeft, false);
-            Place(al.rectTransform, new Vector2(0, 1), new Vector2(70, -192), new Vector2(230, 40));
+            Place(al.rectTransform, new Vector2(0, 1), new Vector2(70, yAuto + 2), new Vector2(230, 40));
             autoInput = MakeInput("AutoValue", t, startingAuto, InputField.ContentType.DecimalNumber, 28);
-            Place((RectTransform)autoInput.transform, new Vector2(0, 1), new Vector2(306, -188), new Vector2(110, 48));
+            Place((RectTransform)autoInput.transform, new Vector2(0, 1), new Vector2(306, yAuto + 4), new Vector2(110, d ? 42 : 48));
             var ax = Label("x", t, "x", 26, textMuted, TextAnchor.MiddleLeft, false);
-            Place(ax.rectTransform, new Vector2(0, 1), new Vector2(422, -192), new Vector2(30, 40));
+            Place(ax.rectTransform, new Vector2(0, 1), new Vector2(422, yAuto + 2), new Vector2(30, 40));
 
-            errorText = Label("Error", t, "", 20, lose, TextAnchor.MiddleLeft, false);
-            Place(errorText.rectTransform, new Vector2(0, 1), new Vector2(24, -244), new Vector2(422, 28));
+            errorText = Label("Error", t, "", 20, lose, d ? TextAnchor.UpperRight : TextAnchor.MiddleLeft, false);
+            if (d) Place(errorText.rectTransform, new Vector2(1, 1), new Vector2(-24, -14), new Vector2(300, 26), new Vector2(1, 1));
+            else Place(errorText.rectTransform, new Vector2(0, 1), new Vector2(24, -244), new Vector2(422, 28));
 
             actionBtn = ButtonWithLabel("Action", t, "BET", 36, out actionBg, out actionText, OnAction);
-            Place((RectTransform)actionBtn.transform, new Vector2(0, 0), new Vector2(24, 22), new Vector2(422, 84), new Vector2(0, 0));
+            Place((RectTransform)actionBtn.transform, new Vector2(0, 0), new Vector2(24, btnY), new Vector2(422, btnH), new Vector2(0, 0));
             actionBtn.transition = Selectable.Transition.None;
             var hint = Label("Hint", actionBtn.transform, "SPACE", 16, new Color(0, 0, 0, 0.35f), TextAnchor.LowerRight, false);
             Place(hint.rectTransform, new Vector2(1, 0), new Vector2(-12, 6), new Vector2(100, 22), new Vector2(1, 0));
@@ -475,17 +734,31 @@ namespace KittyCrash
 
         void BuildGraphCard(Transform root)
         {
-            var card = Panel("GraphCard", root, panel, rounded);
-            Place(card.rectTransform, new Vector2(1, 0), new Vector2(-40, 40), new Vector2(580, 320), new Vector2(1, 0));
-            var title = Label("Title", card.transform, "LIVE CURVE", 22, textMuted, TextAnchor.UpperLeft, false);
-            Place(title.rectTransform, new Vector2(0, 1), new Vector2(24, -16), new Vector2(300, 28));
+            float cardH = docked ? 268f : 320f;
+            var card = Panel("GraphCard", root, docked ? new Color(0.11f, 0.12f, 0.18f, 1f) : panel, rounded);
+            Place(card.rectTransform, new Vector2(1, 0), docked ? new Vector2(-30, 16) : new Vector2(-40, 40), new Vector2(580, cardH), new Vector2(1, 0));
+            if (docked) graphRT = card.rectTransform;
+            var title = Label("Title", card.transform, "MULTIPLIER OVER TIME", 22, textMuted, TextAnchor.UpperLeft, true);
+            Place(title.rectTransform, new Vector2(0, 1), new Vector2(24, -14), new Vector2(330, 28));
+            graphValue = Label("Value", card.transform, "", 24, textMain, TextAnchor.UpperRight, true);
+            Place(graphValue.rectTransform, new Vector2(1, 1), new Vector2(-22, -12), new Vector2(220, 30), new Vector2(1, 1));
+            graphCaption = Label("Caption", card.transform, "", 17, textMuted, TextAnchor.UpperLeft, false);
+            Place(graphCaption.rectTransform, new Vector2(0, 1), new Vector2(24, -42), new Vector2(530, 24));
+            var crt = graphCaption.rectTransform;
+            crt.anchorMin = new Vector2(0, 1); crt.anchorMax = new Vector2(1, 1); crt.pivot = new Vector2(0, 1);
+            crt.anchoredPosition = new Vector2(24, -42); crt.sizeDelta = new Vector2(-46, 24);
+            graphCaption.horizontalOverflow = HorizontalWrapMode.Wrap;
+            graphCaption.verticalOverflow = VerticalWrapMode.Truncate;
+            graphCaption.resizeTextForBestFit = true;
+            graphCaption.resizeTextMinSize = 11;
+            graphCaption.resizeTextMaxSize = 17;
 
             var g = new GameObject("Graph", typeof(RectTransform));
             g.transform.SetParent(card.transform, false);
             var grt = (RectTransform)g.transform;
             grt.anchorMin = Vector2.zero; grt.anchorMax = Vector2.one;
-            grt.offsetMin = new Vector2(84, 26);
-            grt.offsetMax = new Vector2(-24, -58);
+            grt.offsetMin = new Vector2(84, 40);
+            grt.offsetMax = new Vector2(-24, -74);
             graph = g.AddComponent<CrashGraph>();
             graph.raycastTarget = false;
 
@@ -495,11 +768,23 @@ namespace KittyCrash
                 var rt = l.rectTransform;
                 rt.anchorMin = rt.anchorMax = new Vector2(0, 0);
                 rt.pivot = new Vector2(1, 0.5f);
-                float h = 320 - 26 - 58;
-                rt.anchoredPosition = new Vector2(76, 26 + h * i / 3f);
+                float h = cardH - 40 - 74;
+                rt.anchoredPosition = new Vector2(76, 40 + h * i / 3f);
                 rt.sizeDelta = new Vector2(70, 24);
                 graphLabels[i] = l;
             }
+
+            // x axis (seconds) + markers labels
+            graphX0 = Label("X0", card.transform, "0s", 16, textMuted, TextAnchor.UpperLeft, false);
+            Place(graphX0.rectTransform, new Vector2(0, 0), new Vector2(84, 34), new Vector2(80, 20), new Vector2(0, 1));
+            graphX1 = Label("X1", card.transform, "", 16, textMuted, TextAnchor.UpperRight, false);
+            Place(graphX1.rectTransform, new Vector2(1, 0), new Vector2(-24, 34), new Vector2(120, 20), new Vector2(1, 1));
+            graphTarget = Label("Target", g.transform, "", 16, graph.targetColor, TextAnchor.LowerRight, true);
+            graphTarget.rectTransform.sizeDelta = new Vector2(200, 22);
+            graphTarget.rectTransform.pivot = new Vector2(1, 0);
+            graphCash = Label("CashMark", g.transform, "", 16, win, TextAnchor.LowerCenter, true);
+            graphCash.rectTransform.sizeDelta = new Vector2(160, 22);
+            graphCash.rectTransform.pivot = new Vector2(0.5f, 0);
         }
 
         // ── widget helpers ────────────────────────
@@ -528,7 +813,8 @@ namespace KittyCrash
             var go = new GameObject(name, typeof(RectTransform));
             go.transform.SetParent(parent, false);
             var t = go.AddComponent<Text>();
-            t.font = bold ? boldFont : font;
+            bool inDock = docked && dockRT != null && parent != null && parent.IsChildOf(dockRT);
+            t.font = inDock ? (bold ? dockBoldFont : dockFont) : (bold ? boldFont : font);
             t.fontSize = size;
             t.color = color;
             t.alignment = anchor;
@@ -622,7 +908,7 @@ namespace KittyCrash
             s.effectDistance = new Vector2(d, -d);
         }
 
-        static Sprite MakeRounded(int size, int radius)
+        static Sprite MakeRounded(int size, int radius, float ppu = 100f)
         {
             var tex = new Texture2D(size, size, TextureFormat.RGBA32, false);
             tex.wrapMode = TextureWrapMode.Clamp;
@@ -639,7 +925,7 @@ namespace KittyCrash
                 }
             tex.SetPixels32(px);
             tex.Apply();
-            return Sprite.Create(tex, new Rect(0, 0, size, size), new Vector2(0.5f, 0.5f), 100f, 0, SpriteMeshType.FullRect,
+            return Sprite.Create(tex, new Rect(0, 0, size, size), new Vector2(0.5f, 0.5f), ppu, 0, SpriteMeshType.FullRect,
                 new Vector4(radius, radius, radius, radius));
         }
 

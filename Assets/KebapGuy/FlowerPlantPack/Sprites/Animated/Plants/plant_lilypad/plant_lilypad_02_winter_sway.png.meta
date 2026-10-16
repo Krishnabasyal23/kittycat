@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_lilypad_02_winter_sway_0
+      name: plant_lilypad_02_winter_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cb5e33a85b13be4488f33f937fe7ed3
-      internalID: -1281313547
+      spriteID: f0e3d50f40048684cb7d9588050c2438
+      internalID: -1135654395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_winter_sway_1
+      name: plant_lilypad_02_winter_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8f9159403849414db8caf08b010f4ad
-      internalID: 1844794844
+      spriteID: c5f2e9d472d08754f81f8b8cedd3b9c6
+      internalID: -637269337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_winter_sway_2
+      name: plant_lilypad_02_winter_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c81b48e468939845b1c3985a624c17e
-      internalID: -387286814
+      spriteID: 3982ea40e9e3c6e4cb3da7862748b43c
+      internalID: 644500555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_winter_sway_3
+      name: plant_lilypad_02_winter_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99ca0f03a09195e408ab0d1ded358893
-      internalID: 543803257
+      spriteID: 1cd921045c2fa9c4f8e1f505a2a8778c
+      internalID: -2072431208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_winter_sway_4
+      name: plant_lilypad_02_winter_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27350cecc9c86b04aadf881f2a8315eb
-      internalID: 1456691142
+      spriteID: aa7cbcc708caeda418e7aa277accb279
+      internalID: 2099100152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_winter_sway_5
+      name: plant_lilypad_02_winter_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de48cae58d7d11447a735d92fa0a3171
-      internalID: -704932003
+      spriteID: a1f0bb77cee40ad43ae9fa01a1dedcb7
+      internalID: 721471659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_winter_sway_6
+      name: plant_lilypad_02_winter_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe2e5b1c96139224894eb77a4842957c
-      internalID: -353938282
+      spriteID: 82516cf674ac6cd41a40a3361091d717
+      internalID: 1803198208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_winter_sway_7
+      name: plant_lilypad_02_winter_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dc5e62bf48975d42af6664ef767edb6
-      internalID: 945288065
+      spriteID: aa49dcb4ad25d1e46bc0743c869e1f46
+      internalID: -303096215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_winter_sway_8
+      name: plant_lilypad_02_winter_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dded5b8ae71c56045ba3161905e923ba
-      internalID: -1091916794
+      spriteID: 3932ac6d05ecad8469d30ef58677a8d9
+      internalID: -56588535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_winter_sway_9
+      name: plant_lilypad_02_winter_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 642c8feb06b6b7545a5ab2ca7daf6b96
-      internalID: 968053312
+      spriteID: 67b96aa65f7e6104888f88a0ac93ae79
+      internalID: 852213719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_winter_sway_10
+      name: plant_lilypad_02_winter_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eab6bc3caa6986140ac11699502e0f8c
-      internalID: 472150521
+      spriteID: e10061d23dd084e4b8794c75950e2364
+      internalID: -1416881999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_02_winter_sway_11
+      name: plant_lilypad_02_winter_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0538f7ec385532d4f857cfb9410753e7
-      internalID: -1743008244
+      spriteID: 10d6b8b570f12874a82b994c8aa0f6e9
+      internalID: 862344901
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_lilypad_02_winter_sway_0: -1281313547
-      plant_lilypad_02_winter_sway_1: 1844794844
-      plant_lilypad_02_winter_sway_10: 472150521
-      plant_lilypad_02_winter_sway_11: -1743008244
-      plant_lilypad_02_winter_sway_2: -387286814
-      plant_lilypad_02_winter_sway_3: 543803257
-      plant_lilypad_02_winter_sway_4: 1456691142
-      plant_lilypad_02_winter_sway_5: -704932003
-      plant_lilypad_02_winter_sway_6: -353938282
-      plant_lilypad_02_winter_sway_7: 945288065
-      plant_lilypad_02_winter_sway_8: -1091916794
-      plant_lilypad_02_winter_sway_9: 968053312
+      plant_lilypad_02_winter_sway_01_01: -1135654395
+      plant_lilypad_02_winter_sway_01_02: -637269337
+      plant_lilypad_02_winter_sway_01_03: 644500555
+      plant_lilypad_02_winter_sway_01_04: -2072431208
+      plant_lilypad_02_winter_sway_01_05: 2099100152
+      plant_lilypad_02_winter_sway_01_06: 721471659
+      plant_lilypad_02_winter_sway_01_07: 1803198208
+      plant_lilypad_02_winter_sway_01_08: -303096215
+      plant_lilypad_02_winter_sway_01_09: -56588535
+      plant_lilypad_02_winter_sway_01_10: 852213719
+      plant_lilypad_02_winter_sway_01_11: -1416881999
+      plant_lilypad_02_winter_sway_01_12: 862344901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

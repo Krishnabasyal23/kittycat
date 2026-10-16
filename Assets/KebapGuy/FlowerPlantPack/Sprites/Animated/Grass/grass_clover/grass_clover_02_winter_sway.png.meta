@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_clover_02_winter_sway_0
+      name: grass_clover_02_winter_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32206bc5963b9284ebfcd5766bc08951
-      internalID: -1172146050
+      spriteID: 235615c1bb6586843bcaff47e3da6470
+      internalID: 2107725306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_02_winter_sway_1
+      name: grass_clover_02_winter_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40fc5ad9259e6ea46ba524a175050153
-      internalID: 557346799
+      spriteID: 6689df0b09de1ec4b9879a35403b96e0
+      internalID: 781010221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_02_winter_sway_2
+      name: grass_clover_02_winter_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64b278ce05f66f842a2f79d5b6e8813e
-      internalID: 1002068479
+      spriteID: 1640bb3bafb300948b1672dd11cf2ee4
+      internalID: -595906180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_02_winter_sway_3
+      name: grass_clover_02_winter_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c5b47cfef95eb34aabdb380ceaee107
-      internalID: 78428239
+      spriteID: 3e59ff69acd015547bad71a74ea84baf
+      internalID: 2113512526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_02_winter_sway_4
+      name: grass_clover_02_winter_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8c25b89fd1a5534c89d137aad7f1c50
-      internalID: 546111979
+      spriteID: db55495faaa46344aa6cf50db81542e5
+      internalID: 1531431116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_02_winter_sway_5
+      name: grass_clover_02_winter_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 908ec3d1fee63514c988278e5d6e9f0a
-      internalID: -889633629
+      spriteID: e43e874de3c9d16489ef49bcaf6dfdd5
+      internalID: -1208067216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_02_winter_sway_6
+      name: grass_clover_02_winter_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ac79d6b13b50a14288d02f32291780b
-      internalID: 981877960
+      spriteID: 604e167ea1ba12e43a729c4c63f5fe5e
+      internalID: 1592654676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_02_winter_sway_7
+      name: grass_clover_02_winter_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e49bd4e1c850da441aacd08f81960aac
-      internalID: -731430929
+      spriteID: c736ba6accf47d54ba4ee28b45cadfeb
+      internalID: 123453120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_02_winter_sway_8
+      name: grass_clover_02_winter_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 741d4e21b4e61e84caebeaa360833e88
-      internalID: -511290742
+      spriteID: 204c5242f17523c4798a5b4a8f189cd2
+      internalID: 1459034114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_02_winter_sway_9
+      name: grass_clover_02_winter_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3db5336c567ba0439c2275f66e712b3
-      internalID: -1469482474
+      spriteID: 716417048c199e4428f14a029d58b940
+      internalID: 504956456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_02_winter_sway_10
+      name: grass_clover_02_winter_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f10474e37a6b2be40aeb7043db1122d5
-      internalID: -146916855
+      spriteID: fa53881dd7132094488de23d05bdd12c
+      internalID: 1966832192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_02_winter_sway_11
+      name: grass_clover_02_winter_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daeace46679eb514da092a3218e26d1d
-      internalID: 639737863
+      spriteID: 79ed9414d6506b24e9b232bd5d7a3ef3
+      internalID: 1367548631
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_clover_02_winter_sway_0: -1172146050
-      grass_clover_02_winter_sway_1: 557346799
-      grass_clover_02_winter_sway_10: -146916855
-      grass_clover_02_winter_sway_11: 639737863
-      grass_clover_02_winter_sway_2: 1002068479
-      grass_clover_02_winter_sway_3: 78428239
-      grass_clover_02_winter_sway_4: 546111979
-      grass_clover_02_winter_sway_5: -889633629
-      grass_clover_02_winter_sway_6: 981877960
-      grass_clover_02_winter_sway_7: -731430929
-      grass_clover_02_winter_sway_8: -511290742
-      grass_clover_02_winter_sway_9: -1469482474
+      grass_clover_02_winter_sway_01_01: 2107725306
+      grass_clover_02_winter_sway_01_02: 781010221
+      grass_clover_02_winter_sway_01_03: -595906180
+      grass_clover_02_winter_sway_01_04: 2113512526
+      grass_clover_02_winter_sway_01_05: 1531431116
+      grass_clover_02_winter_sway_01_06: -1208067216
+      grass_clover_02_winter_sway_01_07: 1592654676
+      grass_clover_02_winter_sway_01_08: 123453120
+      grass_clover_02_winter_sway_01_09: 1459034114
+      grass_clover_02_winter_sway_01_10: 504956456
+      grass_clover_02_winter_sway_01_11: 1966832192
+      grass_clover_02_winter_sway_01_12: 1367548631
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

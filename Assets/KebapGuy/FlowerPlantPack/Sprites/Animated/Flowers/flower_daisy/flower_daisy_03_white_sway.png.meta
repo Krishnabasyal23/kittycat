@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_daisy_03_white_sway_0
+      name: flower_daisy_03_white_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06fd32da87bde6c4989a77fb6f94a694
-      internalID: -486352885
+      spriteID: abe168fcda9ac5e43b80c4c56dc6f28e
+      internalID: 2068147861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_03_white_sway_1
+      name: flower_daisy_03_white_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efd5815eb2719ef449c796c4ef1fdbd0
-      internalID: -1213203929
+      spriteID: 3ed7df09326c23e4fbe40fc089150333
+      internalID: 89552865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_03_white_sway_2
+      name: flower_daisy_03_white_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92914d3a7d59db64b97cf5cee15c38ea
-      internalID: 774773331
+      spriteID: bf96f9c5ba8906f4b9bc5977787ba4f6
+      internalID: -501892900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_03_white_sway_3
+      name: flower_daisy_03_white_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e855615e262c87409a1838461130dc4
-      internalID: -1424548107
+      spriteID: fbf8dbca79b37fd4b86f45b49b68d676
+      internalID: -1480676409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_03_white_sway_4
+      name: flower_daisy_03_white_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1efd2de250f7dc428f61a5993312a85
-      internalID: -1400394899
+      spriteID: 510485e0ab845d0489f10ecb6c97aa2b
+      internalID: 1335685968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_03_white_sway_5
+      name: flower_daisy_03_white_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0cb744c7e965c647b10eca2c63ba486
-      internalID: 1672947278
+      spriteID: 7b93d6319ec167a4db778b7560844c64
+      internalID: 133532738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_03_white_sway_6
+      name: flower_daisy_03_white_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91a676508dda61a419d4c303c95c4c14
-      internalID: 294692052
+      spriteID: 269232042b99b1e479df24f52243c8d5
+      internalID: 1645831801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_03_white_sway_7
+      name: flower_daisy_03_white_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dc66ec420898df4b8f28979d4aa63dd
-      internalID: -1819849665
+      spriteID: bb2295d69f65c8646af62141a14eff43
+      internalID: -316563959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_03_white_sway_8
+      name: flower_daisy_03_white_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea404c9f08887f64f95aced16fa7f31d
-      internalID: 1727055035
+      spriteID: 64b5f53c70f314e48aab07eb2bb73bf5
+      internalID: 506798699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_03_white_sway_9
+      name: flower_daisy_03_white_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a02315377788a2544b3e62e542f8242f
-      internalID: -218733275
+      spriteID: 95acff624ccab7c4c91e2f2b918adc22
+      internalID: 1009642029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_03_white_sway_10
+      name: flower_daisy_03_white_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fe20246975bdd64aaee234478c424f7
-      internalID: -345655705
+      spriteID: c6fda01d6142f8f43a99a2461c4a5ee8
+      internalID: -215512286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_daisy_03_white_sway_11
+      name: flower_daisy_03_white_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e28caa6d590b6384597f4384dbe0c169
-      internalID: -94110729
+      spriteID: faeecd51fb4ba1747953702e6aeaac5c
+      internalID: -1440070466
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flower_daisy_03_white_sway_0: -486352885
-      flower_daisy_03_white_sway_1: -1213203929
-      flower_daisy_03_white_sway_10: -345655705
-      flower_daisy_03_white_sway_11: -94110729
-      flower_daisy_03_white_sway_2: 774773331
-      flower_daisy_03_white_sway_3: -1424548107
-      flower_daisy_03_white_sway_4: -1400394899
-      flower_daisy_03_white_sway_5: 1672947278
-      flower_daisy_03_white_sway_6: 294692052
-      flower_daisy_03_white_sway_7: -1819849665
-      flower_daisy_03_white_sway_8: 1727055035
-      flower_daisy_03_white_sway_9: -218733275
+      flower_daisy_03_white_sway_01_01: 2068147861
+      flower_daisy_03_white_sway_01_02: 89552865
+      flower_daisy_03_white_sway_01_03: -501892900
+      flower_daisy_03_white_sway_01_04: -1480676409
+      flower_daisy_03_white_sway_01_05: 1335685968
+      flower_daisy_03_white_sway_01_06: 133532738
+      flower_daisy_03_white_sway_01_07: 1645831801
+      flower_daisy_03_white_sway_01_08: -316563959
+      flower_daisy_03_white_sway_01_09: 506798699
+      flower_daisy_03_white_sway_01_10: 1009642029
+      flower_daisy_03_white_sway_01_11: -215512286
+      flower_daisy_03_white_sway_01_12: -1440070466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

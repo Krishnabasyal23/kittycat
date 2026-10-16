@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_tall_01_summer_sway_0
+      name: grass_tall_01_summer_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84ef42ea43396694b9f218ccc6e08f3b
-      internalID: 1253918439
+      spriteID: 9c00097987c2b864bb289d1e862b9598
+      internalID: -1623782183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_summer_sway_1
+      name: grass_tall_01_summer_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ab845f8282c3db48a6bf6543955e411
-      internalID: -279340179
+      spriteID: ca06cf7c4ca25774582960f455c378a9
+      internalID: -1704972372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_summer_sway_2
+      name: grass_tall_01_summer_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 010bbfce92610ff41b3b04b035650dc9
-      internalID: 1730327255
+      spriteID: d246f0cb83ee50441844bcf01f1bce38
+      internalID: 511781198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_summer_sway_3
+      name: grass_tall_01_summer_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee0ff6840922ba143aaa65974eb8b980
-      internalID: 824762093
+      spriteID: 5d2064a91d4e90f4b835e8ba13840c0c
+      internalID: 345993127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_summer_sway_4
+      name: grass_tall_01_summer_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51d3cd751408716408e85b31270f58ea
-      internalID: 1736400290
+      spriteID: 5a0f5ef3450a56142a1eb2f8b90c2e80
+      internalID: 968034675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_summer_sway_5
+      name: grass_tall_01_summer_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64d170f97192d6740899389a7feeda1d
-      internalID: -1532186762
+      spriteID: bd08a738f04f0e04084e90fb10edfd2d
+      internalID: -911823688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_summer_sway_6
+      name: grass_tall_01_summer_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d1a0df7ec61fd34a8554e75baa4e34c
-      internalID: 236271223
+      spriteID: becec9541087ad34190d275ad8fc4bf1
+      internalID: 909380019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_summer_sway_7
+      name: grass_tall_01_summer_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2748bfcd21fef874489c880081ef1fa0
-      internalID: 1314601556
+      spriteID: 1c72e72d46fb1b349929a73683db3cd2
+      internalID: -552095419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_summer_sway_8
+      name: grass_tall_01_summer_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e8e084aed326a240a79e6883c6b271c
-      internalID: -1215942515
+      spriteID: 1b6b27fa0446eb54fb627bba2a772362
+      internalID: -690382477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_summer_sway_9
+      name: grass_tall_01_summer_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 089098c68b399db459d2826bcbd3bade
-      internalID: 1088549845
+      spriteID: 32fa5fbfb7e316e40ae9ede1b95f44a7
+      internalID: -1789571295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_summer_sway_10
+      name: grass_tall_01_summer_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 913098c2e921e354a98c37b379b8923f
-      internalID: 981130710
+      spriteID: b0143bc149c0b044186de5a14b77b769
+      internalID: 1822151736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tall_01_summer_sway_11
+      name: grass_tall_01_summer_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11b024f6ecaf5e341aa5d392e20e7f0a
-      internalID: -2034424464
+      spriteID: 1b73868b02dadbb4cb8181a2140e7e55
+      internalID: 264007026
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_tall_01_summer_sway_0: 1253918439
-      grass_tall_01_summer_sway_1: -279340179
-      grass_tall_01_summer_sway_10: 981130710
-      grass_tall_01_summer_sway_11: -2034424464
-      grass_tall_01_summer_sway_2: 1730327255
-      grass_tall_01_summer_sway_3: 824762093
-      grass_tall_01_summer_sway_4: 1736400290
-      grass_tall_01_summer_sway_5: -1532186762
-      grass_tall_01_summer_sway_6: 236271223
-      grass_tall_01_summer_sway_7: 1314601556
-      grass_tall_01_summer_sway_8: -1215942515
-      grass_tall_01_summer_sway_9: 1088549845
+      grass_tall_01_summer_sway_01_01: -1623782183
+      grass_tall_01_summer_sway_01_02: -1704972372
+      grass_tall_01_summer_sway_01_03: 511781198
+      grass_tall_01_summer_sway_01_04: 345993127
+      grass_tall_01_summer_sway_01_05: 968034675
+      grass_tall_01_summer_sway_01_06: -911823688
+      grass_tall_01_summer_sway_01_07: 909380019
+      grass_tall_01_summer_sway_01_08: -552095419
+      grass_tall_01_summer_sway_01_09: -690382477
+      grass_tall_01_summer_sway_01_10: -1789571295
+      grass_tall_01_summer_sway_01_11: 1822151736
+      grass_tall_01_summer_sway_01_12: 264007026
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

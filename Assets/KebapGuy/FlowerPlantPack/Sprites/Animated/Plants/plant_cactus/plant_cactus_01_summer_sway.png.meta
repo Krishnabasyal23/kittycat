@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_cactus_01_summer_sway_0
+      name: plant_cactus_01_summer_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70d1f30bceef8e041a52f278e1daaccf
-      internalID: 526472444
+      spriteID: 67db2782929de5d4a8675363db6649ab
+      internalID: 497681943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_cactus_01_summer_sway_1
+      name: plant_cactus_01_summer_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98f27c5680841444fa066684c73ae5c1
-      internalID: -1278256766
+      spriteID: 8c7d9f4510abf5e488ba6416bfce8d96
+      internalID: -365461914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_cactus_01_summer_sway_2
+      name: plant_cactus_01_summer_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cccb560a52673cb4cad5da2af0de2708
-      internalID: -249039622
+      spriteID: 166096b3c830c154faa68d5e57b52a79
+      internalID: -1426775182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_cactus_01_summer_sway_3
+      name: plant_cactus_01_summer_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0fef9871481c9b4abbeeaafda63b27c
-      internalID: 1431625226
+      spriteID: 22d5026854ebc10429d6dade29e45579
+      internalID: 2043886631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_cactus_01_summer_sway_4
+      name: plant_cactus_01_summer_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f07892a147827e647b713dc4371a420a
-      internalID: -1780475969
+      spriteID: c4a2c246992b4c949b6e2f97dea7b363
+      internalID: -359877605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_cactus_01_summer_sway_5
+      name: plant_cactus_01_summer_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6300986933647c143b83a510377c858d
-      internalID: 166008865
+      spriteID: c4e45275c8117564e8c913e19476c70b
+      internalID: 684234756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_cactus_01_summer_sway_6
+      name: plant_cactus_01_summer_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db55d52ebe50c764781695c84c2b043e
-      internalID: 1242599981
+      spriteID: 865f83d181d36dd42a3116f26ceaa90c
+      internalID: -568480676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_cactus_01_summer_sway_7
+      name: plant_cactus_01_summer_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb9f450d4734fcf4ea314acbf0ad012e
-      internalID: 1685633470
+      spriteID: 3b281aff6075a78488839a35a39a9389
+      internalID: 439531837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_cactus_01_summer_sway_8
+      name: plant_cactus_01_summer_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e1a4fa5f73700545b00d7efba927359
-      internalID: 346780792
+      spriteID: 3834c4107f6d19246b672de4d14cf77c
+      internalID: -2117856259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_cactus_01_summer_sway_9
+      name: plant_cactus_01_summer_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b313170e02d090f44ad8df3d007d5da0
-      internalID: 1297744651
+      spriteID: 5452a39530496ef4bb1184f2df9aba8c
+      internalID: -1000858378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_cactus_01_summer_sway_10
+      name: plant_cactus_01_summer_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55ea9793aa31f61428a6c3e6a5a2901b
-      internalID: -1405392189
+      spriteID: 66128064b99ed984e9c721a84bb82578
+      internalID: -1070615425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_cactus_01_summer_sway_11
+      name: plant_cactus_01_summer_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42725413f451d9a4493037483ee3bb9f
-      internalID: 834812972
+      spriteID: 37d8ff558b270fc458a8a88557b63f93
+      internalID: 586572557
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_cactus_01_summer_sway_0: 526472444
-      plant_cactus_01_summer_sway_1: -1278256766
-      plant_cactus_01_summer_sway_10: -1405392189
-      plant_cactus_01_summer_sway_11: 834812972
-      plant_cactus_01_summer_sway_2: -249039622
-      plant_cactus_01_summer_sway_3: 1431625226
-      plant_cactus_01_summer_sway_4: -1780475969
-      plant_cactus_01_summer_sway_5: 166008865
-      plant_cactus_01_summer_sway_6: 1242599981
-      plant_cactus_01_summer_sway_7: 1685633470
-      plant_cactus_01_summer_sway_8: 346780792
-      plant_cactus_01_summer_sway_9: 1297744651
+      plant_cactus_01_summer_sway_01_01: 497681943
+      plant_cactus_01_summer_sway_01_02: -365461914
+      plant_cactus_01_summer_sway_01_03: -1426775182
+      plant_cactus_01_summer_sway_01_04: 2043886631
+      plant_cactus_01_summer_sway_01_05: -359877605
+      plant_cactus_01_summer_sway_01_06: 684234756
+      plant_cactus_01_summer_sway_01_07: -568480676
+      plant_cactus_01_summer_sway_01_08: 439531837
+      plant_cactus_01_summer_sway_01_09: -2117856259
+      plant_cactus_01_summer_sway_01_10: -1000858378
+      plant_cactus_01_summer_sway_01_11: -1070615425
+      plant_cactus_01_summer_sway_01_12: 586572557
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

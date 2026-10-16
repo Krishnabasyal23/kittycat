@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bush_large_02_winter_sway_0
+      name: bush_large_02_winter_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2827bbf0b1a3e364d9caf3f39144e15b
-      internalID: 1363761225
+      spriteID: fba8c6a85643bd343b4969150b4ed1a3
+      internalID: 701528334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_winter_sway_1
+      name: bush_large_02_winter_sway_01_02
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8383c310dab15f42aec169da81bd62f
-      internalID: -89794452
+      spriteID: 93ee8909d9688884a85c9b8208e4185a
+      internalID: 191743491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_winter_sway_2
+      name: bush_large_02_winter_sway_01_03
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 955b9775872e4e34fb78cef1c16b9d93
-      internalID: -222864078
+      spriteID: faaa250c719e18f4382d9d716c11616d
+      internalID: 125659884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_winter_sway_3
+      name: bush_large_02_winter_sway_01_04
       rect:
         serializedVersion: 2
         x: 144
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c056b9b9af227594c933b3f11bee70af
-      internalID: 1977176763
+      spriteID: 8b84613500514c142908fde2b085207b
+      internalID: 150569585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_winter_sway_4
+      name: bush_large_02_winter_sway_01_05
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53e80a89f626c6e408537aebce36290f
-      internalID: -1286956702
+      spriteID: 7c058b32f6da029419b07a1a69e605d5
+      internalID: 757838097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_winter_sway_5
+      name: bush_large_02_winter_sway_01_06
       rect:
         serializedVersion: 2
         x: 240
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 709e229b9ddec2840ac90aae4ca66a39
-      internalID: 1934268342
+      spriteID: ba1c3eec8991b1342ac6c55b024d580e
+      internalID: 1573207725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_winter_sway_6
+      name: bush_large_02_winter_sway_01_07
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fff5790e7a0331f4fb8311de18f4a1a3
-      internalID: 944481086
+      spriteID: cd24cf2d97fccc34a9ca8e0469038d22
+      internalID: -647523539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_winter_sway_7
+      name: bush_large_02_winter_sway_01_08
       rect:
         serializedVersion: 2
         x: 336
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdb95c97158e30a4b98a35458b45c544
-      internalID: -204641739
+      spriteID: 38b17cea7ee955548a591be471af9cc1
+      internalID: -818579787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_winter_sway_8
+      name: bush_large_02_winter_sway_01_09
       rect:
         serializedVersion: 2
         x: 384
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b8585b5c4479d54994d6aa1ba912d13
-      internalID: -1847220801
+      spriteID: d1880f5bfefe5ca408d85e0273f0c2c7
+      internalID: -124299606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_winter_sway_9
+      name: bush_large_02_winter_sway_01_10
       rect:
         serializedVersion: 2
         x: 432
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e4d0c05af494d243905ecfd2a43d97d
-      internalID: -964283014
+      spriteID: 8ad9a74d9e87a26408bff49a8a621782
+      internalID: 431790597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_winter_sway_10
+      name: bush_large_02_winter_sway_01_11
       rect:
         serializedVersion: 2
         x: 480
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ba2db41f5c2b4548a4f41b83f88f55e
-      internalID: 2036536178
+      spriteID: 919187b9404793740b1c805ef8a416f4
+      internalID: -1258169829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_large_02_winter_sway_11
+      name: bush_large_02_winter_sway_01_12
       rect:
         serializedVersion: 2
         x: 528
         y: 0
         width: 48
-        height: 48
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf11650cc24b6e34e811a4dd15d0ba93
-      internalID: 260985159
+      spriteID: 24349365b7ac5b044ab9d0e5fac42097
+      internalID: 1238650030
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bush_large_02_winter_sway_0: 1363761225
-      bush_large_02_winter_sway_1: -89794452
-      bush_large_02_winter_sway_10: 2036536178
-      bush_large_02_winter_sway_11: 260985159
-      bush_large_02_winter_sway_2: -222864078
-      bush_large_02_winter_sway_3: 1977176763
-      bush_large_02_winter_sway_4: -1286956702
-      bush_large_02_winter_sway_5: 1934268342
-      bush_large_02_winter_sway_6: 944481086
-      bush_large_02_winter_sway_7: -204641739
-      bush_large_02_winter_sway_8: -1847220801
-      bush_large_02_winter_sway_9: -964283014
+      bush_large_02_winter_sway_01_01: 701528334
+      bush_large_02_winter_sway_01_02: 191743491
+      bush_large_02_winter_sway_01_03: 125659884
+      bush_large_02_winter_sway_01_04: 150569585
+      bush_large_02_winter_sway_01_05: 757838097
+      bush_large_02_winter_sway_01_06: 1573207725
+      bush_large_02_winter_sway_01_07: -647523539
+      bush_large_02_winter_sway_01_08: -818579787
+      bush_large_02_winter_sway_01_09: -124299606
+      bush_large_02_winter_sway_01_10: 431790597
+      bush_large_02_winter_sway_01_11: -1258169829
+      bush_large_02_winter_sway_01_12: 1238650030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

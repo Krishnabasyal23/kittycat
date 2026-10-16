@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_bluebell_01_purple_sway_0
+      name: flower_bluebell_01_purple_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 5
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6876cd779a1c92a4bbb8c959a8292b93
-      internalID: 1730360202
+      spriteID: 65baa8b0838423c479a8733052d13374
+      internalID: 248410171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_bluebell_01_purple_sway_1
+      name: flower_bluebell_01_purple_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 5
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fc212bbcce77bd498cf0872f8a3b6dd
-      internalID: -1447589167
+      spriteID: c13bf884d25af5949b3519dc86ebcbb3
+      internalID: -618326479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_bluebell_01_purple_sway_2
+      name: flower_bluebell_01_purple_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 5
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 660e96807ea53a743984ec3fadb0d650
-      internalID: 493595188
+      spriteID: 36982a68cb0e0354abf7636f4f1fe2d5
+      internalID: -329426258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_bluebell_01_purple_sway_3
+      name: flower_bluebell_01_purple_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 5
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6427c7724b92874082b02239ec71067
-      internalID: 1437120391
+      spriteID: 725a0d087de65264683dbfc349d6b605
+      internalID: -1153916970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_bluebell_01_purple_sway_4
+      name: flower_bluebell_01_purple_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 5
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c201059c03450ae4dab3f7b0ea4c52c1
-      internalID: 1136387155
+      spriteID: 22d4e8654c0154046b6b7a08a2b0fd9a
+      internalID: -60990157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_bluebell_01_purple_sway_5
+      name: flower_bluebell_01_purple_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 5
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d8442419ff99d94eaf8b938b27622a6
-      internalID: 322413905
+      spriteID: d3629df23ad04bd488c1ccee3d949e0e
+      internalID: 1600334165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_bluebell_01_purple_sway_6
+      name: flower_bluebell_01_purple_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 5
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ff08f2e45730b34f83a7cfae220e2d8
-      internalID: 1311787633
+      spriteID: c3e5f31cc9a44a14db20add6a8870c3d
+      internalID: -1100617041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_bluebell_01_purple_sway_7
+      name: flower_bluebell_01_purple_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 5
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55a64d01eb9087444b77f9ad6d4b2391
-      internalID: 1765083645
+      spriteID: 8a55c008c22ac4c4fbcfbca0ca83e202
+      internalID: 1293922725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_bluebell_01_purple_sway_8
+      name: flower_bluebell_01_purple_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 5
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0bc1dee5d5b68042a31293aa17ad8b6
-      internalID: -1494150516
+      spriteID: e9bfd9e01d5be9b47ab25630331cbc3f
+      internalID: 1446419046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_bluebell_01_purple_sway_9
+      name: flower_bluebell_01_purple_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 5
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ddf333ec8e24d54a9a2bf14e9cfaa5b
-      internalID: -1929960968
+      spriteID: ff83b695e5ba3634c878e30eaa8300c2
+      internalID: -377702916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_bluebell_01_purple_sway_10
+      name: flower_bluebell_01_purple_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 5
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5584e65b92388e04894dcd2196284358
-      internalID: 35761769
+      spriteID: d0b9b1f0b8699294cb4630850b9e3694
+      internalID: -1263157351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_bluebell_01_purple_sway_11
+      name: flower_bluebell_01_purple_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 5
         width: 32
-        height: 32
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba34de22b2bb3994fb8a8760133c19e9
-      internalID: 389477310
+      spriteID: 89500b527b910b64a88bc3024fa031fa
+      internalID: -663681354
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flower_bluebell_01_purple_sway_0: 1730360202
-      flower_bluebell_01_purple_sway_1: -1447589167
-      flower_bluebell_01_purple_sway_10: 35761769
-      flower_bluebell_01_purple_sway_11: 389477310
-      flower_bluebell_01_purple_sway_2: 493595188
-      flower_bluebell_01_purple_sway_3: 1437120391
-      flower_bluebell_01_purple_sway_4: 1136387155
-      flower_bluebell_01_purple_sway_5: 322413905
-      flower_bluebell_01_purple_sway_6: 1311787633
-      flower_bluebell_01_purple_sway_7: 1765083645
-      flower_bluebell_01_purple_sway_8: -1494150516
-      flower_bluebell_01_purple_sway_9: -1929960968
+      flower_bluebell_01_purple_sway_01_01: 248410171
+      flower_bluebell_01_purple_sway_01_02: -618326479
+      flower_bluebell_01_purple_sway_01_03: -329426258
+      flower_bluebell_01_purple_sway_01_04: -1153916970
+      flower_bluebell_01_purple_sway_01_05: -60990157
+      flower_bluebell_01_purple_sway_01_06: 1600334165
+      flower_bluebell_01_purple_sway_01_07: -1100617041
+      flower_bluebell_01_purple_sway_01_08: 1293922725
+      flower_bluebell_01_purple_sway_01_09: 1446419046
+      flower_bluebell_01_purple_sway_01_10: -377702916
+      flower_bluebell_01_purple_sway_01_11: -1263157351
+      flower_bluebell_01_purple_sway_01_12: -663681354
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

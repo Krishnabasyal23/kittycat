@@ -126,7 +126,7 @@ namespace KittyCrash.EditorTools
             }
 
             // Scenery + background baselines
-            var spawner = Find<TreeSpawner>();
+            var spawner = TreeSpawner.FindMain();
             if (spawner != null && Mathf.Abs(spawner.groundY - GroundTop) > 0.01f)
             {
                 Undo.RecordObject(spawner, "Fix scenery");

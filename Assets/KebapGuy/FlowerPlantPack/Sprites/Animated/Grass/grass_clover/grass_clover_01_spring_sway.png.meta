@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_clover_01_spring_sway_0
+      name: grass_clover_01_spring_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20cb3e51229f9a14884ab6d6343626b4
-      internalID: 373804883
+      spriteID: bc5dca43261441348a20b7e5fb5c2d79
+      internalID: -2137587859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_01_spring_sway_1
+      name: grass_clover_01_spring_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4aa3b7a0e32d156429d069790004977f
-      internalID: -626496720
+      spriteID: 27b01eb4c3e054f4fbbd4e8beb134750
+      internalID: -1185973776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_01_spring_sway_2
+      name: grass_clover_01_spring_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 968e06d1a1f8a2e4f8cf5df6b4ce9733
-      internalID: 2130522967
+      spriteID: 0b837957c06bd8a4f91bf4d566ab6e8f
+      internalID: -1384489048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_01_spring_sway_3
+      name: grass_clover_01_spring_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 598559e3d19cfc14990d2a45e2800334
-      internalID: -1924927505
+      spriteID: 0c5b11ce415417a4aa01cacd640f831e
+      internalID: 1019924255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_01_spring_sway_4
+      name: grass_clover_01_spring_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc8f9587bfff90f4d93005e098431679
-      internalID: -328391608
+      spriteID: 21263186a78c24c4d818073adb7787e3
+      internalID: -1703279550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_01_spring_sway_5
+      name: grass_clover_01_spring_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5582cf7b4b5149458608836091234c3
-      internalID: -1679271764
+      spriteID: 45237fd7a69485d46ad1a04708ab3db3
+      internalID: -1802662532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_01_spring_sway_6
+      name: grass_clover_01_spring_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76df3af71883e4947bd35b53557c4bf1
-      internalID: 971438164
+      spriteID: fef9685eb046aaf4a86b96ebcc21fda6
+      internalID: -240581851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_01_spring_sway_7
+      name: grass_clover_01_spring_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d7d37fb907063a4b8242a484b1977cc
-      internalID: -1540449949
+      spriteID: f9a1eaf7b6b07b846a23fc5c6dfb374b
+      internalID: -122536494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_01_spring_sway_8
+      name: grass_clover_01_spring_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c2cc548c6a118044b49e752e2411c7b
-      internalID: 1847003374
+      spriteID: 72493de3ecbc7c14bace92f9984fdd15
+      internalID: 908816645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_01_spring_sway_9
+      name: grass_clover_01_spring_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f584aba0e46aa94f931762ee8e1f489
-      internalID: 1104015307
+      spriteID: 15cb8bcdf3fc6da4f9c660e8bdf44021
+      internalID: -342219931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_01_spring_sway_10
+      name: grass_clover_01_spring_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8de58a1ed6eca034989c65dee1950aff
-      internalID: 214958758
+      spriteID: 9ff2e9fe6d982854a93097e38daf560c
+      internalID: 491053872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_clover_01_spring_sway_11
+      name: grass_clover_01_spring_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd81c55c049e19c4a85cc5c090898529
-      internalID: -35553328
+      spriteID: dcbb88b4b85efd0479415e78ad213965
+      internalID: 1371637953
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_clover_01_spring_sway_0: 373804883
-      grass_clover_01_spring_sway_1: -626496720
-      grass_clover_01_spring_sway_10: 214958758
-      grass_clover_01_spring_sway_11: -35553328
-      grass_clover_01_spring_sway_2: 2130522967
-      grass_clover_01_spring_sway_3: -1924927505
-      grass_clover_01_spring_sway_4: -328391608
-      grass_clover_01_spring_sway_5: -1679271764
-      grass_clover_01_spring_sway_6: 971438164
-      grass_clover_01_spring_sway_7: -1540449949
-      grass_clover_01_spring_sway_8: 1847003374
-      grass_clover_01_spring_sway_9: 1104015307
+      grass_clover_01_spring_sway_01_01: -2137587859
+      grass_clover_01_spring_sway_01_02: -1185973776
+      grass_clover_01_spring_sway_01_03: -1384489048
+      grass_clover_01_spring_sway_01_04: 1019924255
+      grass_clover_01_spring_sway_01_05: -1703279550
+      grass_clover_01_spring_sway_01_06: -1802662532
+      grass_clover_01_spring_sway_01_07: -240581851
+      grass_clover_01_spring_sway_01_08: -122536494
+      grass_clover_01_spring_sway_01_09: 908816645
+      grass_clover_01_spring_sway_01_10: -342219931
+      grass_clover_01_spring_sway_01_11: 491053872
+      grass_clover_01_spring_sway_01_12: 1371637953
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

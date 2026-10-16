@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bush_round_01_autumn_sway_0
+      name: bush_round_01_autumn_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d334fbe11ecf3284babaced6190932a6
-      internalID: -141350650
+      spriteID: ea11e677c38208f49aedbb02eea7cd30
+      internalID: -1256900655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_01_autumn_sway_1
+      name: bush_round_01_autumn_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dde58fc766cd66d428c7e9853912aada
-      internalID: -1649066226
+      spriteID: 4f6124a890e7ba24b94d1afde7580a7c
+      internalID: -785418131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_01_autumn_sway_2
+      name: bush_round_01_autumn_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ce31ccbd2170c0499591ccc5d1f3550
-      internalID: -1118934849
+      spriteID: 830ab680e98229047a6be8179a8970cc
+      internalID: 1592927817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_01_autumn_sway_3
+      name: bush_round_01_autumn_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd9c29ac78915864c8df847c9fa8e075
-      internalID: 1913159901
+      spriteID: bbc3e5cbbb3e32f449c5643531b7523d
+      internalID: 586607241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_01_autumn_sway_4
+      name: bush_round_01_autumn_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 648d1dea1cd30e9408f96d2e4d9c9a08
-      internalID: 480423283
+      spriteID: a0fa3ad0e3a43dd4eb1f04a5ea96a8de
+      internalID: -1603363009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_01_autumn_sway_5
+      name: bush_round_01_autumn_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c70ab3044a99e364a81230a47efb578a
-      internalID: -2089381699
+      spriteID: 9e22a0bed6466e144819fd927a867c18
+      internalID: 1050996559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_01_autumn_sway_6
+      name: bush_round_01_autumn_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b4bda02a715d38468faffffdd6e3204
-      internalID: -622127900
+      spriteID: a5c06e83b3a9db940acbad26b290d519
+      internalID: 751993456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_01_autumn_sway_7
+      name: bush_round_01_autumn_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4c30a02cbe161b4aa26854e95518a4a
-      internalID: 535862277
+      spriteID: 5a173ae83fb67a94c864d5bcf87f12be
+      internalID: -1488076221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_01_autumn_sway_8
+      name: bush_round_01_autumn_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e27e805dc19d1741ab24ce206805aea
-      internalID: 2144363757
+      spriteID: 737e1f4fa89d653468c396699fe5d6ae
+      internalID: 1090214031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_01_autumn_sway_9
+      name: bush_round_01_autumn_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bae75796519d4bb42b41540fe6819ecf
-      internalID: -1054043602
+      spriteID: ff1d2d0f7f741d344b17ae3130f934d3
+      internalID: 1534835557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_01_autumn_sway_10
+      name: bush_round_01_autumn_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 595d8184c55d2474081be2f95d5afedb
-      internalID: -1226488960
+      spriteID: 9fd2901ef068a0d4e935e111b710edd3
+      internalID: 1629819894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_round_01_autumn_sway_11
+      name: bush_round_01_autumn_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30f492caf19ed72499b174e7a1495773
-      internalID: -721803433
+      spriteID: 09abe41f5af6501418d6848b9f73d4d8
+      internalID: -1261453015
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bush_round_01_autumn_sway_0: -141350650
-      bush_round_01_autumn_sway_1: -1649066226
-      bush_round_01_autumn_sway_10: -1226488960
-      bush_round_01_autumn_sway_11: -721803433
-      bush_round_01_autumn_sway_2: -1118934849
-      bush_round_01_autumn_sway_3: 1913159901
-      bush_round_01_autumn_sway_4: 480423283
-      bush_round_01_autumn_sway_5: -2089381699
-      bush_round_01_autumn_sway_6: -622127900
-      bush_round_01_autumn_sway_7: 535862277
-      bush_round_01_autumn_sway_8: 2144363757
-      bush_round_01_autumn_sway_9: -1054043602
+      bush_round_01_autumn_sway_01_01: -1256900655
+      bush_round_01_autumn_sway_01_02: -785418131
+      bush_round_01_autumn_sway_01_03: 1592927817
+      bush_round_01_autumn_sway_01_04: 586607241
+      bush_round_01_autumn_sway_01_05: -1603363009
+      bush_round_01_autumn_sway_01_06: 1050996559
+      bush_round_01_autumn_sway_01_07: 751993456
+      bush_round_01_autumn_sway_01_08: -1488076221
+      bush_round_01_autumn_sway_01_09: 1090214031
+      bush_round_01_autumn_sway_01_10: 1534835557
+      bush_round_01_autumn_sway_01_11: 1629819894
+      bush_round_01_autumn_sway_01_12: -1261453015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

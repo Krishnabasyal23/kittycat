@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bush_berry_02_small_red_sway_0
+      name: bush_berry_02_small_red_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2612d1f3219f5b4fac73b1fbebc212e
-      internalID: -549418927
+      spriteID: 26deab3a87431f34f92a5f8d49871898
+      internalID: 800287191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_02_small_red_sway_1
+      name: bush_berry_02_small_red_sway_01_02
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81c8df879cd450341a79e3d7b3593010
-      internalID: -1606456233
+      spriteID: fc3755d737cbf6f41b4c7481c6a36e28
+      internalID: -323145142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_02_small_red_sway_2
+      name: bush_berry_02_small_red_sway_01_03
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35e12aff12b66d146bba7e4a39dab781
-      internalID: -1485734501
+      spriteID: 41562e58d44e3b147adbc190aa7c6efa
+      internalID: 829274632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_02_small_red_sway_3
+      name: bush_berry_02_small_red_sway_01_04
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8786d333e904bf14d9a35207af736ba3
-      internalID: -25051059
+      spriteID: ba5fac92e32555e40be06e322d84f2f3
+      internalID: 1085670742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_02_small_red_sway_4
+      name: bush_berry_02_small_red_sway_01_05
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e69e3b8ee4602324383cba509c48bb1b
-      internalID: 1522805366
+      spriteID: 2ce829e3ba57d4a4489b9d18c74827ff
+      internalID: 1922016816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_02_small_red_sway_5
+      name: bush_berry_02_small_red_sway_01_06
       rect:
         serializedVersion: 2
         x: 80
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 981b0e69912de324e8489338d1fc360e
-      internalID: 738129495
+      spriteID: 90d2fbfb61ccb93438425e0f75ce071a
+      internalID: 640021963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_02_small_red_sway_6
+      name: bush_berry_02_small_red_sway_01_07
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5f3103011040a54e82562b98377c7ed
-      internalID: 1823862262
+      spriteID: e23643f373bcdc640b89b33b289ddb9d
+      internalID: -1814141471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_02_small_red_sway_7
+      name: bush_berry_02_small_red_sway_01_08
       rect:
         serializedVersion: 2
         x: 112
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f94a8ce869a93fb4aa60a94d1f6e4879
-      internalID: 2034852894
+      spriteID: b2a7393f9eb5f5a42b0def62e6b748c7
+      internalID: -1901352152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_02_small_red_sway_8
+      name: bush_berry_02_small_red_sway_01_09
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d49aea9e85d67614684e78e1799bb33a
-      internalID: 416240424
+      spriteID: f6e06deef2ae7194e8b22a9a8f3a8b05
+      internalID: -903827282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_02_small_red_sway_9
+      name: bush_berry_02_small_red_sway_01_10
       rect:
         serializedVersion: 2
         x: 144
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4c5ecba7dd749c4bbc64d5a811d0ea6
-      internalID: -704971386
+      spriteID: 89797166fcf7fd74aa031541c0ab43c0
+      internalID: -1581266481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_02_small_red_sway_10
+      name: bush_berry_02_small_red_sway_01_11
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8360edb143096547919da3e551e5df4
-      internalID: 49201465
+      spriteID: a29485af95d876c47b2baba1654b2548
+      internalID: -283384651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_berry_02_small_red_sway_11
+      name: bush_berry_02_small_red_sway_01_12
       rect:
         serializedVersion: 2
         x: 176
         y: 0
         width: 16
-        height: 16
+        height: 10
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1420613172a5b94aa8f706bc7f7226c
-      internalID: 2072234961
+      spriteID: 61752b86f07bf2449b116dbd1d01c786
+      internalID: -569477067
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bush_berry_02_small_red_sway_0: -549418927
-      bush_berry_02_small_red_sway_1: -1606456233
-      bush_berry_02_small_red_sway_10: 49201465
-      bush_berry_02_small_red_sway_11: 2072234961
-      bush_berry_02_small_red_sway_2: -1485734501
-      bush_berry_02_small_red_sway_3: -25051059
-      bush_berry_02_small_red_sway_4: 1522805366
-      bush_berry_02_small_red_sway_5: 738129495
-      bush_berry_02_small_red_sway_6: 1823862262
-      bush_berry_02_small_red_sway_7: 2034852894
-      bush_berry_02_small_red_sway_8: 416240424
-      bush_berry_02_small_red_sway_9: -704971386
+      bush_berry_02_small_red_sway_01_01: 800287191
+      bush_berry_02_small_red_sway_01_02: -323145142
+      bush_berry_02_small_red_sway_01_03: 829274632
+      bush_berry_02_small_red_sway_01_04: 1085670742
+      bush_berry_02_small_red_sway_01_05: 1922016816
+      bush_berry_02_small_red_sway_01_06: 640021963
+      bush_berry_02_small_red_sway_01_07: -1814141471
+      bush_berry_02_small_red_sway_01_08: -1901352152
+      bush_berry_02_small_red_sway_01_09: -903827282
+      bush_berry_02_small_red_sway_01_10: -1581266481
+      bush_berry_02_small_red_sway_01_11: -283384651
+      bush_berry_02_small_red_sway_01_12: -569477067
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

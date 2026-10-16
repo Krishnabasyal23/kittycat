@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_lilypad_01_summer_sway_0
+      name: plant_lilypad_01_summer_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9e3c57c1bd2a77409e927a1becaadfd
-      internalID: 1499908389
+      spriteID: 3b7755f0e2c915b479ab5396a84bc535
+      internalID: -922272225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_01_summer_sway_1
+      name: plant_lilypad_01_summer_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eeca333be7e5d154ab3254f53f310d8f
-      internalID: -1927412295
+      spriteID: 22b51096da69db04abd0d20990094863
+      internalID: -322059646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_01_summer_sway_2
+      name: plant_lilypad_01_summer_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dac1b83b16dcd64f871caf86da4fb35
-      internalID: 1961636474
+      spriteID: 7dfe9ff474c6d0d4e90411ac53ee0663
+      internalID: 2102265128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_01_summer_sway_3
+      name: plant_lilypad_01_summer_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfbcf08264ad0b5448ba313e9cbd9cd0
-      internalID: -1058115614
+      spriteID: 0257ee88f65a47c4390e5d07b34a43bd
+      internalID: -480009643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_01_summer_sway_4
+      name: plant_lilypad_01_summer_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8480337f020f9147bb4f5770d783491
-      internalID: 2089830358
+      spriteID: 4bc30ca82d48d3b46b972e385404d013
+      internalID: -1551016319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_01_summer_sway_5
+      name: plant_lilypad_01_summer_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecdb7f442c0868a47867cf4a981595d7
-      internalID: 1554968654
+      spriteID: cc71d24213f347649a24270bbd15efce
+      internalID: -752116382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_01_summer_sway_6
+      name: plant_lilypad_01_summer_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8e4be1fffd675049b9958c3964fe659
-      internalID: 2100733340
+      spriteID: 128c229a490f98c4797a4569a5768779
+      internalID: 1753734909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_01_summer_sway_7
+      name: plant_lilypad_01_summer_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6df3fce56fd5c05409bc2905cc86ac74
-      internalID: -364246668
+      spriteID: 6d8fd111a2d59f84298c45962e60f168
+      internalID: -628620168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_01_summer_sway_8
+      name: plant_lilypad_01_summer_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e7788d4ab60be64296beffedba98532
-      internalID: 1406413719
+      spriteID: a97df606f6d03164ea7bdae2cfd96bb2
+      internalID: -104187448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_01_summer_sway_9
+      name: plant_lilypad_01_summer_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37aa9c26dd10bd54a910b099c189434e
-      internalID: -338443868
+      spriteID: 2cbf2c044a81d5f4fafeb6982d267fc4
+      internalID: -981374537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_01_summer_sway_10
+      name: plant_lilypad_01_summer_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 482de3d32ee3dc3449dbd2866ada7214
-      internalID: 1467426020
+      spriteID: 9838867558419914881b3ab8cb478b03
+      internalID: 995910966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_01_summer_sway_11
+      name: plant_lilypad_01_summer_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7273c01837c99245af744e1892b76d3
-      internalID: -201341190
+      spriteID: 9001ad305661c7d47b6a0f66d16c2dfd
+      internalID: 1434872299
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_lilypad_01_summer_sway_0: 1499908389
-      plant_lilypad_01_summer_sway_1: -1927412295
-      plant_lilypad_01_summer_sway_10: 1467426020
-      plant_lilypad_01_summer_sway_11: -201341190
-      plant_lilypad_01_summer_sway_2: 1961636474
-      plant_lilypad_01_summer_sway_3: -1058115614
-      plant_lilypad_01_summer_sway_4: 2089830358
-      plant_lilypad_01_summer_sway_5: 1554968654
-      plant_lilypad_01_summer_sway_6: 2100733340
-      plant_lilypad_01_summer_sway_7: -364246668
-      plant_lilypad_01_summer_sway_8: 1406413719
-      plant_lilypad_01_summer_sway_9: -338443868
+      plant_lilypad_01_summer_sway_01_01: -922272225
+      plant_lilypad_01_summer_sway_01_02: -322059646
+      plant_lilypad_01_summer_sway_01_03: 2102265128
+      plant_lilypad_01_summer_sway_01_04: -480009643
+      plant_lilypad_01_summer_sway_01_05: -1551016319
+      plant_lilypad_01_summer_sway_01_06: -752116382
+      plant_lilypad_01_summer_sway_01_07: 1753734909
+      plant_lilypad_01_summer_sway_01_08: -628620168
+      plant_lilypad_01_summer_sway_01_09: -104187448
+      plant_lilypad_01_summer_sway_01_10: -981374537
+      plant_lilypad_01_summer_sway_01_11: 995910966
+      plant_lilypad_01_summer_sway_01_12: 1434872299
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

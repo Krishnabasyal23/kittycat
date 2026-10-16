@@ -7,6 +7,14 @@ using UnityEngine;
 
 namespace KittyCrash.EditorTools
 {
+    /// <summary>
+    /// Menu: Kitty Crash › Make Scenery From Selected Sprites
+    /// 1. In the Project window select the plant / tree / bush sprites you want (expand a sliced sheet with ▸
+    ///    and shift-click frames, or select whole PNGs).
+    /// 2. Run the menu. For each sprite it makes a prefab (bottom sits on the ground, sized from its pixel
+    ///    height, crossfades with seasons) and puts them in Scenery › Tree Spawner instead of the squares.
+    /// Festive props (pumpkin/snowman…) are kept. Ctrl+Z undoes the spawner change.
+    /// </summary>
     public static class SceneryMaker
     {
         const string OutDir = "Assets/KittyCrash/Prefabs/Scenery";
@@ -63,11 +71,7 @@ namespace KittyCrash.EditorTools
                 if (prefab != null) made.Add(prefab);
             }
 
-#if UNITY_2023_1_OR_NEWER
-            var spawner = Object.FindAnyObjectByType<TreeSpawner>();
-#else
-            var spawner = Object.FindObjectOfType<TreeSpawner>();
-#endif
+            var spawner = TreeSpawner.FindMain();
             if (spawner == null)
             {
                 Msg($"Made {made.Count} prefab(s) in {OutDir}, but the KittyCrash scene isn't open, so the spawner wasn't updated.\n" +

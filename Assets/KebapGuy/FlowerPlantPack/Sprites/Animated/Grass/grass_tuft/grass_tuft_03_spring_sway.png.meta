@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_tuft_03_spring_sway_0
+      name: grass_tuft_03_spring_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1140b7aa9ec92f74ab77bb6e2b7f4a00
-      internalID: -1919302476
+      spriteID: 638b9a756f042514f80d1a58239494a6
+      internalID: 503944310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_spring_sway_1
+      name: grass_tuft_03_spring_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2ac20fc318d2574682cefe0935d612e
-      internalID: -1217391865
+      spriteID: 51fbed8cbe9f6bc48b30d02b736aaef0
+      internalID: -1130014268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_spring_sway_2
+      name: grass_tuft_03_spring_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb00d6c640c6f5c458e829e924424efb
-      internalID: 1266576459
+      spriteID: a32dca70ee1e3f049afc2a2d280e34e6
+      internalID: -243074890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_spring_sway_3
+      name: grass_tuft_03_spring_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2f8a71f28da493498116c1066a065b4
-      internalID: 1250425074
+      spriteID: f633da1e03c5bac418feb56c265733e8
+      internalID: 544401948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_spring_sway_4
+      name: grass_tuft_03_spring_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c62dcf7072acc945a35ef72fac15b84
-      internalID: 135688429
+      spriteID: 310b0b42b6b2c30499a282468310ceb7
+      internalID: 723853080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_spring_sway_5
+      name: grass_tuft_03_spring_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb91a62bba0170e4c8946ce26193de8e
-      internalID: -772839177
+      spriteID: 796032616f438c54f8048c58753d4bbb
+      internalID: 826848181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_spring_sway_6
+      name: grass_tuft_03_spring_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bed68774010f1ee4280eb53ebdbaed7e
-      internalID: 236092390
+      spriteID: 96437112ed96c8b4d8b593693e296746
+      internalID: 1410094681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_spring_sway_7
+      name: grass_tuft_03_spring_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 064387992af25994bb4da486f2da8e49
-      internalID: 1229746370
+      spriteID: 7f83634901b61be43b2c0273ec1d2027
+      internalID: -1399923686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_spring_sway_8
+      name: grass_tuft_03_spring_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d2ff6bd2b6602b4ca59602a6d172281
-      internalID: 1760673862
+      spriteID: 3b2d52b8d0728d240ad642a28b6c5cc2
+      internalID: -1301314950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_spring_sway_9
+      name: grass_tuft_03_spring_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df6ced1b9a2405744be3d93be57060d4
-      internalID: 2093030890
+      spriteID: 0bacde12fa9faf644bb5ca30d32e3671
+      internalID: -179968752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_spring_sway_10
+      name: grass_tuft_03_spring_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33b054978040f3d44850dc77d9254002
-      internalID: 1988024246
+      spriteID: 35ec54e5dea1127408d999376391e2cf
+      internalID: -509964727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tuft_03_spring_sway_11
+      name: grass_tuft_03_spring_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33057ae2319e6b546b6b6fc2d658bb57
-      internalID: 1945016055
+      spriteID: fc0ad2fb1a444ea44a109e96a1db7715
+      internalID: -1461499606
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_tuft_03_spring_sway_0: -1919302476
-      grass_tuft_03_spring_sway_1: -1217391865
-      grass_tuft_03_spring_sway_10: 1988024246
-      grass_tuft_03_spring_sway_11: 1945016055
-      grass_tuft_03_spring_sway_2: 1266576459
-      grass_tuft_03_spring_sway_3: 1250425074
-      grass_tuft_03_spring_sway_4: 135688429
-      grass_tuft_03_spring_sway_5: -772839177
-      grass_tuft_03_spring_sway_6: 236092390
-      grass_tuft_03_spring_sway_7: 1229746370
-      grass_tuft_03_spring_sway_8: 1760673862
-      grass_tuft_03_spring_sway_9: 2093030890
+      grass_tuft_03_spring_sway_01_01: 503944310
+      grass_tuft_03_spring_sway_01_02: -1130014268
+      grass_tuft_03_spring_sway_01_03: -243074890
+      grass_tuft_03_spring_sway_01_04: 544401948
+      grass_tuft_03_spring_sway_01_05: 723853080
+      grass_tuft_03_spring_sway_01_06: 826848181
+      grass_tuft_03_spring_sway_01_07: 1410094681
+      grass_tuft_03_spring_sway_01_08: -1399923686
+      grass_tuft_03_spring_sway_01_09: -1301314950
+      grass_tuft_03_spring_sway_01_10: -179968752
+      grass_tuft_03_spring_sway_01_11: -509964727
+      grass_tuft_03_spring_sway_01_12: -1461499606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

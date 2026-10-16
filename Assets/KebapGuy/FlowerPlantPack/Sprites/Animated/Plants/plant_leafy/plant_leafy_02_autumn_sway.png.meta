@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_leafy_02_autumn_sway_0
+      name: plant_leafy_02_autumn_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f506317460ceadb42a57baf79c93eeca
-      internalID: 904790174
+      spriteID: 1f504fa4c7c756e458a1e50d6774992b
+      internalID: -696089530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_02_autumn_sway_1
+      name: plant_leafy_02_autumn_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b63587cd96113c478c2fce8beb98296
-      internalID: -487600297
+      spriteID: 26117fb487afc6e45a1150ce8f268c7c
+      internalID: -1899653252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_02_autumn_sway_2
+      name: plant_leafy_02_autumn_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d8913efc8b62ee49ac75a3875187d66
-      internalID: 1272111933
+      spriteID: 731f6a82db7b8bd469b900c821ff3768
+      internalID: 251705113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_02_autumn_sway_3
+      name: plant_leafy_02_autumn_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98300b8c786328e4daff17e344c65d79
-      internalID: -1305602689
+      spriteID: dc585e82958855c42b0da5f9b8b0a6c9
+      internalID: -829666066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_02_autumn_sway_4
+      name: plant_leafy_02_autumn_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 304d0c63929c3fd4484303e3c1a71a92
-      internalID: -1016121578
+      spriteID: 3410a3cd8d3943540b0a6004a43305f3
+      internalID: -1524508762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_02_autumn_sway_5
+      name: plant_leafy_02_autumn_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba1c1c2ff18a42c43b13c3dc822dd539
-      internalID: 304638287
+      spriteID: 59ef331cb8f4ff34a941c9a4ba7e80dd
+      internalID: -27735936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_02_autumn_sway_6
+      name: plant_leafy_02_autumn_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20e4d9c82dd96bc42bd7ebb478ee1881
-      internalID: -1932863659
+      spriteID: 1bf0b603d18036545b24f540b2b9b613
+      internalID: -638151774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_02_autumn_sway_7
+      name: plant_leafy_02_autumn_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80df7094a46d8b0489115f7be6f17b41
-      internalID: -794273324
+      spriteID: dd4f20b65df4ba545829fd7ddfed5aaf
+      internalID: -190042892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_02_autumn_sway_8
+      name: plant_leafy_02_autumn_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c6e908fe06d0aa40af479b1c1d70b6d
-      internalID: -41699576
+      spriteID: 52d5fd46e7ef955429569489f848c759
+      internalID: 946073482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_02_autumn_sway_9
+      name: plant_leafy_02_autumn_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c76f17fab52735c42879e6bba132b2cd
-      internalID: 1567859855
+      spriteID: d94f219750156bb4698d2eda63331b4d
+      internalID: 502884288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_02_autumn_sway_10
+      name: plant_leafy_02_autumn_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 792c15a51d880dd4f9867e6afc4d0cc3
-      internalID: -563395578
+      spriteID: 80ecd3369e90d5b4d81941c6ad1e68f3
+      internalID: -2050129400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_leafy_02_autumn_sway_11
+      name: plant_leafy_02_autumn_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 1
         width: 32
-        height: 32
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f67ebc697547091498d85cd6fc6f26c8
-      internalID: 106943174
+      spriteID: e9f1257286747bc40a5367d86e5f3e0b
+      internalID: -1769607291
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_leafy_02_autumn_sway_0: 904790174
-      plant_leafy_02_autumn_sway_1: -487600297
-      plant_leafy_02_autumn_sway_10: -563395578
-      plant_leafy_02_autumn_sway_11: 106943174
-      plant_leafy_02_autumn_sway_2: 1272111933
-      plant_leafy_02_autumn_sway_3: -1305602689
-      plant_leafy_02_autumn_sway_4: -1016121578
-      plant_leafy_02_autumn_sway_5: 304638287
-      plant_leafy_02_autumn_sway_6: -1932863659
-      plant_leafy_02_autumn_sway_7: -794273324
-      plant_leafy_02_autumn_sway_8: -41699576
-      plant_leafy_02_autumn_sway_9: 1567859855
+      plant_leafy_02_autumn_sway_01_01: -696089530
+      plant_leafy_02_autumn_sway_01_02: -1899653252
+      plant_leafy_02_autumn_sway_01_03: 251705113
+      plant_leafy_02_autumn_sway_01_04: -829666066
+      plant_leafy_02_autumn_sway_01_05: -1524508762
+      plant_leafy_02_autumn_sway_01_06: -27735936
+      plant_leafy_02_autumn_sway_01_07: -638151774
+      plant_leafy_02_autumn_sway_01_08: -190042892
+      plant_leafy_02_autumn_sway_01_09: 946073482
+      plant_leafy_02_autumn_sway_01_10: 502884288
+      plant_leafy_02_autumn_sway_01_11: -2050129400
+      plant_leafy_02_autumn_sway_01_12: -1769607291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

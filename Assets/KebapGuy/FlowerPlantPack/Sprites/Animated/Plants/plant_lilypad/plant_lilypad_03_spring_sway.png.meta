@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plant_lilypad_03_spring_sway_0
+      name: plant_lilypad_03_spring_sway_01_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91a0090d5d3ab584eaff8a1d046ec57c
-      internalID: 1199856934
+      spriteID: e41db62e5b2707940bbbffc88acaa619
+      internalID: -870509092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_03_spring_sway_1
+      name: plant_lilypad_03_spring_sway_01_02
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dba8856311894e94a99d5ba8f18213a2
-      internalID: 198249813
+      spriteID: 66da0bb305f15614ca4e2063948c75f0
+      internalID: 874385645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_03_spring_sway_2
+      name: plant_lilypad_03_spring_sway_01_03
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d57b3d35ee58e04fb6c747a81aaf012
-      internalID: 2121449586
+      spriteID: 54293ac4c18d3534d9c747402e3f84ca
+      internalID: 1252111598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_03_spring_sway_3
+      name: plant_lilypad_03_spring_sway_01_04
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8734874c170a4f4ca6e6de70ed84c33
-      internalID: -1866319146
+      spriteID: 23baadef2250e494d889546318f11870
+      internalID: -1500052636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_03_spring_sway_4
+      name: plant_lilypad_03_spring_sway_01_05
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69ceb8348e1037546add2012c258965a
-      internalID: 1661374292
+      spriteID: 1a9ecb0b34666f04dbc58e9deb7a8057
+      internalID: -589482488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_03_spring_sway_5
+      name: plant_lilypad_03_spring_sway_01_06
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16e4c46edc57b1048aa506b24b9fe578
-      internalID: -1888676772
+      spriteID: 846f27969b7382f4bae29f1aeedd529f
+      internalID: -1581410889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_03_spring_sway_6
+      name: plant_lilypad_03_spring_sway_01_07
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c96381c1047dd146852b2780887bb9e
-      internalID: 899275343
+      spriteID: 333bc1f4b3320234c87fd4234c0617e8
+      internalID: -1038053513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_03_spring_sway_7
+      name: plant_lilypad_03_spring_sway_01_08
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c907e81d98ccfb41bbe07dd378d7f2f
-      internalID: 487283606
+      spriteID: 6463e2b21cd0ff54981e85dd707600d2
+      internalID: 991174484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_03_spring_sway_8
+      name: plant_lilypad_03_spring_sway_01_09
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7667fa346fffaaf45bff690134828441
-      internalID: -1070881937
+      spriteID: eb50db36971293443b87fd97520194ef
+      internalID: -1247337147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_03_spring_sway_9
+      name: plant_lilypad_03_spring_sway_01_10
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30e685012dfa48948837d1a874691818
-      internalID: -148896414
+      spriteID: adc8e71c891eac5419ecbe02598efa83
+      internalID: -683719867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_03_spring_sway_10
+      name: plant_lilypad_03_spring_sway_01_11
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 988a9cbc19d589a468ba4f8fe2bc41df
-      internalID: -335030332
+      spriteID: 2a4846ad7aadef448b48e25f6a8eb9f6
+      internalID: -373021511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plant_lilypad_03_spring_sway_11
+      name: plant_lilypad_03_spring_sway_01_12
       rect:
         serializedVersion: 2
         x: 352
         y: 0
         width: 32
-        height: 32
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 771d87db0c3b07b4998c5cd5c2a47f81
-      internalID: 709879794
+      spriteID: 49a3eb4b947e03943ad4d532f4027534
+      internalID: -1044881315
       vertices: []
       indices: 
       edges: []
@@ -396,18 +396,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plant_lilypad_03_spring_sway_0: 1199856934
-      plant_lilypad_03_spring_sway_1: 198249813
-      plant_lilypad_03_spring_sway_10: -335030332
-      plant_lilypad_03_spring_sway_11: 709879794
-      plant_lilypad_03_spring_sway_2: 2121449586
-      plant_lilypad_03_spring_sway_3: -1866319146
-      plant_lilypad_03_spring_sway_4: 1661374292
-      plant_lilypad_03_spring_sway_5: -1888676772
-      plant_lilypad_03_spring_sway_6: 899275343
-      plant_lilypad_03_spring_sway_7: 487283606
-      plant_lilypad_03_spring_sway_8: -1070881937
-      plant_lilypad_03_spring_sway_9: -148896414
+      plant_lilypad_03_spring_sway_01_01: -870509092
+      plant_lilypad_03_spring_sway_01_02: 874385645
+      plant_lilypad_03_spring_sway_01_03: 1252111598
+      plant_lilypad_03_spring_sway_01_04: -1500052636
+      plant_lilypad_03_spring_sway_01_05: -589482488
+      plant_lilypad_03_spring_sway_01_06: -1581410889
+      plant_lilypad_03_spring_sway_01_07: -1038053513
+      plant_lilypad_03_spring_sway_01_08: 991174484
+      plant_lilypad_03_spring_sway_01_09: -1247337147
+      plant_lilypad_03_spring_sway_01_10: -683719867
+      plant_lilypad_03_spring_sway_01_11: -373021511
+      plant_lilypad_03_spring_sway_01_12: -1044881315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
