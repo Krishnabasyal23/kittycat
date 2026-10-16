@@ -609,7 +609,7 @@ namespace KittyCrash
             }
 
             // ── top-left: logo + mode badge + switch ──
-            var logo = Label("Logo", root, "KITTY CRASH", 58, accent, TextAnchor.UpperLeft, true);
+            var logo = Label("Logo", root, "CATINO", 58, accent, TextAnchor.UpperLeft, true);
             Place(logo.rectTransform, new Vector2(0, 1), new Vector2(40, -24), new Vector2(620, 70));
             AddShadow(logo.gameObject, 4);
             apiText = Label("Mode", root, "", 22, win, TextAnchor.UpperLeft, false);
