@@ -34,8 +34,8 @@ namespace KittyCrash
         public CatSpriteAnimator spriteAnimator;
         [Tooltip("Square used for placeholder distraction props.")]
         public Sprite placeholderSprite;
-        [Tooltip("Optional real art: Fish, Sleep (Z), Yarn, Butterfly, Laser, CardboardBox — in that order.")]
-        public Sprite[] distractionSprites = new Sprite[6];
+        [Tooltip("Optional real art: Fish, Sleep (Z), Yarn, Butterfly, Laser, CardboardBox, Leaf, Snowflake, Bird, (TreeClimb unused) — in that order.")]
+        public Sprite[] distractionSprites = new Sprite[10];
 
         public float CurrentSpeed { get; private set; }
         public float DistanceThisRound { get; private set; }
@@ -46,6 +46,7 @@ namespace KittyCrash
         Vector3 visualBasePos, visualBaseScale;
         GameObject prop;
         bool distracted;
+        CatClimber climber;
 
         void Awake()
         {
@@ -60,6 +61,7 @@ namespace KittyCrash
 
         void Start()
         {
+            climber = GetComponent<CatClimber>();
             var rm = RoundManager.Instance;
             if (rm == null) return;
             rm.OnPhaseChanged += HandlePhase;
@@ -78,6 +80,7 @@ namespace KittyCrash
 
         void Update()
         {
+            if (climber != null && climber.Busy) { CurrentSpeed = 0f; return; } // the climber drives kitty up the tree
             var rm = RoundManager.Instance;
             bool running = rm != null && rm.Phase == RoundPhase.Running;
 
@@ -143,9 +146,14 @@ namespace KittyCrash
         {
             fidgetLeft = 0f;
             distracted = true;
-            LastDistraction = Distractions.FromServer(distractionId);
+            LastDistraction = SeasonDistractions.Resolve(distractionId);   // seasonal flavour (fish in summer, leaves in autumn, ...)
 
             if (prop != null) Destroy(prop);
+            if (LastDistraction == DistractionType.TreeClimb)
+            {
+                if (climber != null) { climber.StartClimb(); return; }
+                LastDistraction = DistractionType.Leaf; // no climber installed → fall back
+            }
             prop = new GameObject("Distraction_" + LastDistraction);
             int i = (int)LastDistraction;
             Sprite art = distractionSprites != null && i < distractionSprites.Length ? distractionSprites[i] : null;

@@ -246,7 +246,7 @@ namespace KittyCrash
         void ShowBanner(float crash, string distraction)
         {
             if (bannerRT == null) return;
-            var type = Distractions.FromServer(distraction);
+            var type = SeasonDistractions.Resolve(distraction); // same seasonal pick as the cat shows
             Sprite icon = null;
             if (cat != null && cat.distractionSprites != null && (int)type < cat.distractionSprites.Length) icon = cat.distractionSprites[(int)type];
             bannerIcon.sprite = icon;

@@ -407,7 +407,7 @@ namespace KittyCrash
             if (cam == null) return;
             // follow the cat horizontally (camera moves), keep the height where it started
             if (cat != null) world.x = Mathf.Lerp(world.x, CatHead().x, 0.85f);
-            Vector3 sp = cam.WorldToScreenPoint(world);
+            Vector3 sp = PixelGrid.WorldToScreen(cam, world);
             if (RectTransformUtility.ScreenPointToLocalPointInRectangle(gameArea, sp, null, out var local))
                 rt.anchoredPosition = local + new Vector2(0f, upPixels);
         }

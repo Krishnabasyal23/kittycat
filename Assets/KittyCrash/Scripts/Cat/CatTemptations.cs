@@ -21,8 +21,17 @@ namespace KittyCrash
         public static float LastTemptTime = -99f;
         public static string LastTemptName = "";
 
-        enum Kind { Fish = 0, Yarn = 2, Butterfly = 3, Laser = 4, Box = 5 }
+        enum Kind { Fish = 0, Yarn = 2, Butterfly = 3, Laser = 4, Box = 5, Leaf = 6, Snowflake = 7, Bird = 8 }
         static readonly Kind[] Kinds = { Kind.Fish, Kind.Yarn, Kind.Butterfly, Kind.Laser, Kind.Box };
+
+        /// <summary>Season-flavoured temptations (falls back to the classic five without a SeasonSystem).</summary>
+        static Kind PickKind()
+        {
+            var ss = SeasonSystem.Instance;
+            if (ss == null) return Kinds[Random.Range(0, Kinds.Length)];
+            var pool = SeasonDistractions.TemptationsFor(ss.DominantSeason);
+            return (Kind)(int)pool[Random.Range(0, pool.Length)];
+        }
 
         class Prop { public Transform t; public SpriteRenderer sr; public Kind kind; public float age, phase, baseY; public bool triggered, leaving; }
 
@@ -91,7 +100,7 @@ namespace KittyCrash
                 }
                 if (p.triggered && p.t.position.x < catX - 1.2f) p.leaving = true;
 
-                if (p.t.position.x < left || (p.leaving && (p.kind == Kind.Butterfly || p.kind == Kind.Laser) && p.sr.color.a <= 0.01f))
+                if (p.t.position.x < left || (p.leaving && (p.kind == Kind.Butterfly || p.kind == Kind.Laser || p.kind == Kind.Snowflake || p.kind == Kind.Bird) && p.sr.color.a <= 0.01f))
                 {
                     Destroy(p.t.gameObject);
                     props.RemoveAt(i);
@@ -102,7 +111,7 @@ namespace KittyCrash
         void Spawn()
         {
             if (cam == null) cam = Camera.main;
-            var kind = Kinds[Random.Range(0, Kinds.Length)];
+            var kind = PickKind();
             Sprite sp = null;
             if (walker != null && walker.distractionSprites != null && (int)kind < walker.distractionSprites.Length)
                 sp = walker.distractionSprites[(int)kind];
@@ -117,7 +126,8 @@ namespace KittyCrash
             float groundY = transform.position.y;
             float h = sr.sprite != null ? sr.sprite.bounds.size.y * propScale : 0.5f;
             float y = groundY + h * 0.5f;
-            if (kind == Kind.Butterfly) y = groundY + Random.Range(1.2f, 2f);
+            if (kind == Kind.Butterfly || kind == Kind.Snowflake) y = groundY + Random.Range(1.2f, 2f);
+            if (kind == Kind.Leaf) y = groundY + Random.Range(1.6f, 2.2f);
             if (kind == Kind.Laser) y = groundY + 0.08f;
             go.transform.position = new Vector3(right + 1f, y, 0f);
             if (sp != null) go.transform.localScale = Vector3.one * propScale;
@@ -149,6 +159,20 @@ namespace KittyCrash
                     pos.x += (Mathf.PerlinNoise(t * 3f, 0f) - 0.5f) * Time.deltaTime * 6f + (p.leaving ? Time.deltaTime * 6f : 0f);
                     p.sr.color = new Color(1f, 1f, 1f, p.leaving ? Mathf.Max(0f, p.sr.color.a - Time.deltaTime * 2f) : 0.7f + 0.3f * Mathf.Sin(t * 20f));
                     break;
+                case Kind.Leaf: // see-saws down to the ground
+                    pos.y = Mathf.Max(p.baseY - 1.9f, p.baseY - p.age * 0.45f);
+                    pos.x += Mathf.Sin(t * 3f) * Time.deltaTime * 0.6f;
+                    p.t.rotation = Quaternion.Euler(0f, 0f, Mathf.Sin(t * 3f) * 35f);
+                    break;
+                case Kind.Snowflake: // drifts and spins
+                    pos.y = p.baseY + Mathf.Sin(t * 1.2f) * 0.3f - p.age * 0.05f;
+                    p.t.Rotate(0f, 0f, Time.deltaTime * 50f);
+                    if (p.leaving) Fade(p);
+                    break;
+                case Kind.Bird: // hops, then flies off once noticed
+                    if (!p.leaving) pos.y = p.baseY + Mathf.Abs(Mathf.Sin(t * 6f)) * 0.12f;
+                    else { pos.x += Time.deltaTime * 3f; pos.y += Time.deltaTime * 2f; Fade(p); }
+                    break;
                 case Kind.Box: // wobble
                     p.t.rotation = Quaternion.Euler(0f, 0f, Mathf.Sin(t * 6f) * (p.triggered && !p.leaving ? 8f : 2f));
                     break;
@@ -171,6 +195,9 @@ namespace KittyCrash
                 case Kind.Yarn: return "a yarn ball";
                 case Kind.Butterfly: return "a butterfly";
                 case Kind.Laser: return "a laser dot";
+                case Kind.Leaf: return "a falling leaf";
+                case Kind.Snowflake: return "a snowflake";
+                case Kind.Bird: return "a bird";
                 default: return "a box";
             }
         }

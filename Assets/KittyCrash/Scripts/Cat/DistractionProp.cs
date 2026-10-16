@@ -3,7 +3,8 @@ using UnityEngine;
 namespace KittyCrash
 {
     /// <summary>Server sends "fish", "sleep", "yarn" (and maybe later "butterfly", "laser", "cardboard_box").</summary>
-    public enum DistractionType { Fish, Sleep, Yarn, Butterfly, Laser, CardboardBox }
+    // New values are appended so existing scenes keep their sprite slots.
+    public enum DistractionType { Fish, Sleep, Yarn, Butterfly, Laser, CardboardBox, Leaf, Snowflake, Bird, TreeClimb }
 
     public static class Distractions
     {
@@ -17,6 +18,10 @@ namespace KittyCrash
                 case "butterfly": return DistractionType.Butterfly;
                 case "laser": return DistractionType.Laser;
                 case "cardboard_box": return DistractionType.CardboardBox;
+                case "leaf": return DistractionType.Leaf;
+                case "snowflake": return DistractionType.Snowflake;
+                case "bird": return DistractionType.Bird;
+                case "tree": return DistractionType.TreeClimb;
                 default: return (DistractionType)Random.Range(0, 3); // unknown → one of the live three
             }
         }
@@ -30,6 +35,10 @@ namespace KittyCrash
                 case DistractionType.Yarn: return "a ball of yarn";
                 case DistractionType.Butterfly: return "a butterfly";
                 case DistractionType.Laser: return "a laser dot";
+                case DistractionType.Leaf: return "a falling leaf";
+                case DistractionType.Snowflake: return "a sparkly snowflake";
+                case DistractionType.Bird: return "a little bird";
+                case DistractionType.TreeClimb: return "a tree to climb";
                 default: return "a cardboard box";
             }
         }
@@ -41,7 +50,10 @@ namespace KittyCrash
                 case DistractionType.Sleep: return CatSpriteAnimator.Clip.Sleep;
                 case DistractionType.Fish:
                 case DistractionType.Yarn:
-                case DistractionType.Laser: return CatSpriteAnimator.Clip.Pounce;
+                case DistractionType.Laser:
+                case DistractionType.Leaf:
+                case DistractionType.Snowflake: return CatSpriteAnimator.Clip.Pounce;
+                case DistractionType.TreeClimb: return CatSpriteAnimator.Clip.Walk;
                 default: return CatSpriteAnimator.Clip.Sit;
             }
         }
@@ -89,6 +101,18 @@ namespace KittyCrash
                     anchor = c + new Vector3(1.4f, 0.04f, 0f);
                     Set(new Color(1f, 0.1f, 0.1f), Vector3.one * 0.1f, isPlaceholder);
                     break;
+                case DistractionType.Leaf:
+                    anchor = c + new Vector3(1.0f, 1.6f, 0f);
+                    Set(new Color(0.95f, 0.55f, 0.2f), Vector3.one * 0.25f, isPlaceholder);
+                    break;
+                case DistractionType.Snowflake:
+                    anchor = c + new Vector3(0.9f, 1.8f, 0f);
+                    Set(Color.white, Vector3.one * 0.25f, isPlaceholder);
+                    break;
+                case DistractionType.Bird:
+                    anchor = c + new Vector3(1.5f, 0.2f, 0f);
+                    Set(new Color(0.35f, 0.55f, 0.85f), Vector3.one * 0.3f, isPlaceholder);
+                    break;
                 default:
                     anchor = c + new Vector3(1.2f, 0.35f, 0f);
                     Set(new Color(0.72f, 0.55f, 0.35f), new Vector3(0.8f, 0.7f, 1f), isPlaceholder);
@@ -129,6 +153,24 @@ namespace KittyCrash
                     break;
                 case DistractionType.Laser:       // zips around in front of the cat
                     transform.position = anchor + new Vector3(Mathf.Sin(t * 3.1f) * 0.9f + Mathf.Sin(t * 7.3f) * 0.3f, 0f, 0f);
+                    break;
+                case DistractionType.Leaf:        // flutters down in a zig-zag, then rests on the ground
+                {
+                    float groundY = anchor.y - 1.55f;
+                    float posY = Mathf.Max(groundY, anchor.y - t * 0.55f);
+                    float landed = posY > groundY ? 1f : 0f;
+                    transform.position = new Vector3(anchor.x + Mathf.Sin(t * 3f) * 0.35f * landed, posY, 0f);
+                    transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Sin(t * 3f) * 35f * landed);
+                    break;
+                }
+                case DistractionType.Snowflake:   // drifts down slowly, sparkling
+                    transform.position = anchor + new Vector3(Mathf.Sin(t * 1.5f) * 0.3f, -Mathf.Min(t * 0.35f, 1.2f), 0f);
+                    transform.Rotate(0f, 0f, 60f * Time.deltaTime);
+                    transform.localScale = baseScale * (1f + Mathf.Sin(t * 6f) * 0.08f);
+                    break;
+                case DistractionType.Bird:        // hops on the ground, then flies off
+                    if (t < 2.2f) transform.position = anchor + new Vector3(Mathf.Floor(t * 2f) * 0.12f, Mathf.Abs(Mathf.Sin(t * Mathf.PI * 2f)) * 0.12f, 0f);
+                    else transform.position = anchor + new Vector3(0.5f + (t - 2.2f) * 2.5f, (t - 2.2f) * 1.8f, 0f);
                     break;
                 default:                          // box just sits there, wobbling a bit
                     transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Sin(t * 2f) * 2f);
