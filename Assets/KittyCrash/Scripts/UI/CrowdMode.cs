@@ -162,7 +162,6 @@ namespace KittyCrash
             }));
         }
 
-        // ── loop ───────────────────────────────────
 
         void Update()
         {
