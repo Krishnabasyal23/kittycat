@@ -3,12 +3,7 @@ using UnityEngine;
 
 namespace KittyCrash
 {
-    /// <summary>
-    /// All the cute: emote bubbles (♪ start, ? sniff, ★ big multiplier, ♥ cash-out, ! distracted, zzz idle),
-    /// a bouncy squash-and-stretch walk, a happy hop with floating hearts on cash-out, and paw prints
-    /// that fade behind the cat (darker and longer-lasting in the snow).
-    /// Put it on the Cat (root). The installer fills in the sprites.
-    /// </summary>
+
     public class CatCute : MonoBehaviour
     {
         [Header("Emotes")]
@@ -138,7 +133,7 @@ namespace KittyCrash
             emoteT += Time.deltaTime;
             float pop = emoteT < 0.18f ? Mathf.Lerp(0.2f, 1.2f, emoteT / 0.18f) : Mathf.Lerp(1.2f, 1f, Mathf.Clamp01((emoteT - 0.18f) / 0.12f));
             float fade = 1f - Mathf.Clamp01((emoteT - emoteDur) / 0.25f);
-            bubbleT.localScale = Vector3.one * pop * 1.15f;
+            bubbleT.localScale = Vector3.one * pop * 0.3f;
             bubbleT.localPosition = new Vector3(bubbleOffset.x, bubbleOffset.y + Mathf.Sin(emoteT * 4f) * 0.05f, 0f);
             bubbleSR.color = new Color(1f, 1f, 1f, fade);
             iconSR.color = new Color(1f, 1f, 1f, fade);

@@ -21,6 +21,9 @@ namespace KittyCrash
     /// </summary>
     public class SeasonRules : MonoBehaviour
     {
+        /// <summary>Live season moments for sound/FX: "butterfly", "leafstorm", "cocoa", "zoomies", "bonus".</summary>
+        public static event Action<string> OnEvent;
+
         [Tooltip("Extra full cycles the season reel spins before landing.")]
         public int spinLaps = 1;
         public float spinSeconds = 2.4f;
@@ -51,7 +54,7 @@ namespace KittyCrash
         SeasonDto forecast;            // next walk (shown while betting)
         ScheduleDto schedule;          // this walk
         string scheduleFor;
-        bool butterflyWas, cocoaWas;
+        bool butterflyWas, cocoaWas, stormWas, rushWas;
         float cardPop, bannerT;
 
         // ── UI ──
@@ -168,8 +171,8 @@ namespace KittyCrash
         {
             if (schedule == null || !schedule.rules_on) return;
             float t = rm.RunElapsed;
-            if (schedule.season == "spring" && Inside(schedule.butterfly, 0, t)) ShowBanner("BUTTERFLY BONUS  +25%", SeasonColor["spring"]);
-            else if (schedule.season == "winter" && multiplier >= 2f) ShowBanner("HOT COCOA BONUS  +10%", SeasonColor["winter"]);
+            if (schedule.season == "spring" && Inside(schedule.butterfly, 0, t)) { ShowBanner("BUTTERFLY BONUS  +25%", SeasonColor["spring"]); OnEvent?.Invoke("bonus"); }
+            else if (schedule.season == "winter" && multiplier >= 2f) { ShowBanner("HOT COCOA BONUS  +10%", SeasonColor["winter"]); OnEvent?.Invoke("bonus"); }
         }
 
         // ── every frame ────────────────────────────
@@ -199,8 +202,14 @@ namespace KittyCrash
 
             if (fly && !butterflyWas && rm.HasBet && !rm.CashedOut) ShowBanner("GOLDEN BUTTERFLY!  CASH OUT NOW  +25%", SeasonColor["spring"]);
             if (cocoa && !cocoaWas) ShowBanner("HOT COCOA ZONE  +10%", SeasonColor["winter"]);
+            if (fly && !butterflyWas) OnEvent?.Invoke("butterfly");
+            if (storm && !stormWas) OnEvent?.Invoke("leafstorm");
+            if (cocoa && !cocoaWas) OnEvent?.Invoke("cocoa");
+            if (rush && !rushWas) OnEvent?.Invoke("zoomies");
             butterflyWas = fly;
             cocoaWas = cocoa;
+            stormWas = storm;
+            rushWas = rush;
             if (rush && Mathf.Repeat(Time.time, 0.6f) < 0.3f && bannerT > 1.6f) { banner.text = "SUMMER ZOOMIES!"; banner.color = SeasonColor["summer"]; banner.enabled = true; }
             else if (bannerT > 1.6f) banner.enabled = false;
 

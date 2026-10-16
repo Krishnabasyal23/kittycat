@@ -22,6 +22,10 @@ namespace KittyCrash
     /// </summary>
     public class CrowdMode : MonoBehaviour
     {
+        /// <summary>Fires when new phones join (argument = how many), e.g. for a "pop" sound.</summary>
+        public static event Action<int> OnPlayersJoined;
+        int lastCount = -1;
+
         public bool startOn = false;
         public float pollInterval = 0.3f;
         [Tooltip("Max name tags around the cat (the rest show as '+N').")]
@@ -210,6 +214,8 @@ namespace KittyCrash
                 if (s == null) return;
                 if (state != null && s.round_no != state.round_no) lastStatus.Clear();
                 state = s;
+                if (lastCount >= 0 && s.player_count > lastCount) OnPlayersJoined?.Invoke(s.player_count - lastCount);
+                lastCount = s.player_count;
                 countText.text = s.player_count == 0 ? "Scan to play!" : s.player_count + (s.player_count == 1 ? " player joined" : " players joined");
                 Diff();
                 DrawBoard();
