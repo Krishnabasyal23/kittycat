@@ -134,7 +134,8 @@ namespace KittyCrash
                 case CritterKind.Firefly: speed = Random.Range(-0.2f, 0.2f); fps = 0f; sr.sortingOrder = 15; break;
                 default: speed = Random.Range(-3.2f, -2f); fps = 5f; sr.sortingOrder = -28; break;
             }
-            float scale = kind == CritterKind.Bird ? 0.9f : kind == CritterKind.Firefly ? 0.7f : 1.1f;
+            // butterflies, bees and fireflies match kitty's size; birds stay as they are
+            float scale = kind == CritterKind.Bird ? 0.9f : (kind == CritterKind.Firefly ? 0.7f : 1.1f) * CatSize.K;
             transform.localScale = Vector3.one * scale;
         }
 

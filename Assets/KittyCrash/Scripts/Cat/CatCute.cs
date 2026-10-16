@@ -3,7 +3,12 @@ using UnityEngine;
 
 namespace KittyCrash
 {
-
+    /// <summary>
+    /// All the cute: emote bubbles (♪ start, ? sniff, ★ big multiplier, ♥ cash-out, ! distracted, zzz idle),
+    /// a bouncy squash-and-stretch walk, a happy hop with floating hearts on cash-out, and paw prints
+    /// that fade behind the cat (darker and longer-lasting in the snow).
+    /// Put it on the Cat (root). The installer fills in the sprites.
+    /// </summary>
     public class CatCute : MonoBehaviour
     {
         [Header("Emotes")]
@@ -94,12 +99,13 @@ namespace KittyCrash
 
         void Hearts()
         {
-            var c = transform.position + new Vector3(0f, bubbleOffset.y * 0.7f, 0f);
+            float size = CatSize.K;   // hearts and sparkles match kitty's size
+            var c = transform.position + new Vector3(0f, bubbleOffset.y * 0.7f * size, 0f);
             for (int k = 0; k < 9; k++)
-                FxPool.Spawn(c + new Vector3(Random.Range(-0.5f, 0.5f), 0f, 0f), new Vector2(Random.Range(-0.8f, 0.8f), Random.Range(1.2f, 2.4f)),
-                    Color.white, Random.Range(1.4f, 2.2f), Random.Range(1.1f, 1.7f), -0.4f, 31, heartParticle);
+                FxPool.Spawn(c + new Vector3(Random.Range(-0.5f, 0.5f) * size, 0f, 0f), new Vector2(Random.Range(-0.8f, 0.8f), Random.Range(1.2f, 2.4f)) * size,
+                    Color.white, Random.Range(1.4f, 2.2f) * size, Random.Range(1.1f, 1.7f), -0.4f * size, 31, heartParticle);
             for (int k = 0; k < 8; k++)
-                FxPool.Spawn(c, Random.insideUnitCircle * 2.5f, Color.white, 1.4f, 0.6f, 0f, 31, sparkle);
+                FxPool.Spawn(c, Random.insideUnitCircle * 2.5f * size, Color.white, 1.4f * size, 0.6f, 0f, 31, sparkle);
         }
 
         void Update()
@@ -168,7 +174,7 @@ namespace KittyCrash
             if (sp > 0.3f && pawPrint != null)
             {
                 pawDist += sp * Time.deltaTime;
-                if (pawDist >= pawEvery)
+                if (pawDist >= pawEvery * CatSize.K)
                 {
                     pawDist = 0f;
                     leftPaw = !leftPaw;
@@ -176,7 +182,8 @@ namespace KittyCrash
                     float snow = ss != null ? ss.Weight(Season.Winter) : 0f;
                     var sr = printPool.Count > 0 ? printPool.Pop() : NewPrint();
                     sr.gameObject.SetActive(true);
-                    sr.transform.position = transform.position + new Vector3(-0.15f, leftPaw ? 0.06f : -0.02f, 0f);
+                    sr.transform.position = transform.position + new Vector3(-0.15f, leftPaw ? 0.06f : -0.02f, 0f) * CatSize.K;
+                    sr.transform.localScale = Vector3.one * 0.9f * CatSize.K;   // paw prints match kitty's size
                     var p = new Print { sr = sr, age = 0f, life = Mathf.Lerp(2.5f, 7f, snow), alpha = Mathf.Lerp(0.22f, 0.5f, snow) };
                     sr.color = Color.Lerp(new Color(0.35f, 0.25f, 0.18f), new Color(0.55f, 0.62f, 0.78f), snow);
                     prints.Add(p);

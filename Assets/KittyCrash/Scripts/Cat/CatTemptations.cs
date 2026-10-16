@@ -120,17 +120,18 @@ namespace KittyCrash
             var sr = go.AddComponent<SpriteRenderer>();
             sr.sortingOrder = sortingOrder;
             if (sp != null) sr.sprite = sp;
-            else { sr.sprite = FxPool.Ellipse; sr.color = PlaceholderColor(kind); go.transform.localScale = Vector3.one * 0.5f; }
+            else { sr.sprite = FxPool.Ellipse; sr.color = PlaceholderColor(kind); go.transform.localScale = Vector3.one * 0.5f * CatSize.K; }
 
             float right = cam != null ? cam.ViewportToWorldPoint(new Vector3(1f, 0f, 0f)).x : transform.position.x + 8f;
             float groundY = transform.position.y;
-            float h = sr.sprite != null ? sr.sprite.bounds.size.y * propScale : 0.5f;
+            float size = CatSize.K;   // temptations match kitty's size and float at her height
+            float h = sr.sprite != null ? sr.sprite.bounds.size.y * propScale * size : 0.5f * size;
             float y = groundY + h * 0.5f;
-            if (kind == Kind.Butterfly || kind == Kind.Snowflake) y = groundY + Random.Range(1.2f, 2f);
-            if (kind == Kind.Leaf) y = groundY + Random.Range(1.6f, 2.2f);
-            if (kind == Kind.Laser) y = groundY + 0.08f;
+            if (kind == Kind.Butterfly || kind == Kind.Snowflake) y = groundY + Random.Range(1.2f, 2f) * size;
+            if (kind == Kind.Leaf) y = groundY + Random.Range(1.6f, 2.2f) * size;
+            if (kind == Kind.Laser) y = groundY + 0.08f * size;
             go.transform.position = new Vector3(right + 1f, y, 0f);
-            if (sp != null) go.transform.localScale = Vector3.one * propScale;
+            if (sp != null) go.transform.localScale = Vector3.one * propScale * size;
 
             props.Add(new Prop { t = go.transform, sr = sr, kind = kind, phase = Random.value * 10f, baseY = y });
         }
@@ -152,7 +153,7 @@ namespace KittyCrash
                 case Kind.Butterfly: // flutter, flies off after being noticed
                     pos.y = p.baseY + Mathf.Sin(t * 3f) * 0.35f + (p.leaving ? p.age * 0.02f : 0f);
                     pos.x += Mathf.Sin(t * 1.3f) * Time.deltaTime * 0.8f + (p.leaving ? Time.deltaTime * 2.5f : 0f);
-                    p.t.localScale = new Vector3(Mathf.Abs(Mathf.Sin(t * 14f)) * 0.6f + 0.4f, 1f, 1f) * propScale;
+                    p.t.localScale = new Vector3(Mathf.Abs(Mathf.Sin(t * 14f)) * 0.6f + 0.4f, 1f, 1f) * propScale * CatSize.K;
                     if (p.leaving) Fade(p);
                     break;
                 case Kind.Laser: // jittery dot that zips away

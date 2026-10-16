@@ -51,31 +51,34 @@ namespace KittyCrash
                 if (dustTimer <= 0f)
                 {
                     dustTimer = dustEvery * Mathf.Lerp(1.5f, 0.6f, Mathf.InverseLerp(1.2f, 5f, sp));
-                    var pos = transform.position + new Vector3(-0.35f, 0.05f, 0f);
-                    FxPool.Spawn(pos, new Vector2(Random.Range(-1.2f, -0.4f), Random.Range(0.3f, 0.9f)), dustColor,
-                        Random.Range(0.12f, 0.22f), 0.55f, -0.5f, 12);
+                    float size = CatSize.K;   // dust puffs match kitty's size
+                    var pos = transform.position + new Vector3(-0.35f, 0.05f, 0f) * size;
+                    FxPool.Spawn(pos, new Vector2(Random.Range(-1.2f, -0.4f), Random.Range(0.3f, 0.9f)) * size, dustColor,
+                        Random.Range(0.12f, 0.22f) * size, 0.55f, -0.5f * size, 12);
                 }
             }
         }
 
         void Coins()
         {
-            var c = transform.position + Vector3.up * 0.8f;
+            float size = CatSize.K;   // the coin shower matches kitty's size
+            var c = transform.position + Vector3.up * 0.8f * size;
             for (int i = 0; i < 26; i++)
             {
-                var v = new Vector2(Random.Range(-2.5f, 2.5f), Random.Range(3.5f, 7f));
+                var v = new Vector2(Random.Range(-2.5f, 2.5f), Random.Range(3.5f, 7f)) * size;
                 var col = Random.value < 0.75f ? new Color(1f, 0.82f, 0.2f) : new Color(1f, 0.95f, 0.6f);
-                FxPool.Spawn(c, v, col, Random.Range(0.12f, 0.2f), Random.Range(0.9f, 1.4f), 12f, 25);
+                FxPool.Spawn(c, v, col, Random.Range(0.12f, 0.2f) * size, Random.Range(0.9f, 1.4f), 12f * size, 25);
             }
         }
 
         void Surprise()
         {
-            var c = transform.position + Vector3.up * 1.2f;
+            float size = CatSize.K;
+            var c = transform.position + Vector3.up * 1.2f * size;
             for (int i = 0; i < 12; i++)
             {
                 float a = i / 12f * Mathf.PI * 2f;
-                FxPool.Spawn(c, new Vector2(Mathf.Cos(a), Mathf.Sin(a)) * 2.2f, new Color(1f, 1f, 1f, 0.9f), 0.1f, 0.45f, 0f, 25);
+                FxPool.Spawn(c, new Vector2(Mathf.Cos(a), Mathf.Sin(a)) * 2.2f * size, new Color(1f, 1f, 1f, 0.9f), 0.1f * size, 0.45f, 0f, 25);
             }
         }
     }

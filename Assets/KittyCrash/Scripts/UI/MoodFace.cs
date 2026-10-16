@@ -168,14 +168,14 @@ namespace KittyCrash
             AddOutline(streakText.gameObject);
 
             // pop-ups that follow the cat
-            popText = NewText("Milestone", gameArea, bold, 64, TextAnchor.MiddleCenter);
+            popText = NewText("Milestone", gameArea, bold, Mathf.RoundToInt(64 * CatSize.Ui), TextAnchor.MiddleCenter);
             popRT = popText.rectTransform;
             popRT.sizeDelta = new Vector2(400f, 90f);
             popRT.anchorMin = popRT.anchorMax = new Vector2(0.5f, 0.5f);
             AddOutline(popText.gameObject, 3f);
             popText.enabled = false;
 
-            floatText = NewText("FloatNumber", gameArea, bold, 46, TextAnchor.MiddleCenter);
+            floatText = NewText("FloatNumber", gameArea, bold, Mathf.RoundToInt(46 * CatSize.Ui), TextAnchor.MiddleCenter);
             floatRT = floatText.rectTransform;
             floatRT.sizeDelta = new Vector2(500f, 70f);
             floatRT.anchorMin = floatRT.anchorMax = new Vector2(0.5f, 0.5f);

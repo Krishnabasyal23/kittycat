@@ -263,7 +263,7 @@ namespace KittyCrash
                 t.text.text = $"{p.name}  {p.bet:0}";
                 // fan of tags over kitty's head, two rings so they don't overlap
                 float spread = n <= 1 ? 0f : Mathf.Lerp(-62f, 62f, i / (float)(n - 1));
-                float radius = 150f + (i % 2) * 58f;
+                float radius = (150f + (i % 2) * 58f) * CatSize.Ui;
                 float a = (90f - spread) * Mathf.Deg2Rad;
                 float bob = Mathf.Sin(Time.time * 3f + i) * 5f;
                 t.rt.anchoredPosition = head + new Vector2(Mathf.Cos(a) * radius * 1.5f, Mathf.Sin(a) * radius + bob);
@@ -273,7 +273,7 @@ namespace KittyCrash
             if (riders.Count > n)
             {
                 moreText.text = "+" + (riders.Count - n) + " more riding";
-                moreText.rectTransform.anchoredPosition = head + new Vector2(0f, 290f);
+                moreText.rectTransform.anchoredPosition = head + new Vector2(0f, 290f * CatSize.Ui);
             }
         }
 

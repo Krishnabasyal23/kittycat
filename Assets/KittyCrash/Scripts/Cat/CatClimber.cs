@@ -53,9 +53,11 @@ namespace KittyCrash
             var sr = tree.AddComponent<SpriteRenderer>();
             sr.sprite = art;
             sr.sortingOrder = treeSortingOrder;
-            treeX = transform.position.x + 1.6f;
+            float size = CatSize.K;                     // the tree grows and shrinks with kitty
+            tree.transform.localScale = Vector3.one * size;
+            treeX = transform.position.x + 1.6f * size;
             // whatever the pivot, put the bottom of the tree on the ground
-            tree.transform.position = new Vector3(treeX, baseY - art.bounds.min.y, 0f);
+            tree.transform.position = new Vector3(treeX, baseY - art.bounds.min.y * size, 0f);
             Busy = true;
             step = Step.Approach;
             t = 0f;
@@ -77,7 +79,8 @@ namespace KittyCrash
             if (!Busy) return;
             t += Time.deltaTime;
             var p = transform.position;
-            float trunkX = treeX - 0.25f;
+            float size = CatSize.K;
+            float trunkX = treeX - 0.25f * size;
             switch (step)
             {
                 case Step.Approach:
@@ -88,7 +91,7 @@ namespace KittyCrash
                 case Step.Climb:
                 {
                     float k = Mathf.Clamp01(t / climbSeconds);
-                    p.y = baseY + branchHeight * Mathf.SmoothStep(0f, 1f, k);
+                    p.y = baseY + branchHeight * size * Mathf.SmoothStep(0f, 1f, k);
                     if (visual != null) visual.localRotation = Quaternion.Euler(0f, 0f, Mathf.Lerp(0f, 72f, Mathf.Clamp01(t / 0.2f)));
                     if (anim != null) anim.Play(CatSpriteAnimator.Clip.Run, 1.4f);
                     if (k >= 1f) { step = Step.Hop; t = 0f; }
@@ -97,8 +100,8 @@ namespace KittyCrash
                 case Step.Hop:   // swing onto the branch
                 {
                     float k = Mathf.Clamp01(t / 0.3f);
-                    p.x = Mathf.Lerp(trunkX, treeX + 0.45f, k);
-                    p.y = baseY + branchHeight + Mathf.Sin(k * Mathf.PI) * 0.25f;
+                    p.x = Mathf.Lerp(trunkX, treeX + 0.45f * size, k);
+                    p.y = baseY + branchHeight * size + Mathf.Sin(k * Mathf.PI) * 0.25f * size;
                     if (visual != null) visual.localRotation = Quaternion.Euler(0f, 0f, Mathf.Lerp(72f, 0f, k));
                     if (k >= 1f) { step = Step.Sit; t = 0f; }
                     break;

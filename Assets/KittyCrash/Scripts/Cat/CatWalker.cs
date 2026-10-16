@@ -108,7 +108,7 @@ namespace KittyCrash
             float rate = target < CurrentSpeed ? (running ? acceleration * 2f : stopDeceleration) : acceleration;
             CurrentSpeed = Mathf.MoveTowards(CurrentSpeed, target, rate * Time.deltaTime);
 
-            float step = CurrentSpeed * Time.deltaTime;
+            float step = CurrentSpeed * Time.deltaTime * CatSize.K;   // a smaller kitty takes smaller steps (no sliding feet)
             transform.position += Vector3.right * step;
             if (running) DistanceThisRound += step;
 

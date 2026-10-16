@@ -260,12 +260,13 @@ namespace KittyCrash
             if (!on) return;
             Vector2 head = CatHead();
             float tt = Time.time;
-            Vector2 pos = head + new Vector2(110f + Mathf.Sin(tt * 2.3f) * 70f, 60f + Mathf.Sin(tt * 4.1f) * 26f);
+            float ui = CatSize.Ui;
+            Vector2 pos = head + new Vector2(110f + Mathf.Sin(tt * 2.3f) * 70f, 60f + Mathf.Sin(tt * 4.1f) * 26f) * ui;
             butterfly.anchoredPosition = pos;
             if (butterflyFrames != null) butterflyImg.sprite = butterflyFrames[Mathf.FloorToInt(tt * 10f) % 2];
             float glow = 0.85f + Mathf.Sin(tt * 12f) * 0.15f;
             butterflyImg.color = new Color(1f, 0.85f * glow + 0.1f, 0.25f, 1f);
-            butterfly.localScale = Vector3.one * (1.1f + Mathf.Sin(tt * 6f) * 0.08f);
+            butterfly.localScale = Vector3.one * (1.1f + Mathf.Sin(tt * 6f) * 0.08f) * ui;
             if (UnityEngine.Random.value < Time.deltaTime * 30f) Sparkle(pos);
         }
 
