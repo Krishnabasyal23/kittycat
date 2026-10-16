@@ -8,16 +8,6 @@ using UnityEngine.InputSystem.UI;
 
 namespace KittyCrash
 {
-    /// <summary>
-    /// Proper crash-game UI, built entirely from code at runtime (no prefabs, no TextMeshPro setup):
-    ///   • top bar: logo + live/offline badge, season pill with festival, credits card, history pills
-    ///   • centre: huge multiplier (colour ramps with the value, pulses, shakes on crash) + status line + warm-up bar
-    ///   • bottom-left: bet card (amount, 1/2 · x2 · +10 · MAX chips, auto cash-out, big BET / CASH OUT button)
-    ///   • bottom-right: live curve graph with grid labels and a cash-out marker
-    ///   • win / loss toasts
-    /// Put it on Managers (the installer does this). It switches the old debug HUD off automatically.
-    /// Keys: Space / Enter = bet or cash out.
-    /// </summary>
     public class CrashUI : MonoBehaviour
     {
         [Header("Fonts (Pixelify Sans is in Art/Fonts)")]
@@ -213,17 +203,17 @@ namespace KittyCrash
         Text bannerTitle, bannerReason, bannerResult;
         float bannerT = 99f;
 
-        void BuildBanner(Transform root)
+                void BuildBanner(Transform root)
         {
-            bannerBg = Panel("DistractionBanner", root, new Color(0.08f, 0.06f, 0.12f, 0.88f), rounded);
+            bannerBg = Panel("DistractionBanner", root, new Color(0.08f, 0.06f, 0.12f, 0.86f), rounded);
             bannerRT = bannerBg.rectTransform;
-            Place(bannerRT, new Vector2(0.5f, 1), new Vector2(0, docked ? -126 : -160), new Vector2(860, 170), new Vector2(0.5f, 1));
+            Place(bannerRT, new Vector2(0.5f, 1), new Vector2(0, docked ? -118 : -150), new Vector2(600, 112), new Vector2(0.5f, 1));
             var stripe = Panel("Stripe", bannerRT, lose, rounded);
             stripe.rectTransform.anchorMin = new Vector2(0f, 0f);
             stripe.rectTransform.anchorMax = new Vector2(0f, 1f);
             stripe.rectTransform.pivot = new Vector2(0f, 0.5f);
             stripe.rectTransform.anchoredPosition = Vector2.zero;
-            stripe.rectTransform.sizeDelta = new Vector2(14f, 0f);
+            stripe.rectTransform.sizeDelta = new Vector2(10f, 0f);
 
             var iconGO = new GameObject("Icon", typeof(RectTransform));
             iconGO.transform.SetParent(bannerRT, false);
@@ -231,15 +221,15 @@ namespace KittyCrash
             bannerIcon.preserveAspect = true;
             bannerIcon.raycastTarget = false;
             bannerIconRT = (RectTransform)iconGO.transform;
-            Place(bannerIconRT, new Vector2(0, 0.5f), new Vector2(40, 0), new Vector2(130, 130), new Vector2(0, 0.5f));
+            Place(bannerIconRT, new Vector2(0, 0.5f), new Vector2(24, 0), new Vector2(80, 80), new Vector2(0, 0.5f));
 
-            bannerTitle = Label("Title", bannerRT, "DISTRACTED!", 64, lose, TextAnchor.UpperLeft, true);
-            Place(bannerTitle.rectTransform, new Vector2(0, 1), new Vector2(196, -14), new Vector2(640, 74));
-            AddShadow(bannerTitle.gameObject, 3);
-            bannerReason = Label("Reason", bannerRT, "", 38, textMain, TextAnchor.UpperLeft, true);
-            Place(bannerReason.rectTransform, new Vector2(0, 1), new Vector2(198, -84), new Vector2(640, 44));
-            bannerResult = Label("Result", bannerRT, "", 26, textMuted, TextAnchor.UpperLeft, false);
-            Place(bannerResult.rectTransform, new Vector2(0, 1), new Vector2(200, -128), new Vector2(640, 32));
+            bannerTitle = Label("Title", bannerRT, "DISTRACTED!", 40, lose, TextAnchor.UpperLeft, true);
+            Place(bannerTitle.rectTransform, new Vector2(0, 1), new Vector2(118, -8), new Vector2(460, 46));
+            AddShadow(bannerTitle.gameObject, 2);
+            bannerReason = Label("Reason", bannerRT, "", 24, textMain, TextAnchor.UpperLeft, true);
+            Place(bannerReason.rectTransform, new Vector2(0, 1), new Vector2(120, -54), new Vector2(460, 30));
+            bannerResult = Label("Result", bannerRT, "", 18, textMuted, TextAnchor.UpperLeft, false);
+            Place(bannerResult.rectTransform, new Vector2(0, 1), new Vector2(121, -84), new Vector2(460, 24));
             bannerBg.gameObject.SetActive(false);
         }
 
@@ -260,20 +250,49 @@ namespace KittyCrash
             bannerBg.gameObject.SetActive(true);
         }
 
-        void UpdateBanner()
+                void UpdateBanner()
         {
             if (bannerRT == null) return;
             bool show = rm.Phase == RoundPhase.Ended && bannerT < 30f;
             multText.enabled = !show; // the banner takes the multiplier's place (it shows the crash value itself)
-            if (!show) { if (bannerBg.gameObject.activeSelf) bannerBg.gameObject.SetActive(false); bannerT = 99f; return; }
+            if (!show)
+            {
+                if (bannerBg.gameObject.activeSelf) bannerBg.gameObject.SetActive(false);
+                bannerT = 99f;
+                bannerRT.anchoredPosition = new Vector2(0f, bannerRT.anchoredPosition.y);
+                return;
+            }
             bannerT += Time.deltaTime;
             // elastic pop-in, then a gentle breathe
             float k = Mathf.Clamp01(bannerT / 0.45f);
-            float pop = k < 1f ? 1f + Mathf.Sin(k * Mathf.PI * 2.5f) * (1f - k) * 0.35f : 1f + Mathf.Sin(bannerT * 3f) * 0.015f;
+            float pop = k < 1f ? 1f + Mathf.Sin(k * Mathf.PI * 2.5f) * (1f - k) * 0.25f : 1f + Mathf.Sin(bannerT * 3f) * 0.012f;
             if (bannerT < 0.08f) pop = Mathf.Lerp(0.3f, 1f, bannerT / 0.08f);
             bannerRT.localScale = new Vector3(pop, pop, 1f);
             bannerIconRT.localRotation = Quaternion.Euler(0f, 0f, Mathf.Sin(bannerT * 6f) * 10f);
-            bannerIconRT.anchoredPosition = new Vector2(40f, Mathf.Sin(bannerT * 4f) * 6f);
+            bannerIconRT.anchoredPosition = new Vector2(24f, Mathf.Sin(bannerT * 4f) * 5f);
+
+            // Keep kitty visible: if she is behind the banner (up a tree, mid-pounce...), slide the banner to the other side.
+            float targetX = 0f;
+            var view = Camera.main;
+            var parent = bannerRT.parent as RectTransform;
+            if (cat != null && view != null && parent != null)
+            {
+                var sr = cat.visual != null ? cat.visual.GetComponent<SpriteRenderer>() : null;
+                Vector3 head = sr != null ? new Vector3(sr.bounds.center.x, sr.bounds.max.y, 0f) : cat.transform.position + Vector3.up * 1.5f;
+                Vector3 s = PixelGrid.WorldToScreen(view, head);
+                float scale = bannerRT.lossyScale.x;
+                float half = bannerRT.rect.width * scale * 0.5f;
+                float bottom = bannerRT.position.y - bannerRT.rect.height * scale;
+                float centre = parent.position.x;
+                if (s.y > bottom - 40f * scale && Mathf.Abs(s.x - centre) < half + 100f * scale)
+                {
+                    float room = parent.rect.width * 0.5f - bannerRT.rect.width * 0.5f - 24f;
+                    targetX = s.x < centre ? room : -room;
+                }
+            }
+            var p = bannerRT.anchoredPosition;
+            p.x = Mathf.Lerp(p.x, targetX, Time.deltaTime * 7f);
+            bannerRT.anchoredPosition = p;
         }
 
         void UpdateTopBar()

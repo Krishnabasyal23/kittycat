@@ -20,6 +20,7 @@ namespace KittyCrash
         public RoundStatus status;
         public decimal balance;
         public string distraction;   // only set if the round crashed instantly (1.00x)
+        public string commitment;    // provably fair: sha256 seal of the outcome, published before anyone can cash out
     }
 
     public class RoundStateResult : BackendResult
@@ -44,6 +45,7 @@ namespace KittyCrash
         public float crashPoint;
         public string distraction;
         public decimal payout;
+        public QuantumProof proof;   // revealed seal ingredients (null if the server has none)
     }
 
     /// <summary>

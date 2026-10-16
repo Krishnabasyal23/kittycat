@@ -280,7 +280,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -2.5, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 118914436}
@@ -2958,6 +2958,11 @@ GameObject:
   - component: {fileID: 732777785}
   - component: {fileID: 732777786}
   - component: {fileID: 732777787}
+  - component: {fileID: 732777789}
+  - component: {fileID: 732777788}
+  - component: {fileID: 732777790}
+  - component: {fileID: 732777791}
+  - component: {fileID: 732777792}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -3050,6 +3055,7 @@ MonoBehaviour:
     weatherSize: 0.16
     weatherSpin: 30
     weatherSprite: {fileID: 21300000, guid: 9fca76eb82b024c4598aff002ae37fa3, type: 3}
+  externalControl: 0
 --- !u!114 &732777781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3331,6 +3337,86 @@ MonoBehaviour:
   fireworkInterval: {x: 1.4, y: 3.2}
   duskStrength: 0.55
   groundY: -2.5
+--- !u!114 &732777788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732777778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb72d59b38330e64f9ffb76412b4e73b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KittyCrash.VoiceCashOut
+  sensitivity: 7
+  minLevel: 0.06
+  holdSeconds: 0.03
+--- !u!114 &732777789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732777778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0105e35041882804d8695fdb387d9a7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KittyCrash.QuantumBox
+--- !u!114 &732777790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732777778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aceccb017937c048aeb14ab99d4f81c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KittyCrash.CrowdMode
+  startOn: 0
+  pollInterval: 0.3
+  maxTags: 8
+  panelPosition: {x: -28, y: -330}
+  qrSize: 200
+  boardPosition: {x: 28, y: -250}
+  autoHostBet: 1
+  hostName: PC Player
+--- !u!114 &732777791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732777778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66884ebfb97575548aa49efc81f3011a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KittyCrash.SeasonRules
+  spinLaps: 1
+  spinSeconds: 2.4
+  multiplierCenter: {x: 0, y: -210}
+  multiplierSize: {x: 560, y: 170}
+  cardPosition: {x: 0, y: 34}
+--- !u!114 &732777792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732777778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89029bd3f40d7ae4f8658a379ff0f046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KittyCrash.KittyAudio
+  master: 0.9
+  music: 0.45
+  sfx: 0.8
+  crossfadeSeconds: 1.6
 --- !u!1 &745085957
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,12 +4830,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213188322}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14a24e890e74ce408360ed5f8300d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KittyCrash.PixelGrid
-  pixelsPerUnit: 16
+  pixelsPerUnit: 32
   snapCamera: 1
 --- !u!1 &1238927020
 GameObject:

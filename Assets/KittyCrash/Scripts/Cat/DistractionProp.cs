@@ -59,10 +59,7 @@ namespace KittyCrash
         }
     }
 
-    /// <summary>
-    /// The thing that distracted kitty. Placeholder shapes with simple motion; put a real sprite in
-    /// the matching slot on CatWalker (Distraction Sprites) and it's used instead.
-    /// </summary>
+    
     public class DistractionProp : MonoBehaviour
     {
         DistractionType type;
@@ -70,6 +67,7 @@ namespace KittyCrash
         float t;
         SpriteRenderer sr;
         Vector3 baseScale;
+        float size = 1f;
 
         public void Init(DistractionType kind, Sprite sprite, bool isPlaceholder, Transform cat)
         {
@@ -121,11 +119,20 @@ namespace KittyCrash
             transform.position = anchor;
         }
 
-        void Set(Color placeholderColor, Vector3 placeholderScale, bool isPlaceholder)
+            void Set(Color placeholderColor, Vector3 placeholderScale, bool isPlaceholder)
         {
             sr.color = isPlaceholder ? placeholderColor : Color.white;
-            baseScale = isPlaceholder ? placeholderScale : Vector3.one;
+            baseScale = isPlaceholder ? placeholderScale : Vector3.one * ArtSize(type);
             transform.localScale = baseScale;
+        }
+
+        static float ArtSize(DistractionType t)
+        {
+            switch (t)
+            {
+                case DistractionType.Fish: return 0.5f;
+                default: return 1f;
+            }
         }
 
         void Update()
