@@ -48,10 +48,9 @@ namespace KittyCrash
         [Serializable] class SessionDto { public string session_id; public string balance; }
         [Serializable] class BalanceDto { public string balance; }
         [Serializable] class WagerDto { public string wager; }
-        [Serializable] class StartDto { public string round_id; public string status; public string wager; public string balance; public float multiplier; public string distraction; }
-        [Serializable] class StateDto { public string status; public float multiplier; public string distraction; public string payout; }
+        [Serializable] class StartDto { public string round_id; public string status; public string wager; public string balance; public float multiplier; public string distraction; public string commitment; public float growth_rate; public float warmup_seconds = -1f; }        [Serializable] class StateDto { public string status; public float multiplier; public string distraction; public string payout; }
         [Serializable] class CashDto { public string status; public float multiplier; public string payout; public string balance; }
-        [Serializable] class ResultDto { public string status; public float crash_point; public string distraction; public string payout; }
+        [Serializable] class ResultDto { public string status; public float crash_point; public string distraction; public string payout; public QuantumProof proof; }
         [Serializable] class ErrorDto { public string detail; }
 
         class Response
@@ -143,6 +142,9 @@ namespace KittyCrash
             {
                 if (!r.Ok) { done(Fail<StartRoundResult>(r)); return; }
                 var d = Parse<StartDto>(r.text);
+                // Each round has its own speed (seasons / Summer Rush) and warm-up: follow the server exactly.
+                if (d != null && d.growth_rate > 0f) growthRate = d.growth_rate;
+                if (d != null && d.warmup_seconds >= 0f) warmupSeconds = d.warmup_seconds;
                 done(new StartRoundResult
                 {
                     ok = d != null,
@@ -151,6 +153,7 @@ namespace KittyCrash
                     status = BackendUtil.ParseStatus(d?.status),
                     balance = BackendUtil.ParseMoney(d?.balance),
                     distraction = Clean(d?.distraction),
+                    commitment = d?.commitment,
                 });
             });
         }
@@ -205,6 +208,7 @@ namespace KittyCrash
                     crashPoint = d?.crash_point ?? 0f,
                     distraction = Clean(d?.distraction),
                     payout = BackendUtil.ParseMoney(d?.payout),
+                    proof = d != null && d.proof != null && d.proof.IsValid ? d.proof : null,
                 });
             });
         }

@@ -38,6 +38,7 @@ namespace KittyCrash
             public float crashPoint, crashTime, startTime;
             public string distraction;
             public RoundStatus status;
+            public QuantumProof proof;
             public float cashOutMultiplier;
             public decimal payout;
         }
@@ -79,12 +80,14 @@ namespace KittyCrash
                 string err2 = Validate(wager);
                 if (err2 != null) { done(new StartRoundResult { ok = false, error = err2 }); return; }
 
-                double u;
-                do { u = rng.NextDouble(); } while (u <= 0.0);
+                // provably fair, offline edition: seal the outcome first, reveal it after the round
+                string id = Guid.NewGuid().ToString("N");
+                var proof = Fairness.MakeOffline(id, rng, houseEdge, maxMultiplier, out double u);
 
                 var r = new Round
                 {
-                    id = Guid.NewGuid().ToString("N"),
+                    id = id,
+                    proof = proof,
                     wager = wager,
                     crashPoint = CrashMath.CrashFromUniform(u, houseEdge, maxMultiplier),
                     distraction = distractions.Length > 0 ? distractions[rng.Next(distractions.Length)] : "fish",
@@ -107,6 +110,7 @@ namespace KittyCrash
                     status = r.status,
                     balance = balance,
                     distraction = r.status == RoundStatus.Crashed ? r.distraction : null,
+                    commitment = r.proof.commitment,
                 });
             }));
         }
@@ -173,6 +177,7 @@ namespace KittyCrash
                 crashPoint = r.status == RoundStatus.Running ? 0f : r.crashPoint,
                 distraction = r.status == RoundStatus.Running ? null : r.distraction,
                 payout = r.payout,
+                proof = r.status == RoundStatus.Running ? null : r.proof,
             }, simulatedLatency);
         }
 

@@ -5,14 +5,7 @@ namespace KittyCrash
 {
     public enum Season { Spring = 0, Summer = 1, Autumn = 2, Winter = 3 }
 
-    /// <summary>
-    /// Season clock + smooth blending.
-    /// • Every launch starts on a random season, and never the same one as the previous launch.
-    /// • Each season lasts `secondsPerSeason`. During its last `transitionPortion`, everything —
-    ///   sky, ground, leaves, plant sprites, brightness, weather, festive decor — eases into the next
-    ///   season with a smootherstep curve (no visible "pop" at the start or the end).
-    /// Other scripts read SeasonSystem.Instance (Current snapshot, Weight(season), Blend).
-    /// </summary>
+
     [DefaultExecutionOrder(-40)]
     public class SeasonSystem : MonoBehaviour
     {
@@ -98,6 +91,27 @@ namespace KittyCrash
         Camera cam;
         Season lastDominant;
 
+        [HideInInspector] public bool externalControl;
+        float spinFrom, spinTo = -1f, spinT, spinDuration = 2.4f;
+        public bool IsSpinning => spinTo >= 0f;
+
+        /// <summary>Spin forward through the seasons and land on <paramref name="target"/> (laps = extra full cycles).</summary>
+        public void SpinTo(Season target, int laps = 1, float seconds = 2.4f)
+        {
+            externalControl = true;
+            float to = (int)target + 0.06f;
+            while (to <= progress + 0.01f) to += 4f;
+            to += 4f * Mathf.Max(0, laps);
+            spinFrom = progress;
+            spinTo = to;
+            spinT = 0f;
+            spinDuration = Mathf.Max(0.2f, seconds);
+        }
+
+        /// <summary>Hand the seasons back to the clock (offline mode).</summary>
+        public void ReleaseControl() { externalControl = false; spinTo = -1f; }
+        
+
         void Awake()
         {
             Instance = this;
@@ -120,11 +134,19 @@ namespace KittyCrash
 
         void Update()
         {
-            progress += Time.deltaTime / Mathf.Max(1f, secondsPerSeason);
-            if (progress >= 4f) progress -= 4f;
-
-            if (InputReader.DebugNextSeason()) SkipToNextTransition();
-
+            if (spinTo >= 0f)
+            {
+                spinT += Time.deltaTime / spinDuration;
+                float e = 1f - Mathf.Pow(1f - Mathf.Clamp01(spinT), 3f);   // ease-out: fast, then settles
+                progress = Mathf.Lerp(spinFrom, spinTo, e);
+                if (spinT >= 1f) { progress = Mathf.Repeat(spinTo, 4f); spinTo = -1f; }
+            }
+            else if (!externalControl)
+            {
+                progress += Time.deltaTime / Mathf.Max(1f, secondsPerSeason);
+                if (progress >= 4f) progress -= 4f;
+            }
+            if (InputReader.DebugNextSeason() && !externalControl) SkipToNextTransition();  
             Sample();
             Apply();
 

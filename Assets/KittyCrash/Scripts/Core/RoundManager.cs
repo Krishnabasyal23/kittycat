@@ -87,6 +87,17 @@ namespace KittyCrash
         bool pollInFlight, outcomeRequested;
         float spectatorCrash;
         readonly System.Random spectatorRng = new System.Random();
+        QuantumProof spectatorProof;
+
+        // ── provably fair (Schrödinger box) ──
+        /// <summary>SHA-256 seal of this round's outcome, published before anyone can cash out.</summary>
+        public string Commitment { get; private set; }
+        /// <summary>The id the seal was made for (the server round id, or a local id for watch-only rounds).</summary>
+        public string ProofRoundId { get; private set; }
+        public QuantumProof LastProof { get; private set; }
+        public FairnessResult LastCheck { get; private set; }
+        public event Action OnCommitted;
+        public event Action OnProofRevealed;
         int connectAttempt;
 
         void Awake()
@@ -209,6 +220,11 @@ namespace KittyCrash
             Payout = 0m;
             CrashPoint = -1f;
             Distraction = null;
+            Commitment = null;
+            ProofRoundId = null;
+            LastProof = null;
+            LastCheck = null;
+            spectatorProof = null;
         }
 
         void BeginRound()
@@ -228,12 +244,15 @@ namespace KittyCrash
             ResetRoundState();
             HasBet = false;
             Wager = 0m;
-            double u;
-            do { u = spectatorRng.NextDouble(); } while (u <= 0.0);
+            string id = "watch-" + Guid.NewGuid().ToString("N");
+            spectatorProof = Fairness.MakeOffline(id, spectatorRng, CrashMath.DefaultHouseEdge, CrashMath.DefaultMaxMultiplier, out double u);
             spectatorCrash = CrashMath.CrashFromUniform(u, CrashMath.DefaultHouseEdge, CrashMath.DefaultMaxMultiplier);
             runStartTime = Time.time;
             SetPhase(RoundPhase.Running);
             OnRoundStarted?.Invoke();
+            Commitment = spectatorProof.commitment;
+            ProofRoundId = id;
+            OnCommitted?.Invoke();
         }
 
         string RandomSpectatorDistraction()
@@ -266,6 +285,9 @@ namespace KittyCrash
                 nextPollTime = Time.time + pollInterval;
                 SetPhase(RoundPhase.Running);
                 OnRoundStarted?.Invoke();
+                Commitment = r.commitment;
+                ProofRoundId = r.roundId;
+                if (!string.IsNullOrEmpty(Commitment)) OnCommitted?.Invoke();
 
                 if (r.status == RoundStatus.Crashed) EndRound(1f, r.distraction);   // instant 1.00x
             });
@@ -419,6 +441,29 @@ namespace KittyCrash
 
             OnCrash?.Invoke(crash, distraction);
             SetPhase(RoundPhase.Ended);
+            RevealProof();
+        }
+
+        /// <summary>Open the box: fetch the revealed seal ingredients and check them.</summary>
+        void RevealProof()
+        {
+            if (spectatorProof != null) { SetProof(spectatorProof, spectatorProof.crash_point_exact); return; }
+            if (string.IsNullOrEmpty(RoundId) || string.IsNullOrEmpty(Commitment)) return;
+            string id = RoundId;
+            Backend.GetResult(id, r =>
+            {
+                if (id != ProofRoundId || r == null || !r.ok || r.proof == null) return;
+                SetProof(r.proof, r.proof.crash_point_exact > 0 ? r.proof.crash_point_exact : r.crashPoint);
+            });
+        }
+
+        void SetProof(QuantumProof p, double crash)
+        {
+            if (LastProof != null) return;   // already opened (cash-out path fetches twice)
+            LastProof = p;
+            LastCheck = Fairness.Verify(ProofRoundId, p, crash);
+            if (!string.Equals(p.commitment, Commitment, StringComparison.OrdinalIgnoreCase)) LastCheck.hashOk = false; // must match what was published
+            OnProofRevealed?.Invoke();
         }
 
         void RefreshBalance()
