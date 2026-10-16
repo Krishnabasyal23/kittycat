@@ -4,12 +4,6 @@ using UnityEngine;
 
 namespace KittyCrash.EditorTools
 {
-    /// <summary>
-    /// Menu: Kitty Crash › Install Schrödinger Box + Meow Cash-Out
-    ///   • Schrödinger Box: live provably-fair quantum seal (needs the patched KittyAPI for real qubits;
-    ///     offline/watch rounds use a classical seal so it always works)
-    ///   • Meow to cash out: microphone toggle at the bottom-right of the game view
-    /// </summary>
     public static class QuantumInstaller
     {
         [MenuItem("Kitty Crash/Install Schrödinger Box + Meow Cash-Out")]
@@ -26,7 +20,6 @@ namespace KittyCrash.EditorTools
             Undo.SetCurrentGroupName("Quantum box");
             int group = Undo.GetCurrentGroup();
             if (rm.GetComponent<QuantumBox>() == null) Undo.AddComponent<QuantumBox>(rm.gameObject);
-            if (rm.GetComponent<VoiceCashOut>() == null) Undo.AddComponent<VoiceCashOut>(rm.gameObject);
             Undo.CollapseUndoOperations(group);
             EditorSceneManager.MarkSceneDirty(rm.gameObject.scene);
 
