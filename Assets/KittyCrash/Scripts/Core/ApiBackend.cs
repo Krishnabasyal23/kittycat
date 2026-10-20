@@ -32,6 +32,10 @@ namespace KittyCrash
         public bool logRequests;
 
         public string RngMode { get; private set; }
+        /// <summary>Server version from /api/health (shown in the footer), null until connected.</summary>
+        public string ServerVersion { get; private set; }
+        /// <summary>e.g. "HAPPY HOUR (demo)" when the server runs demo bonuses, otherwise null.</summary>
+        public string Promo { get; private set; }
         public string SessionId => sessionId;
 
         public string Name => "API " + baseUrl + (string.IsNullOrEmpty(RngMode) ? "" : $" ({RngMode})");
@@ -44,7 +48,7 @@ namespace KittyCrash
         string sessionId;
 
         // ── JSON shapes (field names match the Python responses) ──
-        [Serializable] class HealthDto { public string status; public string game; public string version; public string rng_mode; public float growth_rate; public float warmup_seconds = -1f; public string min_bet; public string max_bet; }
+        [Serializable] class HealthDto { public string status; public string game; public string version; public string rng_mode; public float growth_rate; public float warmup_seconds = -1f; public string min_bet; public string max_bet; public string promo; }
         [Serializable] class SessionDto { public string session_id; public string balance; }
         [Serializable] class BalanceDto { public string balance; }
         [Serializable] class WagerDto { public string wager; }
@@ -83,6 +87,8 @@ namespace KittyCrash
             if (health != null)
             {
                 RngMode = health.rng_mode;
+                ServerVersion = health.version;
+                Promo = string.IsNullOrEmpty(health.promo) ? null : health.promo;
                 if (health.growth_rate > 0f) growthRate = health.growth_rate;
                 else
                 {
