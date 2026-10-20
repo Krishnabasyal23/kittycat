@@ -25,6 +25,18 @@ offers **simulated** $5 packs (40 points, or 60 for the once-a-day parking bundl
 and **mock** lottery tickets worth 25 points (up to 3 a day). See `KittyAPI\README.md` for the
 wallet rules. Offline practice keeps its own local balance.
 
+**Play safe.** In server mode the game first asks you to confirm you're **19 or older**: the
+server refuses bets and purchases until you do. The **WALLET** and **PLAY SAFE** buttons (or **W**)
+open:
+- the wallet: free points, demo packs with a simulated checkout and a required "no real money"
+  checkbox, mock tickets, receipts and history;
+- the play-safe tools:
+  - a daily spend limit (lowering applies now, raising waits 24 hours);
+  - a reality check every 15, 30 or 60 minutes;
+  - a cool-off break and self-exclusion. Neither can be shortened.
+
+The phones have the same tools on the crowd page.
+
 ## Repository layout
 
 | Path | What |
@@ -70,14 +82,18 @@ existing clone.
 | F | Next festival look |
 | Q | Show / hide the quantum box: the round's fairness seal and its hash / math / qubit checks |
 | M | Mute / unmute music |
+| W | Open / close the wallet (server mode) |
+
+Shortcuts are ignored while you type in a text field.
 
 ## Known limits
 
 - Phones poll the server about 3 times a second (no WebSockets yet).
 - Wallets are anonymous: anyone who asks for a new session gets a new 50-point wallet. Profiles and
   signed QR identity come in Phase 4.
-- The wallet screen, purchase sheet, lottery entry and responsible-gambling controls are
-  server-side only so far. Their UI comes in Phase 3.
+- The 19+ check is self-attested (no ID verification).
+- The game's wallet panel is built at runtime with plain UI widgets. It works, but it isn't yet
+  styled to match the pixel-art HUD.
 - Plain HTTP on the local network only; no hosting or HTTPS yet.
 - The server's health check still names the game "Quantum Cat Crash".
 - With `HAPPY_HOUR=1` (demo only) the spring butterfly and winter 2.00x strategies return more than
