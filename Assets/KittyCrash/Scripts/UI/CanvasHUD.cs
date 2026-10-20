@@ -124,7 +124,7 @@ namespace KittyCrash
 
         void UpdateTopLeft()
         {
-            if (creditsText != null) creditsText.text = $"{round.Balance:0.00} credits";
+            if (creditsText != null) creditsText.text = $"{round.Balance:0.##} points";
 
             var ss = SeasonSystem.Instance;
             if (seasonText != null && ss != null)

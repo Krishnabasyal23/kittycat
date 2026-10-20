@@ -186,7 +186,7 @@ namespace KittyCrash
             wager = Math.Round(wager, 2, MidpointRounding.AwayFromZero);
             if (Phase != RoundPhase.Idle) { LastError = "Bets open again after this walk"; return false; }
             if (wager < MinBet || wager > MaxBet) { LastError = $"Bet must be {MinBet:0}–{MaxBet:0}"; return false; }
-            if (wager > Balance) { LastError = "Not enough credits"; return false; }
+            if (wager > Balance) { LastError = "Not enough points"; return false; }
 
             if (autoRounds)
             {
@@ -233,7 +233,7 @@ namespace KittyCrash
             {
                 BetQueued = false;
                 if (QueuedWager <= Balance) { StartBackendRound(QueuedWager, QueuedAutoCashOut); return; }
-                LastError = "Not enough credits - watching this round";
+                LastError = "Not enough points - watching this round";
             }
             StartSpectatorRound();
         }
