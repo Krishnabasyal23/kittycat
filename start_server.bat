@@ -1,13 +1,16 @@
 @echo off
 setlocal
-title Catino server (port 8000)
+title Catino v2 server (port 8001)
 
-rem Double-click to start the Catino game server on port 8000 using the "hackathon" conda env.
-rem Uses KittyAPI\data\kittycat.db unless KITTY_DB_PATH is already set.
+rem Double-click to start the Catino v2 server on port 8001 using the "hackathon" conda env.
+rem Uses KittyAPI\data\catino-v2.db (created and migrated on start) unless KITTY_DB_PATH is set.
+rem The v1 demo keeps port 8000 and data\kittycat.db; this server never opens that file.
+rem Optional before starting: set DEMO_MODE=1 (simulated purchases, mock lottery tickets),
+rem set HAPPY_HOUR=1 (demo season bonuses).
 
 set "KITTY_API=%~dp0KittyAPI"
 set "ENV_NAME=hackathon"
-set "PORT=8000"
+set "PORT=8001"
 
 rem --- find conda ---
 set "CONDA_ROOT="
@@ -55,8 +58,9 @@ if not errorlevel 1 (
 
 cd /d "%KITTY_API%"
 echo.
-echo  Catino server starting on port %PORT%
-if defined KITTY_DB_PATH (echo  Database: %KITTY_DB_PATH%) else (echo  Database: %KITTY_API%\data\kittycat.db)
+echo  Catino v2 server starting on port %PORT%
+if defined KITTY_DB_PATH (echo  Database: %KITTY_DB_PATH%) else (echo  Database: %KITTY_API%\data\catino-v2.db)
+if "%DEMO_MODE%"=="1" echo  DEMO MODE: payments are simulated, lottery tickets are mock tickets
 echo  Game:   http://127.0.0.1:%PORT%      Phones: http://^<this PC's Wi-Fi IP^>:%PORT%/crowd
 echo  Close this window or press Ctrl+C to stop.
 echo.
