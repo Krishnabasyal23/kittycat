@@ -466,7 +466,8 @@ namespace KittyCrash
             OnProofRevealed?.Invoke();
         }
 
-        void RefreshBalance()
+        /// <summary>Re-read the balance from the backend (e.g. after the wallet panel added points).</summary>
+        public void RefreshBalance()
         {
             Backend.GetBalance(r =>
             {
