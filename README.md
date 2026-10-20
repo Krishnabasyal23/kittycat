@@ -19,7 +19,11 @@ whatever the server really pays, and the game footer then reads **HAPPY HOUR (de
 Every round is **provably fair**: the server publishes a SHA-256 seal of the outcome before anyone
 can cash out, and opens it after the cat is distracted. Press **Q** to see the seal and its checks.
 
-The game uses virtual credits only.
+Server mode uses **points** in a persistent wallet, never cash. Every player (PC or phone) starts
+with 50 points once. Each server day there are 20 free points. In `DEMO_MODE` the server also
+offers **simulated** $5 packs (40 points, or 60 for the once-a-day parking bundle; no money moves)
+and **mock** lottery tickets worth 25 points (up to 3 a day). See `KittyAPI\README.md` for the
+wallet rules. Offline practice keeps its own local balance.
 
 ## Repository layout
 
@@ -27,7 +31,7 @@ The game uses virtual credits only.
 |---|---|
 | `Assets/KittyCrash/` | The game: scene `Scenes/KittyCrash.unity`, scripts, art, audio |
 | `KittyAPI/` | Python/FastAPI server (git submodule, see its README). Decides crash points, seasons, bonuses and payouts |
-| `start_server.bat` | Double-click to start the server on port 8000 |
+| `start_server.bat` | Double-click to start the v2 server on port 8001 |
 
 ## Requirements
 
@@ -47,9 +51,11 @@ existing clone.
 ## Run with the server
 
 1. Double-click `start_server.bat` (or see `KittyAPI\README.md`). Wait for
-   `Uvicorn running on http://0.0.0.0:8000`.
-2. In Unity, find the Round Manager (Hierarchy search: `t:RoundManager`), tick **Use Api** and
-   check **Base Url** is `http://127.0.0.1:8000`.
+   `Uvicorn running on http://0.0.0.0:8001`. To try simulated purchases and mock lottery tickets,
+   run `set DEMO_MODE=1` in a console first and start the script from there.
+2. In Unity, run **Kitty Crash > Server > Use v2 Server (port 8001)** once and save the scene
+   (Ctrl+S). Then find the Round Manager (Hierarchy search: `t:RoundManager`) and tick **Use Api**.
+   **Use v1 Server (port 8000)** switches back for the v1 demo.
 3. Press **Play**. The footer (bottom right) shows the game and server versions. Press **C** to show
    the crowd QR code; phones on the same Wi-Fi scan it to open
    `/crowd`. Run `pip install segno` in the env if the QR code does not appear.
@@ -67,14 +73,16 @@ existing clone.
 
 ## Known limits
 
-- Phones poll the server about 3 times a second (no WebSockets yet); crowd players and their
-  credits live in server memory and reset when the server restarts.
+- Phones poll the server about 3 times a second (no WebSockets yet).
+- Wallets are anonymous: anyone who asks for a new session gets a new 50-point wallet. Profiles and
+  signed QR identity come in Phase 4.
+- The wallet screen, purchase sheet, lottery entry and responsible-gambling controls are
+  server-side only so far. Their UI comes in Phase 3.
 - Plain HTTP on the local network only; no hosting or HTTPS yet.
 - The server's health check still names the game "Quantum Cat Crash".
 - With `HAPPY_HOUR=1` (demo only) the spring butterfly and winter 2.00x strategies return more than
   100% to the player (about 119% and 105%, `KittyAPI\tests\sim_rtp.py --happy-hour`). Never run it
   with real money.
-- Fairness proofs live in server memory: rounds from before a server restart cannot be verified.
 - Editor menu **Kitty Crash > Install Schrödinger Box + Meow Cash-Out** still exists although
   voice cash-out was removed.
 

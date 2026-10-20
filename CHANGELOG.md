@@ -5,6 +5,16 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [Unreleased] - develop-v2
 
+### Added (Phase 2, server v2.0.0-alpha.3)
+- Editor menu **Kitty Crash > Server > Use v2 Server (port 8001)** / **Use v1 Server (port 8000)**
+  to point the scene's Api Backend at either server without hand-editing the scene.
+
+### Changed (Phase 2)
+- `start_server.bat` starts the v2 server on port 8001 with its own database
+  (`KittyAPI\data\catino-v2.db`). The v1 demo keeps port 8000 and its file.
+- Server mode uses persistent point wallets (50-point start, whole-point bets and payouts).
+- Footer shows `v2.0.0-alpha.3`. KittyAPI pointer moved to server `v2.0.0-alpha.3`.
+
 ### Added (Phase 1b, server v2.0.0-alpha.2)
 - Version footer (bottom right): game version, server version or "offline", and the server's
   promo line ("HAPPY HOUR (demo)"). Installs itself at runtime; no scene or prefab change.
