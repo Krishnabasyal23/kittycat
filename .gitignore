@@ -113,4 +113,20 @@ InitTestScene*.unity*
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
 Assets.zip
-Assets.zip
+
+# Secrets and certificates
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.keystore
+certs/
+
+# Databases, tool output and scratch space (D:\hhh\catt\.tmp holds test DBs and caches)
+*.db
+*.sqlite
+*.sqlite3
+.tmp/
+.pytest_cache/
+web/
