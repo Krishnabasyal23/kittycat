@@ -12,10 +12,11 @@ namespace KittyCrash
     /// FOUR SEASONS, FOUR RULES (needs the KittyAPI season_rules.py update + USE API).
     ///  • While betting: the server's forecast for the next walk. The whole world spins through the seasons
     ///    like a slot reel and lands on it, and a rule card explains what this season changes.
-    ///      SPRING  timing       golden butterfly flutters by: cash out while it's here = +25%
+    ///      SPRING  timing       golden butterfly flutters by: cash out while it's here = bonus
     ///      SUMMER  speed        Summer Zoomies: 40% chance the multiplier climbs way faster
     ///      FALL    information  leaf storms hide the multiplier: trust your gut
-    ///      WINTER  patience     slow, sleepy walk: cash out at 2.00x+ = +10% hot cocoa bonus
+    ///      WINTER  patience     slow, sleepy walk: cash out at 2.00x+ = hot cocoa bonus
+    ///    Bonus sizes come from the server (bonus_pct: +4% by default, +25% / +10% in HAPPY_HOUR demos).
     ///  • While walking: the events happen live in the scene, in sync with the server (and the phones).
     /// Put it on the Managers object.
     /// </summary>
@@ -35,7 +36,8 @@ namespace KittyCrash
 
         // ── server data ──
         [Serializable] class SeasonDto { public string season; public string title; public string axis; public string rule; }
-        [Serializable] class ScheduleDto { public string round_id; public string season; public bool rush; public float growth_rate; public float lead_in_seconds; public bool rules_on; public float[] butterfly; public float[] leaf_storms; }
+        [Serializable] class ScheduleDto { public string round_id; public string season; public bool rush; public float growth_rate; public float lead_in_seconds; public bool rules_on; public float[] butterfly; public float[] leaf_storms; public BonusPctDto bonus_pct; }
+        [Serializable] class BonusPctDto { public int butterfly; public int cocoa; }
 
         static readonly Dictionary<string, Color> SeasonColor = new Dictionary<string, Color>
         {
@@ -171,8 +173,8 @@ namespace KittyCrash
         {
             if (schedule == null || !schedule.rules_on) return;
             float t = rm.RunElapsed;
-            if (schedule.season == "spring" && Inside(schedule.butterfly, 0, t)) { ShowBanner("BUTTERFLY BONUS  +25%", SeasonColor["spring"]); OnEvent?.Invoke("bonus"); }
-            else if (schedule.season == "winter" && multiplier >= 2f) { ShowBanner("HOT COCOA BONUS  +10%", SeasonColor["winter"]); OnEvent?.Invoke("bonus"); }
+            if (schedule.season == "spring" && Inside(schedule.butterfly, 0, t)) { ShowBanner("BUTTERFLY BONUS" + Pct(schedule, "butterfly"), SeasonColor["spring"]); OnEvent?.Invoke("bonus"); }
+            else if (schedule.season == "winter" && multiplier >= 2f) { ShowBanner("HOT COCOA BONUS" + Pct(schedule, "cocoa"), SeasonColor["winter"]); OnEvent?.Invoke("bonus"); }
         }
 
         // ── every frame ────────────────────────────
@@ -200,8 +202,8 @@ namespace KittyCrash
             UpdateButterfly(fly);
             UpdateStorm(storm);
 
-            if (fly && !butterflyWas && rm.HasBet && !rm.CashedOut) ShowBanner("GOLDEN BUTTERFLY!  CASH OUT NOW  +25%", SeasonColor["spring"]);
-            if (cocoa && !cocoaWas) ShowBanner("HOT COCOA ZONE  +10%", SeasonColor["winter"]);
+            if (fly && !butterflyWas && rm.HasBet && !rm.CashedOut) ShowBanner("GOLDEN BUTTERFLY!  CASH OUT NOW" + Pct(schedule, "butterfly"), SeasonColor["spring"]);
+            if (cocoa && !cocoaWas) ShowBanner("HOT COCOA ZONE" + Pct(schedule, "cocoa"), SeasonColor["winter"]);
             if (fly && !butterflyWas) OnEvent?.Invoke("butterfly");
             if (storm && !stormWas) OnEvent?.Invoke("leafstorm");
             if (cocoa && !cocoaWas) OnEvent?.Invoke("cocoa");
@@ -383,14 +385,22 @@ namespace KittyCrash
         static Color Col(string s) => s != null && SeasonColor.TryGetValue(s, out var c) ? c : Color.white;
         static string Pretty(string s) => string.IsNullOrEmpty(s) ? "" : s.ToUpperInvariant();
 
+        /// <summary>"  +4%" from the server's bonus_pct, or "" if this server does not say (never a made-up number).</summary>
+        static string Pct(ScheduleDto s, string kind, string sep = "  ")
+        {
+            if (s == null || s.bonus_pct == null) return "";
+            int v = kind == "butterfly" ? s.bonus_pct.butterfly : s.bonus_pct.cocoa;
+            return v > 0 ? sep + "+" + v + "%" : "";
+        }
+
         static string RuleShort(ScheduleDto s)
         {
             switch (s.season)
             {
-                case "spring": return "catch the golden butterfly: +25%";
+                case "spring": return "catch the golden butterfly" + Pct(s, "butterfly", ": ");
                 case "summer": return s.rush ? "ZOOMIES! climbing fast" : "no zoomies this time";
                 case "fall": return "leaf storms hide the multiplier";
-                case "winter": return "hold to 2.00x for +10% cocoa";
+                case "winter": return "hold to 2.00x for a cocoa bonus" + Pct(s, "cocoa", ": ");
                 default: return "";
             }
         }

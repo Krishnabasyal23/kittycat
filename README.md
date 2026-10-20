@@ -7,10 +7,17 @@ bet on the same cat. Four seasons each change one rule:
 
 | Season | Rule |
 |---|---|
-| Spring | **Butterfly Catch**: cash out while the golden butterfly is on screen for +25% |
+| Spring | **Butterfly Catch**: cash out while the golden butterfly is on screen for a bonus |
 | Summer | **Summer Zoomies**: 40% chance the cat sprints and the multiplier climbs faster |
 | Fall | **Leaf Storm**: gusts of leaves hide the multiplier |
-| Winter | **Hot Cocoa**: slow walk; cash out at 2.00x or more for +10% |
+| Winter | **Hot Cocoa**: slow walk; cash out at 2.00x or more for a bonus |
+
+Season bonuses are **+4%** by default, which keeps every strategy under 100% RTP. Starting the server
+with `HAPPY_HOUR=1` restores the pitch-demo bonuses (+25% butterfly, +10% cocoa). Screens show
+whatever the server really pays, and the game footer then reads **HAPPY HOUR (demo)**.
+
+Every round is **provably fair**: the server publishes a SHA-256 seal of the outcome before anyone
+can cash out, and opens it after the cat is distracted. Press **Q** to see the seal and its checks.
 
 The game uses virtual credits only.
 
@@ -19,7 +26,7 @@ The game uses virtual credits only.
 | Path | What |
 |---|---|
 | `Assets/KittyCrash/` | The game: scene `Scenes/KittyCrash.unity`, scripts, art, audio |
-| `KittyAPI/` | Python/FastAPI server (separate git repo, see its README). Decides crash points, seasons, bonuses and payouts |
+| `KittyAPI/` | Python/FastAPI server (git submodule, see its README). Decides crash points, seasons, bonuses and payouts |
 | `start_server.bat` | Double-click to start the server on port 8000 |
 
 ## Requirements
@@ -27,6 +34,9 @@ The game uses virtual credits only.
 - Unity **6000.6.5f1** (Unity 6)
 - For server mode: Anaconda/Miniconda with the `hackathon` env
   (`conda env create -f KittyAPI\environment.yml`)
+
+Fresh clone: `git clone --recurse-submodules <this repo>`, or run `git submodule update --init` in an
+existing clone.
 
 ## Run offline (no server)
 
@@ -40,7 +50,8 @@ The game uses virtual credits only.
    `Uvicorn running on http://0.0.0.0:8000`.
 2. In Unity, find the Round Manager (Hierarchy search: `t:RoundManager`), tick **Use Api** and
    check **Base Url** is `http://127.0.0.1:8000`.
-3. Press **Play**. Press **C** to show the crowd QR code; phones on the same Wi-Fi scan it to open
+3. Press **Play**. The footer (bottom right) shows the game and server versions. Press **C** to show
+   the crowd QR code; phones on the same Wi-Fi scan it to open
    `/crowd`. Run `pip install segno` in the env if the QR code does not appear.
 
 ## Controls
@@ -51,7 +62,7 @@ The game uses virtual credits only.
 | C | Show / hide crowd mode (QR code and phone players) |
 | N | Choose the next walk's season (host / testing) |
 | F | Next festival look |
-| Q | Show / hide the quantum box panel |
+| Q | Show / hide the quantum box: the round's fairness seal and its hash / math / qubit checks |
 | M | Mute / unmute music |
 
 ## Known limits
@@ -60,8 +71,10 @@ The game uses virtual credits only.
   credits live in server memory and reset when the server restarts.
 - Plain HTTP on the local network only; no hosting or HTTPS yet.
 - The server's health check still names the game "Quantum Cat Crash".
-- Season bonuses are generous: the RTP simulation (`KittyAPI\tests\sim_rtp.py`) shows the spring
-  butterfly and winter 2.00x strategies return more than 100% to the player.
+- With `HAPPY_HOUR=1` (demo only) the spring butterfly and winter 2.00x strategies return more than
+  100% to the player (about 119% and 105%, `KittyAPI\tests\sim_rtp.py --happy-hour`). Never run it
+  with real money.
+- Fairness proofs live in server memory: rounds from before a server restart cannot be verified.
 - Editor menu **Kitty Crash > Install Schrödinger Box + Meow Cash-Out** still exists although
   voice cash-out was removed.
 
