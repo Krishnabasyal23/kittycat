@@ -5,6 +5,19 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [Unreleased] - develop-v2
 
+### Added (Phase 3, server v2.0.0-alpha.4)
+- Wallet and play-safe panel in the game (WALLET / PLAY SAFE buttons, key W), built at runtime:
+  19+ gate, daily points, demo packs with a simulated checkout (generic methods, required
+  checkbox, receipts), mock ticket entry, history, daily spend limit, reality check, cool-off,
+  self-exclusion, out-of-points page.
+
+### Changed (Phase 3)
+- Game shortcuts (Space/Enter, C, F, M, N, Q, W) are ignored while a text field has focus.
+- The balance is labelled points and shown without decimals.
+- Crowd mode no longer opens a fresh server session when the PC runs out of points. The
+  out-of-points page replaces it.
+- Footer shows `v2.0.0-alpha.4`. KittyAPI pointer moved to server `v2.0.0-alpha.4`.
+
 ### Added (Phase 2, server v2.0.0-alpha.3)
 - Editor menu **Kitty Crash > Server > Use v2 Server (port 8001)** / **Use v1 Server (port 8000)**
   to point the scene's Api Backend at either server without hand-editing the scene.
