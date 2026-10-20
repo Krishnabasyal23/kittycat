@@ -5,6 +5,16 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [Unreleased] - develop-v2
 
+### Added (Phase 1b, server v2.0.0-alpha.2)
+- Version footer (bottom right): game version, server version or "offline", and the server's
+  promo line ("HAPPY HOUR (demo)"). Installs itself at runtime; no scene or prefab change.
+- `.gitmodules` entry for `KittyAPI`, so fresh clones can fetch the server.
+
+### Changed (Phase 1b)
+- Season banners and rule hints show the bonus size the server reports (+4% by default) instead
+  of a hard-coded +25% / +10%.
+- KittyAPI pointer moved to server `v2.0.0-alpha.2` (fairness seal with `/verify`, safe bonuses).
+
 ### Added (Phase 1a, server v2.0.0-alpha.1)
 - `start_server.bat`: double-click start of the server on port 8000 with the `hackathon` conda env,
   with clear messages when conda or the env is missing or the port is taken.
