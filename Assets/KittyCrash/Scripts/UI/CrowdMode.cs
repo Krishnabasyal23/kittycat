@@ -54,7 +54,7 @@ namespace KittyCrash
         CatWalker cat;
         Font font;
 
-        bool on, polling, hostBetTried, refilling;
+        bool on, polling, hostBetTried;
         string hostedSession, joinUrl;
         float nextPoll;
         StateDto state;
@@ -179,14 +179,8 @@ namespace KittyCrash
             if (api != null && api.SessionId != hostedSession && !string.IsNullOrEmpty(api.SessionId)) Host();
             if (!rm.useApi) { on = false; RefreshPill(); return; }
 
-            // Laptop ran out of credits → start a fresh server session (50-point starting grant) so the crowd round can still run.
-            if (rm.Phase == RoundPhase.Idle && rm.Balance < rm.MinBet && !refilling)
-            {
-                refilling = true;
-                api.ForgetSession();
-                rm.Connect();
-            }
-            if (refilling && rm.Balance >= rm.MinBet) refilling = false;
+            // Laptop out of points: the wallet panel offers free points, demo packs or a break.
+            // (No more fresh sessions: a new wallet per refill would hand out free points.)
 
             if (!polling && Time.time >= nextPoll) Poll();
 
