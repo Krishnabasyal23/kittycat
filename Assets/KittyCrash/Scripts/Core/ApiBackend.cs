@@ -134,7 +134,7 @@ namespace KittyCrash
             done(new BalanceResult { ok = true, balance = BackendUtil.ParseMoney(s.balance) });
         }
 
-        /// <summary>Forget the saved session; next Connect makes a fresh one (balance back to 1000).</summary>
+        /// <summary>Forget the saved session; next Connect makes a fresh one (a new wallet with the 50-point starting grant).</summary>
         public void ForgetSession()
         {
             sessionId = null;
