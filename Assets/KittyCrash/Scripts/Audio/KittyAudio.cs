@@ -172,9 +172,9 @@ namespace KittyCrash
         void Update()
         {
 #if ENABLE_INPUT_SYSTEM
-            if (Keyboard.current != null && Keyboard.current.mKey.wasPressedThisFrame) musicMuted = !musicMuted;
+            if (!InputReader.Typing && Keyboard.current != null && Keyboard.current.mKey.wasPressedThisFrame) musicMuted = !musicMuted;
 #else
-            if (Input.GetKeyDown(KeyCode.M)) musicMuted = !musicMuted;
+            if (!InputReader.Typing && Input.GetKeyDown(KeyCode.M)) musicMuted = !musicMuted;
 #endif
             var ss = SeasonSystem.Instance;
 

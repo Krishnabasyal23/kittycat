@@ -8,9 +8,22 @@ namespace KittyCrash
     /// <summary>Keyboard shortcuts. Works with the new Input System or the old Input Manager.</summary>
     public static class InputReader
     {
+        /// <summary>True while a text field has focus: game shortcuts must ignore the keyboard then.</summary>
+        public static bool Typing
+        {
+            get
+            {
+                var es = UnityEngine.EventSystems.EventSystem.current;
+                var go = es != null ? es.currentSelectedGameObject : null;
+                var field = go != null ? go.GetComponent<UnityEngine.UI.InputField>() : null;
+                return field != null && field.isFocused;
+            }
+        }
+
         /// <summary>Space / Enter: place bet during betting, cash out while walking.</summary>
         public static bool ActionPressed()
         {
+            if (Typing) return false;
 #if ENABLE_INPUT_SYSTEM
             var k = Keyboard.current;
             return k != null && (k.spaceKey.wasPressedThisFrame || k.enterKey.wasPressedThisFrame);
@@ -22,6 +35,7 @@ namespace KittyCrash
         /// <summary>N: jump to the next season transition (dev/testing).</summary>
         public static bool DebugNextSeason()
         {
+            if (Typing) return false;
 #if ENABLE_INPUT_SYSTEM
             var k = Keyboard.current;
             return k != null && k.nKey.wasPressedThisFrame;

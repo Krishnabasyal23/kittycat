@@ -166,9 +166,9 @@ namespace KittyCrash
         void Update()
         {
 #if ENABLE_INPUT_SYSTEM
-            if (Keyboard.current != null && Keyboard.current.cKey.wasPressedThisFrame) Toggle();
+            if (!InputReader.Typing && Keyboard.current != null && Keyboard.current.cKey.wasPressedThisFrame) Toggle();
 #else
-            if (Input.GetKeyDown(KeyCode.C)) Toggle();
+            if (!InputReader.Typing && Input.GetKeyDown(KeyCode.C)) Toggle();
 #endif
             if (cam == null) cam = Camera.main;
             if (cam != null) { area.anchorMin = new Vector2(0f, cam.rect.y); area.anchorMax = new Vector2(1f, Mathf.Min(1f, cam.rect.y + cam.rect.height)); }
