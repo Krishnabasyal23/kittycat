@@ -5,14 +5,14 @@ using UnityEngine.UI;
 namespace KittyCrash
 {
     /// <summary>
-    /// Small footer with the build version: "Catino v2.0.0-alpha.3 · server 2.0.0-alpha.3" (or "offline"),
+    /// Small footer with the build version: "Catino v2.0.0-alpha.4 · server 2.0.0-alpha.4" (or "offline"),
     /// plus the server's promo line such as "HAPPY HOUR (demo)".
     /// Installs itself at runtime in any scene that has a RoundManager, so no scene or prefab edit is needed.
     /// </summary>
     public class VersionFooter : MonoBehaviour
     {
         /// <summary>Keep in step with the git tag (v2.0.0-alpha.N) and VERSION in KittyAPI/main.py.</summary>
-        public const string ClientVersion = "2.0.0-alpha.3";
+        public const string ClientVersion = "2.0.0-alpha.4";
 
         static readonly Color Muted = new Color(1f, 1f, 1f, 0.55f);
         static readonly Color Promo = new Color(1f, 0.82f, 0.24f, 0.95f);
