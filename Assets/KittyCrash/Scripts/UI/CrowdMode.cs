@@ -179,7 +179,7 @@ namespace KittyCrash
             if (api != null && api.SessionId != hostedSession && !string.IsNullOrEmpty(api.SessionId)) Host();
             if (!rm.useApi) { on = false; RefreshPill(); return; }
 
-            // Laptop ran out of credits → start a fresh server session (1000 credits) so the crowd round can still run.
+            // Laptop ran out of credits → start a fresh server session (50-point starting grant) so the crowd round can still run.
             if (rm.Phase == RoundPhase.Idle && rm.Balance < rm.MinBet && !refilling)
             {
                 refilling = true;
