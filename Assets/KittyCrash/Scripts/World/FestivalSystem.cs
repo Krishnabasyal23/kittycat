@@ -151,9 +151,9 @@ namespace KittyCrash
         void Update()
         {
 #if ENABLE_INPUT_SYSTEM
-            if (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame) NextFestival();
+            if (!InputReader.Typing && Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame) NextFestival();
 #else
-            if (Input.GetKeyDown(KeyCode.F)) NextFestival();
+            if (!InputReader.Typing && Input.GetKeyDown(KeyCode.F)) NextFestival();
 #endif
             if (cam == null) { cam = Camera.main; if (cam == null) return; }
             var art = CurrentArt;
