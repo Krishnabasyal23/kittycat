@@ -297,7 +297,7 @@ namespace KittyCrash
 
         void UpdateTopBar()
         {
-            creditsText.text = rm.Balance.ToString("N2", Inv);
+            creditsText.text = rm.Balance.ToString("#,0.##", Inv);
 
             var ss = SeasonSystem.Instance;
             if (ss != null)
@@ -636,7 +636,7 @@ namespace KittyCrash
             var creditsCard = Panel("Credits", dock, docked ? new Color(0.11f, 0.12f, 0.18f, 1f) : panel, rounded);
             if (docked) { Place(creditsCard.rectTransform, new Vector2(0.5f, 0), new Vector2(0, 182), new Vector2(340, 88), new Vector2(0.5f, 0)); creditsRT = creditsCard.rectTransform; }
             else Place(creditsCard.rectTransform, new Vector2(1, 1), new Vector2(-40, -24), new Vector2(340, 88), new Vector2(1, 1));
-            var cl = Label("Label", creditsCard.transform, "CREDITS", 20, textMuted, TextAnchor.UpperLeft, false);
+            var cl = Label("Label", creditsCard.transform, "POINTS", 20, textMuted, TextAnchor.UpperLeft, false);
             Place(cl.rectTransform, new Vector2(0, 1), new Vector2(20, -10), new Vector2(200, 26));
             creditsText = Label("Value", creditsCard.transform, "0.00", 44, textMain, TextAnchor.LowerRight, true);
             Place(creditsText.rectTransform, new Vector2(1, 0), new Vector2(-20, 8), new Vector2(300, 56), new Vector2(1, 0));
@@ -713,7 +713,7 @@ namespace KittyCrash
 
             betInput = MakeInput("Bet", t, startingBet, InputField.ContentType.DecimalNumber, 38);
             Place((RectTransform)betInput.transform, new Vector2(0, 1), new Vector2(24, yInput), new Vector2(422, hInput));
-            var unit = Label("Unit", betInput.transform, "credits", 22, textMuted, TextAnchor.MiddleRight, false);
+            var unit = Label("Unit", betInput.transform, "points", 22, textMuted, TextAnchor.MiddleRight, false);
             Place(unit.rectTransform, new Vector2(1, 0.5f), new Vector2(-18, 0), new Vector2(120, 40), new Vector2(1, 0.5f));
 
             string[] chips = { "1/2", "x2", "+10", "MAX" };
