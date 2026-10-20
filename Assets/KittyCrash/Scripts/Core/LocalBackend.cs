@@ -192,7 +192,7 @@ namespace KittyCrash
             if (active != null) Refresh(active);
             if (active != null) return "Session already has an active round";
             if (wager < MinBet || wager > MaxBet) return "Wager outside betting limits";
-            if (wager > balance) return "Insufficient credits";
+            if (wager > balance) return "Insufficient points";
             return null;
         }
 

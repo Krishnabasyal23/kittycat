@@ -81,7 +81,7 @@ namespace KittyCrash
         void TopLeft()
         {
             GUILayout.BeginArea(new Rect(12, 10, 340, 160));
-            GUILayout.Label($"Credits  {round.Balance:0.00}", label);
+            GUILayout.Label($"Points  {round.Balance:0.##}", label);
 
             var ss = SeasonSystem.Instance;
             if (ss != null)
@@ -100,7 +100,7 @@ namespace KittyCrash
             GUILayout.BeginHorizontal();
             bool api = GUILayout.Toggle(round.useApi, " Use API");
             if (api != round.useApi) round.SetUseApi(api);
-            if (!round.useApi && GUILayout.Button("Reset credits", GUILayout.Width(100))) round.ResetOfflineBalance();
+            if (!round.useApi && GUILayout.Button("Reset points", GUILayout.Width(100))) round.ResetOfflineBalance();
             GUILayout.EndHorizontal();
             GUI.enabled = true;
             GUILayout.EndArea();
