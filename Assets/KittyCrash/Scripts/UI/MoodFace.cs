@@ -35,7 +35,7 @@ namespace KittyCrash
         Camera cam;
         Font font, bold;
 
-        RectTransform root, gameArea, faceRT, popRT, floatRT;
+        RectTransform root, gameArea, faceRT, popRT, floatRT, moodPanel;
         Image faceImg, plateImg, vignetteImg, meterFill;
         Text label, subLabel, streakText, popText, floatText;
 
@@ -117,6 +117,7 @@ namespace KittyCrash
 
             // mood panel, top-right
             var panel = NewRect("MoodPanel", gameArea);
+            moodPanel = panel;
             panel.anchorMin = panel.anchorMax = panel.pivot = new Vector2(1f, 1f);
             panel.anchoredPosition = new Vector2(-margin.x, -margin.y);
             panel.sizeDelta = new Vector2(faceSize + 70f, faceSize + 120f);
@@ -188,6 +189,7 @@ namespace KittyCrash
         void LateUpdate()
         {
             if (rm == null) { rm = RoundManager.Instance; if (rm == null) return; }
+            if (moodPanel != null && moodPanel.gameObject.activeSelf != HudLayout.Mood) moodPanel.gameObject.SetActive(HudLayout.Mood);
             if (cam == null) cam = Camera.main;
 
             // keep to the game view (above the betting dock)

@@ -85,8 +85,16 @@ existing clone.
 | Q | Show / hide the quantum box: the round's fairness seal and its hash / math / qubit checks |
 | M | Mute / unmute music |
 | W | Open / close the wallet (server mode) |
+| Esc | Open / close the menu (wallet, safe play, panels, how to play, settings, demo reset) |
+| F1 | How to play |
+| F5 | Demo reset: start over as a new player (asks first; offline, or a server in `DEMO_MODE`) |
 
-Shortcuts are ignored while you type in a text field.
+Shortcuts are ignored while you type in a text field or while a menu is open.
+
+The game opens on a title screen (Play, How to play, Settings, Safe play). Settings has mute,
+volume, the classic layout, the title screen on/off and online/offline play. The demo reset gives
+a fresh wallet with the starting points and no breaks or limits; on the server the old wallet and
+its history stay untouched.
 
 ## Known limits
 

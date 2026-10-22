@@ -84,6 +84,20 @@ namespace KittyCrash
         bool Connected => Api != null && !string.IsNullOrEmpty(Api.SessionId)
                           && rm.Phase != RoundPhase.Connecting && rm.Phase != RoundPhase.Offline;
         public bool IsOpen => modal != null && modal.gameObject.activeSelf;
+        public bool Online => Connected;
+        public bool DemoMode => wallet != null && wallet.demo_mode;
+
+        /// <summary>Demo reset: forget everything about the old wallet (GameMenu reconnects with a new one).</summary>
+        public void ResetForNewPlayer()
+        {
+            wallet = null;
+            gateShown = oopShown = false;
+            sessionStart = null;
+            nextRefresh = 0f;
+            closable = true;
+            Close();
+            walletLabel.text = "WALLET";
+        }
 
         void Awake()
         {
@@ -99,7 +113,7 @@ namespace KittyCrash
         void Update()
         {
             bool online = Connected;
-            buttons.gameObject.SetActive(online);
+            buttons.gameObject.SetActive(online && HudLayout.WalletButtons);
             if (!online) { if (IsOpen && closable) Close(); gateShown = false; return; }
 
             if (!InputReader.Typing && WPressed()) { if (IsOpen) { if (closable) Close(); } else ShowHome(); }
@@ -206,7 +220,7 @@ namespace KittyCrash
 
         // ── pages ─────────────────────────────────
 
-        void ShowHome()
+        public void ShowHome()
         {
             StartCoroutine(Call("GET", "/api/wallet", null, null, (code, text) =>
             {
@@ -423,7 +437,7 @@ namespace KittyCrash
             }
         }
 
-        void ShowSafe()
+        public void ShowSafe()
         {
             StartCoroutine(Call("GET", "/api/wallet/limits", null, null, (code, text) =>
             {
