@@ -12,7 +12,7 @@ namespace KittyCrash
     public class VersionFooter : MonoBehaviour
     {
         /// <summary>Keep in step with the git tag (v2.0.0-alpha.N) and VERSION in KittyAPI/main.py.</summary>
-        public const string ClientVersion = "2.0.0-alpha.11";
+        public const string ClientVersion = "2.0.0-alpha.12";
 
         static readonly Color Muted = new Color(1f, 1f, 1f, 0.55f);
         static readonly Color Promo = new Color(1f, 0.82f, 0.24f, 0.95f);

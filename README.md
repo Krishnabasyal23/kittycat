@@ -105,8 +105,8 @@ editor. It plays the scene and saves the title, clean, menu and classic screens 
 
 Shortcuts are ignored while you type in a text field or while a menu is open.
 
-The game opens on a title screen (Play, How to play, Settings, Safe play). Settings has mute,
-volume, the classic layout, the title screen on/off and online/offline play. The demo reset gives
+The game opens on a title screen (Play, How to play, Settings, Safe play). Settings has the language
+(English / French), mute, volume, the classic layout, the title screen on/off and online/offline play. The demo reset gives
 a fresh wallet with the starting points and no breaks or limits; on the server the old wallet and
 its history stay untouched.
 

@@ -67,6 +67,8 @@ namespace KittyCrash
         }
 
         RectTransform creditsRT, warmRT, graphRT;
+        Text pointsLabel, yourBetLabel, unitLabel, autoLabelText, graphTitle;
+        Loc.Lang shownLang;
         GameObject graphCard;
 
         /// <summary>
@@ -300,6 +302,15 @@ namespace KittyCrash
         /// <summary>Clean layout (HudLayout): graph, history and the server switch only when wanted.</summary>
         void ApplyLayout()
         {
+            if (shownLang != Loc.Current)
+            {
+                shownLang = Loc.Current;
+                if (pointsLabel != null) pointsLabel.text = Loc.T("hud.points");
+                if (yourBetLabel != null) yourBetLabel.text = Loc.T("hud.yourBet");
+                if (unitLabel != null) unitLabel.text = Loc.T("hud.unit");
+                if (autoLabelText != null) autoLabelText.text = Loc.T("hud.auto");
+                if (graphTitle != null) graphTitle.text = Loc.T("hud.graph");
+            }
             if (graphCard != null && graphCard.activeSelf != HudLayout.Graph) graphCard.SetActive(HudLayout.Graph);
             if (historyRow != null && historyRow.gameObject.activeSelf != HudLayout.History) historyRow.gameObject.SetActive(HudLayout.History);
             if (apiToggleBtn != null) apiToggleBtn.gameObject.SetActive(HudLayout.ServerSwitch);
@@ -351,8 +362,8 @@ namespace KittyCrash
 
             switch (rm.Phase)
             {
-                case RoundPhase.Connecting: big = "..."; sub = "Connecting..."; c = textMuted; break;
-                case RoundPhase.Offline: big = "OFFLINE"; sub = $"Can't reach the server - retrying in {Mathf.CeilToInt(rm.PhaseTimeLeft)}s"; c = lose; break;
+                case RoundPhase.Connecting: big = "..."; sub = Loc.T("hud.connecting"); c = textMuted; break;
+                case RoundPhase.Offline: big = Loc.T("hud.offlineBtn"); sub = Loc.F("hud.offline", Mathf.CeilToInt(rm.PhaseTimeLeft)); c = lose; break;
                 case RoundPhase.Idle:
                     if (rm.autoRounds)
                     {
@@ -360,31 +371,31 @@ namespace KittyCrash
                         c = accent;
                         pulse = 0.6f;
                         sub = rm.BetQueued
-                            ? $"Bet locked in: {rm.QueuedWager.ToString("N2", Inv)}  -  kitty starts in {rm.PhaseTimeLeft:0.0}s"
-                            : $"Place your bets!  Next walk in {rm.PhaseTimeLeft:0.0}s";
+                            ? Loc.F("hud.locked", rm.QueuedWager.ToString("N2", Inv), rm.PhaseTimeLeft)
+                            : Loc.F("hud.placeBets", rm.PhaseTimeLeft);
                     }
-                    else { big = "1.00x"; sub = "Place a bet to send kitty walking"; c = textMuted; }
+                    else { big = "1.00x"; sub = Loc.T("hud.placeOne"); c = textMuted; }
                     break;
-                case RoundPhase.Starting: big = "1.00x"; sub = "Kitty is stretching...  rolling the quantum dice"; c = textMuted; break;
+                case RoundPhase.Starting: big = "1.00x"; sub = Loc.T("hud.starting"); c = textMuted; break;
                 case RoundPhase.Running:
                     float m = CrashMath.Floor2(rm.Multiplier);
                     big = m.ToString("0.00", Inv) + "x";
-                    if (rm.IsWarmingUp) { c = textMuted; sub = $"Kitty is warming up...  multiplier starts in {rm.WarmupLeft:0.0}s"; }
+                    if (rm.IsWarmingUp) { c = textMuted; sub = Loc.F("hud.warming", rm.WarmupLeft); }
                     else
                     {
                         c = rm.CashedOut ? win : MultColor(m);
                         pulse = Mathf.Clamp01((m - 1f) / 4f);
-                        sub = cat != null ? $"Kitty has walked {cat.DistanceThisRound:0.0} m" : "Kitty is walking...";
-                        if (cat != null && cat.IsFidgeting) sub += "   ...sniff sniff";
-                        if (rm.CashedOut) sub = $"You cashed out at {rm.CashOutMultiplier:0.00}x - watch where kitty stops!";
-                        if (!rm.HasBet) sub = "Just watching this round - bets open when kitty gets distracted";
+                        sub = cat != null ? Loc.F("hud.walked", cat.DistanceThisRound) : Loc.T("hud.walking");
+                        if (cat != null && cat.IsFidgeting) sub += Loc.T("hud.sniff");
+                        if (rm.CashedOut) sub = Loc.F("hud.cashedAt", rm.CashOutMultiplier);
+                        if (!rm.HasBet) sub = Loc.T("hud.watching");
                     }
                     break;
                 default:
                     big = rm.Multiplier.ToString("0.00", Inv) + "x";
                     c = lose;
                     var d = cat != null ? Distractions.Pretty(cat.LastDistraction) : "something shiny";
-                    sub = $"DISTRACTED by {d}!";
+                    sub = Loc.F("hud.distracted", d);
                     break;
             }
 
@@ -423,21 +434,21 @@ namespace KittyCrash
             switch (rm.Phase)
             {
                 case RoundPhase.Idle:
-                    if (rm.BetQueued) { label = "CANCEL BET"; bg = panelLight; clickable = true; darkText = false; }
-                    else { label = rm.autoRounds ? $"BET   ({Mathf.CeilToInt(Mathf.Max(0f, rm.PhaseTimeLeft))}s)" : "BET"; bg = win; clickable = true; }
+                    if (rm.BetQueued) { label = Loc.T("hud.cancelBet"); bg = panelLight; clickable = true; darkText = false; }
+                    else { label = rm.autoRounds ? Loc.F("hud.betIn", Mathf.CeilToInt(Mathf.Max(0f, rm.PhaseTimeLeft))) : Loc.T("hud.bet"); bg = win; clickable = true; }
                     break;
-                case RoundPhase.Starting: label = "STARTING..."; bg = panelLight; break;
+                case RoundPhase.Starting: label = Loc.T("hud.startingBtn"); bg = panelLight; break;
                 case RoundPhase.Running:
-                    if (!rm.HasBet) { label = "WATCHING..."; bg = panelLight; }
-                    else if (rm.CashedOut) { label = "WON  +" + rm.Payout.ToString("N2", Inv); bg = panelLight; }
-                    else if (rm.CashOutPending) { label = "CASHING OUT..."; bg = accent * 0.8f; }
-                    else if (rm.IsWarmingUp) { label = $"WARMING UP  {rm.WarmupLeft:0.0}s"; bg = panelLight; }
-                    else { label = "CASH OUT  " + rm.PotentialPayout.ToString("N2", Inv); bg = accent; clickable = true; }
+                    if (!rm.HasBet) { label = Loc.T("hud.watchingBtn"); bg = panelLight; }
+                    else if (rm.CashedOut) { label = Loc.F("hud.won", rm.Payout.ToString("N2", Inv)); bg = panelLight; }
+                    else if (rm.CashOutPending) { label = Loc.T("hud.cashingOut"); bg = accent * 0.8f; }
+                    else if (rm.IsWarmingUp) { label = Loc.F("hud.warmingBtn", rm.WarmupLeft); bg = panelLight; }
+                    else { label = Loc.F("hud.cashOut", rm.PotentialPayout.ToString("N2", Inv)); bg = accent; clickable = true; }
                     break;
                 case RoundPhase.Ended:
-                    label = !rm.HasBet ? "BETS OPEN SOON" : rm.CashedOut ? "WON  +" + rm.Payout.ToString("N2", Inv) : "LOST  -" + rm.Wager.ToString("N2", Inv);
+                    label = !rm.HasBet ? Loc.T("hud.betsSoon") : rm.CashedOut ? Loc.F("hud.won", rm.Payout.ToString("N2", Inv)) : Loc.F("hud.lost", rm.Wager.ToString("N2", Inv));
                     bg = panelLight; break;
-                default: label = "OFFLINE"; bg = panelLight; break;
+                default: label = Loc.T("hud.offlineBtn"); bg = panelLight; break;
             }
             bg.a = 1f;
             actionText.text = label;
@@ -652,7 +663,7 @@ namespace KittyCrash
             var creditsCard = Panel("Credits", dock, docked ? new Color(0.11f, 0.12f, 0.18f, 1f) : panel, rounded);
             if (docked) { Place(creditsCard.rectTransform, new Vector2(0.5f, 0), new Vector2(0, 182), new Vector2(340, 88), new Vector2(0.5f, 0)); creditsRT = creditsCard.rectTransform; }
             else Place(creditsCard.rectTransform, new Vector2(1, 1), new Vector2(-40, -24), new Vector2(340, 88), new Vector2(1, 1));
-            var cl = Label("Label", creditsCard.transform, "POINTS", 20, textMuted, TextAnchor.UpperLeft, false);
+            var cl = pointsLabel = Label("Label", creditsCard.transform, Loc.T("hud.points"), 20, textMuted, TextAnchor.UpperLeft, false);
             Place(cl.rectTransform, new Vector2(0, 1), new Vector2(20, -10), new Vector2(200, 26));
             creditsText = Label("Value", creditsCard.transform, "0.00", 44, textMain, TextAnchor.LowerRight, true);
             Place(creditsText.rectTransform, new Vector2(1, 0), new Vector2(-20, 8), new Vector2(300, 56), new Vector2(1, 0));
@@ -724,12 +735,12 @@ namespace KittyCrash
             float yInput = d ? -40 : -50, hInput = d ? 56 : 66, yChips = d ? -104 : -128, hChips = d ? 40 : 48;
             float yAuto = d ? -152 : -194, btnH = d ? 66 : 84, btnY = d ? 12 : 22;
 
-            var title = Label("Title", t, "YOUR BET", 22, textMuted, TextAnchor.UpperLeft, false);
+            var title = yourBetLabel = Label("Title", t, Loc.T("hud.yourBet"), 22, textMuted, TextAnchor.UpperLeft, false);
             Place(title.rectTransform, new Vector2(0, 1), new Vector2(24, -16), new Vector2(300, 28));
 
             betInput = MakeInput("Bet", t, startingBet, InputField.ContentType.DecimalNumber, 38);
             Place((RectTransform)betInput.transform, new Vector2(0, 1), new Vector2(24, yInput), new Vector2(422, hInput));
-            var unit = Label("Unit", betInput.transform, "points", 22, textMuted, TextAnchor.MiddleRight, false);
+            var unit = unitLabel = Label("Unit", betInput.transform, Loc.T("hud.unit"), 22, textMuted, TextAnchor.MiddleRight, false);
             Place(unit.rectTransform, new Vector2(1, 0.5f), new Vector2(-18, 0), new Vector2(120, 40), new Vector2(1, 0.5f));
 
             string[] chips = { "1/2", "x2", "+10", "MAX" };
@@ -747,7 +758,7 @@ namespace KittyCrash
             autoToggle = MakeToggle("Auto", t, out var autoLabel);
             Place((RectTransform)autoToggle.transform, new Vector2(0, 1), new Vector2(24, yAuto), new Vector2(36, 36));
             autoLabel.text = "";
-            var al = Label("AutoLabel", t, "Auto cash-out at", 24, textMain, TextAnchor.MiddleLeft, false);
+            var al = autoLabelText = Label("AutoLabel", t, Loc.T("hud.auto"), 24, textMain, TextAnchor.MiddleLeft, false);
             Place(al.rectTransform, new Vector2(0, 1), new Vector2(70, yAuto + 2), new Vector2(230, 40));
             autoInput = MakeInput("AutoValue", t, startingAuto, InputField.ContentType.DecimalNumber, 28);
             Place((RectTransform)autoInput.transform, new Vector2(0, 1), new Vector2(306, yAuto + 4), new Vector2(110, d ? 42 : 48));
@@ -774,7 +785,7 @@ namespace KittyCrash
             Place(card.rectTransform, new Vector2(1, 0), docked ? new Vector2(-30, 16) : new Vector2(-40, 40), new Vector2(580, cardH), new Vector2(1, 0));
             if (docked) graphRT = card.rectTransform;
             graphCard = card.gameObject;
-            var title = Label("Title", card.transform, "MULTIPLIER OVER TIME", 22, textMuted, TextAnchor.UpperLeft, true);
+            var title = graphTitle = Label("Title", card.transform, Loc.T("hud.graph"), 22, textMuted, TextAnchor.UpperLeft, true);
             Place(title.rectTransform, new Vector2(0, 1), new Vector2(24, -14), new Vector2(330, 28));
             graphValue = Label("Value", card.transform, "", 24, textMain, TextAnchor.UpperRight, true);
             Place(graphValue.rectTransform, new Vector2(1, 1), new Vector2(-22, -12), new Vector2(220, 30), new Vector2(1, 1));

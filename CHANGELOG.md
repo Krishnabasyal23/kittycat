@@ -5,6 +5,12 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [Unreleased] - develop-v2
 
+## [2.0.0-alpha.12] - 2026-10-22
+
+### Added
+- English / French strings (`Loc.cs`) for the title screen, menu pages, bet card and status line.
+  Settings > Language switches and remembers it. Wallet panel and server rule texts stay English.
+
 ## [2.0.0-alpha.11] - 2026-10-22
 
 Covers client 2.0.0-alpha.5 to alpha.11 (Phase 4 and the v2 polish items).
