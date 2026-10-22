@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catino: a crash game you can check</title>
+<meta name="description" content="A cat walks, the multiplier climbs, and you cash out before it gets distracted. Every round is sealed in Schrödinger's Box so anyone can check it was fair.">
+<style>
+  :root {
+    --bg: #14131f; --panel: #1e1c2e; --panel2: #262440; --ink: #f2f0ff; --mute: #a9a5c9;
+    --orange: #ffa62b; --green: #4be08a; --line: #34315a;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding-inline: 20px;
+  }
+  main { max-width: 980px; margin: 0 auto; padding-block: 28px 64px; }
+  a { color: var(--orange); }
+  .logo { font-weight: 900; letter-spacing: .04em; font-size: 1.1rem; }
+  .logo b { color: var(--orange); }
+  header.hero { padding-block: 44px 20px; }
+  h1 { font-size: clamp(2rem, 5.4vw, 3.4rem); line-height: 1.08; margin: 10px 0 14px; }
+  h1 span { color: var(--orange); }
+  .lead { font-size: 1.15rem; color: var(--mute); max-width: 40em; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 8px; }
+  .btn {
+    display: inline-block; padding: 12px 22px; border-radius: 12px; font-weight: 800;
+    text-decoration: none; background: var(--orange); color: #241a05;
+  }
+  .btn.alt { background: var(--panel2); color: var(--ink); border: 1px solid var(--line); }
+  .shot { margin: 30px 0 6px; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: #000; }
+  .shot img { display: block; width: 100%; height: auto; }
+  .shot.crop { aspect-ratio: 1920 / 1040; }
+  .shot.crop img { object-fit: cover; object-position: top; height: 100%; }
+  .cap { color: var(--mute); font-size: .9rem; margin: 6px 2px 0; }
+  h2 { font-size: 1.6rem; margin: 54px 0 12px; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); margin-top: 18px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--mute); font-size: .96rem; }
+  .steps { counter-reset: s; list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 12px; }
+  .steps li {
+    counter-increment: s; background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    padding: 14px 18px 14px 58px; position: relative;
+  }
+  .steps li::before {
+    content: counter(s); position: absolute; left: 16px; top: 12px; width: 30px; height: 30px; border-radius: 50%;
+    background: var(--orange); color: #241a05; font-weight: 900; display: grid; place-items: center;
+  }
+  .phones { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 220px)); justify-content: center; margin-top: 22px; }
+  .phones figure { margin: 0; }
+  .phones img { width: 100%; height: auto; border-radius: 18px; border: 1px solid var(--line); display: block; }
+  .phones figcaption { color: var(--mute); font-size: .88rem; text-align: center; margin-top: 6px; }
+  .formula {
+    font-family: ui-monospace, "Cascadia Code", Consolas, monospace; background: var(--panel2); border: 1px solid var(--line);
+    border-radius: 12px; padding: 14px 16px; overflow-x: auto; white-space: pre; margin-top: 14px; font-size: .95rem;
+  }
+  .note { background: var(--panel2); border-left: 4px solid var(--orange); border-radius: 10px; padding: 14px 18px; margin-top: 18px; color: var(--mute); }
+  .note b { color: var(--ink); }
+  ul.plain { padding-left: 1.2em; color: var(--mute); }
+  ul.plain b { color: var(--ink); }
+  .video { margin-top: 28px; aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); }
+  .video iframe { width: 100%; height: 100%; border: 0; display: block; }
+  footer { margin-top: 60px; color: var(--mute); font-size: .9rem; border-top: 1px solid var(--line); padding-top: 18px; }
+</style>
+</head>
+<body>
+<main>
+
+<header class="hero">
+  <div class="logo">CAT<b>INO</b></div>
+  <h1>A crash game where you can <span>check</span> the house didn't cheat.</h1>
+  <p class="lead">A cat walks, the multiplier climbs, and you cash out before it gets distracted. Up to 60 friends join
+  on their phones by scanning a QR code, and every round is sealed in <b>Schrödinger's Box</b> so anyone can verify it was fair.</p>
+  <div class="buttons" id="buttons"></div>
+  <div class="shot crop"><img src="img/game.png" alt="The Catino game screen: a pixel cat walking through a summer meadow with the bet panel below"></div>
+  <p class="cap">The Unity game on the big screen. Points only, no real money.</p>
+</header>
+
+<section id="video-section" hidden>
+  <h2>Watch it</h2>
+  <div class="video" id="video"></div>
+</section>
+
+<section>
+  <h2>How a round works</h2>
+  <ol class="steps">
+    <li><b>Bet.</b> Place your points while the cat stretches. Everyone on the phones bets on the same cat.</li>
+    <li><b>Walk.</b> The cat walks and the multiplier climbs. Four seasons change the speed and the rules.</li>
+    <li><b>Cash out.</b> Press the button before the cat gets distracted: your payout is your bet times the multiplier.</li>
+    <li><b>Open the box.</b> After the crash, check that the result was fixed before you bet and could not be steered.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Schrödinger's Box: the fairness proof</h2>
+  <p class="lead">A cat in a sealed box has no known fate until the box is opened. Catino's box stays sealed until the cat is
+  "observed" at the crash. It is a metaphor, not literal quantum physics.</p>
+  <ol class="steps">
+    <li><b>Seal.</b> Before anyone can cash out, the server publishes a SHA-256 seal of its secret value.</li>
+    <li><b>Seeds.</b> While the cat stretches, every player's phone adds a random seed it just made.</li>
+    <li><b>Mix.</b> The crash point comes from the secret XOR a hash of all the seeds, so neither the server nor one player can pick it.</li>
+    <li><b>Open.</b> When the cat is distracted the box opens, and every phone re-checks the seal, the seeds and the maths by itself.</li>
+  </ol>
+  <div class="formula">crash point = clamp( 0.96 / u , 1 , 100 )        u = (value + 0.5) / 2^36
+value       = secret XOR top 36 bits of SHA-256( round : seeds )
+P(crash ≥ m) = 0.96 / m           so every cash-out target returns 96% on average</div>
+  <div class="phones">
+    <figure><img src="img/phone-box-sealed.png" alt="A phone showing the sealed box before the walk"><figcaption>Sealed before the walk</figcaption></figure>
+    <figure><img src="img/phone-box-open.png" alt="A phone showing the opened box with four green checks"><figcaption>Opened: four green ticks</figcaption></figure>
+  </div>
+  <div class="note"><b>Straight talk:</b> the quantum part is a <b>simulation</b> (Qiskit) mixed with the operating system's secure
+  random generator, so it is "quantum-ready", not a quantum device. A server could still leave a seed out of the published list
+  (that seed's owner would notice) or cancel a round (bets are refunded). Players committing to their seeds in advance is next.</div>
+</section>
+
+<section>
+  <h2>What's inside</h2>
+  <div class="grid">
+    <div class="card"><h3>The game</h3><p>Unity 6, pixel art, four seasons with their own music, weather and rules, six cat skins and festival looks. English and French.</p></div>
+    <div class="card"><h3>The server</h3><p>FastAPI and SQLite. The server decides every crash point, bonus and payout. An append-only ledger and idempotency keys keep balances honest.</p></div>
+    <div class="card"><h3>Phones</h3><p>Scan the QR, bet and cash out from any browser. Live updates over WebSockets with a polling fallback. No app to install.</p></div>
+    <div class="card"><h3>Play safe</h3><p>19+ gate, spend limits (raising one waits 24 hours), cool-off, self-exclusion, reality checks and helpline links.</p></div>
+    <div class="card"><h3>Season bonuses</h3><p>Capped so the best possible strategy still stays under 100% return. The house edge is 4%.</p></div>
+    <div class="card"><h3>Operator tools</h3><p>A live dashboard with the return to player per season, CSV exports and an audit log, available on the server computer only.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Status</h2>
+  <ul class="plain">
+    <li><b>Works today:</b> the full game, up to 60 phones on one network or through a tunnel, Schrödinger's Box with player seeds, English and French.</li>
+    <li><b>Prototype limits:</b> points only, no real money. Wallets are anonymous and 19+ is self-declared. There is no login yet and no post-quantum cryptography.</li>
+    <li><b>Next:</b> an always-on public host, real logins, and players committing to their seeds in advance.</li>
+  </ul>
+</section>
+
+<footer>
+  Catino is a game project built for fun and learning. Points have no cash value.
+  <span id="repo-links"></span>
+</footer>
+
+</main>
+<script>
+  // Fill these in; an empty one hides its button.
+  var LINKS = {
+    live: "",                                              // a live demo address, e.g. https://....
+    video: "",                                             // a YouTube video id, e.g. "dQw4w9WgXcQ"
+    repo: "https://github.com/Krishnabasyal23/kittycat",   // the Unity game
+    server: "https://github.com/Krishnabasyal23/KittyAPI"  // the server
+  };
+  (function () {
+    var b = document.getElementById("buttons");
+    function add(href, text, alt) {
+      var a = document.createElement("a");
+      a.className = "btn" + (alt ? " alt" : ""); a.href = href; a.textContent = text;
+      a.target = "_blank"; a.rel = "noopener";
+      b.appendChild(a);
+    }
+    if (LINKS.live) add(LINKS.live + "/crowd", "Try it on your phone");
+    if (LINKS.video) add("#video-section", "Watch the demo", true);
+    if (LINKS.repo) add(LINKS.repo, "Game code", true);
+    if (LINKS.server) add(LINKS.server, "Server code", true);
+    if (LINKS.video) {
+      document.getElementById("video-section").hidden = false;
+      var f = document.createElement("iframe");
+      f.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(LINKS.video);
+      f.title = "Catino demo video"; f.allowFullscreen = true;
+      f.setAttribute("allow", "accelerometer; autoplay; encrypted-media; picture-in-picture");
+      document.getElementById("video").appendChild(f);
+    }
+  })();
+</script>
+</body>
+</html>
