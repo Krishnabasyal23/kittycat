@@ -5,6 +5,10 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [Unreleased] - develop-v2
 
+### Added (Phase 4, server v2.0.0-alpha.5)
+- Wallet panel: any-amount demo top-up ($1-$100, 8 points per $1, daily cap shown).
+- Profile page: nickname, avatar, stats and a single-use cashier QR code with its counter code.
+
 ### Added (Phase 3, server v2.0.0-alpha.4)
 - Wallet and play-safe panel in the game (WALLET / PLAY SAFE buttons, key W), built at runtime:
   19+ gate, daily points, demo packs with a simulated checkout (generic methods, required
