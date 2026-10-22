@@ -5,6 +5,16 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [Unreleased] - develop-v2
 
+### Changed (client 2.0.0-alpha.8, server 2.0.0-alpha.8)
+- Clean game screen by default: multiplier, cat, bet controls, balance, season and forecast. Graph,
+  history, wallet buttons, crowd pill and leaderboard, mood face and the server switch are in the
+  menu. Settings > Classic layout brings the old screen back.
+- Classic layout: the crowd leaderboard moves below the wallet buttons; the version footer moves
+  to the bottom centre so it no longer touches the graph card.
+- Editor menu **Kitty Crash > Capture Screenshots**: saves title, clean, menu and classic shots at
+  1920x1080 and 1366x768 to `.tmp/shots`.
+- Phone page: menu sheet, folding "This walk" and "Leaderboard".
+
 ### Added (client 2.0.0-alpha.7)
 - Title screen (Play, How to play, Settings, Safe play, Quit), MENU button and Esc menu.
 - Settings: mute, volume, classic layout, title screen on/off, online/offline play (saved).
