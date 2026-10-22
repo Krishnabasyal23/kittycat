@@ -115,6 +115,9 @@ namespace KittyCrash
             }));
         }
 
+        /// <summary>Offline practice has no server to mix seeds with: nothing to do.</summary>
+        public void SendSeed(string roundId, string seed, Action<BackendResult> done) => done(new BackendResult { ok = true });
+
         public void GetState(string roundId, Action<RoundStateResult> done)
         {
             if (!rounds.TryGetValue(roundId ?? "", out var r)) { Respond(done, new RoundStateResult { ok = false, error = "Round not found for session" }, simulatedLatency); return; }

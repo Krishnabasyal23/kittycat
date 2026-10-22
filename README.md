@@ -19,8 +19,11 @@ Season bonuses are **+4%** by default, which keeps every strategy under 100% RTP
 with `HAPPY_HOUR=1` restores the bigger demo bonuses (+25% butterfly, +10% cocoa). Screens show
 whatever the server really pays, and the game footer then reads **HAPPY HOUR (demo)**.
 
-Every round is **provably fair**: the server publishes a SHA-256 seal of the outcome before anyone
-can cash out, and opens it after the cat is distracted. The small seal badge under MENU shows it; press **Q** (or click the badge) for the full proof and its checks.
+Every round is **provably fair**, and the proof lives in **Schrödinger's Box**: the server publishes a SHA-256
+seal of its secret before anyone can cash out, and the box stays shut until the cat is "observed" (distracted).
+While kitty stretches, every player's device adds a random **seed**, and the crash point comes from the server's
+value XOR a hash of all the seeds, so neither the server nor a player can steer it. The small box badge under MENU
+shows the seal; press **Q** (or click the badge) to open the box and see its checks: seal, seeds, math and qubits.
 
 Server mode uses **points** in a persistent wallet, never cash. Every player (PC or phone) starts
 with 50 points once. Each server day there are 20 free points. In `DEMO_MODE` the server also
@@ -96,7 +99,7 @@ editor. It plays the scene and saves the title, clean, menu and classic screens 
 | C | Show / hide crowd mode (QR code and phone players) |
 | N | Choose the next walk's season (host / testing) |
 | F | Next festival look |
-| Q | Show / hide the quantum box: the round's fairness seal and its hash / math / qubit checks |
+| Q | Show / hide Schrödinger's Box: the round's seal and its seal / seeds / math / qubit checks |
 | M | Mute / unmute music |
 | W | Open / close the wallet (server mode) |
 | Esc | Open / close the menu (wallet, safe play, panels, how to play, settings, demo reset) |
