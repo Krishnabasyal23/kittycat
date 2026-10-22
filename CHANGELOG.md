@@ -5,6 +5,13 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [Unreleased] - develop-v2
 
+### Added (client 2.0.0-alpha.7)
+- Title screen (Play, How to play, Settings, Safe play, Quit), MENU button and Esc menu.
+- Settings: mute, volume, classic layout, title screen on/off, online/offline play (saved).
+- Demo reset (menu or F5, asks first): a fresh player with a new wallet; server mode only in DEMO_MODE.
+- Clean layout groundwork (`HudLayout`): graph, history, wallet buttons, crowd leaderboard and mood
+  face can be hidden and opened from the menu.
+
 ### Changed (server v2.0.0-alpha.6)
 - Ticket bonus: one typed code field, one ticket a day, generic message for any code that doesn't
   verify, entry pauses after three wrong codes. `start_server.bat` mentions `KittyAPI\.env.local`.

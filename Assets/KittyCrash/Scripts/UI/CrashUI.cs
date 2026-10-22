@@ -67,6 +67,7 @@ namespace KittyCrash
         }
 
         RectTransform creditsRT, warmRT, graphRT;
+        GameObject graphCard;
 
         /// <summary>
         /// Narrow screens (e.g. a 4:3 Game view): shrink the graph card and fit the middle column
@@ -78,7 +79,7 @@ namespace KittyCrash
             float W = ((RectTransform)canvasRef.transform).rect.width;
             float gw = Mathf.Clamp(W - 30f - 470f - 16f - 380f - 16f - 30f, 320f, 580f);
             graphRT.sizeDelta = new Vector2(gw, graphRT.sizeDelta.y);
-            float left = 30f + 470f + 16f, right = W - 30f - gw - 16f;
+            float left = 30f + 470f + 16f, right = HudLayout.Graph ? W - 30f - gw - 16f : W - left;
             float cw = Mathf.Max(200f, right - left);
             float cx = (left + right) * 0.5f - W * 0.5f;
 
@@ -187,6 +188,7 @@ namespace KittyCrash
             bool typing = (betInput != null && betInput.isFocused) || (autoInput != null && autoInput.isFocused);
             if (!typing && InputReader.ActionPressed()) OnAction();
 
+            ApplyLayout();
             UpdateTopBar();
             UpdateCentre();
             UpdateBetCard();
@@ -293,6 +295,20 @@ namespace KittyCrash
             var p = bannerRT.anchoredPosition;
             p.x = Mathf.Lerp(p.x, targetX, Time.deltaTime * 7f);
             bannerRT.anchoredPosition = p;
+        }
+
+        /// <summary>Clean layout (HudLayout): graph, history and the server switch only when wanted.</summary>
+        void ApplyLayout()
+        {
+            if (graphCard != null && graphCard.activeSelf != HudLayout.Graph) graphCard.SetActive(HudLayout.Graph);
+            if (historyRow != null && historyRow.gameObject.activeSelf != HudLayout.History) historyRow.gameObject.SetActive(HudLayout.History);
+            if (apiToggleBtn != null) apiToggleBtn.gameObject.SetActive(HudLayout.ServerSwitch);
+            if (apiText != null)
+            {
+                bool classic = HudLayout.Classic;
+                apiText.gameObject.SetActive(classic || (rm.useApi && rm.Phase == RoundPhase.Offline));
+                apiText.rectTransform.anchoredPosition = new Vector2(44, classic ? -94 : -150);   // clean: under MENU
+            }
         }
 
         void UpdateTopBar()
@@ -757,6 +773,7 @@ namespace KittyCrash
             var card = Panel("GraphCard", root, docked ? new Color(0.11f, 0.12f, 0.18f, 1f) : panel, rounded);
             Place(card.rectTransform, new Vector2(1, 0), docked ? new Vector2(-30, 16) : new Vector2(-40, 40), new Vector2(580, cardH), new Vector2(1, 0));
             if (docked) graphRT = card.rectTransform;
+            graphCard = card.gameObject;
             var title = Label("Title", card.transform, "MULTIPLIER OVER TIME", 22, textMuted, TextAnchor.UpperLeft, true);
             Place(title.rectTransform, new Vector2(0, 1), new Vector2(24, -14), new Vector2(330, 28));
             graphValue = Label("Value", card.transform, "", 24, textMain, TextAnchor.UpperRight, true);

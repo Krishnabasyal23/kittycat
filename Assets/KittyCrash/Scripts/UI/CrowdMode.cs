@@ -61,7 +61,7 @@ namespace KittyCrash
         readonly Dictionary<string, string> lastStatus = new Dictionary<string, string>();
 
         // ── UI ──
-        RectTransform root, area, panel, tagLayer, board;
+        RectTransform root, area, panel, tagLayer, board, pillRT;
         Image pillBg;
         Text pillText, joinText, countText, boardText, moreText;
         RawImage qrImage;
@@ -109,7 +109,7 @@ namespace KittyCrash
 
         // ── on / off ───────────────────────────────
 
-        void Toggle()
+        public void Toggle()
         {
             if (on) { on = false; RefreshPill(); return; }
             api = rm != null ? (rm.apiBackend != null ? rm.apiBackend : rm.GetComponent<ApiBackend>()) : null;
@@ -172,6 +172,8 @@ namespace KittyCrash
 #endif
             if (cam == null) cam = Camera.main;
             if (cam != null) { area.anchorMin = new Vector2(0f, cam.rect.y); area.anchorMax = new Vector2(1f, Mathf.Min(1f, cam.rect.y + cam.rect.height)); }
+            if (pillRT != null) pillRT.gameObject.SetActive(HudLayout.Classic || on);   // clean layout: MENU > Crowd mode
+            if (!HudLayout.Leaderboard && board.gameObject.activeSelf) board.gameObject.SetActive(false);
 
             UpdateFlyers();
             if (!on) return;
@@ -344,7 +346,7 @@ namespace KittyCrash
 
         void DrawBoard()
         {
-            bool show = state.leaderboard != null && state.leaderboard.Length > 0;
+            bool show = HudLayout.Leaderboard && state.leaderboard != null && state.leaderboard.Length > 0;
             board.gameObject.SetActive(show);
             if (!show) return;
             var sb = new StringBuilder("<color=#FFA62E>CROWD TOP 5</color>\n");
@@ -411,6 +413,7 @@ namespace KittyCrash
             pill.anchorMin = pill.anchorMax = pill.pivot = new Vector2(1f, 1f);
             pill.anchoredPosition = panelPosition;
             pill.sizeDelta = new Vector2(qrSize + 40f, 46f);
+            pillRT = pill;
             pillBg = pill.gameObject.AddComponent<Image>();
             var btn = pill.gameObject.AddComponent<Button>();
             btn.targetGraphic = pillBg;
