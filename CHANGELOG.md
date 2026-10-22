@@ -5,6 +5,14 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [Unreleased] - develop-v2
 
+## [2.0.0-beta.2] - 2026-10-22
+
+### Added
+- Picture tour (`PictureTour.cs`): how to play in four animated cards with no words, using the
+  game's own art (your cat, the fish, the paw, the mood faces). Opens on the first Play, from How to
+  play and with F1. The written rules moved to MENU > RULES.
+- Server 2.0.0-beta.2: audit log, safe bonus tuning on the dashboard, WebSockets for the phones.
+
 ## [2.0.0-beta.1] - 2026-10-22
 
 First beta: every v2 plan item is in (wallet, cashier, title and menu, clean layout, safe play,

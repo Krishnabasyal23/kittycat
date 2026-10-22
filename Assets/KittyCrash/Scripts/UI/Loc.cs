@@ -298,6 +298,7 @@ namespace KittyCrash
             ["menu.leaderboard"] = ("Crowd leaderboard", "Classement de la salle"),
             ["menu.mood"] = ("Mood face", "Humeur du chat"),
             ["menu.crowd"] = ("CROWD MODE (PHONES JOIN WITH A QR CODE)", "MODE SALLE (LES TÉLÉPHONES REJOIGNENT PAR CODE QR)"),
+            ["menu.rules"] = ("RULES", "RÈGLES"),
             ["menu.reset"] = ("DEMO RESET", "RÉINITIALISER (DÉMO)"),
             ["menu.titlescreen"] = ("TITLE SCREEN", "ÉCRAN TITRE"),
             ["menu.back"] = ("BACK TO THE GAME", "RETOUR AU JEU"),
