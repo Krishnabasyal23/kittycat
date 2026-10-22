@@ -5,6 +5,17 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [Unreleased] - develop-v2
 
+## [2.0.0-alpha.11] - 2026-10-22
+
+Covers client 2.0.0-alpha.5 to alpha.11 (Phase 4 and the v2 polish items).
+
+### Added (client 2.0.0-alpha.11, server 2.0.0-alpha.11)
+- The forecast card shows the next walk's season and the two after it ("THEN: ...").
+- README: forecast, cashier and operator pages, screenshot capture.
+
+### Server 2.0.0-alpha.10 (no client change)
+- Operator dashboard at `/operator` on the server computer.
+
 ### Added (client 2.0.0-alpha.9, server 2.0.0-alpha.9)
 - SAFE PLAY (title screen and menu): plain-language advice, a button to the limits, reality check
   and breaks, and helplines (ConnexOntario 1-866-531-2600 or text CONNEX to 247247; 9-8-8). Numbers
@@ -81,4 +92,4 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [1.0-pitch]
 
-Frozen release shown at the pitch.
+Frozen v1 release.

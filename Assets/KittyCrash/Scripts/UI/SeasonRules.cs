@@ -36,6 +36,8 @@ namespace KittyCrash
 
         // ── server data ──
         [Serializable] class SeasonDto { public string season; public string title; public string axis; public string rule; }
+        [Serializable] class UpcomingDto { public string season; }
+        [Serializable] class ForecastDto { public UpcomingDto[] upcoming; }
         [Serializable] class ScheduleDto { public string round_id; public string season; public bool rush; public float growth_rate; public float lead_in_seconds; public bool rules_on; public float[] butterfly; public float[] leaf_storms; public BonusPctDto bonus_pct; }
         [Serializable] class BonusPctDto { public int butterfly; public int cocoa; }
 
@@ -54,6 +56,7 @@ namespace KittyCrash
         Font font;
 
         SeasonDto forecast;            // next walk (shown while betting)
+        string[] upcoming = new string[0];   // the next three walks' seasons (server-rolled, used in order)
         ScheduleDto schedule;          // this walk
         string scheduleFor;
         bool butterflyWas, cocoaWas, stormWas, rushWas;
@@ -62,7 +65,7 @@ namespace KittyCrash
         // ── UI ──
         RectTransform area, card, pill, cover, fxLayer, butterfly;
         Image cardBg, pillBg, butterflyImg;
-        Text cardSeason, cardTitle, cardRule, pillText, banner, coverText;
+        Text cardSeason, cardTitle, cardRule, cardNext, pillText, banner, coverText;
         Sprite[] butterflyFrames;
         Sprite leafSprite;
         readonly List<RectTransform> coverLeaves = new List<RectTransform>();
@@ -139,6 +142,8 @@ namespace KittyCrash
                     var f = JsonUtility.FromJson<SeasonDto>(text);
                     if (f == null || string.IsNullOrEmpty(f.season)) return;
                     forecast = f;
+                    var list = JsonUtility.FromJson<ForecastDto>(text)?.upcoming;
+                    upcoming = list == null ? new string[0] : Array.ConvertAll(list, u => u.season);
                     cardPop = 0f;
                     if (SeasonSystem.Instance != null) SeasonSystem.Instance.SpinTo(ToSeason(f.season), spinLaps, spinSeconds);
                 }));
@@ -150,6 +155,7 @@ namespace KittyCrash
             var f = JsonUtility.FromJson<SeasonDto>(text);
             if (f == null || string.IsNullOrEmpty(f.season)) return;
             forecast = f;
+            if (f != null && upcoming.Length > 0) upcoming[0] = f.season;   // the host changed only the next walk
             cardPop = 0f;
             if (rm.Phase == RoundPhase.Idle && SeasonSystem.Instance != null) SeasonSystem.Instance.SpinTo(ToSeason(f.season), 0, 0.9f);
             else ShowBanner("NEXT WALK: " + Pretty(f.season), Col(f.season));
@@ -237,6 +243,7 @@ namespace KittyCrash
                 cardSeason.color = spinning ? Color.white : col;
                 cardTitle.text = spinning ? "" : forecast.title.ToUpperInvariant() + "   -   changes the " + forecast.axis.ToUpperInvariant();
                 cardRule.text = spinning ? "" : forecast.rule;
+                cardNext.text = spinning || upcoming.Length < 2 ? "" : "THEN:  " + string.Join("   >   ", Array.ConvertAll(upcoming, Pretty), 1, upcoming.Length - 1);
                 cardBg.color = new Color(col.r * 0.18f, col.g * 0.18f, col.b * 0.22f, 0.92f);
                 cardPop += Time.deltaTime;
                 float s = spinning ? 0.96f + Mathf.Sin(Time.time * 18f) * 0.02f : (cardPop < 0.2f ? 1f : Mathf.Lerp(1.08f, 1f, Mathf.Clamp01((cardPop - 0.2f) * 5f)));
@@ -458,7 +465,7 @@ namespace KittyCrash
             card = R("SeasonCard", area);
             card.anchorMin = card.anchorMax = card.pivot = new Vector2(0.5f, 0f);
             card.anchoredPosition = cardPosition;
-            card.sizeDelta = new Vector2(700f, 108f);
+            card.sizeDelta = new Vector2(700f, 136f);
             cardBg = card.gameObject.AddComponent<Image>();
             cardBg.raycastTarget = false;
             card.gameObject.AddComponent<Outline>().effectDistance = new Vector2(2f, -2f);
@@ -468,6 +475,8 @@ namespace KittyCrash
             Place(cardTitle.rectTransform, -42f, 24f);
             cardRule = T("Rule", card, 18, new Color(0.85f, 0.84f, 0.95f));
             Place(cardRule.rectTransform, -70f, 26f);
+            cardNext = T("Next", card, 17, new Color(0.75f, 0.73f, 0.86f));
+            Place(cardNext.rectTransform, -100f, 26f);
             card.gameObject.SetActive(false);
 
             // rule pill (while walking)
