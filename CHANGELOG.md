@@ -5,6 +5,16 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [Unreleased] - develop-v2
 
+### Added
+- The fairness seal (badge + Q proof panel) is now on screen in every game: it installs itself at runtime.
+  MENU can hide the badge; Q always opens the proof. Its texts follow the French setting.
+- `UiStyle`: the wallet panel and the menu use the HUD's rounded cards, colours, button tints, header font
+  and orange accent edge.
+
+### Fixed
+- The seal never appeared: its file was named `QuantamBox.cs` while the class is `QuantumBox`, so Unity could
+  not attach it. Renamed (asset ID kept). The old **Install Fairness Seal Panel** menu is gone (not needed).
+
 ## [2.0.0-beta.2] - 2026-10-22
 
 ### Added

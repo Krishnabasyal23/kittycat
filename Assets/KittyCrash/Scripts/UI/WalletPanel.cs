@@ -48,9 +48,9 @@ namespace KittyCrash
         [Serializable] class TicketBody { public string code; }
 
         static readonly Color Dim = new Color(0f, 0f, 0f, 0.62f);
-        static readonly Color PanelBg = new Color(0.12f, 0.11f, 0.19f, 0.98f);
-        static readonly Color Card = new Color(0.17f, 0.15f, 0.26f, 1f);
-        static readonly Color Orange = new Color(1f, 0.65f, 0.18f, 1f);
+        static readonly Color PanelBg = UiStyle.Panel;
+        static readonly Color Card = UiStyle.CardLight;
+        static readonly Color Orange = UiStyle.Accent;
         static readonly Color TextMain = new Color(0.96f, 0.95f, 1f, 1f);
         static readonly Color TextDim = new Color(0.64f, 0.61f, 0.77f, 1f);
         static readonly Color Red = new Color(1f, 0.35f, 0.42f, 1f);
@@ -599,12 +599,11 @@ namespace KittyCrash
             var panel = Rect("Panel", modal);
             panel.anchorMin = panel.anchorMax = panel.pivot = new Vector2(0.5f, 0.5f);
             panel.sizeDelta = new Vector2(820f, 940f);
-            panel.gameObject.AddComponent<Image>().color = PanelBg;
-            var outline = panel.gameObject.AddComponent<Outline>();
-            outline.effectColor = new Color(1f, 0.65f, 0.18f, 0.5f);
-            outline.effectDistance = new Vector2(2f, -2f);
+            UiStyle.Round(panel.gameObject.AddComponent<Image>(), PanelBg);
+            UiStyle.AccentEdge(panel);
 
-            titleText = MakeText(panel, "", bold, 36, TextMain, TextAnchor.MiddleLeft);
+            titleText = MakeText(panel, "", UiStyle.HeaderFont(bold), 36, TextMain, TextAnchor.MiddleLeft);
+            UiStyle.Shadow(titleText);
             var tr = titleText.rectTransform;
             tr.anchorMin = new Vector2(0f, 1f); tr.anchorMax = new Vector2(1f, 1f); tr.pivot = new Vector2(0.5f, 1f);
             tr.offsetMin = new Vector2(28f, -76f); tr.offsetMax = new Vector2(-100f, -16f);
@@ -685,7 +684,7 @@ namespace KittyCrash
         void Boxed(string text, Color color)
         {
             var box = Rect("Box", content);
-            box.gameObject.AddComponent<Image>().color = new Color(color.r, color.g, color.b, 0.14f);
+            UiStyle.Round(box.gameObject.AddComponent<Image>(), new Color(color.r, color.g, color.b, 0.14f));
             var pad = box.gameObject.AddComponent<VerticalLayoutGroup>();
             pad.padding = new RectOffset(16, 16, 12, 12);
             pad.childControlWidth = true; pad.childControlHeight = true; pad.childForceExpandHeight = false;
@@ -720,7 +719,7 @@ namespace KittyCrash
         InputField Input(string placeholder, InputField.ContentType type)
         {
             var go = Rect("Input", content);
-            go.gameObject.AddComponent<Image>().color = new Color(0.07f, 0.06f, 0.11f, 1f);
+            UiStyle.Round(go.gameObject.AddComponent<Image>(), UiStyle.Field);
             go.gameObject.AddComponent<LayoutElement>().minHeight = 64f;
             var field = go.gameObject.AddComponent<InputField>();
             var text = MakeText(go, "", font, 26, TextMain, TextAnchor.MiddleLeft);
@@ -745,11 +744,11 @@ namespace KittyCrash
             box.anchorMin = box.anchorMax = box.pivot = new Vector2(0f, 0.5f);
             box.sizeDelta = new Vector2(40f, 40f);
             var boxImg = box.gameObject.AddComponent<Image>();
-            boxImg.color = TextMain;
+            UiStyle.Round(boxImg, TextMain);
             var mark = Rect("Mark", box);
             mark.anchorMin = Vector2.zero; mark.anchorMax = Vector2.one; mark.offsetMin = new Vector2(7f, 7f); mark.offsetMax = new Vector2(-7f, -7f);
             var markImg = mark.gameObject.AddComponent<Image>();
-            markImg.color = Orange;
+            UiStyle.Round(markImg, Orange);
             var t = MakeText(go, Loc.E(label), font, 24, TextMain, TextAnchor.MiddleLeft);
             t.rectTransform.anchorMin = Vector2.zero; t.rectTransform.anchorMax = Vector2.one;
             t.rectTransform.offsetMin = new Vector2(56f, 0f); t.rectTransform.offsetMax = Vector2.zero;
@@ -795,9 +794,9 @@ namespace KittyCrash
         {
             var go = Rect("Button", parent);
             var img = go.gameObject.AddComponent<Image>();
-            img.color = bg;
             var b = go.gameObject.AddComponent<Button>();
             b.targetGraphic = img;
+            UiStyle.Style(b, img, bg);
             b.onClick.AddListener(() => onClick());
             text = MakeText(go, Loc.E(label), bold, 24, bg == Orange ? new Color(0.09f, 0.07f, 0.12f, 1f) : TextMain, TextAnchor.MiddleCenter);
             Inset(text.rectTransform);

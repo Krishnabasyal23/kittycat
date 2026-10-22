@@ -1,5 +1,6 @@
 using System.Globalization;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
@@ -7,8 +8,28 @@ using UnityEngine.InputSystem;
 
 namespace KittyCrash
 {
+    /// <summary>
+    /// The fairness seal: a small badge (top-left, under MENU) with the round's SHA-256 commitment, and on Q or a
+    /// click the full proof panel that opens the seal after the crash and checks the hash and the math.
+    /// Installs itself at runtime in any scene with a RoundManager (no scene edit). Menu > "Fairness seal" hides
+    /// the badge in the clean layout; Q always works.
+    /// </summary>
     public class QuantumBox : MonoBehaviour
     {
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+        static void Install()
+        {
+            SceneManager.sceneLoaded += (scene, mode) => TryAdd();
+            TryAdd();
+        }
+
+        static void TryAdd()
+        {
+            if (RoundManager.Instance == null || FindAnyObjectByType<QuantumBox>() != null) return;
+            new GameObject("QuantumBox").AddComponent<QuantumBox>();
+        }
+
+
         public Vector2 position = new Vector2(28f, -178f);
         [Tooltip("Show the full proof panel at start (otherwise only the small badge; click it to open).")]
         public bool showProofAtStart = false;
@@ -56,22 +77,22 @@ namespace KittyCrash
             string c = rm.Commitment;
             if (pillText != null)
             {
-                pillText.text = string.IsNullOrEmpty(c) ? "QUANTUM SEAL" : "SEALED  " + c.Substring(0, Mathf.Min(6, c.Length));
+                pillText.text = string.IsNullOrEmpty(c) ? Loc.E("QUANTUM SEAL") : Loc.E("SEALED") + "  " + c.Substring(0, Mathf.Min(6, c.Length));
                 pillText.color = Color.white;
                 pillBg.color = new Color(0.08f, 0.06f, 0.16f, 0.85f);
             }
             if (string.IsNullOrEmpty(c))
             {
-                info.text = rm.Phase == RoundPhase.Running ? "Rolling the qubits..." : "Waiting for the next walk.\nEvery round is sealed\nbefore anyone can cash out.";
+                info.text = Loc.E(rm.Phase == RoundPhase.Running ? "Rolling the qubits..." : "Waiting for the next walk.\nEvery round is sealed\nbefore anyone can cash out.");
                 verdict.text = "";
             }
             else
             {
-                info.text = "<b>SEALED</b>  " + Short(c) + "\nThe crash point is already\nlocked inside the box.\nCash out = open the box early.";
-                verdict.text = "outcome locked before betting";
+                info.text = "<b>" + Loc.E("SEALED") + "</b>  " + Short(c) + "\n" + Loc.E("The crash point is already\nlocked inside the box.\nCash out = open the box early.");
+                verdict.text = Loc.E("outcome locked before betting");
                 verdict.color = Muted;
             }
-            sub.text = "quantum seal - provably fair";
+            sub.text = Loc.E("quantum seal - provably fair");
         }
         void Reveal()
         {
@@ -96,29 +117,29 @@ namespace KittyCrash
                     regLabels[r].text = s.ToString(Inv);
                 }
 
-            string src = p.source == "hybrid" ? "6 qubits XOR secure mask"
+            string src = Loc.E(p.source == "hybrid" ? "6 qubits XOR secure mask"
                        : p.source == "offline" ? "offline practice (classical)"
                        : p.source == "secure_fallback" ? "secure random (qubits unavailable)"
-                       : p.source;
+                       : p.source);
             var sb = new System.Text.StringBuilder();
-            sb.Append("<b>OPENED</b>  ").Append(src).Append('\n');
+            sb.Append("<b>").Append(Loc.E("OPENED")).Append("</b>  ").Append(src).Append('\n');
             if (chk.mathOk.HasValue)
             {
-                sb.Append("value ").Append(chk.value.ToString("N0", Inv)).Append('\n');
+                sb.Append(Loc.E("value")).Append(' ').Append(chk.value.ToString("N0", Inv)).Append('\n');
                 sb.Append("u = ").Append(chk.u.ToString("0.0000", Inv)).Append("  ->  ")
                   .Append((1.0 - p.house_edge).ToString("0.00", Inv)).Append(" / u = ")
                   .Append(chk.recomputedCrash.ToString("0.00", Inv)).Append("x\n");
             }
-            sb.Append(Check("seal matches", chk.hashOk)).Append('\n');
-            if (chk.mathOk.HasValue) sb.Append(Check("crash math", chk.mathOk.Value)).Append('\n');
-            if (chk.quantumOk.HasValue) sb.Append(Check("qubits used", chk.quantumOk.Value));
+            sb.Append(Check(Loc.E("seal matches"), chk.hashOk)).Append('\n');
+            if (chk.mathOk.HasValue) sb.Append(Check(Loc.E("crash math"), chk.mathOk.Value)).Append('\n');
+            if (chk.quantumOk.HasValue) sb.Append(Check(Loc.E("qubits used"), chk.quantumOk.Value));
             info.text = sb.ToString();
 
-            verdict.text = chk.AllOk ? "VERIFIED FAIR" : "MISMATCH - NOT FAIR";
+            verdict.text = Loc.E(chk.AllOk ? "VERIFIED FAIR" : "MISMATCH - NOT FAIR");
             verdict.color = chk.AllOk ? Good : Bad;
             if (pillText != null)
             {
-                pillText.text = chk.AllOk ? "FAIR - VERIFIED" : "NOT FAIR!";
+                pillText.text = Loc.E(chk.AllOk ? "FAIR - VERIFIED" : "NOT FAIR!");
                 pillText.color = new Color(0.05f, 0.08f, 0.06f);
                 pillBg.color = chk.AllOk ? new Color(0.4f, 0.95f, 0.55f, 0.95f) : new Color(1f, 0.38f, 0.38f, 0.95f);
             }
@@ -144,6 +165,8 @@ namespace KittyCrash
 #endif
             if (cam == null) cam = Camera.main;
             if (cam != null) { area.anchorMin = new Vector2(0f, cam.rect.y); area.anchorMax = new Vector2(1f, Mathf.Min(1f, cam.rect.y + cam.rect.height)); }
+            bool badge = HudLayout.Seal || panel.gameObject.activeSelf;
+            if (pill.gameObject.activeSelf != badge) pill.gameObject.SetActive(badge);
             bool live = rm != null && rm.Phase == RoundPhase.Running;
             // badge dots: shimmer while sealed, settle once opened
             for (int i = 0; i < 6; i++)
@@ -239,7 +262,7 @@ namespace KittyCrash
                 pillDots[i].raycastTarget = false;
             }
             pillText = Label("BadgeText", pill, bold, 24, Color.white, TextAnchor.MiddleLeft, new Vector2(100f, 0f), new Vector2(200f, 52f));
-            pillText.text = "QUANTUM SEAL";
+            pillText.text = Loc.E("QUANTUM SEAL");
 
             panel = Rect("SchrodingerBox", area);
             panel.anchorMin = panel.anchorMax = panel.pivot = new Vector2(0f, 1f);
@@ -253,7 +276,7 @@ namespace KittyCrash
             ol.effectDistance = new Vector2(2f, -2f);
 
             title = Label("Title", panel, bold, 24, Cyan, TextAnchor.UpperLeft, new Vector2(14f, -10f), new Vector2(400f, 28f));
-            title.text = "SCHRÖDINGER BOX";
+            LocText.Bind(title, "SCHRÖDINGER BOX");
             sub = Label("Sub", panel, font, 16, Muted, TextAnchor.UpperLeft, new Vector2(15f, -36f), new Vector2(400f, 20f));
 
             const float cell = 22f, gap = 4f;
