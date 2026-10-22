@@ -54,7 +54,9 @@ keep it fun, opens the tools above, and lists ConnexOntario (1-866-531-2600, or 
 |---|---|
 | `Assets/KittyCrash/` | The game: scene `Scenes/KittyCrash.unity`, scripts, art, audio |
 | `KittyAPI/` | Python/FastAPI server (git submodule, see its README). Decides crash points, seasons, bonuses and payouts |
-| `start_server.bat` | Double-click to start the v2 server on port 8001 |
+| `start_server.bat` | Double-click to start the v2 server on port 8001 (room demo on the Wi-Fi) |
+| `start_tunnel.bat`, `start_public.bat` | Online demo: a tunnel (cloudflared or ngrok) plus the server in public mode, see "Run online" |
+| `site/` | A static landing page (video, screenshots, links). Host it on Vercel, Cloudflare Pages or GitHub Pages |
 
 ## Requirements
 
@@ -64,6 +66,15 @@ keep it fun, opens the tools above, and lists ConnexOntario (1-866-531-2600, or 
 
 Fresh clone: `git clone --recurse-submodules <this repo>`, or run `git submodule update --init` in an
 existing clone.
+
+## Quick start (Windows)
+
+1. Install Unity 6000.6.5f1 and, for server mode, Anaconda with the `hackathon` env (see Requirements).
+2. Clone with `git clone --recurse-submodules <this repo>`.
+3. Offline: open `Assets/KittyCrash/Scenes/KittyCrash.unity` and press Play.
+4. With the server: double-click `start_server.bat`, tick **Use Api** on the Round Manager, press Play,
+   then press **C** and scan the QR code with a phone on the same Wi-Fi.
+5. Over the internet: see "Run online" below.
 
 ## Run offline (no server)
 
@@ -87,6 +98,20 @@ existing clone.
 Pages that only open on the server computer (`http://127.0.0.1:8001/...`):
 - `/cashier`: scan or type a player's cashier code and record a simulated counter top-up.
 - `/operator`: live RTP, bets, players, top-ups, points, safe-play counts, daily charts, CSV export.
+
+## Run online (for a live demo)
+
+Phones anywhere can join through a tunnel that gives the server a public https address. Nothing is installed
+on the phones and no money is involved (points only).
+
+1. Install `cloudflared` (no account) or `ngrok` (free account).
+2. Double-click `start_tunnel.bat` and copy the `https://...` address it prints.
+3. Double-click `start_public.bat` and paste the address when asked. It starts the server in **public mode**
+   on this computer only: the cashier and operator pages close, only this game can host, and each visitor is rate limited.
+4. In Unity use the v2 server (`http://127.0.0.1:8001`), tick **Use Api**, press Play and press **C**. The QR now holds the
+   public address.
+
+Container hosts (Render, Fly.io), a VM with Caddy, backups and a pre-demo checklist: `KittyAPI\docs\DEPLOY.md`.
 
 To check the game screen at 1920x1080 and 1366x768, run **Kitty Crash > Capture Screenshots** in the
 editor. It plays the scene and saves the title, clean, menu and classic screens to `.tmp\shots`.
@@ -125,7 +150,8 @@ its history stay untouched.
 - The 19+ check is self-attested (no ID verification).
 - The wallet panel and menu are built at runtime. They use the HUD's rounded cards, colours and header
   font, but no hand-drawn pixel art.
-- Plain HTTP on the local network only; no hosting or HTTPS yet.
+- Plain HTTP on the local network by default. A tunnel in public mode gives https for a live demo; there is no always-on host yet, and a
+  hosted table still needs the game on a PC to open rounds.
 - With `HAPPY_HOUR=1` (demo only) the spring butterfly and winter 2.00x strategies return more than
   100% to the player (about 119% and 105%, `KittyAPI\tests\sim_rtp.py --happy-hour`). Never run it
   with real money.

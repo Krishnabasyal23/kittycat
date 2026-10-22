@@ -3,9 +3,13 @@
 All notable changes to the Catino Unity project. Server changes are listed in
 `KittyAPI/CHANGELOG.md`. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
-## [Unreleased] - develop-v2
+## [2.0.0-beta.3] - 2026-10-22
 
 ### Added
+- Online demo: `start_tunnel.bat` (cloudflared or ngrok) and `start_public.bat` (the server in public mode on this
+  computer only). The README has a "Run online" section and a quick start. Server hardening and the hosting guide
+  are in KittyAPI (`docs/DEPLOY.md`).
+- `site/`: a static landing page (video, screenshots, links) for Vercel, Cloudflare Pages or GitHub Pages.
 - Schrödinger's Box (the fairness seal, renamed; Q is unchanged) with player seeds: after the commitment is shown,
   the game sends its own random seed during the walk's lead-in and the opened box checks the seeds (and that
   ours was counted) next to the seal, the math and the qubits. French included. The panel is taller for the two
