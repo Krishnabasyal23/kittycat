@@ -18,12 +18,14 @@ namespace KittyCrash
 
         // clean-layout panels the player opened from the menu (this session only)
         public static bool ShowGraph, ShowHistory, ShowLeaderboard, ShowMood;
+        public static bool ShowSeal = true;      // the small fairness-seal badge (Q opens the full proof either way)
 
         public static bool Classic { get { Load(); return classic; } set { Load(); classic = value; Save(); } }
         public static bool Graph => Classic || ShowGraph;
         public static bool History => Classic || ShowHistory;
         public static bool Leaderboard => Classic || ShowLeaderboard;
         public static bool Mood => Classic || ShowMood;
+        public static bool Seal => Classic || ShowSeal;
         public static bool WalletButtons => Classic;
         public static bool ServerSwitch => Classic;
 

@@ -20,7 +20,7 @@ with `HAPPY_HOUR=1` restores the bigger demo bonuses (+25% butterfly, +10% cocoa
 whatever the server really pays, and the game footer then reads **HAPPY HOUR (demo)**.
 
 Every round is **provably fair**: the server publishes a SHA-256 seal of the outcome before anyone
-can cash out, and opens it after the cat is distracted. Press **Q** to see the seal and its checks (install the panel once first, see Known limits).
+can cash out, and opens it after the cat is distracted. The small seal badge under MENU shows it; press **Q** (or click the badge) for the full proof and its checks.
 
 Server mode uses **points** in a persistent wallet, never cash. Every player (PC or phone) starts
 with 50 points once. Each server day there are 20 free points. In `DEMO_MODE` the server also
@@ -120,14 +120,12 @@ its history stay untouched.
   profile adds a nickname and avatar, and the cashier QR code proves which wallet to top up, but there
   are no logins.
 - The 19+ check is self-attested (no ID verification).
-- The game's wallet panel is built at runtime with plain UI widgets. It works, but it isn't yet
-  styled to match the pixel-art HUD.
+- The wallet panel and menu are built at runtime. They use the HUD's rounded cards, colours and header
+  font, but no hand-drawn pixel art.
 - Plain HTTP on the local network only; no hosting or HTTPS yet.
 - With `HAPPY_HOUR=1` (demo only) the spring butterfly and winter 2.00x strategies return more than
   100% to the player (about 119% and 105%, `KittyAPI\tests\sim_rtp.py --happy-hour`). Never run it
   with real money.
-- The fairness seal panel (key **Q**) isn't in the scene by default. Add it once with
-  **Kitty Crash > Install Fairness Seal Panel (Q)** and save the scene.
 
 ## Credits
 

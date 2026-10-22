@@ -22,10 +22,10 @@ namespace KittyCrash
         public static GameMenu Instance { get; private set; }
 
         static readonly Color Dim = new Color(0f, 0f, 0f, 0.7f);
-        static readonly Color PanelBg = new Color(0.12f, 0.11f, 0.19f, 0.98f);
+        static readonly Color PanelBg = UiStyle.Panel;
         static readonly Color TitleBg = new Color(0.07f, 0.06f, 0.12f, 1f);
-        static readonly Color Card = new Color(0.17f, 0.15f, 0.26f, 1f);
-        static readonly Color Orange = new Color(1f, 0.65f, 0.18f, 1f);
+        static readonly Color Card = UiStyle.CardLight;
+        static readonly Color Orange = UiStyle.Accent;
         static readonly Color TextMain = new Color(0.96f, 0.95f, 1f, 1f);
         static readonly Color TextDim = new Color(0.64f, 0.61f, 0.77f, 1f);
         static readonly Color Red = new Color(1f, 0.35f, 0.42f, 1f);
@@ -151,6 +151,7 @@ namespace KittyCrash
                 Toggle(Loc.T("menu.history"), HudLayout.ShowHistory, v => HudLayout.ShowHistory = v);
                 Toggle(Loc.T("menu.leaderboard"), HudLayout.ShowLeaderboard, v => HudLayout.ShowLeaderboard = v);
                 Toggle(Loc.T("menu.mood"), HudLayout.ShowMood, v => HudLayout.ShowMood = v);
+                Toggle(Loc.T("menu.seal"), HudLayout.ShowSeal, v => HudLayout.ShowSeal = v);
             }
             var crowd = FindAnyObjectByType<CrowdMode>();
             if (crowd != null) Btn(Loc.T("menu.crowd"), () => { Close(); crowd.Toggle(); }, Card);
@@ -295,11 +296,10 @@ namespace KittyCrash
             var panel = Rect("Panel", modal);
             panel.anchorMin = panel.anchorMax = panel.pivot = new Vector2(0.5f, 0.5f);
             panel.sizeDelta = new Vector2(860f, 900f);
-            panel.gameObject.AddComponent<Image>().color = PanelBg;
-            var outline = panel.gameObject.AddComponent<Outline>();
-            outline.effectColor = new Color(1f, 0.65f, 0.18f, 0.5f);
-            outline.effectDistance = new Vector2(2f, -2f);
-            pageTitle = MakeText(panel, "", bold, 38, TextMain, TextAnchor.MiddleLeft);
+            UiStyle.Round(panel.gameObject.AddComponent<Image>(), PanelBg);
+            UiStyle.AccentEdge(panel);
+            pageTitle = MakeText(panel, "", UiStyle.HeaderFont(bold), 38, TextMain, TextAnchor.MiddleLeft);
+            UiStyle.Shadow(pageTitle);
             var tr = pageTitle.rectTransform;
             tr.anchorMin = new Vector2(0f, 1f); tr.anchorMax = new Vector2(1f, 1f); tr.pivot = new Vector2(0.5f, 1f);
             tr.offsetMin = new Vector2(30f, -80f); tr.offsetMax = new Vector2(-110f, -16f);
@@ -350,7 +350,7 @@ namespace KittyCrash
             title.anchorMin = Vector2.zero; title.anchorMax = Vector2.one; title.offsetMin = title.offsetMax = Vector2.zero;
             title.gameObject.AddComponent<Image>().color = TitleBg;
 
-            var logo = MakeText(title, "CATINO", bold, 150, Orange, TextAnchor.MiddleCenter);
+            var logo = MakeText(title, "CATINO", UiStyle.HeaderFont(bold), 150, Orange, TextAnchor.MiddleCenter);
             Center(logo.rectTransform, 300f, new Vector2(1200f, 190f));
             logo.gameObject.AddComponent<Shadow>().effectDistance = new Vector2(6f, -6f);
             var tag = MakeText(title, Loc.T("title.tagline"), font, 30, TextDim, TextAnchor.MiddleCenter);
@@ -458,9 +458,9 @@ namespace KittyCrash
         {
             var go = Rect("Button", parent);
             var img = go.gameObject.AddComponent<Image>();
-            img.color = bg;
             var b = go.gameObject.AddComponent<Button>();
             b.targetGraphic = img;
+            UiStyle.Style(b, img, bg);
             b.onClick.AddListener(() => onClick());
             text = MakeText(go, label, bold, 24, bg == Orange ? new Color(0.09f, 0.07f, 0.12f, 1f) : TextMain, TextAnchor.MiddleCenter);
             var r = text.rectTransform;
