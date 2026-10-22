@@ -5,6 +5,16 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [Unreleased] - develop-v2
 
+### Added
+- French now covers the whole game screen: distracted banner, distraction names, graph captions and
+  markers, season pill and festival names, forecast card and season banners (rule texts come from the
+  server in French), mood face, crowd mode, cat skin picker, error lines and the wallet panel
+  (including common server messages). `Loc.E` translates whole on-screen texts; `LocText` keeps fixed
+  labels in step when the language changes.
+
+### Fixed
+- The title screen is fully opaque (the round's banner no longer shows through it).
+
 ## [2.0.0-alpha.12] - 2026-10-22
 
 ### Added

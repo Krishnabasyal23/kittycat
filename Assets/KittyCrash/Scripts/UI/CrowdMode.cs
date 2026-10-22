@@ -115,7 +115,7 @@ namespace KittyCrash
             api = rm != null ? (rm.apiBackend != null ? rm.apiBackend : rm.GetComponent<ApiBackend>()) : null;
             if (rm == null || !rm.useApi || api == null || string.IsNullOrEmpty(api.SessionId))
             {
-                pillText.text = "CLICK USE API FIRST";
+                pillText.text = Loc.E("CLICK USE API FIRST");
                 return;
             }
             on = true;
@@ -139,7 +139,7 @@ namespace KittyCrash
 
         void RefreshPill()
         {
-            pillText.text = on ? "CROWD MODE: ON  (C)" : "CROWD MODE: OFF  (C)";
+            pillText.text = Loc.E(on ? "CROWD MODE: ON  (C)" : "CROWD MODE: OFF  (C)");
             pillBg.color = on ? Orange : Dark;
             pillText.color = on ? new Color(0.08f, 0.06f, 0.1f) : Color.white;
             panel.gameObject.SetActive(on);
@@ -213,7 +213,7 @@ namespace KittyCrash
                 state = s;
                 if (lastCount >= 0 && s.player_count > lastCount) OnPlayersJoined?.Invoke(s.player_count - lastCount);
                 lastCount = s.player_count;
-                countText.text = s.player_count == 0 ? "Scan to play!" : s.player_count + (s.player_count == 1 ? " player joined" : " players joined");
+                countText.text = Loc.E(s.player_count == 0 ? "Scan to play!" : s.player_count + (s.player_count == 1 ? " player joined" : " players joined"));
                 Diff();
                 DrawBoard();
             }));
@@ -269,7 +269,7 @@ namespace KittyCrash
             moreText.gameObject.SetActive(riders.Count > n);
             if (riders.Count > n)
             {
-                moreText.text = "+" + (riders.Count - n) + " more riding";
+                moreText.text = Loc.E("+" + (riders.Count - n) + " more riding");
                 moreText.rectTransform.anchoredPosition = head + new Vector2(0f, 290f * CatSize.Ui);
             }
         }
@@ -432,7 +432,7 @@ namespace KittyCrash
 
             var title = T("Title", panel, 24, Orange);
             Place(title.rectTransform, -8f, 32f);
-            title.text = "PLAY ON YOUR PHONE";
+            LocText.Bind(title, "PLAY ON YOUR PHONE");
 
             var qr = R("QR", panel);
             qr.anchorMin = qr.anchorMax = qr.pivot = new Vector2(0.5f, 1f);
@@ -443,7 +443,7 @@ namespace KittyCrash
 
             joinText = T("Url", panel, 17, new Color(0.8f, 0.78f, 0.9f));
             Place(joinText.rectTransform, -(qrSize + 50f), 26f);
-            joinText.text = "connecting...";
+            joinText.text = Loc.E("connecting...");
 
             countText = T("Count", panel, 20, Green);
             Place(countText.rectTransform, -(qrSize + 76f), 28f);

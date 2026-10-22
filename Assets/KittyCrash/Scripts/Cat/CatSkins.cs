@@ -109,7 +109,7 @@ namespace KittyCrash
             bg.color = new Color(0.07f, 0.08f, 0.13f, 0.78f);
 
             var title = MakeText("Title", pill, font, 15, new Color(0.65f, 0.68f, 0.8f), TextAnchor.UpperCenter);
-            title.text = "CAT SKIN";
+            LocText.Bind(title, "CAT SKIN");
             var trt = title.rectTransform; trt.anchorMin = new Vector2(0f, 1f); trt.anchorMax = new Vector2(1f, 1f); trt.pivot = new Vector2(0.5f, 1f);
             trt.anchoredPosition = new Vector2(0f, -3f); trt.sizeDelta = new Vector2(0f, 18f);
 
