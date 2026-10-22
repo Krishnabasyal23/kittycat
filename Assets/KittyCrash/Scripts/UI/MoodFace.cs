@@ -234,10 +234,10 @@ namespace KittyCrash
             meterFill.color = tc;
 
             // texts
-            label.text = LabelFor(mood);
+            label.text = Loc.E(LabelFor(mood));
             label.color = mood == Mood.Sad ? new Color(0.6f, 0.75f, 1f) : mood == Mood.Win || mood == Mood.Relieved ? new Color(1f, 0.85f, 0.35f) : Color.Lerp(Color.white, tc, tension);
-            subLabel.text = SubFor(tension);
-            streakText.text = Tension.WinStreak >= 2 ? $"Win streak ×{Tension.WinStreak} - greed rising!" : "";
+            subLabel.text = Loc.E(SubFor(tension));
+            streakText.text = Tension.WinStreak >= 2 ? Loc.E($"Win streak ×{Tension.WinStreak} - greed rising!") : "";
 
             // vignette: heartbeat when scary, flashes on win / loss
             float va = Mathf.Pow(tension, 1.5f) * vignetteStrength * (0.55f + 0.45f * thump);
@@ -300,7 +300,7 @@ namespace KittyCrash
         string SubFor(float tension)
         {
             if (Time.time - CatTemptations.LastTemptTime < 1.4f && rm.Phase == RoundPhase.Running && !rm.CashedOut)
-                return "Ignore " + CatTemptations.LastTemptName + ", kitty!";
+                return "Ignore " + Loc.E(CatTemptations.LastTemptName) + ", kitty!";
             switch (rm.Phase)
             {
                 case RoundPhase.Running:

@@ -96,7 +96,7 @@ namespace KittyCrash
             nextRefresh = 0f;
             closable = true;
             Close();
-            walletLabel.text = "WALLET";
+            walletLabel.text = Loc.E("WALLET");
         }
 
         void Awake()
@@ -176,9 +176,9 @@ namespace KittyCrash
 
         static string Detail(string text)
         {
-            try { var e = JsonUtility.FromJson<ErrorDto>(text); if (e != null && !string.IsNullOrEmpty(e.detail)) return e.detail; }
+            try { var e = JsonUtility.FromJson<ErrorDto>(text); if (e != null && !string.IsNullOrEmpty(e.detail)) return Loc.E(e.detail); }
             catch (ArgumentException) { }
-            return "Can't reach the server";
+            return Loc.E("Can't reach the server");
         }
 
         static T[] List<T, TWrap>(string json, Func<TWrap, T[]> items)
@@ -201,7 +201,7 @@ namespace KittyCrash
                 }
             });
             busy = false;
-            if (wallet != null) walletLabel.text = $"WALLET  ·  {wallet.balance} pts";
+            if (wallet != null) walletLabel.text = Loc.E($"WALLET  ·  {wallet.balance} pts");
         }
 
         void AfterMoneyChange()
@@ -245,15 +245,15 @@ namespace KittyCrash
                         Btn("TOP UP", () =>
                         {
                             if (!int.TryParse(amount.text, NumberStyles.None, Inv, out int d) || d < t.min_dollars || d > most)
-                            { tuMsg.text = $"Whole dollars, ${t.min_dollars}-${most}"; tuMsg.color = Red; return; }
+                            { tuMsg.text = Loc.E($"Whole dollars, ${t.min_dollars}-${most}"); tuMsg.color = Red; return; }
                             ShowCheckout(new ProductDto { product_id = "topup", label = $"${d} demo top-up", price = d.ToString("0.00", Inv), currency = "CAD", points = d * t.points_per_dollar }, d);
                         }, Orange, t.available);
                     }
                     foreach (var p in wallet.products ?? new ProductDto[0])
                     {
                         var product = p;
-                        string tail = p.once_per_day ? "  ·  once a day" : "";
-                        Btn($"{p.label}  ·  ${p.price} → {p.points} points{tail}" + (p.available ? "" : "  (bought today)"),
+                        string tail = p.once_per_day ? "  ·  " + Loc.E("once a day") : "";
+                        Btn($"{Loc.E(p.label)}  ·  ${p.price} → {p.points} points{tail}" + (p.available ? "" : "  (" + Loc.E("bought today") + ")"),
                             () => ShowCheckout(product), Card, p.available);
                     }
                 }
@@ -297,7 +297,7 @@ namespace KittyCrash
                 var msg = Line("", TextDim, 22);
                 Btn("SAVE", () => StartCoroutine(Call("PUT", "/api/profile", JsonUtility.ToJson(new ProfileBody { nickname = name.text, avatar = avatar }), null, (c, t) =>
                 {
-                    msg.text = Ok(c) ? "Saved" : Detail(t);
+                    msg.text = Ok(c) ? Loc.E("Saved") : Detail(t);
                     msg.color = Ok(c) ? Green : Red;
                 })), Orange);
                 var s = p.stats;
@@ -371,7 +371,7 @@ namespace KittyCrash
                 var body = JsonUtility.ToJson(new PurchaseBody { product = p.product_id, amount_dollars = dollars, confirmed = true });
                 StartCoroutine(Call("POST", "/api/wallet/purchase", body, key, (code, text) =>
                 {
-                    if (code == 402) { msg.text = "Demo payment declined. No points added."; msg.color = Red; Refresh_(); return; }
+                    if (code == 402) { msg.text = Loc.E("Demo payment declined. No points added."); msg.color = Red; Refresh_(); return; }
                     if (!Ok(code)) { msg.text = Detail(text); msg.color = Red; Refresh_(); return; }
                     AfterMoneyChange();
                     ShowReceipt(JsonUtility.FromJson<ReceiptDto>(text));
@@ -384,10 +384,10 @@ namespace KittyCrash
         {
             Page("Receipt (simulated)");
             Banner(r.notice);
-            Line($"Item: {r.label}", TextMain, 26);
+            Line($"Item: {Loc.E(r.label)}", TextMain, 26);
             Line($"Price: ${r.price} {r.currency}", TextMain, 26);
             Line($"Points: +{r.points}", TextMain, 26);
-            Line($"Status: {r.status}   ·   {When(r.created_at)}", TextMain, 24);
+            Line($"Status: {Loc.E(r.status)}   ·   {When(r.created_at)}", TextMain, 24);
             Line($"Payment id {r.payment_id} (provider {r.provider})", TextDim, 18);
             Btn("BACK TO WALLET", ShowHome, Orange);
         }
@@ -414,10 +414,10 @@ namespace KittyCrash
             if (error != null) Line(error, Red);
             Line("Simulated receipts", TextMain, 26, true);
             if (receipts.Length == 0) Line("No purchases.", TextDim, 22);
-            foreach (var r in receipts) Line($"{r.label}  ·  {r.status}  ·  +{r.points}   {When(r.created_at)}", TextMain, 22);
+            foreach (var r in receipts) Line($"{Loc.E(r.label)}  ·  {Loc.E(r.status)}  ·  +{r.points}   {When(r.created_at)}", TextMain, 22);
             Line("Points ledger", TextMain, 26, true);
             foreach (var e in entries)
-                Line($"{Kind(e.kind)}   {(e.amount_points > 0 ? "+" : "")}{e.amount_points} → {e.balance_after}   {When(e.created_at)}", TextMain, 22);
+                Line($"{Loc.E(Kind(e.kind))}   {(e.amount_points > 0 ? "+" : "")}{e.amount_points} → {e.balance_after}   {When(e.created_at)}", TextMain, 22);
             Btn("BACK", ShowHome, Card);
         }
 
@@ -448,15 +448,15 @@ namespace KittyCrash
                 else if (!string.IsNullOrEmpty(v.cooling_off_until)) Warn($"Taking a break until {When(v.cooling_off_until)}.");
 
                 Line("Daily spend limit", TextMain, 26, true);
-                string now = v.daily_spend_limit_points > 0 ? $"{v.daily_spend_limit_points} points ({Mathf.Max(0, v.daily_spend_limit_points - v.spent_today)} left today)" : "none";
+                string now = v.daily_spend_limit_points > 0 ? $"{v.daily_spend_limit_points} points ({Mathf.Max(0, v.daily_spend_limit_points - v.spent_today)} left today)" : Loc.E("none");
                 Line($"Now: {now}   ·   spent today {v.spent_today}", TextDim, 22);
                 if (v.pending_limit != null && !string.IsNullOrEmpty(v.pending_limit.effective_at))
-                    Line($"Change waiting: {(v.pending_limit.daily_spend_limit_points > 0 ? v.pending_limit.daily_spend_limit_points.ToString() : "no limit")} from {When(v.pending_limit.effective_at)}", TextDim, 22);
+                    Line($"Change waiting: {(v.pending_limit.daily_spend_limit_points > 0 ? v.pending_limit.daily_spend_limit_points.ToString() : Loc.E("no limit"))} from {When(v.pending_limit.effective_at)}", TextDim, 22);
                 var limit = Input("Points per day", InputField.ContentType.IntegerNumber);
                 var msg = Line($"Lowering applies now. Raising or removing waits {v.options.limit_increase_delay_hours} hours.", TextDim, 20);
                 Row(("SET LIMIT", () =>
                 {
-                    if (!int.TryParse(limit.text, NumberStyles.Integer, Inv, out int n) || n <= 0) { msg.text = "Enter a number of points."; msg.color = Red; return; }
+                    if (!int.TryParse(limit.text, NumberStyles.Integer, Inv, out int n) || n <= 0) { msg.text = Loc.E("Enter a number of points."); msg.color = Red; return; }
                     StartCoroutine(Send("PUT", "/api/wallet/limits", $"{{\"daily_spend_limit_points\":{n}}}", msg));
                 }), ("REMOVE LIMIT", () => StartCoroutine(Send("PUT", "/api/wallet/limits", "{\"daily_spend_limit_points\":null}", msg))));
 
@@ -482,7 +482,7 @@ namespace KittyCrash
                     string label = h < 24 ? $"{h} hour" : h == 24 ? "1 day" : $"{h / 24} days";
                     Btn(label, () =>
                     {
-                        if (!coolOk.isOn) { msg.text = "Tick the box to start a break."; msg.color = Red; return; }
+                        if (!coolOk.isOn) { msg.text = Loc.E("Tick the box to start a break."); msg.color = Red; return; }
                         StartCoroutine(Send("POST", "/api/wallet/cool-off", $"{{\"hours\":{hours},\"confirm\":true}}", msg));
                     }, Card, true, row);
                 }
@@ -496,7 +496,7 @@ namespace KittyCrash
                     int days = d;
                     Btn($"{d} days", () =>
                     {
-                        if (!exclOk.isOn) { msg.text = "Tick the box to self-exclude."; msg.color = Red; return; }
+                        if (!exclOk.isOn) { msg.text = Loc.E("Tick the box to self-exclude."); msg.color = Red; return; }
                         StartCoroutine(Send("POST", "/api/wallet/self-exclude", $"{{\"days\":{days},\"confirm\":true}}", msg));
                     }, Card, true, row);
                 }
@@ -587,7 +587,8 @@ namespace KittyCrash
             buttons.sizeDelta = new Vector2(300f, 116f);
             var wb = MakeButton(buttons, "WALLET", ShowHome, Orange, out walletLabel);
             Place(wb.transform, 0f, 52f);
-            var sb = MakeButton(buttons, "PLAY SAFE", ShowSafe, Card, out _);
+            var sb = MakeButton(buttons, "PLAY SAFE", ShowSafe, Card, out var safeLabel);
+            LocText.Bind(safeLabel, "PLAY SAFE");
             Place(sb.transform, -60f, 52f);
 
             // modal: dim background + scrolling panel
@@ -647,7 +648,7 @@ namespace KittyCrash
         {
             closable = canClose;
             closeButton.gameObject.SetActive(canClose);
-            titleText.text = title;
+            titleText.text = Loc.E(title);
             for (int i = content.childCount - 1; i >= 0; i--) Destroy(content.GetChild(i).gameObject);
             content.anchoredPosition = Vector2.zero;
             modal.gameObject.SetActive(true);
@@ -661,7 +662,7 @@ namespace KittyCrash
 
         void Toast(string text)
         {
-            statusText.text = text;
+            statusText.text = Loc.E(text);
             CancelInvoke(nameof(ClearToast));
             Invoke(nameof(ClearToast), 4f);
         }
@@ -672,7 +673,7 @@ namespace KittyCrash
 
         Text Line(string text, Color color, int size = 26, bool strong = false)
         {
-            var t = MakeText(content, text, strong ? bold : font, size, color, TextAnchor.UpperLeft);
+            var t = MakeText(content, Loc.E(text), strong ? bold : font, size, color, TextAnchor.UpperLeft);
             t.horizontalOverflow = HorizontalWrapMode.Wrap;
             t.verticalOverflow = VerticalWrapMode.Overflow;
             return t;
@@ -688,7 +689,7 @@ namespace KittyCrash
             var pad = box.gameObject.AddComponent<VerticalLayoutGroup>();
             pad.padding = new RectOffset(16, 16, 12, 12);
             pad.childControlWidth = true; pad.childControlHeight = true; pad.childForceExpandHeight = false;
-            var t = MakeText(box, text, bold, 22, color, TextAnchor.MiddleCenter);
+            var t = MakeText(box, Loc.E(text), bold, 22, color, TextAnchor.MiddleCenter);
             t.horizontalOverflow = HorizontalWrapMode.Wrap;
         }
 
@@ -725,7 +726,7 @@ namespace KittyCrash
             var text = MakeText(go, "", font, 26, TextMain, TextAnchor.MiddleLeft);
             Inset(text.rectTransform);
             text.supportRichText = false;
-            var ph = MakeText(go, placeholder, font, 24, TextDim, TextAnchor.MiddleLeft);
+            var ph = MakeText(go, Loc.E(placeholder), font, 24, TextDim, TextAnchor.MiddleLeft);
             Inset(ph.rectTransform);
             ph.fontStyle = FontStyle.Italic;
             field.textComponent = text;
@@ -749,7 +750,7 @@ namespace KittyCrash
             mark.anchorMin = Vector2.zero; mark.anchorMax = Vector2.one; mark.offsetMin = new Vector2(7f, 7f); mark.offsetMax = new Vector2(-7f, -7f);
             var markImg = mark.gameObject.AddComponent<Image>();
             markImg.color = Orange;
-            var t = MakeText(go, label, font, 24, TextMain, TextAnchor.MiddleLeft);
+            var t = MakeText(go, Loc.E(label), font, 24, TextMain, TextAnchor.MiddleLeft);
             t.rectTransform.anchorMin = Vector2.zero; t.rectTransform.anchorMax = Vector2.one;
             t.rectTransform.offsetMin = new Vector2(56f, 0f); t.rectTransform.offsetMax = Vector2.zero;
             t.horizontalOverflow = HorizontalWrapMode.Wrap;
@@ -798,7 +799,7 @@ namespace KittyCrash
             var b = go.gameObject.AddComponent<Button>();
             b.targetGraphic = img;
             b.onClick.AddListener(() => onClick());
-            text = MakeText(go, label, bold, 24, bg == Orange ? new Color(0.09f, 0.07f, 0.12f, 1f) : TextMain, TextAnchor.MiddleCenter);
+            text = MakeText(go, Loc.E(label), bold, 24, bg == Orange ? new Color(0.09f, 0.07f, 0.12f, 1f) : TextMain, TextAnchor.MiddleCenter);
             Inset(text.rectTransform);
             text.horizontalOverflow = HorizontalWrapMode.Wrap;
             return b;

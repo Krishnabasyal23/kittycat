@@ -137,7 +137,7 @@ namespace KittyCrash
                     if (SeasonSystem.Instance != null && SeasonSystem.Instance.externalControl) SeasonSystem.Instance.ReleaseControl();
                     return;
                 }
-                StartCoroutine(Get("/api/season/next", text =>
+                StartCoroutine(Get("/api/season/next?lang=" + LangCode, text =>
                 {
                     var f = JsonUtility.FromJson<SeasonDto>(text);
                     if (f == null || string.IsNullOrEmpty(f.season)) return;
@@ -188,7 +188,7 @@ namespace KittyCrash
         void Update()
         {
             // N on the game screen = choose the next walk's season (the server decides, so phones follow instantly)
-            if (InputReader.DebugNextSeason() && Online()) StartCoroutine(Request("POST", "/api/season/next", "{}", NextSeasonPicked));
+            if (InputReader.DebugNextSeason() && Online()) StartCoroutine(Request("POST", "/api/season/next?lang=" + LangCode, "{}", NextSeasonPicked));
 
             if (cam == null) cam = Camera.main;
             if (cam != null) { area.anchorMin = new Vector2(0f, cam.rect.y); area.anchorMax = new Vector2(1f, Mathf.Min(1f, cam.rect.y + cam.rect.height)); }
@@ -239,11 +239,11 @@ namespace KittyCrash
             {
                 var col = Col(forecast.season);
                 bool spinning = SeasonSystem.Instance != null && SeasonSystem.Instance.IsSpinning;
-                cardSeason.text = spinning ? "SPINNING THE SEASONS..." : "NEXT WALK:  " + Pretty(forecast.season);
+                cardSeason.text = Loc.E(spinning ? "SPINNING THE SEASONS..." : "NEXT WALK:  " + Pretty(forecast.season));
                 cardSeason.color = spinning ? Color.white : col;
-                cardTitle.text = spinning ? "" : forecast.title.ToUpperInvariant() + "   -   changes the " + forecast.axis.ToUpperInvariant();
+                cardTitle.text = spinning ? "" : forecast.title.ToUpperInvariant() + Loc.E("   -   changes the ") + forecast.axis.ToUpperInvariant();
                 cardRule.text = spinning ? "" : forecast.rule;
-                cardNext.text = spinning || upcoming.Length < 2 ? "" : "THEN:  " + string.Join("   >   ", Array.ConvertAll(upcoming, Pretty), 1, upcoming.Length - 1);
+                cardNext.text = spinning || upcoming.Length < 2 ? "" : Loc.E("THEN:  ") + string.Join("   >   ", Array.ConvertAll(upcoming, Pretty), 1, upcoming.Length - 1);
                 cardBg.color = new Color(col.r * 0.18f, col.g * 0.18f, col.b * 0.22f, 0.92f);
                 cardPop += Time.deltaTime;
                 float s = spinning ? 0.96f + Mathf.Sin(Time.time * 18f) * 0.02f : (cardPop < 0.2f ? 1f : Mathf.Lerp(1.08f, 1f, Mathf.Clamp01((cardPop - 0.2f) * 5f)));
@@ -256,7 +256,7 @@ namespace KittyCrash
             if (showPill)
             {
                 var col = Col(schedule.season);
-                pillText.text = Pretty(schedule.season) + "  -  " + RuleShort(schedule);
+                pillText.text = Pretty(schedule.season) + "  -  " + Loc.E(RuleShort(schedule));
                 pillText.color = col;
                 pillBg.color = new Color(col.r * 0.15f, col.g * 0.15f, col.b * 0.2f, 0.85f);
                 pill.sizeDelta = new Vector2(pillText.preferredWidth + 36f, 36f);
@@ -361,7 +361,7 @@ namespace KittyCrash
 
         void ShowBanner(string text, Color color)
         {
-            banner.text = text;
+            banner.text = Loc.E(text);
             banner.color = color;
             banner.enabled = true;
             bannerT = 0f;
@@ -390,7 +390,10 @@ namespace KittyCrash
         }
 
         static Color Col(string s) => s != null && SeasonColor.TryGetValue(s, out var c) ? c : Color.white;
-        static string Pretty(string s) => string.IsNullOrEmpty(s) ? "" : s.ToUpperInvariant();
+        static string Pretty(string s) => string.IsNullOrEmpty(s) ? "" : Loc.E(s.ToUpperInvariant());
+
+        /// <summary>The server sends the season rule texts in this language.</summary>
+        static string LangCode => Loc.Current == Loc.Lang.Fr ? "fr" : "en";
 
         /// <summary>"  +4%" from the server's bonus_pct, or "" if this server does not say (never a made-up number).</summary>
         static string Pct(ScheduleDto s, string kind, string sep = "  ")
