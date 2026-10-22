@@ -38,6 +38,10 @@ open:
 
 The phones have the same tools on the crowd page.
 
+**Safe play** (title screen, menu, phone menu) explains in plain words how the game works and how to
+keep it fun, opens the tools above, and lists ConnexOntario (1-866-531-2600, or text CONNEX to
+247247, free, 24/7) and the 9-8-8 crisis line. Re-check the numbers before any public use.
+
 ## Repository layout
 
 | Path | What |

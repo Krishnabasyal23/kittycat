@@ -500,7 +500,7 @@ namespace KittyCrash
                         StartCoroutine(Send("POST", "/api/wallet/self-exclude", $"{{\"days\":{days},\"confirm\":true}}", msg));
                     }, Card, true, row);
                 }
-                Line("Need to talk to someone? ConnexOntario: 1-866-531-2600 (free, 24/7).", TextDim, 20);
+                Line("Need to talk to someone? ConnexOntario: 1-866-531-2600 or text CONNEX to 247247 (free, 24/7). Crisis: call or text 9-8-8.", TextDim, 20);
                 Btn("BACK TO WALLET", ShowHome, Card);
             }));
         }
