@@ -52,6 +52,7 @@ namespace KittyCrash
         [Serializable] class SessionDto { public string session_id; public string balance; }
         [Serializable] class BalanceDto { public string balance; }
         [Serializable] class WagerDto { public string wager; }
+        [Serializable] class SeedDto { public string seed; }
         [Serializable] class StartDto { public string round_id; public string status; public string wager; public string balance; public float multiplier; public string distraction; public string commitment; public float growth_rate; public float warmup_seconds = -1f; }        [Serializable] class StateDto { public string status; public float multiplier; public string distraction; public string payout; }
         [Serializable] class CashDto { public string status; public float multiplier; public string payout; public string balance; }
         [Serializable] class ResultDto { public string status; public float crash_point; public string distraction; public string payout; public QuantumProof proof; }
@@ -162,6 +163,12 @@ namespace KittyCrash
                     commitment = d?.commitment,
                 });
             });
+        }
+
+        public void SendSeed(string roundId, string seed, Action<BackendResult> done)
+        {
+            Request("POST", $"/api/rounds/{roundId}/seed", JsonUtility.ToJson(new SeedDto { seed = seed }), r =>
+                done(r.Ok ? new BackendResult { ok = true } : Fail<BackendResult>(r)));
         }
 
         public void GetState(string roundId, Action<RoundStateResult> done)

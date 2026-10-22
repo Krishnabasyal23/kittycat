@@ -4,6 +4,14 @@ using System.Text;
 
 namespace KittyCrash
 {
+    /// <summary>One player seed from the opened box (the label is the seat's name).</summary>
+    [Serializable]
+    public class SeedEntry
+    {
+        public string label;
+        public string seed;
+    }
+
     /// <summary>
     /// The fairness proof the server reveals after a round (see KittyAPI fairness.py).
     /// Field names match the JSON so JsonUtility can fill it directly.
@@ -23,6 +31,8 @@ namespace KittyCrash
         public double house_edge;
         public double max_multiplier;
         public double crash_point_exact;
+        public SeedEntry[] seeds;      // Schrodinger's Box: the players' seeds (null on old rounds)
+        public string final_value;     // value XOR mask(seeds): the crash point comes from this
 
         public bool IsValid => !string.IsNullOrEmpty(commitment) && !string.IsNullOrEmpty(salt);
         public bool HasQubits => quantum_samples != null && quantum_samples.Length > 0;
@@ -33,12 +43,16 @@ namespace KittyCrash
         public bool hashOk;
         public bool? mathOk;
         public bool? quantumOk;
+        public bool? seedsOk;          // null when nobody sent a seed
+        public bool? mineIncluded;     // null when this client sent no seed
+        public int seedCount;
+        public long finalValue;
         public double u;
         public double recomputedCrash;
         public long value;
         public long combinedQubits;
         public long mask;
-        public bool AllOk => hashOk && mathOk != false && quantumOk != false;
+        public bool AllOk => hashOk && mathOk != false && quantumOk != false && seedsOk != false && mineIncluded != false;
     }
 
     public static class Fairness
@@ -46,7 +60,7 @@ namespace KittyCrash
         static readonly CultureInfo Inv = CultureInfo.InvariantCulture;
 
         /// <summary>Checks a revealed proof exactly like the server's fairness.verify().</summary>
-        public static FairnessResult Verify(string roundId, QuantumProof p, double crashPoint)
+        public static FairnessResult Verify(string roundId, QuantumProof p, double crashPoint, string mySeed = null)
         {
             var r = new FairnessResult();
             if (p == null || !p.IsValid) return r;
@@ -55,7 +69,22 @@ namespace KittyCrash
             if (p.scheme == "value" && long.TryParse(p.value, NumberStyles.Integer, Inv, out long v) && p.bits > 0 && p.bits < 63)
             {
                 r.value = v;
-                r.u = (v + 0.5) / Math.Pow(2.0, p.bits);
+                // Schrodinger's Box: the crash point comes from value XOR mask(seeds); the hash is of the value alone
+                long final = v;
+                if (!string.IsNullOrEmpty(p.final_value) && long.TryParse(p.final_value, NumberStyles.Integer, Inv, out long fv)) final = fv;
+                r.finalValue = final;
+                if (p.seeds != null && p.seeds.Length > 0 && !string.IsNullOrEmpty(p.final_value))
+                {
+                    var list = new string[p.seeds.Length];
+                    for (int i = 0; i < list.Length; i++) list[i] = p.seeds[i].seed;
+                    int hex = (p.bits + 3) / 4;
+                    string digest = Sha256Hex($"{roundId}:seeds:{string.Join(",", list)}");
+                    long mask = Convert.ToInt64(digest.Substring(0, hex), 16) >> (hex * 4 - p.bits);
+                    r.seedCount = list.Length;
+                    r.seedsOk = final == (v ^ mask);
+                    if (!string.IsNullOrEmpty(mySeed)) r.mineIncluded = Array.IndexOf(list, mySeed) >= 0;
+                }
+                r.u = (final + 0.5) / Math.Pow(2.0, p.bits);
                 double crash = (1.0 - p.house_edge) / r.u;
                 r.recomputedCrash = Math.Max(1.0, Math.Min(crash, p.max_multiplier > 1 ? p.max_multiplier : 100.0));
                 double target = p.crash_point_exact > 0 ? p.crash_point_exact : crashPoint;
@@ -73,6 +102,17 @@ namespace KittyCrash
                 }
             }
             return r;
+        }
+
+        /// <summary>A fresh random seed for Schrodinger's Box: 32 hex characters, made on this device.</summary>
+        public static string NewSeed()
+        {
+            var bytes = new byte[16];
+            try { using (var rng = System.Security.Cryptography.RandomNumberGenerator.Create()) rng.GetBytes(bytes); }
+            catch (Exception) { new System.Random(Guid.NewGuid().GetHashCode()).NextBytes(bytes); }
+            var sb = new StringBuilder(32);
+            foreach (byte b in bytes) sb.Append(b.ToString("x2"));
+            return sb.ToString();
         }
 
         /// <summary>A proof for offline practice / spectator rounds (classical randomness, same commit-reveal idea).</summary>

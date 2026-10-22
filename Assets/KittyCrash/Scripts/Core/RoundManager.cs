@@ -92,6 +92,10 @@ namespace KittyCrash
         // ── provably fair (Schrödinger box) ──
         /// <summary>SHA-256 seal of this round's outcome, published before anyone can cash out.</summary>
         public string Commitment { get; private set; }
+        /// <summary>This client's own random seed for the round's Schrodinger's Box (null until it is made).</summary>
+        public string MySeed { get; private set; }
+        /// <summary>True once the server has accepted <see cref="MySeed"/> (it is mixed into the crash point).</summary>
+        public bool SeedSent { get; private set; }
         /// <summary>The id the seal was made for (the server round id, or a local id for watch-only rounds).</summary>
         public string ProofRoundId { get; private set; }
         public QuantumProof LastProof { get; private set; }
@@ -221,6 +225,8 @@ namespace KittyCrash
             CrashPoint = -1f;
             Distraction = null;
             Commitment = null;
+            MySeed = null;
+            SeedSent = false;
             ProofRoundId = null;
             LastProof = null;
             LastCheck = null;
@@ -288,8 +294,24 @@ namespace KittyCrash
                 Commitment = r.commitment;
                 ProofRoundId = r.roundId;
                 if (!string.IsNullOrEmpty(Commitment)) OnCommitted?.Invoke();
+                SendSeed(r.roundId);
 
                 if (r.status == RoundStatus.Crashed) EndRound(1f, r.distraction);   // instant 1.00x
+            });
+        }
+
+        /// <summary>Schrodinger's Box: after seeing the commitment, add our own random seed. The crash point comes from
+        /// the server's sealed value XOR a hash of every player's seed, so neither side can steer it.</summary>
+        void SendSeed(string id)
+        {
+            if (string.IsNullOrEmpty(id) || string.IsNullOrEmpty(Commitment)) return;
+            string seed = Fairness.NewSeed();
+            MySeed = seed;
+            Backend.SendSeed(id, seed, res =>
+            {
+                if (id != RoundId || res == null || !res.ok) return;   // too late or already sent: the box just won't count it
+                SeedSent = true;
+                OnCommitted?.Invoke();
             });
         }
 
@@ -461,7 +483,7 @@ namespace KittyCrash
         {
             if (LastProof != null) return;   // already opened (cash-out path fetches twice)
             LastProof = p;
-            LastCheck = Fairness.Verify(ProofRoundId, p, crash);
+            LastCheck = Fairness.Verify(ProofRoundId, p, crash, SeedSent ? MySeed : null);
             if (!string.Equals(p.commitment, Commitment, StringComparison.OrdinalIgnoreCase)) LastCheck.hashOk = false; // must match what was published
             OnProofRevealed?.Invoke();
         }

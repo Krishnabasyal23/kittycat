@@ -6,6 +6,10 @@ All notable changes to the Catino Unity project. Server changes are listed in
 ## [Unreleased] - develop-v2
 
 ### Added
+- Schrödinger's Box (the fairness seal, renamed; Q is unchanged) with player seeds: after the commitment is shown,
+  the game sends its own random seed during the walk's lead-in and the opened box checks the seeds (and that
+  ours was counted) next to the seal, the math and the qubits. French included. The panel is taller for the two
+  new lines. Needs server 2.0.0-beta.2+ with migration 0010; offline practice has no seeds.
 - The fairness seal (badge + Q proof panel) is now on screen in every game: it installs itself at runtime.
   MENU can hide the badge; Q always opens the proof. Its texts follow the French setting.
 - `UiStyle`: the wallet panel and the menu use the HUD's rounded cards, colours, button tints, header font

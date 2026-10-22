@@ -9,8 +9,9 @@ using UnityEngine.InputSystem;
 namespace KittyCrash
 {
     /// <summary>
-    /// The fairness seal: a small badge (top-left, under MENU) with the round's SHA-256 commitment, and on Q or a
-    /// click the full proof panel that opens the seal after the crash and checks the hash and the math.
+    /// Schrodinger's Box (the fairness seal): a small badge (top-left, under MENU) with the round's SHA-256 commitment,
+    /// and on Q or a click the full panel that opens the box after the crash. The box stays sealed until the cat is
+    /// "observed" (metaphor, not literal superposition). It checks the hash, the players' seeds, the math and the qubits.
     /// Installs itself at runtime in any scene with a RoundManager (no scene edit). Menu > "Fairness seal" hides
     /// the badge in the clean layout; Q always works.
     /// </summary>
@@ -77,7 +78,7 @@ namespace KittyCrash
             string c = rm.Commitment;
             if (pillText != null)
             {
-                pillText.text = string.IsNullOrEmpty(c) ? Loc.E("QUANTUM SEAL") : Loc.E("SEALED") + "  " + c.Substring(0, Mathf.Min(6, c.Length));
+                pillText.text = string.IsNullOrEmpty(c) ? Loc.E("SCHRÖDINGER'S BOX") : Loc.E("SEALED") + "  " + c.Substring(0, Mathf.Min(6, c.Length));
                 pillText.color = Color.white;
                 pillBg.color = new Color(0.08f, 0.06f, 0.16f, 0.85f);
             }
@@ -88,11 +89,12 @@ namespace KittyCrash
             }
             else
             {
-                info.text = "<b>" + Loc.E("SEALED") + "</b>  " + Short(c) + "\n" + Loc.E("The crash point is already\nlocked inside the box.\nCash out = open the box early.");
+                info.text = "<b>" + Loc.E("SEALED") + "</b>  " + Short(c) + "\n" + Loc.E("The crash point is already\nlocked inside the box.\nCash out = open the box early.")
+                          + (rm.SeedSent ? "\n<color=#66F28C>" + Loc.E("your seed is in the box") + "</color>" : "");
                 verdict.text = Loc.E("outcome locked before betting");
                 verdict.color = Muted;
             }
-            sub.text = Loc.E("quantum seal - provably fair");
+            sub.text = Loc.E("sealed until the cat is observed");
         }
         void Reveal()
         {
@@ -125,12 +127,14 @@ namespace KittyCrash
             sb.Append("<b>").Append(Loc.E("OPENED")).Append("</b>  ").Append(src).Append('\n');
             if (chk.mathOk.HasValue)
             {
-                sb.Append(Loc.E("value")).Append(' ').Append(chk.value.ToString("N0", Inv)).Append('\n');
+                sb.Append(Loc.E("value")).Append(' ').Append(chk.finalValue.ToString("N0", Inv)).Append('\n');
                 sb.Append("u = ").Append(chk.u.ToString("0.0000", Inv)).Append("  ->  ")
                   .Append((1.0 - p.house_edge).ToString("0.00", Inv)).Append(" / u = ")
                   .Append(chk.recomputedCrash.ToString("0.00", Inv)).Append("x\n");
             }
             sb.Append(Check(Loc.E("seal matches"), chk.hashOk)).Append('\n');
+            if (chk.seedsOk.HasValue) sb.Append(Check(Loc.E("seeds mixed") + " (" + chk.seedCount.ToString(Inv) + ")", chk.seedsOk.Value)).Append('\n');
+            if (chk.mineIncluded.HasValue) sb.Append(Check(Loc.E("your seed counted"), chk.mineIncluded.Value)).Append('\n');
             if (chk.mathOk.HasValue) sb.Append(Check(Loc.E("crash math"), chk.mathOk.Value)).Append('\n');
             if (chk.quantumOk.HasValue) sb.Append(Check(Loc.E("qubits used"), chk.quantumOk.Value));
             info.text = sb.ToString();
@@ -246,7 +250,7 @@ namespace KittyCrash
             pill = Rect("SealBadge", area);
             pill.anchorMin = pill.anchorMax = pill.pivot = new Vector2(0f, 1f);
             pill.anchoredPosition = position;
-            pill.sizeDelta = new Vector2(300f, 52f);
+            pill.sizeDelta = new Vector2(340f, 52f);
             pillBg = pill.gameObject.AddComponent<Image>();
             pillBg.color = new Color(0.08f, 0.06f, 0.16f, 0.85f);
             var pb = pill.gameObject.AddComponent<Button>();
@@ -261,13 +265,13 @@ namespace KittyCrash
                 pillDots[i] = d.gameObject.AddComponent<Image>();
                 pillDots[i].raycastTarget = false;
             }
-            pillText = Label("BadgeText", pill, bold, 24, Color.white, TextAnchor.MiddleLeft, new Vector2(100f, 0f), new Vector2(200f, 52f));
-            pillText.text = Loc.E("QUANTUM SEAL");
+            pillText = Label("BadgeText", pill, bold, 22, Color.white, TextAnchor.MiddleLeft, new Vector2(100f, 0f), new Vector2(236f, 52f));
+            pillText.text = Loc.E("SCHRÖDINGER'S BOX");
 
             panel = Rect("SchrodingerBox", area);
             panel.anchorMin = panel.anchorMax = panel.pivot = new Vector2(0f, 1f);
             panel.anchoredPosition = position + new Vector2(0f, -62f);
-            panel.sizeDelta = new Vector2(520f, 300f);
+            panel.sizeDelta = new Vector2(520f, 350f);
             var bg = panel.gameObject.AddComponent<Image>();
             bg.color = new Color(0.06f, 0.05f, 0.12f, 0.84f);
             bg.raycastTarget = false;
@@ -276,7 +280,7 @@ namespace KittyCrash
             ol.effectDistance = new Vector2(2f, -2f);
 
             title = Label("Title", panel, bold, 24, Cyan, TextAnchor.UpperLeft, new Vector2(14f, -10f), new Vector2(400f, 28f));
-            LocText.Bind(title, "SCHRÖDINGER BOX");
+            LocText.Bind(title, "SCHRÖDINGER'S BOX");
             sub = Label("Sub", panel, font, 16, Muted, TextAnchor.UpperLeft, new Vector2(15f, -36f), new Vector2(400f, 20f));
 
             const float cell = 22f, gap = 4f;
@@ -297,12 +301,12 @@ namespace KittyCrash
                     new Vector2(14f + r * (cell + gap) - 6f, -66f - 6 * (cell + gap) - 2f), new Vector2(cell + 12f, 18f));
             }
 
-            info = Label("Info", panel, font, 19, Color.white, TextAnchor.UpperLeft, new Vector2(178f, -64f), new Vector2(330f, 190f));
+            info = Label("Info", panel, font, 19, Color.white, TextAnchor.UpperLeft, new Vector2(178f, -64f), new Vector2(330f, 240f));
             info.supportRichText = true;
             info.horizontalOverflow = HorizontalWrapMode.Wrap;
             info.lineSpacing = 1.05f;
 
-            verdict = Label("Verdict", panel, bold, 22, Good, TextAnchor.LowerLeft, new Vector2(178f, -268f), new Vector2(330f, 28f));
+            verdict = Label("Verdict", panel, bold, 22, Good, TextAnchor.LowerLeft, new Vector2(178f, -318f), new Vector2(330f, 28f));
         }
 
         static RectTransform Rect(string n, Transform parent)

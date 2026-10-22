@@ -52,6 +52,7 @@ namespace KittyCrash
     /// Everything the game needs from a backend. Matches the Catino FastAPI server (KittyAPI):
     ///   POST /api/sessions                 → Connect
     ///   POST /api/rounds {wager}           → StartRound   (placing the bet starts the walk)
+    ///   POST /api/rounds/{id}/seed         → SendSeed     (Schrodinger's Box: our random seed, during the lead-in)
     ///   GET  /api/rounds/{id}/state        → GetState     (polled while walking)
     ///   POST /api/rounds/{id}/cashout      → CashOut
     ///   GET  /api/rounds/{id}/result       → GetResult    (crash point + distraction once over)
@@ -68,6 +69,7 @@ namespace KittyCrash
 
         void Connect(Action<BalanceResult> done);
         void StartRound(decimal wager, Action<StartRoundResult> done);
+        void SendSeed(string roundId, string seed, Action<BackendResult> done);
         void GetState(string roundId, Action<RoundStateResult> done);
         void CashOut(string roundId, Action<CashOutResult> done);
         void GetResult(string roundId, Action<RoundOutcome> done);
