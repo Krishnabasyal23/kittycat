@@ -118,6 +118,13 @@ namespace KittyCrash
 
         void Play() => title.gameObject.SetActive(false);
 
+        /// <summary>Close the title screen and any menu page (screenshots, tests).</summary>
+        public void CloseAll()
+        {
+            title.gameObject.SetActive(false);
+            modal.gameObject.SetActive(false);
+        }
+
         public void ShowMenu()
         {
             Page("Menu");

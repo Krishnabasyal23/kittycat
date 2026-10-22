@@ -174,6 +174,8 @@ namespace KittyCrash
             if (cam != null) { area.anchorMin = new Vector2(0f, cam.rect.y); area.anchorMax = new Vector2(1f, Mathf.Min(1f, cam.rect.y + cam.rect.height)); }
             if (pillRT != null) pillRT.gameObject.SetActive(HudLayout.Classic || on);   // clean layout: MENU > Crowd mode
             if (!HudLayout.Leaderboard && board.gameObject.activeSelf) board.gameObject.SetActive(false);
+            // the wallet buttons (classic layout, server mode) sit where the board starts: go below them
+            board.anchoredPosition = boardPosition + (HudLayout.WalletButtons && rm != null && rm.useApi ? new Vector2(0f, -130f) : Vector2.zero);
 
             UpdateFlyers();
             if (!on) return;
