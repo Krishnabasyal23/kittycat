@@ -8,8 +8,13 @@ namespace KittyCrash
     /// <summary>Keyboard shortcuts. Works with the new Input System or the old Input Manager.</summary>
     public static class InputReader
     {
-        /// <summary>True while a text field has focus: game shortcuts must ignore the keyboard then.</summary>
-        public static bool Typing
+        /// <summary>True while the title screen or a menu page is open (set by GameMenu).</summary>
+        public static bool MenuOpen;
+
+        /// <summary>True while a text field has focus or a menu is open: game shortcuts must ignore the keyboard then.</summary>
+        public static bool Typing => FieldFocused || MenuOpen;
+
+        public static bool FieldFocused
         {
             get
             {
