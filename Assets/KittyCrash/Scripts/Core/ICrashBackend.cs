@@ -49,7 +49,7 @@ namespace KittyCrash
     }
 
     /// <summary>
-    /// Everything the game needs from a backend. Matches the Quantum Cat Crash FastAPI:
+    /// Everything the game needs from a backend. Matches the Catino FastAPI server (KittyAPI):
     ///   POST /api/sessions                 → Connect
     ///   POST /api/rounds {wager}           → StartRound   (placing the bet starts the walk)
     ///   GET  /api/rounds/{id}/state        → GetState     (polled while walking)

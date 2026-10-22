@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 namespace KittyCrash
 {
     /// <summary>
-    /// Talks to the Quantum Cat Crash FastAPI (main app with /api/... routes).
+    /// Talks to the Catino FastAPI server (KittyAPI) (main app with /api/... routes).
     /// Set Base Url to wherever the server runs (default: same PC, port 8000).
     /// The session id is remembered between plays; if the server restarted, a new session is created.
     /// </summary>
