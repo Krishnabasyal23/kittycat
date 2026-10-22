@@ -12,7 +12,7 @@ namespace KittyCrash
     public class VersionFooter : MonoBehaviour
     {
         /// <summary>Keep in step with the git tag (v2.0.0-alpha.N) and VERSION in KittyAPI/main.py.</summary>
-        public const string ClientVersion = "2.0.0-alpha.7";
+        public const string ClientVersion = "2.0.0-alpha.8";
 
         static readonly Color Muted = new Color(1f, 1f, 1f, 0.55f);
         static readonly Color Promo = new Color(1f, 0.82f, 0.24f, 0.95f);
@@ -50,14 +50,15 @@ namespace KittyCrash
 
             var rt = new GameObject("VersionText", typeof(RectTransform)).GetComponent<RectTransform>();
             rt.SetParent(cgo.transform, false);
-            rt.anchorMin = rt.anchorMax = rt.pivot = new Vector2(1f, 0f);
-            rt.anchoredPosition = new Vector2(-14f, 8f);
-            rt.sizeDelta = new Vector2(700f, 24f);
+            // bottom centre, under the warm-up bar: clear of the bet card and the graph card
+            rt.anchorMin = rt.anchorMax = rt.pivot = new Vector2(0.5f, 0f);
+            rt.anchoredPosition = new Vector2(0f, 6f);
+            rt.sizeDelta = new Vector2(760f, 24f);
 
             label = rt.gameObject.AddComponent<Text>();
             label.font = font;
             label.fontSize = 16;
-            label.alignment = TextAnchor.LowerRight;
+            label.alignment = TextAnchor.LowerCenter;
             label.raycastTarget = false;
             label.supportRichText = true;
             label.color = Muted;
