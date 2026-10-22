@@ -5,6 +5,11 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [Unreleased] - develop-v2
 
+### Added (client 2.0.0-alpha.9, server 2.0.0-alpha.9)
+- SAFE PLAY (title screen and menu): plain-language advice, a button to the limits, reality check
+  and breaks, and helplines (ConnexOntario 1-866-531-2600 or text CONNEX to 247247; 9-8-8). Numbers
+  checked on connexontario.ca and 988.ca on 2026-10-22.
+
 ### Changed (client 2.0.0-alpha.8, server 2.0.0-alpha.8)
 - Clean game screen by default: multiplier, cat, bet controls, balance, season and forecast. Graph,
   history, wallet buttons, crowd pill and leaderboard, mood face and the server switch are in the
