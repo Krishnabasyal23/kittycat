@@ -245,11 +245,11 @@ namespace KittyCrash
             if (cat != null && cat.distractionSprites != null && (int)type < cat.distractionSprites.Length) icon = cat.distractionSprites[(int)type];
             bannerIcon.sprite = icon;
             bannerIcon.enabled = icon != null;
-            bannerTitle.text = "DISTRACTED!";
-            bannerReason.text = "Kitty spotted " + Distractions.Pretty(type) + " at " + crash.ToString("0.00", Inv) + "x";
-            if (rm.HasBet && !rm.CashedOut) { bannerResult.text = "You lost " + rm.Wager.ToString("N2", Inv) + " - cash out sooner next time!"; bannerResult.color = lose; }
-            else if (rm.HasBet && rm.CashedOut) { bannerResult.text = "You got out at " + rm.CashOutMultiplier.ToString("0.00", Inv) + "x and won " + rm.Payout.ToString("N2", Inv) + "!"; bannerResult.color = win; }
-            else { bannerResult.text = "No bet this round - place one for the next walk"; bannerResult.color = textMuted; }
+            bannerTitle.text = Loc.E("DISTRACTED!");
+            bannerReason.text = Loc.E("Kitty spotted " + Loc.E(Distractions.Pretty(type)) + " at " + crash.ToString("0.00", Inv) + "x");
+            if (rm.HasBet && !rm.CashedOut) { bannerResult.text = Loc.E("You lost " + rm.Wager.ToString("N2", Inv) + " - cash out sooner next time!"); bannerResult.color = lose; }
+            else if (rm.HasBet && rm.CashedOut) { bannerResult.text = Loc.E("You got out at " + rm.CashOutMultiplier.ToString("0.00", Inv) + "x and won " + rm.Payout.ToString("N2", Inv) + "!"); bannerResult.color = win; }
+            else { bannerResult.text = Loc.E("No bet this round - place one for the next walk"); bannerResult.color = textMuted; }
             bannerT = 0f;
             bannerBg.gameObject.SetActive(true);
         }
@@ -330,28 +330,28 @@ namespace KittyCrash
             if (ss != null)
             {
                 seasonText.text = ss.InTransition
-                    ? $"{ss.CurrentSeason.ToString().ToUpper()}  >  {ss.NextSeason.ToString().ToUpper()}"
-                    : ss.CurrentSeason.ToString().ToUpper();
+                    ? $"{Loc.E(ss.CurrentSeason.ToString().ToUpper())}  >  {Loc.E(ss.NextSeason.ToString().ToUpper())}"
+                    : Loc.E(ss.CurrentSeason.ToString().ToUpper());
                 var c = Color.Lerp(SeasonColor(ss.CurrentSeason), SeasonColor(ss.NextSeason), ss.Blend);
                 seasonPill.color = c;
                 string fest = ss.Get(ss.DominantSeason).festiveName;
-                festText.text = string.IsNullOrEmpty(fest) ? "" : "~ " + fest + " ~";
+                festText.text = string.IsNullOrEmpty(fest) ? "" : "~ " + Loc.E(fest) + " ~";
             }
 
             if (rm.useApi)
             {
                 string mode = rm.apiBackend != null && !string.IsNullOrEmpty(rm.apiBackend.RngMode) ? rm.apiBackend.RngMode : "api";
-                apiText.text = rm.Phase == RoundPhase.Offline ? "o  API OFFLINE - retrying" : $"o  LIVE  -  {mode} RNG";
+                apiText.text = Loc.E(rm.Phase == RoundPhase.Offline ? "o  API OFFLINE - retrying" : $"o  LIVE  -  {mode} RNG");
                 apiText.color = rm.Phase == RoundPhase.Offline ? lose : win;
             }
             else
             {
-                apiText.text = "o  PRACTICE MODE (offline)";
+                apiText.text = Loc.E("o  PRACTICE MODE (offline)");
                 apiText.color = textMuted;
             }
             bool canSwitch = rm.Phase == RoundPhase.Idle || rm.Phase == RoundPhase.Offline || rm.Phase == RoundPhase.Ended;
             apiToggleBtn.interactable = canSwitch;
-            apiToggleText.text = rm.useApi ? "USE OFFLINE" : "USE API";
+            apiToggleText.text = Loc.E(rm.useApi ? "USE OFFLINE" : "USE API");
         }
 
         void UpdateCentre()
@@ -394,7 +394,7 @@ namespace KittyCrash
                 default:
                     big = rm.Multiplier.ToString("0.00", Inv) + "x";
                     c = lose;
-                    var d = cat != null ? Distractions.Pretty(cat.LastDistraction) : "something shiny";
+                    var d = Loc.E(cat != null ? Distractions.Pretty(cat.LastDistraction) : "something shiny");
                     sub = Loc.F("hud.distracted", d);
                     break;
             }
@@ -456,7 +456,7 @@ namespace KittyCrash
             actionBg.color = bg;
             actionBtn.interactable = clickable;
 
-            errorText.text = rm.LastError ?? "";
+            errorText.text = Loc.E(rm.LastError ?? "");
         }
 
         void UpdateGraph()
@@ -480,18 +480,18 @@ namespace KittyCrash
                 case RoundPhase.Running:
                     graphValue.text = rm.IsWarmingUp ? "" : m.ToString("0.00", Inv) + "x  " + elapsed.ToString("0.0", Inv) + "s";
                     graphValue.color = line;
-                    graphCaption.text = rm.CashedOut ? "Banked! The line keeps going until kitty gets distracted."
+                    graphCaption.text = Loc.E(rm.CashedOut ? "Banked! The line keeps going until kitty gets distracted."
                                       : rm.HasBet ? "Payout grows every second - cash out before the line stops."
-                                      : "Watching: the line stops where kitty gets distracted.";
+                                      : "Watching: the line stops where kitty gets distracted.");
                     break;
                 case RoundPhase.Ended:
-                    graphValue.text = "STOP " + m.ToString("0.00", Inv) + "x";
+                    graphValue.text = Loc.E("STOP " + m.ToString("0.00", Inv) + "x");
                     graphValue.color = lose;
-                    graphCaption.text = "Kitty got distracted after " + elapsed.ToString("0.0", Inv) + "s - that's where this round crashed.";
+                    graphCaption.text = Loc.E("Kitty got distracted after " + elapsed.ToString("0.0", Inv) + "s - that's where this round crashed.");
                     break;
                 default:
                     graphValue.text = "";
-                    graphCaption.text = "Same curve every round. Only where it stops is random.";
+                    graphCaption.text = Loc.E("Same curve every round. Only where it stops is random.");
                     break;
             }
             graphX1.text = graph.MaxTime.ToString("0", Inv) + "s";
@@ -501,14 +501,14 @@ namespace KittyCrash
             graphTarget.enabled = showTarget;
             if (showTarget)
             {
-                graphTarget.text = "AUTO CASH-OUT " + target.ToString("0.00", Inv) + "x";
+                graphTarget.text = Loc.E("AUTO CASH-OUT " + target.ToString("0.00", Inv) + "x");
                 graphTarget.rectTransform.anchoredPosition = new Vector2(graph.rectTransform.rect.xMax, graph.LocalY(target) + 3f);
             }
             bool showCash = rm.CashedOut && rm.CashOutMultiplier > 1f;
             graphCash.enabled = showCash;
             if (showCash)
             {
-                graphCash.text = "YOU " + rm.CashOutMultiplier.ToString("0.00", Inv) + "x";
+                graphCash.text = Loc.E("YOU " + rm.CashOutMultiplier.ToString("0.00", Inv) + "x");
                 graphCash.rectTransform.anchoredPosition = new Vector2(graph.LocalX(graph.TimeFor(rm.CashOutMultiplier)), graph.LocalY(rm.CashOutMultiplier) + 12f);
             }
         }

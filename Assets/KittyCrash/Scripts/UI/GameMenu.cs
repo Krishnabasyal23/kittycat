@@ -23,7 +23,7 @@ namespace KittyCrash
 
         static readonly Color Dim = new Color(0f, 0f, 0f, 0.7f);
         static readonly Color PanelBg = new Color(0.12f, 0.11f, 0.19f, 0.98f);
-        static readonly Color TitleBg = new Color(0.07f, 0.06f, 0.12f, 0.97f);
+        static readonly Color TitleBg = new Color(0.07f, 0.06f, 0.12f, 1f);
         static readonly Color Card = new Color(0.17f, 0.15f, 0.26f, 1f);
         static readonly Color Orange = new Color(1f, 0.65f, 0.18f, 1f);
         static readonly Color TextMain = new Color(0.96f, 0.95f, 1f, 1f);
