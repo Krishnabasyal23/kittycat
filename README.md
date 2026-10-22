@@ -112,7 +112,8 @@ its history stay untouched.
 
 ## Known limits
 
-- Phones poll the server about 3 times a second (no WebSockets yet).
+- Phones get live updates over a WebSocket (polling only as a fallback). The game screen itself
+  still polls the server, which runs on the same computer.
 - Wallets are still anonymous: anyone who asks for a new session gets a new 50-point wallet. A
   profile adds a nickname and avatar, and the cashier QR code proves which wallet to top up, but there
   are no logins.
