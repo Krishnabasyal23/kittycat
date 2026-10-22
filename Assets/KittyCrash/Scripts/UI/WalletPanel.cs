@@ -28,7 +28,7 @@ namespace KittyCrash
         // ── server JSON (field names match KittyAPI) ──
         [Serializable] class DailyDto { public int points; public bool available; }
         [Serializable] class ProductDto { public string product_id, label, price, currency; public int points; public bool once_per_day, available; }
-        [Serializable] class LotteryDto { public int points, redeemed_today, daily_max; public bool available; }
+        [Serializable] class LotteryDto { public int points, redeemed_today, daily_max; public bool available, enabled; public string locked_until; }
         [Serializable] class PendingDto { public int daily_spend_limit_points; public string effective_at; }
         [Serializable] class OptionsDto { public int[] cool_off_hours, self_exclusion_days, reality_check_minutes; public int limit_increase_delay_hours; }
         [Serializable] class RgDto { public bool age_confirmed, can_play; public int min_age, daily_spend_limit_points, spent_today, reality_check_minutes; public PendingDto pending_limit; public string cooling_off_until, self_excluded_until; public OptionsDto options; }
@@ -45,7 +45,7 @@ namespace KittyCrash
         [Serializable] class ActivityDto { public int minutes, bets, wagered, won, net; }
         [Serializable] class ErrorDto { public string detail; }
         [Serializable] class PurchaseBody { public string product; public int amount_dollars; public bool confirmed; }
-        [Serializable] class TicketBody { public string ticket_id, numbers; }
+        [Serializable] class TicketBody { public string code; }
 
         static readonly Color Dim = new Color(0f, 0f, 0f, 0.62f);
         static readonly Color PanelBg = new Color(0.12f, 0.11f, 0.19f, 0.98f);
@@ -242,13 +242,19 @@ namespace KittyCrash
                         Btn($"{p.label}  ·  ${p.price} → {p.points} points{tail}" + (p.available ? "" : "  (bought today)"),
                             () => ShowCheckout(product), Card, p.available);
                     }
-                    Line($"Mock lottery ticket: {wallet.lottery.points} points, {wallet.lottery.redeemed_today}/{wallet.lottery.daily_max} today. Mock tickets only, not real lottery tickets.", TextDim, 22);
-                    var id = Input("Ticket id (MOCK-XXXX-XXXX-XXXX)", InputField.ContentType.Standard);
-                    var nums = Input("Numbers, e.g. 01 02 04 08 16", InputField.ContentType.Standard);
-                    var msg = Line("", TextDim, 22);
-                    Btn("REDEEM TICKET", () => StartCoroutine(Redeem(id.text, nums.text, msg)), Orange, wallet.lottery.available);
                 }
                 else Line("Point packs are off on this server.", TextDim, 22);
+                var L = wallet.lottery;
+                if (L != null && L.enabled)
+                {
+                    Line($"Ticket bonus: {L.points} points, one ticket a day. Demo tickets only, not real lottery tickets.", TextDim, 22);
+                    var codeIn = Input("Ticket code", InputField.ContentType.Standard);
+                    codeIn.characterLimit = 64;
+                    string note = !string.IsNullOrEmpty(L.locked_until) ? $"Ticket entry is paused until {When(L.locked_until)}."
+                                : L.redeemed_today >= L.daily_max ? "Today's ticket is redeemed. Come back tomorrow." : "";
+                    var msg = Line(note, TextDim, 22);
+                    Btn("REDEEM TICKET", () => StartCoroutine(Redeem(codeIn, msg)), Orange, L.available);
+                }
                 Row(("PROFILE & CASHIER CODE", ShowProfile), ("RECEIPTS & HISTORY", ShowHistory));
                 Btn("PLAY SAFE", ShowSafe, Card);
             }));
@@ -315,13 +321,15 @@ namespace KittyCrash
             });
         }
 
-        IEnumerator Redeem(string ticketId, string numbers, Text msg)
+        IEnumerator Redeem(InputField field, Text msg)
         {
-            var body = JsonUtility.ToJson(new TicketBody { ticket_id = (ticketId ?? "").Trim().ToUpperInvariant(), numbers = (numbers ?? "").Trim() });
+            string typed = (field.text ?? "").Trim();
+            if (typed.Length == 0) yield break;
+            var body = JsonUtility.ToJson(new TicketBody { code = typed });
             yield return Call("POST", "/api/wallet/lottery/redeem", body, NewKey(), (code, text) =>
             {
                 if (Ok(code)) { AfterMoneyChange(); ShowHome(); }
-                else { msg.text = Detail(text); msg.color = Red; }
+                else { msg.text = Detail(text); msg.color = Red; field.text = ""; }
             });
         }
 
@@ -407,7 +415,7 @@ namespace KittyCrash
                 case "daily_free": return "Daily free";
                 case "topup": return "Demo top-up";
                 case "parking_bundle": return "Demo parking bundle";
-                case "lottery_ticket": return "Mock lottery ticket";
+                case "lottery_ticket": return "Ticket bonus";
                 case "wager": return "Bet";
                 case "payout": return "Cash-out";
                 case "refund": return "Refund";
@@ -519,7 +527,7 @@ namespace KittyCrash
             Line("You can keep watching. To play again:", TextDim, 24);
             if (wallet.daily_free.available) Btn($"CLAIM {wallet.daily_free.points} FREE POINTS", () => StartCoroutine(ClaimDaily()), Orange);
             else Line("Free points are back tomorrow.", TextDim, 22);
-            if (wallet.demo_mode) Btn("Demo point packs or a mock ticket", ShowHome, Card);
+            if (wallet.demo_mode || (wallet.lottery != null && wallet.lottery.enabled)) Btn("Top up or enter a ticket", ShowHome, Card);
             Btn("Take a break", ShowSafe, Card);
             Btn("Just watch", Close, Card);
         }
