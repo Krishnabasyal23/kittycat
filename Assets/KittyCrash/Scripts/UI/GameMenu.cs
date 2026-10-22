@@ -36,7 +36,8 @@ namespace KittyCrash
         RoundManager rm;
         Font font, bold;
         RectTransform title, modal, content, menuButton;
-        Text pageTitle;
+        Transform canvasRoot;
+        Text pageTitle, menuLabel;
 
         public bool IsOpen => (modal != null && modal.gameObject.activeSelf) || (title != null && title.gameObject.activeSelf);
 
@@ -127,21 +128,21 @@ namespace KittyCrash
 
         public void ShowMenu()
         {
-            Page("Menu");
-            Row(("WALLET", () => OpenWallet(w => w.ShowHome())), ("SAFE PLAY", ShowSafePlay));
+            Page(Loc.T("menu.title"));
+            Row((Loc.T("menu.wallet"), () => OpenWallet(w => w.ShowHome())), (Loc.T("title.safe"), ShowSafePlay));
             if (!HudLayout.Classic)
             {
-                Line("Show on screen (this session)", TextDim, 22);
-                Toggle("Multiplier graph", HudLayout.ShowGraph, v => HudLayout.ShowGraph = v);
-                Toggle("Round history", HudLayout.ShowHistory, v => HudLayout.ShowHistory = v);
-                Toggle("Crowd leaderboard", HudLayout.ShowLeaderboard, v => HudLayout.ShowLeaderboard = v);
-                Toggle("Mood face", HudLayout.ShowMood, v => HudLayout.ShowMood = v);
+                Line(Loc.T("menu.show"), TextDim, 22);
+                Toggle(Loc.T("menu.graph"), HudLayout.ShowGraph, v => HudLayout.ShowGraph = v);
+                Toggle(Loc.T("menu.history"), HudLayout.ShowHistory, v => HudLayout.ShowHistory = v);
+                Toggle(Loc.T("menu.leaderboard"), HudLayout.ShowLeaderboard, v => HudLayout.ShowLeaderboard = v);
+                Toggle(Loc.T("menu.mood"), HudLayout.ShowMood, v => HudLayout.ShowMood = v);
             }
             var crowd = FindAnyObjectByType<CrowdMode>();
-            if (crowd != null) Btn("CROWD MODE (PHONES JOIN WITH A QR CODE)", () => { Close(); crowd.Toggle(); }, Card);
-            Row(("HOW TO PLAY", ShowHowTo), ("SETTINGS", ShowSettings));
-            Row(("DEMO RESET", ShowReset), ("TITLE SCREEN", ShowTitle));
-            Btn("BACK TO THE GAME", Close, Orange);
+            if (crowd != null) Btn(Loc.T("menu.crowd"), () => { Close(); crowd.Toggle(); }, Card);
+            Row((Loc.T("title.howto"), ShowHowTo), (Loc.T("title.settings"), ShowSettings));
+            Row((Loc.T("menu.reset"), ShowReset), (Loc.T("menu.titlescreen"), ShowTitle));
+            Btn(Loc.T("menu.back"), Close, Orange);
         }
 
         void OpenWallet(Action<WalletPanel> open)
@@ -149,9 +150,9 @@ namespace KittyCrash
             var w = WalletPanel.Instance;
             if (w == null || !w.Online)
             {
-                Page("Wallet");
-                Line("The wallet needs the game server. Switch to online play in Settings.", TextMain, 24);
-                Btn("Back", ShowMenu, Card);
+                Page(Loc.T("menu.wallet"));
+                Line(Loc.T("wallet.needsServer"), TextMain, 24);
+                Btn(Loc.T("common.back"), ShowMenu, Card);
                 return;
             }
             Close();
@@ -160,73 +161,75 @@ namespace KittyCrash
 
         public void ShowSafePlay()
         {
-            Page("Safe play");
-            Line("Catino is a game. Points have no cash value and can't be cashed out.", TextMain, 24, true);
-            Line("-  Decide how long you'll play before you start, and stop when the time is up.", TextMain, 24);
-            Line("-  Each walk is random. The next walk doesn't know about the last one, so chasing losses never helps.", TextMain, 24);
-            Line("-  On average the game pays back less than you bet. Playing longer doesn't make a win more likely.", TextMain, 24);
-            Line("-  Take breaks. If playing stops being fun, or you feel you have to play, stop.", TextMain, 24);
-            Line("Your tools (server mode): a daily spend limit, a reality check reminder, a cool-off break and self-exclusion. Breaks and self-exclusion can't be shortened.", TextDim, 22);
-            Btn("LIMITS, REALITY CHECK AND BREAKS", () => OpenWallet(w => w.ShowSafe()), Orange);
-            Line("Need to talk to someone? ConnexOntario: call 1-866-531-2600 or text CONNEX to 247247 (free, 24/7, includes gambling support).", TextMain, 22);
-            Line("In crisis: call or text 9-8-8 (Canada, 24/7). In danger: call 9-1-1.", TextMain, 22);
-            Btn("Back", () => { if (title.gameObject.activeSelf) Close(); else ShowMenu(); }, Card);
+            Page(Loc.T("safe.title"));
+            Line(Loc.T("safe.points"), TextMain, 24, true);
+            Line(Loc.T("safe.1"), TextMain, 24);
+            Line(Loc.T("safe.2"), TextMain, 24);
+            Line(Loc.T("safe.3"), TextMain, 24);
+            Line(Loc.T("safe.4"), TextMain, 24);
+            Line(Loc.T("safe.tools"), TextDim, 22);
+            Btn(Loc.T("safe.open"), () => OpenWallet(w => w.ShowSafe()), Orange);
+            Line(Loc.T("safe.help"), TextMain, 22);
+            Line(Loc.T("safe.crisis"), TextMain, 22);
+            Btn(Loc.T("common.back"), () => { if (title.gameObject.activeSelf) Close(); else ShowMenu(); }, Card);
         }
 
         public void ShowHowTo()
         {
-            Page("How to play");
-            Line("1.  While betting is open, choose how many points to bet and press BET (or Space).", TextMain, 24);
-            Line("2.  The cat starts walking and the multiplier climbs.", TextMain, 24);
-            Line("3.  Press CASH OUT (or Space) before the cat gets distracted. You win bet x multiplier.", TextMain, 24);
-            Line("4.  If the cat gets distracted first, the bet is lost. Auto cash-out can cash out for you.", TextMain, 24);
-            Line("5.  Each season changes one rule. The forecast while betting shows what's coming.", TextMain, 24);
-            Line("Points are not money and can't be cashed out. Take breaks: Safe play is in the menu.", TextDim, 22);
-            Line("Keys:  Space bet / cash out  ·  Esc menu  ·  W wallet  ·  C crowd mode  ·  M music  ·  F1 help  ·  F5 demo reset", TextDim, 20);
-            Btn("BACK", () => { if (title.gameObject.activeSelf) Close(); else ShowMenu(); }, Orange);
+            Page(Loc.T("howto.title"));
+            for (int i = 1; i <= 5; i++) Line(Loc.T("howto." + i), TextMain, 24);
+            Line(Loc.T("howto.points"), TextDim, 22);
+            Line(Loc.T("howto.keys"), TextDim, 20);
+            Btn(Loc.T("common.back"), () => { if (title.gameObject.activeSelf) Close(); else ShowMenu(); }, Orange);
         }
 
         public void ShowSettings()
         {
-            Page("Settings");
-            Toggle("Mute all sound", HudLayout.Muted, v => HudLayout.Muted = v);
+            Page(Loc.T("settings.title"));
+            Btn(Loc.T("settings.language"), () =>
+            {
+                Loc.Current = Loc.Current == Loc.Lang.En ? Loc.Lang.Fr : Loc.Lang.En;
+                RebuildTitle();
+                ShowSettings();
+            }, Card);
+            Toggle(Loc.T("settings.mute"), HudLayout.Muted, v => HudLayout.Muted = v);
             Text vol = null;
-            void ShowVolume() => vol.text = $"Volume  {Mathf.RoundToInt(HudLayout.Volume * 100f)}%";
+            void ShowVolume() => vol.text = Loc.F("settings.volume", Mathf.RoundToInt(HudLayout.Volume * 100f));
             var row = RowRect();
             Btn("-", () => { HudLayout.Volume = Mathf.Round(HudLayout.Volume * 10f - 1f) / 10f; ShowVolume(); }, Card, true, row);
             vol = MakeText(row, "", bold, 26, TextMain, TextAnchor.MiddleCenter);
             Btn("+", () => { HudLayout.Volume = Mathf.Round(HudLayout.Volume * 10f + 1f) / 10f; ShowVolume(); }, Card, true, row);
             ShowVolume();
-            Toggle("Classic layout (everything on screen)", HudLayout.Classic, v => HudLayout.Classic = v);
-            Toggle("Show the title screen at start", HudLayout.TitleAtStart, v => HudLayout.TitleAtStart = v);
+            Toggle(Loc.T("settings.classic"), HudLayout.Classic, v => HudLayout.Classic = v);
+            Toggle(Loc.T("settings.titleAtStart"), HudLayout.TitleAtStart, v => HudLayout.TitleAtStart = v);
             if (rm != null)
-                Toggle("Play online (game server)", rm.useApi, v => { if (rm.useApi != v) rm.SetUseApi(v); });
-            Btn("BACK", () => { if (title.gameObject.activeSelf) Close(); else ShowMenu(); }, Orange);
+                Toggle(Loc.T("settings.online"), rm.useApi, v => { if (rm.useApi != v) rm.SetUseApi(v); });
+            Btn(Loc.T("common.back"), () => { if (title.gameObject.activeSelf) Close(); else ShowMenu(); }, Orange);
         }
 
         public void ShowReset()
         {
-            Page("Demo reset");
+            Page(Loc.T("reset.title"));
             string blocked = ResetBlockedReason();
             if (blocked != null)
             {
                 Line(blocked, TextMain, 24);
-                Btn("Back", ShowMenu, Card);
+                Btn(Loc.T("common.back"), ShowMenu, Card);
                 return;
             }
-            Line("Start over as a new demo player? You get a fresh wallet with the starting points, and breaks and limits on this computer are cleared.", TextMain, 24);
-            Line(rm.useApi ? "The old wallet and its history stay on the server." : "This resets the offline practice balance.", TextDim, 22);
-            Btn("YES, START OVER", DemoReset, Orange);
-            Btn("Cancel", ShowMenu, Card);
+            Line(Loc.T("reset.ask"), TextMain, 24);
+            Line(Loc.T(rm.useApi ? "reset.server" : "reset.offline"), TextDim, 22);
+            Btn(Loc.T("reset.yes"), DemoReset, Orange);
+            Btn(Loc.T("common.cancel"), ShowMenu, Card);
         }
 
         string ResetBlockedReason()
         {
-            if (rm == null) return "The game isn't ready yet.";
-            if (rm.HasBet || rm.BetQueued) return "Finish or cancel your bet first.";
-            if (rm.Phase == RoundPhase.Starting || rm.Phase == RoundPhase.Running) return "Wait for this walk to end, then try again.";
+            if (rm == null) return Loc.T("reset.notReady");
+            if (rm.HasBet || rm.BetQueued) return Loc.T("reset.bet");
+            if (rm.Phase == RoundPhase.Starting || rm.Phase == RoundPhase.Running) return Loc.T("reset.walk");
             if (rm.useApi && (WalletPanel.Instance == null || !WalletPanel.Instance.DemoMode))
-                return "Demo reset is only available when the server runs in demo mode.";
+                return Loc.T("reset.demoOnly");
             return null;
         }
 
@@ -240,9 +243,9 @@ namespace KittyCrash
             else if (rm.localBackend != null) rm.localBackend.ResetBalance();
             if (WalletPanel.Instance != null) WalletPanel.Instance.ResetForNewPlayer();
             rm.Connect();
-            Page("Demo reset");
-            Line("Done. You're a new player.", Green, 28, true);
-            Btn("PLAY", Close, Orange);
+            Page(Loc.T("reset.title"));
+            Line(Loc.T("reset.done"), Green, 28, true);
+            Btn(Loc.T("title.play"), Close, Orange);
         }
 
         public void Close() => modal.gameObject.SetActive(false);
@@ -262,8 +265,9 @@ namespace KittyCrash
             scaler.matchWidthOrHeight = 1f;
             cgo.AddComponent<GraphicRaycaster>();
 
-            var mb = MakeButton(cgo.transform, "MENU", ShowMenu, new Color(0.11f, 0.12f, 0.18f, 0.92f), out var mbText);
+            var mb = MakeButton(cgo.transform, Loc.T("menu.button"), ShowMenu, new Color(0.11f, 0.12f, 0.18f, 0.92f), out var mbText);
             mbText.fontSize = 20;
+            menuLabel = mbText;
             menuButton = (RectTransform)mb.transform;
             menuButton.anchorMin = menuButton.anchorMax = menuButton.pivot = new Vector2(0f, 1f);
             menuButton.sizeDelta = new Vector2(150f, 40f);
@@ -310,7 +314,19 @@ namespace KittyCrash
             sr.viewport = scroll;
             modal.gameObject.SetActive(false);
 
-            BuildTitle(cgo.transform);
+            canvasRoot = cgo.transform;
+            BuildTitle(canvasRoot);
+        }
+
+        /// <summary>The language changed: rebuild the title screen and relabel the MENU button.</summary>
+        void RebuildTitle()
+        {
+            bool open = title.gameObject.activeSelf;
+            Destroy(title.gameObject);
+            BuildTitle(canvasRoot);
+            title.SetSiblingIndex(modal.GetSiblingIndex());   // keep the open page above it
+            title.gameObject.SetActive(open);
+            menuLabel.text = Loc.T("menu.button");
         }
 
         void BuildTitle(Transform root)
@@ -322,7 +338,7 @@ namespace KittyCrash
             var logo = MakeText(title, "CATINO", bold, 150, Orange, TextAnchor.MiddleCenter);
             Center(logo.rectTransform, 300f, new Vector2(1200f, 190f));
             logo.gameObject.AddComponent<Shadow>().effectDistance = new Vector2(6f, -6f);
-            var tag = MakeText(title, "Bet points, watch the cat walk, cash out before it gets distracted.", font, 30, TextDim, TextAnchor.MiddleCenter);
+            var tag = MakeText(title, Loc.T("title.tagline"), font, 30, TextDim, TextAnchor.MiddleCenter);
             Center(tag.rectTransform, 170f, new Vector2(1400f, 50f));
 
             var col = Rect("Buttons", title);
@@ -330,14 +346,14 @@ namespace KittyCrash
             var v = col.gameObject.AddComponent<VerticalLayoutGroup>();
             v.spacing = 14f;
             v.childControlWidth = true; v.childControlHeight = true; v.childForceExpandHeight = false;
-            Btn("PLAY", Play, Orange, true, col).GetComponent<LayoutElement>().minHeight = 84f;
-            Btn("HOW TO PLAY", ShowHowTo, Card, true, col);
-            Btn("SETTINGS", ShowSettings, Card, true, col);
-            Btn("SAFE PLAY", ShowSafePlay, Card, true, col);
+            Btn(Loc.T("title.play"), Play, Orange, true, col).GetComponent<LayoutElement>().minHeight = 84f;
+            Btn(Loc.T("title.howto"), ShowHowTo, Card, true, col);
+            Btn(Loc.T("title.settings"), ShowSettings, Card, true, col);
+            Btn(Loc.T("title.safe"), ShowSafePlay, Card, true, col);
 #if !UNITY_WEBGL
-            Btn("QUIT", Application.Quit, Card, true, col);
+            Btn(Loc.T("title.quit"), Application.Quit, Card, true, col);
 #endif
-            var foot = MakeText(title, "Points only, never money.  Players must be 19+.  v" + VersionFooter.ClientVersion, font, 20, TextDim, TextAnchor.MiddleCenter);
+            var foot = MakeText(title, Loc.F("title.footer", VersionFooter.ClientVersion), font, 20, TextDim, TextAnchor.MiddleCenter);
             Center(foot.rectTransform, -470f, new Vector2(1400f, 30f));
             title.gameObject.SetActive(false);
         }
@@ -390,7 +406,7 @@ namespace KittyCrash
         {
             Text text = null;
             Button b = null;
-            void Show() { text.text = label + (on ? "   ON" : "   OFF"); b.targetGraphic.color = on ? new Color(0.24f, 0.21f, 0.36f, 1f) : Card; }
+            void Show() { text.text = label + "   " + Loc.T(on ? "common.on" : "common.off"); b.targetGraphic.color = on ? new Color(0.24f, 0.21f, 0.36f, 1f) : Card; }
             b = MakeButton(content, "", () => { on = !on; set(on); Show(); }, Card, out text);
             b.gameObject.AddComponent<LayoutElement>().minHeight = 60f;
             text.alignment = TextAnchor.MiddleLeft;
