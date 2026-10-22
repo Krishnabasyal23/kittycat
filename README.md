@@ -89,8 +89,9 @@ Shortcuts are ignored while you type in a text field.
 ## Known limits
 
 - Phones poll the server about 3 times a second (no WebSockets yet).
-- Wallets are anonymous: anyone who asks for a new session gets a new 50-point wallet. Profiles and
-  signed QR identity come in Phase 4.
+- Wallets are still anonymous: anyone who asks for a new session gets a new 50-point wallet. A
+  profile adds a nickname and avatar, and the cashier QR code proves which wallet to top up, but there
+  are no logins.
 - The 19+ check is self-attested (no ID verification).
 - The game's wallet panel is built at runtime with plain UI widgets. It works, but it isn't yet
   styled to match the pixel-art HUD.

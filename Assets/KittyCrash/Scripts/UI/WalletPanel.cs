@@ -14,7 +14,8 @@ namespace KittyCrash
 {
     /// <summary>
     /// Wallet and play-safe tools for server mode (Phase 3). Mirrors the phone page:
-    ///  • 19+ gate before play, wallet (daily free points, demo packs, mock lottery tickets),
+    ///  • 19+ gate before play, wallet (daily free points, any-amount demo top-up, packs, lottery ticket),
+    ///  • profile (nickname, avatar, stats) and a signed single-use QR code for the cashier page,
     ///  • demo checkout with generic payment choices and a required "simulated" checkbox, receipts, history,
     ///  • daily spend limit, reality check, cool-off, self-exclusion, out-of-points page.
     /// Every rule is enforced by the server; this only shows it. Installs itself at runtime in any scene
@@ -31,14 +32,19 @@ namespace KittyCrash
         [Serializable] class PendingDto { public int daily_spend_limit_points; public string effective_at; }
         [Serializable] class OptionsDto { public int[] cool_off_hours, self_exclusion_days, reality_check_minutes; public int limit_increase_delay_hours; }
         [Serializable] class RgDto { public bool age_confirmed, can_play; public int min_age, daily_spend_limit_points, spent_today, reality_check_minutes; public PendingDto pending_limit; public string cooling_off_until, self_excluded_until; public OptionsDto options; }
-        [Serializable] class WalletDto { public string server_time; public int balance; public DailyDto daily_free; public ProductDto[] products; public LotteryDto lottery; public bool demo_mode; public RgDto responsible; }
+        [Serializable] class TopupDto { public int points_per_dollar, min_dollars, max_dollars, daily_cap_dollars, left_today_dollars; public bool available; }
+        [Serializable] class WalletDto { public string server_time; public int balance; public DailyDto daily_free; public ProductDto[] products; public TopupDto topup; public LotteryDto lottery; public bool demo_mode; public RgDto responsible; }
+        [Serializable] class StatsDto { public int rounds, wins, wagered, net; public float best_multiplier; }
+        [Serializable] class ProfileDto { public string nickname, avatar; public string[] avatars; public int balance; public StatsDto stats; }
+        [Serializable] class ProfileBody { public string nickname, avatar; }
+        [Serializable] class QrDto { public string counter_code, png_base64; public int seconds; }
         [Serializable] class ReceiptDto { public string payment_id, provider, label, price, currency, status, created_at, notice; public int points; }
         [Serializable] class ReceiptList { public ReceiptDto[] items; }
         [Serializable] class EntryDto { public string kind, created_at; public int amount_points, balance_after; }
         [Serializable] class EntryList { public EntryDto[] items; }
         [Serializable] class ActivityDto { public int minutes, bets, wagered, won, net; }
         [Serializable] class ErrorDto { public string detail; }
-        [Serializable] class PurchaseBody { public string product; public bool confirmed; }
+        [Serializable] class PurchaseBody { public string product; public int amount_dollars; public bool confirmed; }
         [Serializable] class TicketBody { public string ticket_id, numbers; }
 
         static readonly Color Dim = new Color(0f, 0f, 0f, 0.62f);
@@ -213,7 +219,23 @@ namespace KittyCrash
                 if (wallet.demo_mode)
                 {
                     Banner("DEMO MODE: payments are simulated. No real money is ever charged.");
-                    foreach (var p in wallet.products)
+                    var t = wallet.topup;
+                    if (t != null && t.points_per_dollar > 0)
+                    {
+                        int most = Mathf.Min(t.max_dollars, t.left_today_dollars);
+                        Line($"Demo top-up: ${t.min_dollars}-${t.max_dollars}, {t.points_per_dollar} points per $1, ${t.left_today_dollars} of ${t.daily_cap_dollars} left today.", TextDim, 22);
+                        var amount = Input("Amount in dollars", InputField.ContentType.IntegerNumber);
+                        amount.characterLimit = 3;
+                        amount.text = "5";
+                        var tuMsg = Line("", TextDim, 22);
+                        Btn("TOP UP", () =>
+                        {
+                            if (!int.TryParse(amount.text, NumberStyles.None, Inv, out int d) || d < t.min_dollars || d > most)
+                            { tuMsg.text = $"Whole dollars, ${t.min_dollars}-${most}"; tuMsg.color = Red; return; }
+                            ShowCheckout(new ProductDto { product_id = "topup", label = $"${d} demo top-up", price = d.ToString("0.00", Inv), currency = "CAD", points = d * t.points_per_dollar }, d);
+                        }, Orange, t.available);
+                    }
+                    foreach (var p in wallet.products ?? new ProductDto[0])
                     {
                         var product = p;
                         string tail = p.once_per_day ? "  ·  once a day" : "";
@@ -227,8 +249,62 @@ namespace KittyCrash
                     Btn("REDEEM TICKET", () => StartCoroutine(Redeem(id.text, nums.text, msg)), Orange, wallet.lottery.available);
                 }
                 else Line("Point packs are off on this server.", TextDim, 22);
-                Row(("RECEIPTS & HISTORY", ShowHistory), ("PLAY SAFE", ShowSafe));
+                Row(("PROFILE & CASHIER CODE", ShowProfile), ("RECEIPTS & HISTORY", ShowHistory));
+                Btn("PLAY SAFE", ShowSafe, Card);
             }));
+        }
+
+        // profile + signed single-use QR code for the cashier page
+        void ShowProfile()
+        {
+            StartCoroutine(Call("GET", "/api/profile", null, null, (code, text) =>
+            {
+                if (!Ok(code)) { Toast(Detail(text)); return; }
+                var p = JsonUtility.FromJson<ProfileDto>(text);
+                string avatar = p.avatar;
+                Page("Profile");
+                var name = Input("Nickname", InputField.ContentType.Standard);
+                name.characterLimit = 12;
+                name.text = p.nickname ?? "";
+                var row = RowRect();
+                var picks = new Button[p.avatars.Length];
+                for (int i = 0; i < p.avatars.Length; i++)
+                {
+                    string a = p.avatars[i];
+                    picks[i] = Btn(a, () => { avatar = a; for (int j = 0; j < picks.Length; j++) Highlight(picks[j], p.avatars[j] == avatar); }, Card, true, row);
+                    Highlight(picks[i], a == avatar);
+                }
+                var msg = Line("", TextDim, 22);
+                Btn("SAVE", () => StartCoroutine(Call("PUT", "/api/profile", JsonUtility.ToJson(new ProfileBody { nickname = name.text, avatar = avatar }), null, (c, t) =>
+                {
+                    msg.text = Ok(c) ? "Saved" : Detail(t);
+                    msg.color = Ok(c) ? Green : Red;
+                })), Orange);
+                var s = p.stats;
+                Line($"Rounds {s.rounds}   ·   cash-outs {s.wins}   ·   best {(s.best_multiplier > 0 ? s.best_multiplier.ToString("0.00", Inv) + "x" : "-")}   ·   net {s.net}", TextMain, 24);
+                Line("Cashier code: show it at the counter to top up there (simulated). It works once, for a few minutes.", TextDim, 22);
+                Btn("SHOW MY CASHIER CODE", () => StartCoroutine(Call("POST", "/api/profile/qr", "{}", null, (c, t) =>
+                {
+                    if (!Ok(c)) { msg.text = Detail(t); msg.color = Red; return; }
+                    var q = JsonUtility.FromJson<QrDto>(t);
+                    QrImage(Convert.FromBase64String(q.png_base64));
+                    Line($"Counter code  {q.counter_code}   (expires in {q.seconds / 60} min)", TextMain, 30, true);
+                })), Card);
+                Btn("Back", ShowHome, Card);
+            }));
+        }
+
+        void QrImage(byte[] png)
+        {
+            var tex = new Texture2D(2, 2) { filterMode = FilterMode.Point };
+            tex.LoadImage(png);
+            var holder = Rect("Qr", content);
+            holder.gameObject.AddComponent<LayoutElement>().minHeight = 340f;
+            var img = Rect("Image", holder).gameObject.AddComponent<RawImage>();
+            img.texture = tex;
+            var r = img.rectTransform;
+            r.anchorMin = r.anchorMax = r.pivot = new Vector2(0.5f, 0.5f);
+            r.sizeDelta = new Vector2(320f, 320f);
         }
 
         IEnumerator ClaimDaily()
@@ -249,7 +325,7 @@ namespace KittyCrash
             });
         }
 
-        void ShowCheckout(ProductDto p)
+        void ShowCheckout(ProductDto p, int dollars = 0)
         {
             string key = NewKey();    // one key per checkout: retries can never charge twice
             string method = "";
@@ -270,7 +346,7 @@ namespace KittyCrash
             pay = Btn($"PAY ${p.price} (DEMO)", () =>
             {
                 pay.interactable = false;
-                var body = JsonUtility.ToJson(new PurchaseBody { product = p.product_id, confirmed = true });
+                var body = JsonUtility.ToJson(new PurchaseBody { product = p.product_id, amount_dollars = dollars, confirmed = true });
                 StartCoroutine(Call("POST", "/api/wallet/purchase", body, key, (code, text) =>
                 {
                     if (code == 402) { msg.text = "Demo payment declined. No points added."; msg.color = Red; Refresh_(); return; }
