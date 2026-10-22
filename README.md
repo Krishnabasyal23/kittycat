@@ -100,12 +100,14 @@ editor. It plays the scene and saves the title, clean, menu and classic screens 
 | M | Mute / unmute music |
 | W | Open / close the wallet (server mode) |
 | Esc | Open / close the menu (wallet, safe play, panels, how to play, settings, demo reset) |
-| F1 | How to play |
+| F1 | How to play: a picture tour with no words (Left / Right or the arrows to step, Esc to close) |
 | F5 | Demo reset: start over as a new player (asks first; offline, or a server in `DEMO_MODE`) |
 
 Shortcuts are ignored while you type in a text field or while a menu is open.
 
-The game opens on a title screen (Play, How to play, Settings, Safe play). Settings has the language
+The game opens on a title screen (Play, How to play, Settings, Safe play). The first time you press
+Play, a short picture tour shows the game without words: bet, the walk, cash out in time, and what
+happens when the cat gets distracted. The written rules are in the menu under **RULES**. Settings has the language
 (English / French), mute, volume, the classic layout, the title screen on/off and online/offline play. The demo reset gives
 a fresh wallet with the starting points and no breaks or limits; on the server the old wallet and
 its history stay untouched.

@@ -39,7 +39,8 @@ namespace KittyCrash
         Transform canvasRoot;
         Text pageTitle, menuLabel;
 
-        public bool IsOpen => (modal != null && modal.gameObject.activeSelf) || (title != null && title.gameObject.activeSelf);
+        public bool IsOpen => (modal != null && modal.gameObject.activeSelf) || (title != null && title.gameObject.activeSelf) || tour != null;
+        PictureTour tour;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         static void Install()
@@ -65,6 +66,7 @@ namespace KittyCrash
             HudLayout.ApplyAudio();
             Build();
             if (HudLayout.TitleAtStart && !titleShownThisRun) ShowTitle();
+            else if (!PictureTour.Seen) ShowTour();
             titleShownThisRun = true;
         }
 
@@ -78,7 +80,7 @@ namespace KittyCrash
             InputReader.MenuOpen = IsOpen;
             PlaceMenuButton();
 
-            if (InputReader.FieldFocused) return;
+            if (InputReader.FieldFocused || tour != null) return;    // the picture tour reads its own keys
             var wallet = WalletPanel.Instance;
             if (Pressed(Hotkey.Escape) && wallet != null && wallet.IsOpen && !IsOpen) { wallet.Close(); return; }
             if (Pressed(Hotkey.Escape))
@@ -86,7 +88,7 @@ namespace KittyCrash
                 if (title.gameObject.activeSelf) return;
                 if (modal.gameObject.activeSelf) Close(); else ShowMenu();
             }
-            else if (Pressed(Hotkey.F1)) ShowHowTo();
+            else if (Pressed(Hotkey.F1)) ShowTour();
             else if (Pressed(Hotkey.F5)) ShowReset();
         }
 
@@ -117,7 +119,19 @@ namespace KittyCrash
             title.gameObject.SetActive(true);
         }
 
-        void Play() => title.gameObject.SetActive(false);
+        void Play()
+        {
+            title.gameObject.SetActive(false);
+            if (!PictureTour.Seen) ShowTour();      // first time: the picture tour once
+        }
+
+        /// <summary>How to play in pictures (no text): bet, the walk, cash out in time, the distraction.</summary>
+        public void ShowTour()
+        {
+            if (tour != null) return;
+            modal.gameObject.SetActive(false);
+            tour = PictureTour.Open(canvasRoot, bold);
+        }
 
         /// <summary>Close the title screen and any menu page (screenshots, tests).</summary>
         public void CloseAll()
@@ -140,7 +154,8 @@ namespace KittyCrash
             }
             var crowd = FindAnyObjectByType<CrowdMode>();
             if (crowd != null) Btn(Loc.T("menu.crowd"), () => { Close(); crowd.Toggle(); }, Card);
-            Row((Loc.T("title.howto"), ShowHowTo), (Loc.T("title.settings"), ShowSettings));
+            Row((Loc.T("title.howto"), ShowTour), (Loc.T("menu.rules"), ShowHowTo));
+            Btn(Loc.T("title.settings"), ShowSettings, Card);
             Row((Loc.T("menu.reset"), ShowReset), (Loc.T("menu.titlescreen"), ShowTitle));
             Btn(Loc.T("menu.back"), Close, Orange);
         }
@@ -347,7 +362,7 @@ namespace KittyCrash
             v.spacing = 14f;
             v.childControlWidth = true; v.childControlHeight = true; v.childForceExpandHeight = false;
             Btn(Loc.T("title.play"), Play, Orange, true, col).GetComponent<LayoutElement>().minHeight = 84f;
-            Btn(Loc.T("title.howto"), ShowHowTo, Card, true, col);
+            Btn(Loc.T("title.howto"), ShowTour, Card, true, col);
             Btn(Loc.T("title.settings"), ShowSettings, Card, true, col);
             Btn(Loc.T("title.safe"), ShowSafePlay, Card, true, col);
 #if !UNITY_WEBGL
