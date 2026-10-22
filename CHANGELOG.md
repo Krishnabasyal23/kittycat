@@ -5,6 +5,11 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [Unreleased] - develop-v2
 
+## [2.0.0-beta.1] - 2026-10-22
+
+First beta: every v2 plan item is in (wallet, cashier, title and menu, clean layout, safe play,
+operator dashboard, three-season forecast, English / French).
+
 ### Added
 - French now covers the whole game screen: distracted banner, distraction names, graph captions and
   markers, season pill and festival names, forecast card and season banners (rule texts come from the
@@ -14,6 +19,8 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ### Fixed
 - The title screen is fully opaque (the round's banner no longer shows through it).
+- Editor menu renamed to **Kitty Crash > Install Fairness Seal Panel (Q)** (the old name mentioned a
+  removed voice cash-out).
 
 ## [2.0.0-alpha.12] - 2026-10-22
 
