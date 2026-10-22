@@ -5,6 +5,10 @@ All notable changes to the Catino Unity project. Server changes are listed in
 
 ## [Unreleased] - develop-v2
 
+### Changed (server v2.0.0-alpha.6)
+- Ticket bonus: one typed code field, one ticket a day, generic message for any code that doesn't
+  verify, entry pauses after three wrong codes. `start_server.bat` mentions `KittyAPI\.env.local`.
+
 ### Added (Phase 4, server v2.0.0-alpha.5)
 - Wallet panel: any-amount demo top-up ($1-$100, 8 points per $1, daily cap shown).
 - Profile page: nickname, avatar, stats and a single-use cashier QR code with its counter code.

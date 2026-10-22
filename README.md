@@ -21,15 +21,16 @@ can cash out, and opens it after the cat is distracted. Press **Q** to see the s
 
 Server mode uses **points** in a persistent wallet, never cash. Every player (PC or phone) starts
 with 50 points once. Each server day there are 20 free points. In `DEMO_MODE` the server also
-offers **simulated** $5 packs (40 points, or 60 for the once-a-day parking bundle; no money moves)
-and **mock** lottery tickets worth 25 points (up to 3 a day). See `KittyAPI\README.md` for the
+offers **simulated** top-ups of any amount from $1 to $100 (8 points per $1, up to $200 a day) and a
+$5 parking bundle (60 points, once a day); no money moves. A ticket code from a demo ticket is worth
+25 points, once a day. See `KittyAPI\README.md` for the
 wallet rules. Offline practice keeps its own local balance.
 
 **Play safe.** In server mode the game first asks you to confirm you're **19 or older**: the
 server refuses bets and purchases until you do. The **WALLET** and **PLAY SAFE** buttons (or **W**)
 open:
 - the wallet: free points, demo packs with a simulated checkout and a required "no real money"
-  checkbox, mock tickets, receipts and history;
+  checkbox, ticket entry, profile and cashier code, receipts and history;
 - the play-safe tools:
   - a daily spend limit (lowering applies now, raising waits 24 hours);
   - a reality check every 15, 30 or 60 minutes;
@@ -63,8 +64,9 @@ existing clone.
 ## Run with the server
 
 1. Double-click `start_server.bat` (or see `KittyAPI\README.md`). Wait for
-   `Uvicorn running on http://0.0.0.0:8001`. To try simulated purchases and mock lottery tickets,
-   run `set DEMO_MODE=1` in a console first and start the script from there.
+   `Uvicorn running on http://0.0.0.0:8001`. Settings and local secrets
+   (`DEMO_MODE=1` for simulated purchases, `TICKET_SECRET`, `QR_SECRET`) go in `KittyAPI\.env.local`,
+   one `KEY=value` per line. That file is never committed.
 2. In Unity, run **Kitty Crash > Server > Use v2 Server (port 8001)** once and save the scene
    (Ctrl+S). Then find the Round Manager (Hierarchy search: `t:RoundManager`) and tick **Use Api**.
    **Use v1 Server (port 8000)** switches back for the v1 demo.
