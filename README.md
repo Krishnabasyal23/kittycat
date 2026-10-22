@@ -12,8 +12,11 @@ bet on the same cat. Four seasons each change one rule:
 | Fall | **Leaf Storm**: gusts of leaves hide the multiplier |
 | Winter | **Hot Cocoa**: slow walk; cash out at 2.00x or more for a bonus |
 
+While betting, the forecast card shows the next walk's season and the two after it. The server rolls
+those seasons in advance and uses them in that order, so the forecast is never a guess.
+
 Season bonuses are **+4%** by default, which keeps every strategy under 100% RTP. Starting the server
-with `HAPPY_HOUR=1` restores the pitch-demo bonuses (+25% butterfly, +10% cocoa). Screens show
+with `HAPPY_HOUR=1` restores the bigger demo bonuses (+25% butterfly, +10% cocoa). Screens show
 whatever the server really pays, and the game footer then reads **HAPPY HOUR (demo)**.
 
 Every round is **provably fair**: the server publishes a SHA-256 seal of the outcome before anyone
@@ -77,6 +80,13 @@ existing clone.
 3. Press **Play**. The footer (bottom right) shows the game and server versions. Press **C** to show
    the crowd QR code; phones on the same Wi-Fi scan it to open
    `/crowd`. Run `pip install segno` in the env if the QR code does not appear.
+
+Pages that only open on the server computer (`http://127.0.0.1:8001/...`):
+- `/cashier`: scan or type a player's cashier code and record a simulated counter top-up.
+- `/operator`: live RTP, bets, players, top-ups, points, safe-play counts, daily charts, CSV export.
+
+To check the game screen at 1920x1080 and 1366x768, run **Kitty Crash > Capture Screenshots** in the
+editor. It plays the scene and saves the title, clean, menu and classic screens to `.tmp\shots`.
 
 ## Controls
 
