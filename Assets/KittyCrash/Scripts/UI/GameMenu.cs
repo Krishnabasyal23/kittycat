@@ -161,9 +161,16 @@ namespace KittyCrash
         public void ShowSafePlay()
         {
             Page("Safe play");
-            Line("Play for fun, with points only. These tools live in your wallet on the server:", TextMain, 24);
+            Line("Catino is a game. Points have no cash value and can't be cashed out.", TextMain, 24, true);
+            Line("-  Decide how long you'll play before you start, and stop when the time is up.", TextMain, 24);
+            Line("-  Each walk is random. The next walk doesn't know about the last one, so chasing losses never helps.", TextMain, 24);
+            Line("-  On average the game pays back less than you bet. Playing longer doesn't make a win more likely.", TextMain, 24);
+            Line("-  Take breaks. If playing stops being fun, or you feel you have to play, stop.", TextMain, 24);
+            Line("Your tools (server mode): a daily spend limit, a reality check reminder, a cool-off break and self-exclusion. Breaks and self-exclusion can't be shortened.", TextDim, 22);
             Btn("LIMITS, REALITY CHECK AND BREAKS", () => OpenWallet(w => w.ShowSafe()), Orange);
-            Btn("Back", ShowMenu, Card);
+            Line("Need to talk to someone? ConnexOntario: call 1-866-531-2600 or text CONNEX to 247247 (free, 24/7, includes gambling support).", TextMain, 22);
+            Line("In crisis: call or text 9-8-8 (Canada, 24/7). In danger: call 9-1-1.", TextMain, 22);
+            Btn("Back", () => { if (title.gameObject.activeSelf) Close(); else ShowMenu(); }, Card);
         }
 
         public void ShowHowTo()
