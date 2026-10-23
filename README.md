@@ -109,6 +109,10 @@ on the phones and no money is involved (points only).
 and prints the address. Phones open `<address>/crowd`; the web game is at `<address>/play` once you have built it (Kitty Crash >
 Build > WebGL for the server). The server's own house table runs rounds while phones are watching, so no game window is needed.
 
+If the Vercel command line is set up on this PC, it also updates the landing page (`site/`, catino.vercel.app) so its
+**Play in your browser** and **Join on your phone** buttons point at this run, and switches the page back to "offline" when you
+stop. The page reads `live.json`, which the launcher rewrites for each deploy; the committed copy stays empty.
+
 By hand:
 
 1. Install `cloudflared` (no account) or `ngrok` (free account).

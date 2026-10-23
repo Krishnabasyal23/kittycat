@@ -6,6 +6,9 @@ All notable changes to the Catino Unity project. Server changes are listed in
 ## [2.0.0-beta.3] - 2026-10-22
 
 ### Added
+- The landing page shows **Play in your browser** and **Join on your phone** only while the live demo is reachable (it reads
+  `live.json` and pings the server), otherwise an offline notice. `start_online.bat` updates it by itself and sets it back to
+  offline on exit.
 - `start_online.bat`: tunnel and public server in one click, house table on. `start_public.bat` now turns the house table on.
 - Web game: **Kitty Crash > Build > WebGL for the server (/play)** builds the game into `KittyAPI\web\play`; the server serves it at
   `/play`. In the browser it plays online from the start (`WebGlOnline`). On a public server the Crowd screen (key C) shows where
