@@ -6,6 +6,8 @@ All notable changes to the Catino Unity project. Server changes are listed in
 ## [2.0.0-beta.3] - 2026-10-22
 
 ### Added
+- The new logos in the game: the wordmark in the top-left HUD and the crowned-cat emblem on the title screen (`Resources/KittyCrashLogos`,
+  loaded by `Logos.cs`; plain text is the fallback if a file is missing).
 - The RULES page now states the house edge (4%, 96% back on average) in English and French, with the number read from the server
   (`/api/health` `house_edge_pct`). The landing page has an "odds, in the open" section.
 - `start_public.bat` turns the simulated checkout back on for the public demo (labelled simulated, no real money).

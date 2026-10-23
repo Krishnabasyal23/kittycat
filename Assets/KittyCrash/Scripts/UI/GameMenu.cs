@@ -352,11 +352,24 @@ namespace KittyCrash
             title.anchorMin = Vector2.zero; title.anchorMax = Vector2.one; title.offsetMin = title.offsetMax = Vector2.zero;
             title.gameObject.AddComponent<Image>().color = TitleBg;
 
-            var logo = MakeText(title, "CATINO", UiStyle.HeaderFont(bold), 150, Orange, TextAnchor.MiddleCenter);
-            Center(logo.rectTransform, 300f, new Vector2(1200f, 190f));
-            logo.gameObject.AddComponent<Shadow>().effectDistance = new Vector2(6f, -6f);
+            var emblem = Logos.Emblem;
+            if (emblem != null)
+            {
+                var logoGo = Rect("Logo", title);
+                var logoImg = logoGo.gameObject.AddComponent<Image>();
+                logoImg.sprite = emblem;
+                logoImg.preserveAspect = true;
+                logoImg.raycastTarget = false;
+                Center(logoGo, 345f, new Vector2(450f, 300f));
+            }
+            else
+            {
+                var logo = MakeText(title, "CATINO", UiStyle.HeaderFont(bold), 150, Orange, TextAnchor.MiddleCenter);
+                Center(logo.rectTransform, 300f, new Vector2(1200f, 190f));
+                logo.gameObject.AddComponent<Shadow>().effectDistance = new Vector2(6f, -6f);
+            }
             var tag = MakeText(title, Loc.T("title.tagline"), font, 30, TextDim, TextAnchor.MiddleCenter);
-            Center(tag.rectTransform, 170f, new Vector2(1400f, 50f));
+            Center(tag.rectTransform, 160f, new Vector2(1400f, 50f));
 
             var col = Rect("Buttons", title);
             Center(col, -110f, new Vector2(520f, 440f));

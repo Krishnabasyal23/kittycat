@@ -636,9 +636,21 @@ namespace KittyCrash
             }
 
             // ── top-left: logo + mode badge + switch ──
-            var logo = Label("Logo", root, "CATINO", 58, accent, TextAnchor.UpperLeft, true);
-            Place(logo.rectTransform, new Vector2(0, 1), new Vector2(40, -24), new Vector2(620, 70));
-            AddShadow(logo.gameObject, 4);
+            var wordmark = Logos.Wordmark;
+            if (wordmark != null)
+            {
+                var logoImg = Panel("Logo", root, Color.white, wordmark);
+                logoImg.type = Image.Type.Simple;
+                logoImg.preserveAspect = true;
+                Place(logoImg.rectTransform, new Vector2(0, 1), new Vector2(38, -20), new Vector2(290, 72));
+                AddShadow(logoImg.gameObject, 4);
+            }
+            else
+            {
+                var logo = Label("Logo", root, "CATINO", 58, accent, TextAnchor.UpperLeft, true);
+                Place(logo.rectTransform, new Vector2(0, 1), new Vector2(40, -24), new Vector2(620, 70));
+                AddShadow(logo.gameObject, 4);
+            }
             apiText = Label("Mode", root, "", 22, win, TextAnchor.UpperLeft, false);
             Place(apiText.rectTransform, new Vector2(0, 1), new Vector2(44, -94), new Vector2(560, 30));
             apiToggleBtn = ButtonWithLabel("ApiToggle", root, "USE API", 18, out apiToggleBg, out apiToggleText, () =>
