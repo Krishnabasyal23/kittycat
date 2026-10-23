@@ -66,6 +66,8 @@ namespace KittyCrash
         float WarmupSeconds { get; }
         decimal MinBet { get; }
         decimal MaxBet { get; }
+        /// <summary>The house edge in whole percent (the game pays back 100 minus this on average), shown in the rules.</summary>
+        int HouseEdgePct { get; }
 
         void Connect(Action<BalanceResult> done);
         void StartRound(decimal wager, Action<StartRoundResult> done);

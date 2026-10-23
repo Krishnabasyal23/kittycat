@@ -50,6 +50,7 @@ namespace KittyCrash
         decimal balance;
 
         public string Name => "Offline (local)";
+        public int HouseEdgePct => Mathf.RoundToInt(CrashMath.DefaultHouseEdge * 100f);
         public float GrowthRate => growthRate;
         public float WarmupSeconds => warmupSeconds;
         public decimal MinBet => (decimal)minBet;

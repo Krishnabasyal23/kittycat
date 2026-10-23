@@ -60,6 +60,7 @@ namespace KittyCrash
         public readonly List<float> History = new List<float>();
 
         public ICrashBackend Backend { get; private set; }
+        public int HouseEdgePct => Backend != null ? Backend.HouseEdgePct : Mathf.RoundToInt(CrashMath.DefaultHouseEdge * 100f);
         public string BackendName => Backend != null ? Backend.Name : "-";
         public float GrowthRate => Backend != null ? Backend.GrowthRate : CrashMath.DefaultGrowthRate;
         public float WarmupSeconds => Backend != null ? Backend.WarmupSeconds : 0f;

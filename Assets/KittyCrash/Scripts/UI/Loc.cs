@@ -344,6 +344,8 @@ namespace KittyCrash
                            "4.  Si le chat est distrait avant, la mise est perdue. L'encaissement auto peut encaisser pour vous."),
             ["howto.5"] = ("5.  Each season changes one rule. The forecast while betting shows what's coming.",
                            "5.  Chaque saison change une règle. Pendant les mises, la prévision montre ce qui s'en vient."),
+            ["howto.edge"] = ("6.  The house edge is {0}%: over many rounds the game pays back about {1}% of all points bet, and every cash-out target has the same {1}% return. Season bonuses are capped so no strategy beats 100%. Open Schrödinger's Box (Q) to check any round.",
+                           "6.  L'avantage de la maison est de {0} % : sur de nombreuses manches, le jeu rend environ {1} % de tous les points misés, et chaque cible d'encaissement a le même rendement de {1} %. Les bonus de saison sont plafonnés : aucune stratégie ne dépasse 100 %. Ouvrez la boîte de Schrödinger (Q) pour vérifier n'importe quelle manche."),
             ["howto.points"] = ("Points are not money and can't be cashed out. Take breaks: Safe play is in the menu.",
                                 "Les points ne sont pas de l'argent et ne s'encaissent pas. Prenez des pauses : le jeu responsable est dans le menu."),
             ["howto.keys"] = ("Keys:  Space bet / cash out  ·  Esc menu  ·  W wallet  ·  C crowd mode  ·  M music  ·  F1 help  ·  F5 demo reset",
