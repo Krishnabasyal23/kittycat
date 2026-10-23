@@ -151,6 +151,12 @@ happens when the cat gets distracted. The written rules are in the menu under **
 a fresh wallet with the starting points and no breaks or limits; on the server the old wallet and
 its history stay untouched.
 
+## Contributing
+
+`main` is the trunk — it's always current and is what the repo link shows by default. Branch off
+`main`, open a PR back into `main`, and delete the branch once it's merged (`git push origin --delete
+<branch>`, or tick the box on the GitHub merge screen). Don't let merged branches pile up.
+
 ## Known limits
 
 - Phones get live updates over a WebSocket (polling only as a fallback). The game screen itself
