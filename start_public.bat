@@ -44,7 +44,9 @@ if not errorlevel 1 (
 if not defined PUBLIC_URL set /p PUBLIC_URL=Paste the public https address (or press Enter to skip):
 
 set "PUBLIC_MODE=1"
-set "DEMO_MODE="
+rem Simulated top-ups (card / wallet checkout, clearly labelled, no real money) stay on for the demo.
+set "DEMO_MODE=1"
+if not defined ALLOW_PUBLIC_DEMO set "ALLOW_PUBLIC_DEMO=1"
 if not defined AUTO_HOST set "AUTO_HOST=1"
 
 cd /d "%KITTY_API%"

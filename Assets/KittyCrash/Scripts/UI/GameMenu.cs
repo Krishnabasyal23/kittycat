@@ -194,6 +194,8 @@ namespace KittyCrash
         {
             Page(Loc.T("howto.title"));
             for (int i = 1; i <= 5; i++) Line(Loc.T("howto." + i), TextMain, 24);
+            int edge = rm != null ? rm.HouseEdgePct : 4;
+            Line(Loc.F("howto.edge", edge, 100 - edge), TextMain, 22);
             Line(Loc.T("howto.points"), TextDim, 22);
             Line(Loc.T("howto.keys"), TextDim, 20);
             Btn(Loc.T("common.back"), () => { if (title.gameObject.activeSelf) Close(); else ShowMenu(); }, Orange);
