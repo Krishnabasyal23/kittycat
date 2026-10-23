@@ -6,6 +6,10 @@ All notable changes to the Catino Unity project. Server changes are listed in
 ## [2.0.0-beta.3] - 2026-10-22
 
 ### Added
+- `start_online.bat`: tunnel and public server in one click, house table on. `start_public.bat` now turns the house table on.
+- Web game: **Kitty Crash > Build > WebGL for the server (/play)** builds the game into `KittyAPI\web\play`; the server serves it at
+  `/play`. In the browser it plays online from the start (`WebGlOnline`). On a public server the Crowd screen (key C) shows where
+  phones join instead of trying to host.
 - Online demo: `start_tunnel.bat` (cloudflared or ngrok) and `start_public.bat` (the server in public mode on this
   computer only). The README has a "Run online" section and a quick start. Server hardening and the hosting guide
   are in KittyAPI (`docs/DEPLOY.md`).

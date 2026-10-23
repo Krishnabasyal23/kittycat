@@ -55,7 +55,8 @@ keep it fun, opens the tools above, and lists ConnexOntario (1-866-531-2600, or 
 | `Assets/KittyCrash/` | The game: scene `Scenes/KittyCrash.unity`, scripts, art, audio |
 | `KittyAPI/` | Python/FastAPI server (git submodule, see its README). Decides crash points, seasons, bonuses and payouts |
 | `start_server.bat` | Double-click to start the v2 server on port 8001 (room demo on the Wi-Fi) |
-| `start_tunnel.bat`, `start_public.bat` | Online demo: a tunnel (cloudflared or ngrok) plus the server in public mode, see "Run online" |
+| `start_online.bat` | One click for a live demo: a Cloudflare tunnel plus the server in public mode with the house table on, prints the public address |
+| `start_tunnel.bat`, `start_public.bat` | The same in two steps (cloudflared or ngrok tunnel, then the server), see "Run online" |
 | `site/` | A static landing page (video, screenshots, links). Host it on Vercel, Cloudflare Pages or GitHub Pages |
 
 ## Requirements
@@ -103,6 +104,12 @@ Pages that only open on the server computer (`http://127.0.0.1:8001/...`):
 
 Phones anywhere can join through a tunnel that gives the server a public https address. Nothing is installed
 on the phones and no money is involved (points only).
+
+**Fastest:** double-click `start_online.bat`. It downloads cloudflared once, opens the tunnel, starts the server in public mode
+and prints the address. Phones open `<address>/crowd`; the web game is at `<address>/play` once you have built it (Kitty Crash >
+Build > WebGL for the server). The server's own house table runs rounds while phones are watching, so no game window is needed.
+
+By hand:
 
 1. Install `cloudflared` (no account) or `ngrok` (free account).
 2. Double-click `start_tunnel.bat` and copy the `https://...` address it prints.

@@ -56,6 +56,7 @@ namespace KittyCrash
 
         bool on, polling, hostBetTried;
         string hostedSession, joinUrl;
+        bool viewOnly;   // a public server only lets the game on its own computer host: this screen just shows where phones join
         float nextPoll;
         StateDto state;
         readonly Dictionary<string, string> lastStatus = new Dictionary<string, string>();
@@ -126,14 +127,30 @@ namespace KittyCrash
         void Host()
         {
             hostedSession = api.SessionId;
+            viewOnly = false;
             StartCoroutine(Send("POST", "/api/crowd/host", JsonUtility.ToJson(new HostBody { name = hostName }), (code, text) =>
             {
+                if (code == 403) { ShowJoinInfo(); return; }
                 if (code != 200) { joinText.text = "Server has no crowd mode yet\n(update KittyAPI)"; return; }
                 var h = JsonUtility.FromJson<HostDto>(text);
                 joinUrl = h.join_url;
                 joinText.text = joinUrl.Replace("http://", "").Replace("https://", "");
                 DrawQr(h.qr);
                 if (rm.Phase == RoundPhase.Idle) Open(rm.PhaseTimeLeft);
+            }));
+        }
+
+        // The server refused the host seat (public mode): show the address and QR code phones use to join its own table.
+        void ShowJoinInfo()
+        {
+            viewOnly = true;
+            StartCoroutine(Send("GET", "/api/crowd/join-info", null, (code, text) =>
+            {
+                if (code != 200) { joinText.text = "Crowd mode is not available here"; return; }
+                var h = JsonUtility.FromJson<HostDto>(text);
+                joinUrl = h.join_url;
+                joinText.text = joinUrl.Replace("http://", "").Replace("https://", "");
+                DrawQr(h.qr);
             }));
         }
 
@@ -155,6 +172,7 @@ namespace KittyCrash
 
         void Open(float seconds)
         {
+            if (viewOnly) return;
             var body = JsonUtility.ToJson(new OpenDto { seconds = Mathf.Max(1f, seconds) });
             StartCoroutine(Send("POST", "/api/crowd/open", body, (code, text) =>
             {
@@ -182,6 +200,7 @@ namespace KittyCrash
 
             if (api != null && api.SessionId != hostedSession && !string.IsNullOrEmpty(api.SessionId)) Host();
             if (!rm.useApi) { on = false; RefreshPill(); return; }
+            if (viewOnly) return;
 
             // Laptop out of points: the wallet panel offers free points, demo packs or a break.
             // (No more fresh sessions: a new wallet per refill would hand out free points.)
