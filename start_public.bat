@@ -45,11 +45,13 @@ if not defined PUBLIC_URL set /p PUBLIC_URL=Paste the public https address (or p
 
 set "PUBLIC_MODE=1"
 set "DEMO_MODE="
+if not defined AUTO_HOST set "AUTO_HOST=1"
 
 cd /d "%KITTY_API%"
 echo.
 echo  Catino server (public mode) on 127.0.0.1:%PORT%
 if defined PUBLIC_URL (echo  Public address: %PUBLIC_URL%/crowd) else (echo  No public address set: the join QR will show the Wi-Fi address)
+echo  House table is on: phones can play without the Unity game. Web game: /play when a build exists.
 echo  Cashier and operator pages are closed. Close this window or press Ctrl+C to stop.
 echo.
 
