@@ -30,6 +30,10 @@
     display: inline-block; padding: 12px 22px; border-radius: 12px; font-weight: 800;
     text-decoration: none; background: var(--orange); color: #241a05;
   }
+  .status { font-size: .95rem; margin: 2px 2px 0; padding-left: 22px; position: relative; color: var(--mute); }
+  .status::before { content: ""; position: absolute; left: 4px; top: .5em; width: 10px; height: 10px; border-radius: 50%; background: var(--mute); }
+  .status.on { color: var(--green); }
+  .status.on::before { background: var(--green); box-shadow: 0 0 10px var(--green); }
   .btn.alt { background: var(--panel2); color: var(--ink); border: 1px solid var(--line); }
   .shot { margin: 30px 0 6px; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: #000; }
   .shot img { display: block; width: 100%; height: auto; }
@@ -76,6 +80,7 @@
   <p class="lead">A cat walks, the multiplier climbs, and you cash out before it gets distracted. Up to 60 friends join
   on their phones by scanning a QR code, and every round is sealed in <b>Schrödinger's Box</b> so anyone can verify it was fair.</p>
   <div class="buttons" id="buttons"></div>
+  <div class="status off" id="status"></div>
   <div class="shot crop"><img src="img/game.png" alt="The Catino game screen: a pixel cat walking through a summer meadow with the bet panel below"></div>
   <p class="cap">The Unity game on the big screen. Points only, no real money.</p>
 </header>
@@ -145,34 +150,68 @@ P(crash ≥ m) = 0.96 / m           so every cash-out target returns 96% on aver
 
 </main>
 <script>
-  // Fill these in; an empty one hides its button.
+  // Where the live demo is comes from live.json, which start_online.bat rewrites each time the demo starts.
+  // An empty address means the demo is off. Edit video (a YouTube id) and the repo links here.
   var LINKS = {
-    live: "",                                              // a live demo address, e.g. https://....
-    video: "",                                             // a YouTube video id, e.g. "dQw4w9WgXcQ"
-    repo: "https://github.com/Krishnabasyal23/kittycat",   // the Unity game
-    server: "https://github.com/Krishnabasyal23/KittyAPI"  // the server
+    live: "",
+    video: "",
+    repo: "https://github.com/Krishnabasyal23/kittycat",
+    server: "https://github.com/Krishnabasyal23/KittyAPI"
   };
-  (function () {
-    var b = document.getElementById("buttons");
-    function add(href, text, alt) {
+
+  function reachable(base) {
+    if (!base) return Promise.resolve(false);
+    var ctl = new AbortController();
+    var timer = setTimeout(function () { ctl.abort(); }, 6000);
+    return fetch(base + "/api/health", { mode: "no-cors", cache: "no-store", signal: ctl.signal })
+      .then(function () { clearTimeout(timer); return true; })
+      .catch(function () { clearTimeout(timer); return false; });
+  }
+
+  function render(online) {
+    var box = document.getElementById("buttons");
+    var status = document.getElementById("status");
+    function add(href, text, cls) {
       var a = document.createElement("a");
-      a.className = "btn" + (alt ? " alt" : ""); a.href = href; a.textContent = text;
+      a.className = "btn" + (cls ? " " + cls : ""); a.href = href; a.textContent = text;
       a.target = "_blank"; a.rel = "noopener";
-      b.appendChild(a);
+      box.appendChild(a);
     }
-    if (LINKS.live) add(LINKS.live + "/crowd", "Try it on your phone");
-    if (LINKS.video) add("#video-section", "Watch the demo", true);
-    if (LINKS.repo) add(LINKS.repo, "Game code", true);
-    if (LINKS.server) add(LINKS.server, "Server code", true);
+    box.innerHTML = "";
+    if (online) {
+      add(LINKS.live + "/play/", "Play in your browser");
+      add(LINKS.live + "/crowd", "Join on your phone", "alt");
+      status.className = "status on";
+      status.textContent = "Live demo is running right now. Phones can join from anywhere.";
+    } else {
+      status.className = "status off";
+      status.textContent = "The live demo is offline right now. It runs from a laptop, so ask for a live session or watch the video.";
+    }
+    if (LINKS.video) add("#video-section", "Watch the demo", "alt");
+    if (LINKS.repo) add(LINKS.repo, "Game code", "alt");
+    if (LINKS.server) add(LINKS.server, "Server code", "alt");
     if (LINKS.video) {
       document.getElementById("video-section").hidden = false;
-      var f = document.createElement("iframe");
-      f.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(LINKS.video);
-      f.title = "Catino demo video"; f.allowFullscreen = true;
-      f.setAttribute("allow", "accelerometer; autoplay; encrypted-media; picture-in-picture");
-      document.getElementById("video").appendChild(f);
+      var v = document.getElementById("video");
+      if (!v.firstChild) {
+        var f = document.createElement("iframe");
+        f.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(LINKS.video);
+        f.title = "Catino demo video"; f.allowFullscreen = true;
+        f.setAttribute("allow", "accelerometer; autoplay; encrypted-media; picture-in-picture");
+        v.appendChild(f);
+      }
     }
-  })();
+  }
+
+  render(false);
+  fetch("live.json?" + Date.now(), { cache: "no-store" })
+    .then(function (r) { return r.ok ? r.json() : {}; })
+    .catch(function () { return {}; })
+    .then(function (j) {
+      LINKS.live = ((j && j.live) || "").replace(/\/+$/, "");
+      return reachable(LINKS.live);
+    })
+    .then(render);
 </script>
 </body>
 </html>
