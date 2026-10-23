@@ -17,6 +17,16 @@ function Publish-Link([string]$root, [string]$address) {
     try { & $vercel deploy --prod --yes 2>&1 | Out-Null } catch { } finally { Pop-Location }
 }
 
+# Starting twice would give two tunnels fighting over one server and a dead link on the landing page.
+if (Get-NetTCPConnection -LocalPort 8001 -State Listen -ErrorAction SilentlyContinue) {
+    Write-Host ""
+    Write-Host "  The Catino server is already running (port 8001), so nothing was started." -ForegroundColor Yellow
+    Write-Host "  Use the window that is already open. To restart it, close that window first (or press Ctrl+C in it)."
+    Write-Host ""
+    Read-Host "  Press Enter to close this window"
+    exit 0
+}
+
 $cf = (Get-Command cloudflared -ErrorAction SilentlyContinue).Source
 if (-not $cf) { $cf = Join-Path $root ".tmp\cloudflared\cloudflared.exe" }
 if (-not (Test-Path $cf)) {
