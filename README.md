@@ -124,9 +124,6 @@ By hand:
 
 Container hosts (Render, Fly.io), a VM with Caddy, backups and a pre-demo checklist: `KittyAPI\docs\DEPLOY.md`.
 
-To check the game screen at 1920x1080 and 1366x768, run **Kitty Crash > Capture Screenshots** in the
-editor. It plays the scene and saves the title, clean, menu and classic screens to `.tmp\shots`.
-
 ## Controls
 
 | Key | Action |
