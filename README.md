@@ -169,8 +169,12 @@ its history stay untouched.
 
 ## Credits
 
-- Cat sprites (Pet Cats pack). TODO: I will fill in author and licence myself
-- Plants (KebapGuy pack). TODO: I will fill in author and licence myself
-- Font (Fredoka). TODO: I will fill in author and licence myself
-- Music (Season Cycle). TODO: I will fill in author and licence myself
-- Sound effects (generated in-house). TODO: I will fill in author and licence myself
+- Cat sprites (Pet Cats pack). https://assetstore.unity.com/packages/2d/characters/pet-cats-pixel-art-pack-248340
+- Plants (KebapGuy pack). https://assetstore.unity.com/publishers/158912
+- Font (Fredoka). https://fonts.google.com/specimen/Fredoka
+- Music (Season Cycle). https://marketplace.unity.com/packages/audio/music/orchestral/gomesda-cozy-spring-free-orchestral-mini-pack-377670
+
+## License
+
+The code in this repository is released under the [MIT License](LICENSE). The art, music and fonts listed under
+Credits belong to their authors and keep their own licences; the MIT License does not cover them.
