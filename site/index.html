@@ -162,10 +162,12 @@ P(crash ≥ m) = 0.96 / m           so every cash-out target returns 96% on aver
 
 </main>
 <script>
-  // Where the live demo is comes from live.json, which start_online.bat rewrites each time the demo starts.
-  // An empty address means the demo is off. Edit video (a YouTube id) and the repo links here.
+  // live.json: the tunnel address of a demo running on a PC (start_online.bat rewrites it; empty when stopped).
+  // permanent.json: the always-on hosted address (Render), used when no PC demo is running.
+  // Edit video (a YouTube id) and the repo links here.
   var LINKS = {
     live: "",
+    hosted: "",
     video: "",
     repo: "https://github.com/Krishnabasyal23/kittycat",
     server: "https://github.com/Krishnabasyal23/KittyAPI"
@@ -180,7 +182,15 @@ P(crash ≥ m) = 0.96 / m           so every cash-out target returns 96% on aver
       .catch(function () { clearTimeout(timer); return false; });
   }
 
-  function render(online) {
+  function getJson(name) {
+    return fetch(name + "?" + Date.now(), { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : {}; })
+      .catch(function () { return {}; });
+  }
+
+  function clean(u) { return (u || "").replace(/\/+$/, ""); }
+
+  function render(mode) {
     var box = document.getElementById("buttons");
     var status = document.getElementById("status");
     function add(href, text, cls) {
@@ -190,11 +200,14 @@ P(crash ≥ m) = 0.96 / m           so every cash-out target returns 96% on aver
       box.appendChild(a);
     }
     box.innerHTML = "";
-    if (online) {
-      add(LINKS.live + "/play/", "Play in your browser");
-      add(LINKS.live + "/crowd", "Join on your phone", "alt");
+    var base = mode === "tunnel" ? LINKS.live : mode === "hosted" ? LINKS.hosted : "";
+    if (base) {
+      add(base + "/play/", "Play in your browser");
+      add(base + "/crowd", "Join on your phone", "alt");
       status.className = "status on";
-      status.textContent = "Live demo is running right now. Phones can join from anywhere.";
+      status.textContent = mode === "tunnel"
+        ? "Live demo is running right now. Phones can join from anywhere."
+        : "Hosted demo. It sleeps when nobody is around, so the first load can take up to a minute.";
     } else {
       status.className = "status off";
       status.textContent = "The live demo is offline right now. It runs from a laptop, so ask for a live session or watch the video.";
@@ -215,15 +228,14 @@ P(crash ≥ m) = 0.96 / m           so every cash-out target returns 96% on aver
     }
   }
 
-  render(false);
-  fetch("live.json?" + Date.now(), { cache: "no-store" })
-    .then(function (r) { return r.ok ? r.json() : {}; })
-    .catch(function () { return {}; })
-    .then(function (j) {
-      LINKS.live = ((j && j.live) || "").replace(/\/+$/, "");
+  render("off");
+  Promise.all([getJson("live.json"), getJson("permanent.json")])
+    .then(function (r) {
+      LINKS.live = clean(r[0] && r[0].live);
+      LINKS.hosted = clean(r[1] && r[1].host);
       return reachable(LINKS.live);
     })
-    .then(render);
+    .then(function (tunnelUp) { render(tunnelUp ? "tunnel" : LINKS.hosted ? "hosted" : "off"); });
 </script>
 </body>
 </html>
